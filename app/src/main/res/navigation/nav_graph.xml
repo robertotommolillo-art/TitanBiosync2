@@ -5,15 +5,6 @@
     app:startDestination="@id/dashboardFragment">
 
     <fragment
-        android:id="@+id/workoutReportHostFragment"
-        android:name="com.titanbiosync.gym.ui.report.WorkoutReportHostFragment"
-        android:label="Report allenamento">
-        <argument
-            android:name="sessionId"
-            app:argType="string" />
-    </fragment>
-
-    <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.titanbiosync.ui.dashboard.DashboardFragment"
         android:label="Dashboard">
