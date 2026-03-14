@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "bb_bench_press_video_asset_1",
+    "exerciseId": "bb_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_flat_bench_press_video_asset_1",
+    "exerciseId": "db_flat_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_flat_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_flat_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_incline_bench_press_video_asset_1",
+    "exerciseId": "bb_incline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_incline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_incline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_bench_press_video_asset_1",
+    "exerciseId": "db_incline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_incline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_incline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_incline_press_video_asset_1",
+    "exerciseId": "smith_incline_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_incline_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_incline_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_chest_press_video_asset_1",
+    "exerciseId": "machine_chest_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_chest_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_chest_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_video_asset_1",
+    "exerciseId": "cable_chest_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_chest_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_chest_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_fly_video_asset_1",
+    "exerciseId": "db_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_video_asset_1",
+    "exerciseId": "push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "diamond_push_up_video_asset_1",
+    "exerciseId": "diamond_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/diamond_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/diamond_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "wide_push_up_video_asset_1",
+    "exerciseId": "wide_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/wide_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/wide_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "dip_video_asset_1",
+    "exerciseId": "dip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/dip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/dip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bench_dip_video_asset_1",
+    "exerciseId": "bench_dip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bench_dip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bench_dip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_overhead_press_video_asset_1",
+    "exerciseId": "bb_overhead_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_overhead_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_overhead_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_shoulder_press_video_asset_1",
+    "exerciseId": "db_shoulder_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_shoulder_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_shoulder_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "arnold_press_video_asset_1",
+    "exerciseId": "arnold_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/arnold_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/arnold_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_shoulder_press_video_asset_1",
+    "exerciseId": "machine_shoulder_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_shoulder_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_shoulder_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_video_asset_1",
+    "exerciseId": "db_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_lateral_raise_video_asset_1",
+    "exerciseId": "cable_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_front_raise_video_asset_1",
+    "exerciseId": "db_front_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_front_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_front_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rear_delt_fly_machine_video_asset_1",
+    "exerciseId": "rear_delt_fly_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rear_delt_fly_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rear_delt_fly_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_rear_delt_fly_video_asset_1",
+    "exerciseId": "db_rear_delt_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_rear_delt_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_rear_delt_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_face_pull_video_asset_1",
+    "exerciseId": "cable_face_pull",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_face_pull.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_face_pull.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_video_asset_1",
+    "exerciseId": "band_pull_apart",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/band_pull_apart.mp4",
+    "thumbnailUrl": "gym_media/placeholders/band_pull_apart.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_barbell_row_video_asset_1",
+    "exerciseId": "bb_barbell_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_barbell_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_barbell_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_one_arm_row_video_asset_1",
+    "exerciseId": "db_one_arm_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_one_arm_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_one_arm_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_seated_row_video_asset_1",
+    "exerciseId": "cable_seated_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_seated_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_seated_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_row_video_asset_1",
+    "exerciseId": "machine_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_video_asset_1",
+    "exerciseId": "pull_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pull_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pull_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "chin_up_video_asset_1",
+    "exerciseId": "chin_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/chin_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/chin_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_video_asset_1",
+    "exerciseId": "lat_pulldown",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_neutral_grip_video_asset_1",
+    "exerciseId": "lat_pulldown_neutral_grip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown_neutral_grip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown_neutral_grip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_video_asset_1",
+    "exerciseId": "bb_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_video_asset_1",
+    "exerciseId": "bb_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_video_asset_2",
+    "exerciseId": "bb_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_front_squat_video_asset_1",
+    "exerciseId": "bb_front_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_front_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_front_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "goblet_squat_video_asset_1",
+    "exerciseId": "goblet_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/goblet_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/goblet_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_goblet_squat_video_asset_1",
+    "exerciseId": "db_goblet_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_goblet_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_goblet_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_back_squat_video_asset_1",
+    "exerciseId": "smith_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hack_squat_machine_video_asset_1",
+    "exerciseId": "hack_squat_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hack_squat_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hack_squat_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "leg_press_video_asset_2",
+    "exerciseId": "leg_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/leg_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/leg_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_video_asset_2",
+    "exerciseId": "bb_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_romanian_deadlift_video_asset_1",
+    "exerciseId": "bb_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_romanian_deadlift_video_asset_1",
+    "exerciseId": "db_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_romanian_deadlift_video_asset_1",
+    "exerciseId": "kb_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hip_thrust_bb_video_asset_1",
+    "exerciseId": "hip_thrust_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hip_thrust_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hip_thrust_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "glute_bridge_video_asset_1",
+    "exerciseId": "glute_bridge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/glute_bridge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/glute_bridge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "split_squat_video_asset_1",
+    "exerciseId": "split_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/split_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/split_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bulgarian_split_squat_db_video_asset_1",
+    "exerciseId": "bulgarian_split_squat_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bulgarian_split_squat_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bulgarian_split_squat_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "walking_lunge_db_video_asset_1",
+    "exerciseId": "walking_lunge_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/walking_lunge_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/walking_lunge_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "step_up_db_video_asset_1",
+    "exerciseId": "step_up_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/step_up_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/step_up_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bench_press_video_asset_1",
+    "exerciseId": "bb_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_flat_bench_press_video_asset_1",
+    "exerciseId": "db_flat_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_flat_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_flat_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_incline_bench_press_video_asset_1",
+    "exerciseId": "bb_incline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_incline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_incline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_bench_press_video_asset_1",
+    "exerciseId": "db_incline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_incline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_incline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_incline_press_video_asset_1",
+    "exerciseId": "smith_incline_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_incline_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_incline_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_chest_press_video_asset_1",
+    "exerciseId": "machine_chest_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_chest_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_chest_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_video_asset_1",
+    "exerciseId": "cable_chest_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_chest_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_chest_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_fly_video_asset_1",
+    "exerciseId": "db_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_video_asset_1",
+    "exerciseId": "push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "diamond_push_up_video_asset_1",
+    "exerciseId": "diamond_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/diamond_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/diamond_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "wide_push_up_video_asset_1",
+    "exerciseId": "wide_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/wide_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/wide_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "dip_video_asset_1",
+    "exerciseId": "dip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/dip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/dip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bench_dip_video_asset_1",
+    "exerciseId": "bench_dip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bench_dip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bench_dip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_overhead_press_video_asset_1",
+    "exerciseId": "bb_overhead_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_overhead_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_overhead_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_shoulder_press_video_asset_1",
+    "exerciseId": "db_shoulder_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_shoulder_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_shoulder_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "arnold_press_video_asset_1",
+    "exerciseId": "arnold_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/arnold_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/arnold_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_shoulder_press_video_asset_1",
+    "exerciseId": "machine_shoulder_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_shoulder_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_shoulder_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_video_asset_1",
+    "exerciseId": "db_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_lateral_raise_video_asset_1",
+    "exerciseId": "cable_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_front_raise_video_asset_1",
+    "exerciseId": "db_front_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_front_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_front_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rear_delt_fly_machine_video_asset_1",
+    "exerciseId": "rear_delt_fly_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rear_delt_fly_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rear_delt_fly_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_rear_delt_fly_video_asset_1",
+    "exerciseId": "db_rear_delt_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_rear_delt_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_rear_delt_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_face_pull_video_asset_1",
+    "exerciseId": "cable_face_pull",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_face_pull.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_face_pull.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_video_asset_1",
+    "exerciseId": "band_pull_apart",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/band_pull_apart.mp4",
+    "thumbnailUrl": "gym_media/placeholders/band_pull_apart.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_barbell_row_video_asset_1",
+    "exerciseId": "bb_barbell_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_barbell_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_barbell_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_one_arm_row_video_asset_1",
+    "exerciseId": "db_one_arm_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_one_arm_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_one_arm_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_seated_row_video_asset_1",
+    "exerciseId": "cable_seated_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_seated_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_seated_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_row_video_asset_1",
+    "exerciseId": "machine_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_video_asset_1",
+    "exerciseId": "pull_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pull_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pull_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "chin_up_video_asset_1",
+    "exerciseId": "chin_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/chin_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/chin_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_video_asset_1",
+    "exerciseId": "lat_pulldown",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_neutral_grip_video_asset_1",
+    "exerciseId": "lat_pulldown_neutral_grip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown_neutral_grip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown_neutral_grip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_video_asset_1",
+    "exerciseId": "bb_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_video_asset_1",
+    "exerciseId": "bb_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_front_squat_video_asset_1",
+    "exerciseId": "bb_front_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_front_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_front_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "goblet_squat_video_asset_1",
+    "exerciseId": "goblet_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/goblet_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/goblet_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_goblet_squat_video_asset_1",
+    "exerciseId": "db_goblet_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_goblet_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_goblet_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_back_squat_video_asset_1",
+    "exerciseId": "smith_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hack_squat_machine_video_asset_1",
+    "exerciseId": "hack_squat_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hack_squat_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hack_squat_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "leg_press_video_asset_1",
+    "exerciseId": "leg_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/leg_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/leg_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_romanian_deadlift_video_asset_1",
+    "exerciseId": "bb_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_romanian_deadlift_video_asset_1",
+    "exerciseId": "db_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_romanian_deadlift_video_asset_1",
+    "exerciseId": "kb_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hip_thrust_bb_video_asset_1",
+    "exerciseId": "hip_thrust_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hip_thrust_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hip_thrust_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "glute_bridge_video_asset_1",
+    "exerciseId": "glute_bridge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/glute_bridge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/glute_bridge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "split_squat_video_asset_1",
+    "exerciseId": "split_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/split_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/split_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bulgarian_split_squat_db_video_asset_1",
+    "exerciseId": "bulgarian_split_squat_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bulgarian_split_squat_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bulgarian_split_squat_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "walking_lunge_db_video_asset_1",
+    "exerciseId": "walking_lunge_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/walking_lunge_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/walking_lunge_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "step_up_db_video_asset_1",
+    "exerciseId": "step_up_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/step_up_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/step_up_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_flat_bench_press_video_asset_1",
+    "exerciseId": "db_flat_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_flat_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_flat_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_incline_bench_press_video_asset_1",
+    "exerciseId": "bb_incline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_incline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_incline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_bench_press_video_asset_1",
+    "exerciseId": "db_incline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_incline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_incline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_incline_press_video_asset_1",
+    "exerciseId": "smith_incline_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_incline_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_incline_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_chest_press_video_asset_1",
+    "exerciseId": "machine_chest_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_chest_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_chest_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_video_asset_1",
+    "exerciseId": "cable_chest_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_chest_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_chest_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_fly_video_asset_1",
+    "exerciseId": "db_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_video_asset_1",
+    "exerciseId": "push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "diamond_push_up_video_asset_1",
+    "exerciseId": "diamond_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/diamond_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/diamond_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "wide_push_up_video_asset_1",
+    "exerciseId": "wide_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/wide_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/wide_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "dip_video_asset_1",
+    "exerciseId": "dip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/dip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/dip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bench_dip_video_asset_1",
+    "exerciseId": "bench_dip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bench_dip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bench_dip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_overhead_press_video_asset_1",
+    "exerciseId": "bb_overhead_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_overhead_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_overhead_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_shoulder_press_video_asset_1",
+    "exerciseId": "db_shoulder_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_shoulder_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_shoulder_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "arnold_press_video_asset_1",
+    "exerciseId": "arnold_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/arnold_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/arnold_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_shoulder_press_video_asset_1",
+    "exerciseId": "machine_shoulder_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_shoulder_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_shoulder_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_video_asset_1",
+    "exerciseId": "db_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_lateral_raise_video_asset_1",
+    "exerciseId": "cable_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_front_raise_video_asset_1",
+    "exerciseId": "db_front_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_front_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_front_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rear_delt_fly_machine_video_asset_1",
+    "exerciseId": "rear_delt_fly_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rear_delt_fly_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rear_delt_fly_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_rear_delt_fly_video_asset_1",
+    "exerciseId": "db_rear_delt_fly",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_rear_delt_fly.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_rear_delt_fly.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_face_pull_video_asset_1",
+    "exerciseId": "cable_face_pull",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_face_pull.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_face_pull.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_video_asset_1",
+    "exerciseId": "band_pull_apart",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/band_pull_apart.mp4",
+    "thumbnailUrl": "gym_media/placeholders/band_pull_apart.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_barbell_row_video_asset_1",
+    "exerciseId": "bb_barbell_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_barbell_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_barbell_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_one_arm_row_video_asset_1",
+    "exerciseId": "db_one_arm_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_one_arm_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_one_arm_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_seated_row_video_asset_1",
+    "exerciseId": "cable_seated_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_seated_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_seated_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_row_video_asset_1",
+    "exerciseId": "machine_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_video_asset_1",
+    "exerciseId": "pull_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pull_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pull_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "chin_up_video_asset_1",
+    "exerciseId": "chin_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/chin_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/chin_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_video_asset_1",
+    "exerciseId": "lat_pulldown",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_neutral_grip_video_asset_1",
+    "exerciseId": "lat_pulldown_neutral_grip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown_neutral_grip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown_neutral_grip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_video_asset_1",
+    "exerciseId": "bb_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_video_asset_1",
+    "exerciseId": "bb_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_front_squat_video_asset_1",
+    "exerciseId": "bb_front_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_front_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_front_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "goblet_squat_video_asset_1",
+    "exerciseId": "goblet_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/goblet_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/goblet_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_goblet_squat_video_asset_1",
+    "exerciseId": "db_goblet_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_goblet_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_goblet_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_back_squat_video_asset_1",
+    "exerciseId": "smith_back_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_back_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_back_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hack_squat_machine_video_asset_1",
+    "exerciseId": "hack_squat_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hack_squat_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hack_squat_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "leg_press_video_asset_1",
+    "exerciseId": "leg_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/leg_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/leg_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_romanian_deadlift_video_asset_1",
+    "exerciseId": "bb_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_romanian_deadlift_video_asset_1",
+    "exerciseId": "db_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_romanian_deadlift_video_asset_1",
+    "exerciseId": "kb_romanian_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_romanian_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_romanian_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hip_thrust_bb_video_asset_1",
+    "exerciseId": "hip_thrust_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hip_thrust_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hip_thrust_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "glute_bridge_video_asset_1",
+    "exerciseId": "glute_bridge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/glute_bridge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/glute_bridge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "split_squat_video_asset_1",
+    "exerciseId": "split_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/split_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/split_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bulgarian_split_squat_db_video_asset_1",
+    "exerciseId": "bulgarian_split_squat_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bulgarian_split_squat_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bulgarian_split_squat_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "walking_lunge_db_video_asset_1",
+    "exerciseId": "walking_lunge_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/walking_lunge_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/walking_lunge_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "step_up_db_video_asset_1",
+    "exerciseId": "step_up_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/step_up_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/step_up_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_close_grip_bench_press_video_asset_1",
+    "exerciseId": "bb_close_grip_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_close_grip_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_close_grip_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_pause_bench_press_video_asset_1",
+    "exerciseId": "bb_pause_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_pause_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_pause_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_spoto_press_video_asset_1",
+    "exerciseId": "bb_spoto_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_spoto_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_spoto_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_board_press_video_asset_1",
+    "exerciseId": "bb_board_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_board_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_board_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_floor_press_video_asset_1",
+    "exerciseId": "bb_floor_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_floor_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_floor_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_flat_press_video_asset_1",
+    "exerciseId": "smith_flat_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_flat_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_flat_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_incline_chest_press_video_asset_1",
+    "exerciseId": "machine_incline_chest_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_incline_chest_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_incline_chest_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_decline_chest_press_video_asset_1",
+    "exerciseId": "machine_decline_chest_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_decline_chest_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_decline_chest_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_decline_bench_press_video_asset_1",
+    "exerciseId": "db_decline_bench_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_decline_bench_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_decline_bench_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_press_standing_video_asset_1",
+    "exerciseId": "cable_press_standing",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_press_standing.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_press_standing.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_press_single_arm_video_asset_1",
+    "exerciseId": "cable_press_single_arm",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_press_single_arm.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_press_single_arm.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_fly_low_video_asset_1",
+    "exerciseId": "cable_fly_low",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_fly_low.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_fly_low.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_fly_high_video_asset_1",
+    "exerciseId": "cable_fly_high",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_fly_high.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_fly_high.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pec_deck_video_asset_1",
+    "exerciseId": "pec_deck",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pec_deck.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pec_deck.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_knee_video_asset_1",
+    "exerciseId": "push_up_knee",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/push_up_knee.mp4",
+    "thumbnailUrl": "gym_media/placeholders/push_up_knee.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pike_push_up_video_asset_1",
+    "exerciseId": "pike_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pike_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pike_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "handstand_push_up_wall_video_asset_1",
+    "exerciseId": "handstand_push_up_wall",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/handstand_push_up_wall.mp4",
+    "thumbnailUrl": "gym_media/placeholders/handstand_push_up_wall.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_push_press_video_asset_1",
+    "exerciseId": "bb_push_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_push_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_push_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_hammer_curl_video_asset_1",
+    "exerciseId": "db_hammer_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_hammer_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_hammer_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_biceps_curl_video_asset_1",
+    "exerciseId": "bb_biceps_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_biceps_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_biceps_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "ez_bar_curl_video_asset_1",
+    "exerciseId": "ez_bar_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/ez_bar_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/ez_bar_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_curl_video_asset_1",
+    "exerciseId": "db_incline_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_incline_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_incline_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "preacher_curl_machine_video_asset_1",
+    "exerciseId": "preacher_curl_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/preacher_curl_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/preacher_curl_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_biceps_curl_video_asset_1",
+    "exerciseId": "cable_biceps_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_biceps_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_biceps_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_rope_hammer_curl_video_asset_1",
+    "exerciseId": "cable_rope_hammer_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_rope_hammer_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_rope_hammer_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "concentration_curl_video_asset_1",
+    "exerciseId": "concentration_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/concentration_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/concentration_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "zottman_curl_video_asset_1",
+    "exerciseId": "zottman_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/zottman_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/zottman_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "reverse_curl_bb_video_asset_1",
+    "exerciseId": "reverse_curl_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/reverse_curl_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/reverse_curl_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_rope_video_asset_1",
+    "exerciseId": "triceps_pushdown_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/triceps_pushdown_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/triceps_pushdown_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_bar_video_asset_1",
+    "exerciseId": "triceps_pushdown_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/triceps_pushdown_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/triceps_pushdown_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "overhead_triceps_extension_rope_video_asset_1",
+    "exerciseId": "overhead_triceps_extension_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/overhead_triceps_extension_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/overhead_triceps_extension_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "skull_crusher_ez_bar_video_asset_1",
+    "exerciseId": "skull_crusher_ez_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/skull_crusher_ez_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/skull_crusher_ez_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_overhead_triceps_extension_video_asset_1",
+    "exerciseId": "db_overhead_triceps_extension",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_overhead_triceps_extension.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_overhead_triceps_extension.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_kickback_video_asset_1",
+    "exerciseId": "cable_kickback",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_kickback.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_kickback.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_triceps_kickback_video_asset_1",
+    "exerciseId": "db_triceps_kickback",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_triceps_kickback.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_triceps_kickback.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "close_grip_push_up_video_asset_1",
+    "exerciseId": "close_grip_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/close_grip_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/close_grip_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bench_close_grip_push_up_video_asset_1",
+    "exerciseId": "bench_close_grip_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bench_close_grip_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bench_close_grip_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_hammer_curl_video_asset_1",
+    "exerciseId": "db_hammer_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_hammer_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_hammer_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_biceps_curl_video_asset_1",
+    "exerciseId": "bb_biceps_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_biceps_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_biceps_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "ez_bar_curl_video_asset_1",
+    "exerciseId": "ez_bar_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/ez_bar_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/ez_bar_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_curl_video_asset_1",
+    "exerciseId": "db_incline_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_incline_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_incline_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "preacher_curl_machine_video_asset_1",
+    "exerciseId": "preacher_curl_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/preacher_curl_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/preacher_curl_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_biceps_curl_video_asset_1",
+    "exerciseId": "cable_biceps_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_biceps_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_biceps_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_rope_hammer_curl_video_asset_1",
+    "exerciseId": "cable_rope_hammer_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_rope_hammer_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_rope_hammer_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "concentration_curl_video_asset_1",
+    "exerciseId": "concentration_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/concentration_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/concentration_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "zottman_curl_video_asset_1",
+    "exerciseId": "zottman_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/zottman_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/zottman_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "reverse_curl_bb_video_asset_1",
+    "exerciseId": "reverse_curl_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/reverse_curl_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/reverse_curl_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_rope_video_asset_1",
+    "exerciseId": "triceps_pushdown_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/triceps_pushdown_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/triceps_pushdown_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_bar_video_asset_1",
+    "exerciseId": "triceps_pushdown_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/triceps_pushdown_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/triceps_pushdown_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "overhead_triceps_extension_rope_video_asset_1",
+    "exerciseId": "overhead_triceps_extension_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/overhead_triceps_extension_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/overhead_triceps_extension_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "skull_crusher_ez_bar_video_asset_1",
+    "exerciseId": "skull_crusher_ez_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/skull_crusher_ez_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/skull_crusher_ez_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_overhead_triceps_extension_video_asset_1",
+    "exerciseId": "db_overhead_triceps_extension",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_overhead_triceps_extension.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_overhead_triceps_extension.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_kickback_video_asset_1",
+    "exerciseId": "cable_kickback",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_kickback.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_kickback.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_triceps_kickback_video_asset_1",
+    "exerciseId": "db_triceps_kickback",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_triceps_kickback.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_triceps_kickback.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "close_grip_push_up_video_asset_1",
+    "exerciseId": "close_grip_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/close_grip_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/close_grip_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bench_close_grip_push_up_video_asset_1",
+    "exerciseId": "bench_close_grip_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bench_close_grip_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bench_close_grip_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_hammer_curl_video_asset_1",
+    "exerciseId": "db_hammer_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_hammer_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_hammer_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_biceps_curl_video_asset_1",
+    "exerciseId": "bb_biceps_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_biceps_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_biceps_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "ez_bar_curl_video_asset_1",
+    "exerciseId": "ez_bar_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/ez_bar_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/ez_bar_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_curl_video_asset_1",
+    "exerciseId": "db_incline_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_incline_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_incline_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "preacher_curl_machine_video_asset_1",
+    "exerciseId": "preacher_curl_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/preacher_curl_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/preacher_curl_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_biceps_curl_video_asset_1",
+    "exerciseId": "cable_biceps_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_biceps_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_biceps_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_rope_hammer_curl_video_asset_1",
+    "exerciseId": "cable_rope_hammer_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_rope_hammer_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_rope_hammer_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "concentration_curl_video_asset_1",
+    "exerciseId": "concentration_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/concentration_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/concentration_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "zottman_curl_video_asset_1",
+    "exerciseId": "zottman_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/zottman_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/zottman_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "reverse_curl_bb_video_asset_1",
+    "exerciseId": "reverse_curl_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/reverse_curl_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/reverse_curl_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_rope_video_asset_1",
+    "exerciseId": "triceps_pushdown_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/triceps_pushdown_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/triceps_pushdown_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_bar_video_asset_1",
+    "exerciseId": "triceps_pushdown_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/triceps_pushdown_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/triceps_pushdown_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "overhead_triceps_extension_rope_video_asset_1",
+    "exerciseId": "overhead_triceps_extension_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/overhead_triceps_extension_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/overhead_triceps_extension_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "skull_crusher_ez_bar_video_asset_1",
+    "exerciseId": "skull_crusher_ez_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/skull_crusher_ez_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/skull_crusher_ez_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_overhead_triceps_extension_video_asset_1",
+    "exerciseId": "db_overhead_triceps_extension",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_overhead_triceps_extension.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_overhead_triceps_extension.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_kickback_video_asset_1",
+    "exerciseId": "cable_kickback",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_kickback.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_kickback.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_triceps_kickback_video_asset_1",
+    "exerciseId": "db_triceps_kickback",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_triceps_kickback.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_triceps_kickback.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "close_grip_push_up_video_asset_1",
+    "exerciseId": "close_grip_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/close_grip_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/close_grip_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bench_close_grip_push_up_video_asset_1",
+    "exerciseId": "bench_close_grip_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bench_close_grip_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bench_close_grip_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_rdl_video_asset_1",
+    "exerciseId": "bb_rdl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_rdl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_rdl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_good_morning_video_asset_1",
+    "exerciseId": "bb_good_morning",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_good_morning.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_good_morning.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_good_morning_video_asset_1",
+    "exerciseId": "db_good_morning",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_good_morning.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_good_morning.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_swing_video_asset_1",
+    "exerciseId": "kb_swing",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_swing.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_swing.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_deadlift_video_asset_1",
+    "exerciseId": "kb_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_hip_thrust_video_asset_1",
+    "exerciseId": "bb_hip_thrust",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_hip_thrust.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_hip_thrust.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_hip_thrust_video_asset_1",
+    "exerciseId": "machine_hip_thrust",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_hip_thrust.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_hip_thrust.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_pull_through_video_asset_1",
+    "exerciseId": "cable_pull_through",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_pull_through.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_pull_through.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "back_extension_video_asset_1",
+    "exerciseId": "back_extension",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/back_extension.mp4",
+    "thumbnailUrl": "gym_media/placeholders/back_extension.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "reverse_hyperextension_video_asset_1",
+    "exerciseId": "reverse_hyperextension",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/reverse_hyperextension.mp4",
+    "thumbnailUrl": "gym_media/placeholders/reverse_hyperextension.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "glute_ham_raise_video_asset_1",
+    "exerciseId": "glute_ham_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/glute_ham_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/glute_ham_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lying_leg_curl_machine_video_asset_1",
+    "exerciseId": "lying_leg_curl_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lying_leg_curl_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lying_leg_curl_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "seated_leg_curl_machine_video_asset_1",
+    "exerciseId": "seated_leg_curl_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/seated_leg_curl_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/seated_leg_curl_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "standing_leg_curl_machine_video_asset_1",
+    "exerciseId": "standing_leg_curl_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/standing_leg_curl_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/standing_leg_curl_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "nordic_hamstring_curl_video_asset_1",
+    "exerciseId": "nordic_hamstring_curl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/nordic_hamstring_curl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/nordic_hamstring_curl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_glute_bridge_video_asset_1",
+    "exerciseId": "bb_glute_bridge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_glute_bridge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_glute_bridge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "frog_pump_video_asset_1",
+    "exerciseId": "frog_pump",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/frog_pump.mp4",
+    "thumbnailUrl": "gym_media/placeholders/frog_pump.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "banded_glute_bridge_video_asset_1",
+    "exerciseId": "banded_glute_bridge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/banded_glute_bridge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/banded_glute_bridge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_lunge_video_asset_1",
+    "exerciseId": "bb_back_lunge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_back_lunge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_back_lunge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_reverse_lunge_video_asset_1",
+    "exerciseId": "db_reverse_lunge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_reverse_lunge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_reverse_lunge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_forward_lunge_video_asset_1",
+    "exerciseId": "db_forward_lunge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_forward_lunge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_forward_lunge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "walking_lunge_bodyweight_video_asset_1",
+    "exerciseId": "walking_lunge_bodyweight",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/walking_lunge_bodyweight.mp4",
+    "thumbnailUrl": "gym_media/placeholders/walking_lunge_bodyweight.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "curtsy_lunge_video_asset_1",
+    "exerciseId": "curtsy_lunge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/curtsy_lunge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/curtsy_lunge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cossack_squat_video_asset_1",
+    "exerciseId": "cossack_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cossack_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cossack_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "side_lunge_video_asset_1",
+    "exerciseId": "side_lunge",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/side_lunge.mp4",
+    "thumbnailUrl": "gym_media/placeholders/side_lunge.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lateral_step_up_video_asset_1",
+    "exerciseId": "lateral_step_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lateral_step_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lateral_step_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "step_down_video_asset_1",
+    "exerciseId": "step_down",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/step_down.mp4",
+    "thumbnailUrl": "gym_media/placeholders/step_down.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "wall_sit_video_asset_1",
+    "exerciseId": "wall_sit",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/wall_sit.mp4",
+    "thumbnailUrl": "gym_media/placeholders/wall_sit.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "leg_extension_machine_video_asset_1",
+    "exerciseId": "leg_extension_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/leg_extension_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/leg_extension_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "sissy_squat_video_asset_1",
+    "exerciseId": "sissy_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/sissy_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/sissy_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "belt_squat_video_asset_1",
+    "exerciseId": "belt_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/belt_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/belt_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "smith_split_squat_video_asset_1",
+    "exerciseId": "smith_split_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/smith_split_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/smith_split_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_sumo_squat_video_asset_1",
+    "exerciseId": "db_sumo_squat",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_sumo_squat.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_sumo_squat.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_sumo_deadlift_video_asset_1",
+    "exerciseId": "bb_sumo_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_sumo_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_sumo_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deficit_deadlift_video_asset_1",
+    "exerciseId": "bb_deficit_deadlift",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_deficit_deadlift.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_deficit_deadlift.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_rack_pull_video_asset_1",
+    "exerciseId": "bb_rack_pull",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_rack_pull.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_rack_pull.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bent_over_row_video_asset_1",
+    "exerciseId": "bb_bent_over_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_bent_over_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_bent_over_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pendlay_row_video_asset_1",
+    "exerciseId": "pendlay_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pendlay_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pendlay_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "t_bar_row_video_asset_1",
+    "exerciseId": "t_bar_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/t_bar_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/t_bar_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "chest_supported_row_db_video_asset_1",
+    "exerciseId": "chest_supported_row_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/chest_supported_row_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/chest_supported_row_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "one_arm_cable_row_video_asset_1",
+    "exerciseId": "one_arm_cable_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/one_arm_cable_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/one_arm_cable_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "straight_arm_pulldown_video_asset_1",
+    "exerciseId": "straight_arm_pulldown",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/straight_arm_pulldown.mp4",
+    "thumbnailUrl": "gym_media/placeholders/straight_arm_pulldown.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pullover_db_video_asset_1",
+    "exerciseId": "pullover_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pullover_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pullover_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_pullover_video_asset_1",
+    "exerciseId": "machine_pullover",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_pullover.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_pullover.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "inverted_row_video_asset_1",
+    "exerciseId": "inverted_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/inverted_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/inverted_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "inverted_row_feet_elevated_video_asset_1",
+    "exerciseId": "inverted_row_feet_elevated",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/inverted_row_feet_elevated.mp4",
+    "thumbnailUrl": "gym_media/placeholders/inverted_row_feet_elevated.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "dead_hang_video_asset_1",
+    "exerciseId": "dead_hang",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/dead_hang.mp4",
+    "thumbnailUrl": "gym_media/placeholders/dead_hang.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "scapular_pull_up_video_asset_1",
+    "exerciseId": "scapular_pull_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/scapular_pull_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/scapular_pull_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "shrug_bb_video_asset_1",
+    "exerciseId": "shrug_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/shrug_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/shrug_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "shrug_db_video_asset_1",
+    "exerciseId": "shrug_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/shrug_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/shrug_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "farmer_carry_db_video_asset_1",
+    "exerciseId": "farmer_carry_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/farmer_carry_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/farmer_carry_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "farmer_carry_kb_video_asset_1",
+    "exerciseId": "farmer_carry_kb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/farmer_carry_kb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/farmer_carry_kb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "suitcase_carry_kb_video_asset_1",
+    "exerciseId": "suitcase_carry_kb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/suitcase_carry_kb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/suitcase_carry_kb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "plank_video_asset_1",
+    "exerciseId": "plank",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/plank.mp4",
+    "thumbnailUrl": "gym_media/placeholders/plank.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "side_plank_video_asset_1",
+    "exerciseId": "side_plank",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/side_plank.mp4",
+    "thumbnailUrl": "gym_media/placeholders/side_plank.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "dead_bug_video_asset_1",
+    "exerciseId": "dead_bug",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/dead_bug.mp4",
+    "thumbnailUrl": "gym_media/placeholders/dead_bug.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bird_dog_video_asset_1",
+    "exerciseId": "bird_dog",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bird_dog.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bird_dog.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hollow_body_hold_video_asset_1",
+    "exerciseId": "hollow_body_hold",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hollow_body_hold.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hollow_body_hold.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hanging_knee_raise_video_asset_1",
+    "exerciseId": "hanging_knee_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hanging_knee_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hanging_knee_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "hanging_leg_raise_video_asset_1",
+    "exerciseId": "hanging_leg_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/hanging_leg_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/hanging_leg_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "captains_chair_knee_raise_video_asset_1",
+    "exerciseId": "captains_chair_knee_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/captains_chair_knee_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/captains_chair_knee_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_crunch_video_asset_1",
+    "exerciseId": "cable_crunch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_crunch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_crunch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_ab_crunch_video_asset_1",
+    "exerciseId": "machine_ab_crunch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_ab_crunch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_ab_crunch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "ab_wheel_rollout_video_asset_1",
+    "exerciseId": "ab_wheel_rollout",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/ab_wheel_rollout.mp4",
+    "thumbnailUrl": "gym_media/placeholders/ab_wheel_rollout.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "mountain_climber_video_asset_1",
+    "exerciseId": "mountain_climber",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/mountain_climber.mp4",
+    "thumbnailUrl": "gym_media/placeholders/mountain_climber.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "russian_twist_video_asset_1",
+    "exerciseId": "russian_twist",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/russian_twist.mp4",
+    "thumbnailUrl": "gym_media/placeholders/russian_twist.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "pallof_press_video_asset_1",
+    "exerciseId": "pallof_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/pallof_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/pallof_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_woodchop_video_asset_1",
+    "exerciseId": "cable_woodchop",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_woodchop.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_woodchop.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "back_extension_isometric_hold_video_asset_1",
+    "exerciseId": "back_extension_isometric_hold",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/back_extension_isometric_hold.mp4",
+    "thumbnailUrl": "gym_media/placeholders/back_extension_isometric_hold.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "superman_hold_video_asset_1",
+    "exerciseId": "superman_hold",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/superman_hold.mp4",
+    "thumbnailUrl": "gym_media/placeholders/superman_hold.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_calf_raise_standing_video_asset_1",
+    "exerciseId": "bb_calf_raise_standing",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_calf_raise_standing.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_calf_raise_standing.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_calf_raise_standing_video_asset_1",
+    "exerciseId": "db_calf_raise_standing",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_calf_raise_standing.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_calf_raise_standing.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_calf_raise_standing_video_asset_1",
+    "exerciseId": "machine_calf_raise_standing",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_calf_raise_standing.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_calf_raise_standing.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "machine_calf_raise_seated_video_asset_1",
+    "exerciseId": "machine_calf_raise_seated",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/machine_calf_raise_seated.mp4",
+    "thumbnailUrl": "gym_media/placeholders/machine_calf_raise_seated.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "single_leg_calf_raise_video_asset_1",
+    "exerciseId": "single_leg_calf_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/single_leg_calf_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/single_leg_calf_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "tibialis_raise_video_asset_1",
+    "exerciseId": "tibialis_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/tibialis_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/tibialis_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "leg_press_calf_raise_video_asset_1",
+    "exerciseId": "leg_press_calf_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/leg_press_calf_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/leg_press_calf_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "donkey_calf_raise_video_asset_1",
+    "exerciseId": "donkey_calf_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/donkey_calf_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/donkey_calf_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "jump_rope_video_asset_1",
+    "exerciseId": "jump_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/jump_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/jump_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "box_jump_video_asset_1",
+    "exerciseId": "box_jump",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/box_jump.mp4",
+    "thumbnailUrl": "gym_media/placeholders/box_jump.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "broad_jump_video_asset_1",
+    "exerciseId": "broad_jump",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/broad_jump.mp4",
+    "thumbnailUrl": "gym_media/placeholders/broad_jump.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "burpee_video_asset_1",
+    "exerciseId": "burpee",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/burpee.mp4",
+    "thumbnailUrl": "gym_media/placeholders/burpee.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bear_crawl_video_asset_1",
+    "exerciseId": "bear_crawl",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bear_crawl.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bear_crawl.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "sled_push_video_asset_1",
+    "exerciseId": "sled_push",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/sled_push.mp4",
+    "thumbnailUrl": "gym_media/placeholders/sled_push.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rower_interval_video_asset_1",
+    "exerciseId": "rower_interval",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rower_interval.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rower_interval.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "assault_bike_interval_video_asset_1",
+    "exerciseId": "assault_bike_interval",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/assault_bike_interval.mp4",
+    "thumbnailUrl": "gym_media/placeholders/assault_bike_interval.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "farmer_carry_bodyweight_video_asset_1",
+    "exerciseId": "farmer_carry_bodyweight",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/farmer_carry_bodyweight.mp4",
+    "thumbnailUrl": "gym_media/placeholders/farmer_carry_bodyweight.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "face_pull_rope_video_asset_1",
+    "exerciseId": "face_pull_rope",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/face_pull_rope.mp4",
+    "thumbnailUrl": "gym_media/placeholders/face_pull_rope.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_external_rotation_video_asset_1",
+    "exerciseId": "cable_external_rotation",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_external_rotation.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_external_rotation.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "band_external_rotation_video_asset_1",
+    "exerciseId": "band_external_rotation",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/band_external_rotation.mp4",
+    "thumbnailUrl": "gym_media/placeholders/band_external_rotation.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "band_internal_rotation_video_asset_1",
+    "exerciseId": "band_internal_rotation",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/band_internal_rotation.mp4",
+    "thumbnailUrl": "gym_media/placeholders/band_internal_rotation.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "ytw_raise_video_asset_1",
+    "exerciseId": "ytw_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/ytw_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/ytw_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "prone_cobra_video_asset_1",
+    "exerciseId": "prone_cobra",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/prone_cobra.mp4",
+    "thumbnailUrl": "gym_media/placeholders/prone_cobra.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "scapular_wall_slide_video_asset_1",
+    "exerciseId": "scapular_wall_slide",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/scapular_wall_slide.mp4",
+    "thumbnailUrl": "gym_media/placeholders/scapular_wall_slide.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_video_asset_1",
+    "exerciseId": "band_pull_apart",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/band_pull_apart.mp4",
+    "thumbnailUrl": "gym_media/placeholders/band_pull_apart.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "reverse_fly_cable_video_asset_1",
+    "exerciseId": "reverse_fly_cable",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/reverse_fly_cable.mp4",
+    "thumbnailUrl": "gym_media/placeholders/reverse_fly_cable.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rear_delt_fly_machine_video_asset_1",
+    "exerciseId": "rear_delt_fly_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rear_delt_fly_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rear_delt_fly_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_upright_row_video_asset_1",
+    "exerciseId": "cable_upright_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_upright_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_upright_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_upright_row_video_asset_1",
+    "exerciseId": "db_upright_row",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_upright_row.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_upright_row.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "shrug_trap_bar_video_asset_1",
+    "exerciseId": "shrug_trap_bar",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/shrug_trap_bar.mp4",
+    "thumbnailUrl": "gym_media/placeholders/shrug_trap_bar.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "scapular_push_up_video_asset_1",
+    "exerciseId": "scapular_push_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/scapular_push_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/scapular_push_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "serratus_wall_slide_video_asset_1",
+    "exerciseId": "serratus_wall_slide",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/serratus_wall_slide.mp4",
+    "thumbnailUrl": "gym_media/placeholders/serratus_wall_slide.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_clean_video_asset_1",
+    "exerciseId": "bb_clean",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_clean.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_clean.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_power_clean_video_asset_1",
+    "exerciseId": "bb_power_clean",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_power_clean.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_power_clean.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_hang_clean_video_asset_1",
+    "exerciseId": "bb_hang_clean",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_hang_clean.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_hang_clean.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_clean_and_press_video_asset_1",
+    "exerciseId": "bb_clean_and_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_clean_and_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_clean_and_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_clean_video_asset_1",
+    "exerciseId": "db_clean",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_clean.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_clean.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_clean_and_press_video_asset_1",
+    "exerciseId": "db_clean_and_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_clean_and_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_clean_and_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_clean_video_asset_1",
+    "exerciseId": "kb_clean",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_clean.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_clean.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_clean_and_press_video_asset_1",
+    "exerciseId": "kb_clean_and_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_clean_and_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_clean_and_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_snatch_video_asset_1",
+    "exerciseId": "kb_snatch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_snatch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_snatch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_swing_clean_complex_video_asset_1",
+    "exerciseId": "kb_swing_clean_complex",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_swing_clean_complex.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_swing_clean_complex.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "thruster_db_video_asset_1",
+    "exerciseId": "thruster_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/thruster_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/thruster_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "thruster_bb_video_asset_1",
+    "exerciseId": "thruster_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/thruster_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/thruster_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "wall_ball_video_asset_1",
+    "exerciseId": "wall_ball",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/wall_ball.mp4",
+    "thumbnailUrl": "gym_media/placeholders/wall_ball.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "medicine_ball_slam_video_asset_1",
+    "exerciseId": "medicine_ball_slam",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/medicine_ball_slam.mp4",
+    "thumbnailUrl": "gym_media/placeholders/medicine_ball_slam.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "battle_ropes_video_asset_1",
+    "exerciseId": "battle_ropes",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/battle_ropes.mp4",
+    "thumbnailUrl": "gym_media/placeholders/battle_ropes.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_snatch_video_asset_1",
+    "exerciseId": "bb_snatch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_snatch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_snatch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_power_snatch_video_asset_1",
+    "exerciseId": "bb_power_snatch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_power_snatch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_power_snatch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_hang_snatch_video_asset_1",
+    "exerciseId": "bb_hang_snatch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_hang_snatch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_hang_snatch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "overhead_squat_bb_video_asset_1",
+    "exerciseId": "overhead_squat_bb",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/overhead_squat_bb.mp4",
+    "thumbnailUrl": "gym_media/placeholders/overhead_squat_bb.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "snatch_balance_video_asset_1",
+    "exerciseId": "snatch_balance",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/snatch_balance.mp4",
+    "thumbnailUrl": "gym_media/placeholders/snatch_balance.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_clean_and_jerk_video_asset_1",
+    "exerciseId": "bb_clean_and_jerk",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_clean_and_jerk.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_clean_and_jerk.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_push_jerk_video_asset_1",
+    "exerciseId": "bb_push_jerk",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_push_jerk.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_push_jerk.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "bb_split_jerk_video_asset_1",
+    "exerciseId": "bb_split_jerk",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/bb_split_jerk.mp4",
+    "thumbnailUrl": "gym_media/placeholders/bb_split_jerk.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_turkish_get_up_video_asset_1",
+    "exerciseId": "kb_turkish_get_up",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_turkish_get_up.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_turkish_get_up.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_windmill_video_asset_1",
+    "exerciseId": "kb_windmill",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_windmill.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_windmill.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "kb_overhead_carry_video_asset_1",
+    "exerciseId": "kb_overhead_carry",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/kb_overhead_carry.mp4",
+    "thumbnailUrl": "gym_media/placeholders/kb_overhead_carry.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_snatch_video_asset_1",
+    "exerciseId": "db_snatch",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_snatch.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_snatch.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_devils_press_video_asset_1",
+    "exerciseId": "db_devils_press",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_devils_press.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_devils_press.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "man_maker_db_video_asset_1",
+    "exerciseId": "man_maker_db",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/man_maker_db.mp4",
+    "thumbnailUrl": "gym_media/placeholders/man_maker_db.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rowing_erg_steady_state_video_asset_1",
+    "exerciseId": "rowing_erg_steady_state",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rowing_erg_steady_state.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rowing_erg_steady_state.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "treadmill_run_video_asset_1",
+    "exerciseId": "treadmill_run",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/treadmill_run.mp4",
+    "thumbnailUrl": "gym_media/placeholders/treadmill_run.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_wide_grip_video_asset_1",
+    "exerciseId": "lat_pulldown_wide_grip",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown_wide_grip.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown_wide_grip.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_underhand_video_asset_1",
+    "exerciseId": "lat_pulldown_underhand",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown_underhand.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown_underhand.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_single_arm_video_asset_1",
+    "exerciseId": "lat_pulldown_single_arm",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/lat_pulldown_single_arm.mp4",
+    "thumbnailUrl": "gym_media/placeholders/lat_pulldown_single_arm.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "assisted_pull_up_machine_video_asset_1",
+    "exerciseId": "assisted_pull_up_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/assisted_pull_up_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/assisted_pull_up_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "assisted_dip_machine_video_asset_1",
+    "exerciseId": "assisted_dip_machine",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/assisted_dip_machine.mp4",
+    "thumbnailUrl": "gym_media/placeholders/assisted_dip_machine.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_triceps_extension_bar_overhead_video_asset_1",
+    "exerciseId": "cable_triceps_extension_bar_overhead",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_triceps_extension_bar_overhead.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_triceps_extension_bar_overhead.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_lateral_raise_video_asset_1",
+    "exerciseId": "cable_lateral_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_lateral_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_lateral_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "cable_front_raise_video_asset_1",
+    "exerciseId": "cable_front_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/cable_front_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/cable_front_raise.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_seated_video_asset_1",
+    "exerciseId": "db_lateral_raise_seated",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_lateral_raise_seated.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_lateral_raise_seated.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_leaning_video_asset_1",
+    "exerciseId": "db_lateral_raise_leaning",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/db_lateral_raise_leaning.mp4",
+    "thumbnailUrl": "gym_media/placeholders/db_lateral_raise_leaning.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "rear_delt_row_cable_video_asset_1",
+    "exerciseId": "rear_delt_row_cable",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/rear_delt_row_cable.mp4",
+    "thumbnailUrl": "gym_media/placeholders/rear_delt_row_cable.jpg",
+    "createdAt": 0
+  },
+  {
+    "id": "incline_db_y_raise_video_asset_1",
+    "exerciseId": "incline_db_y_raise",
+    "variantId": null,
+    "type": "video",
+    "source": "asset",
+    "url": "gym_media/placeholders/incline_db_y_raise.mp4",
+    "thumbnailUrl": "gym_media/placeholders/incline_db_y_raise.jpg",
+    "createdAt": 0
+  }
+]

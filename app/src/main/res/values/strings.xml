@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TitanBiosync</string>
+
+    <!-- Start Session -->
+    <string name="start_session_title">Avvia nuova sessione</string>
+    <string name="start_session_select_type">Seleziona il tipo di sessione:</string>
+
+    <string name="start_session_running">Corsa</string>
+    <string name="start_session_running_hint">Outdoor o tapis roulant</string>
+
+    <string name="start_session_cycling">Ciclismo</string>
+    <string name="start_session_cycling_hint">Strada o cyclette</string>
+
+    <string name="start_session_starting">Avvio sessione…</string>
+    <string name="start_session_started">Sessione avviata: %1$s</string>
+    <string name="start_session_error">Errore: %1$s</string>
+
+    <!-- Common -->
+    <string name="common_dash">—</string>
+    <string name="common_coming_soon">Dettagli in arrivo</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_placeholder_ellipsis">…</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_settings">Impostazioni</string>
+    <string name="dashboard_welcome_back">Bentornato</string>
+
+    <string name="dashboard_active_session_title">Sessione attiva</string>
+    <string name="dashboard_no_active_session">Nessuna sessione attiva</string>
+    <string name="dashboard_view_details">Vedi dettagli</string>
+
+    <string name="dashboard_active_session_type">Tipo: %1$s</string>
+
+    <string name="dashboard_today_title">Oggi</string>
+    <string name="dashboard_today_stats">%1$d sessioni\n%2$d minuti attivi</string>
+
+    <string name="dashboard_devices_title">Dispositivi</string>
+    <string name="dashboard_devices_count_zero">0 dispositivi connessi</string>
+    <string name="dashboard_devices_connected">%1$d dispositivi connessi</string>
+
+    <string name="dashboard_error_title">Errore</string>
+    <string name="dashboard_error_message">Errore: %1$s</string>
+
+    <!-- Quick stats -->
+    <string name="dashboard_quick_sessions">Sessioni</string>
+    <string name="dashboard_quick_minutes">Minuti</string>
+    <string name="dashboard_quick_devices">Dispositivi</string>
+    <string name="dashboard_quick_streak">Streak</string>
+
+    <!-- Active session status chip -->
+    <string name="dashboard_session_status_active">ATTIVA</string>
+    <string name="dashboard_session_status_inactive">NESSUNA</string>
+
+</resources>

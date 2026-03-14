@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dayRoot"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/dayText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="1" />
+
+    <View
+        android:id="@+id/dayDot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/holo_blue_light"
+        android:visibility="gone" />
+
+</FrameLayout>

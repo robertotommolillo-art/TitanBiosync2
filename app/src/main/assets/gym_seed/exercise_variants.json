@@ -1,0 +1,3815 @@
+[
+  {
+    "id": "bb_bench_press_close_grip",
+    "exerciseId": "bb_bench_press",
+    "nameIt": "Panca presa stretta",
+    "nameEn": "Close-Grip Bench Press",
+    "notesIt": "Riduci la larghezza della presa per enfatizzare tricipiti; mantieni avambracci verticali e controllo sul petto.",
+    "notesEn": "Use a narrower grip to emphasize triceps; keep forearms vertical and control the touch point.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bench_press_pause",
+    "exerciseId": "bb_bench_press",
+    "nameIt": "Panca con pausa",
+    "nameEn": "Paused Bench Press",
+    "notesIt": "Fai una pausa breve sul petto senza perdere tensione. Non rilassare scapole o polsi.",
+    "notesEn": "Pause briefly on the chest without losing tightness. Don’t relax scapulae or wrists.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bench_press_tempo_3_0_1",
+    "exerciseId": "bb_bench_press",
+    "nameIt": "Panca tempo 3-0-1",
+    "nameEn": "Bench Press Tempo 3-0-1",
+    "notesIt": "Scendi in 3 secondi, nessuna pausa in basso, risali controllato. Mantieni lo stesso touch point su ogni ripetizione.",
+    "notesEn": "Lower for 3 seconds, no pause at the bottom, press up with control. Keep the same touch point every rep.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_flat_bench_press_neutral_grip",
+    "exerciseId": "db_flat_bench_press",
+    "nameIt": "Panca manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Bench Press",
+    "notesIt": "Presa neutra per comfort di spalla; mantieni gomiti vicini e ROM completo senza perdere stabilità.",
+    "notesEn": "Neutral grip for shoulder comfort; keep elbows tucked and use full ROM without losing stability.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_flat_bench_press_floor",
+    "exerciseId": "db_flat_bench_press",
+    "nameIt": "Floor press manubri",
+    "nameEn": "Dumbbell Floor Press",
+    "notesIt": "Esegui a terra per limitare la profondità e aumentare stabilità. Non rimbalzare i gomiti sul pavimento.",
+    "notesEn": "Perform on the floor to limit depth and increase stability. Don’t bounce elbows off the floor.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_incline_bench_press_pause",
+    "exerciseId": "bb_incline_bench_press",
+    "nameIt": "Panca inclinata con pausa",
+    "nameEn": "Paused Incline Bench Press",
+    "notesIt": "Pausa sul petto alto mantenendo tensione; evita di spostare la spinta sulle spalle.",
+    "notesEn": "Pause on the upper chest while staying tight; avoid shifting the press into the shoulders.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_incline_bench_press_close_grip",
+    "exerciseId": "bb_incline_bench_press",
+    "nameIt": "Panca inclinata presa stretta",
+    "nameEn": "Close-Grip Incline Bench Press",
+    "notesIt": "Presa leggermente più stretta per più tricipite; tieni avambracci verticali e scapole ferme.",
+    "notesEn": "Slightly narrower grip for more triceps; keep forearms vertical and scapulae fixed.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_incline_bench_press_neutral_grip",
+    "exerciseId": "db_incline_bench_press",
+    "nameIt": "Panca inclinata manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Incline Press",
+    "notesIt": "Presa neutra per ridurre stress sulla spalla; non accorciare il ROM per 'caricare' di più.",
+    "notesEn": "Neutral grip to reduce shoulder stress; don’t shorten ROM just to go heavier.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_bench_press_low_incline",
+    "exerciseId": "db_incline_bench_press",
+    "nameIt": "Panca manubri bassa inclinazione",
+    "nameEn": "Low-Incline Dumbbell Press",
+    "notesIt": "Usa inclinazione moderata per focalizzare petto alto senza dominanza deltoidi. Mantieni scapole addotte.",
+    "notesEn": "Use a modest incline to hit upper chest without excessive front-delt takeover. Keep scapulae retracted.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "smith_incline_press_close_grip",
+    "exerciseId": "smith_incline_press",
+    "nameIt": "Smith inclinata presa stretta",
+    "nameEn": "Close-Grip Smith Incline Press",
+    "notesIt": "Presa più stretta per tricipiti; evita di spingere con spalle sollevate e ROM incompleto.",
+    "notesEn": "Narrower grip for triceps; avoid shrugging and incomplete ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "smith_incline_press_tempo_3_1_1",
+    "exerciseId": "smith_incline_press",
+    "nameIt": "Smith inclinata tempo 3-1-1",
+    "nameEn": "Smith Incline Press Tempo 3-1-1",
+    "notesIt": "Discesa lenta con pausa breve in basso; mantiene controllo e tensione sul petto.",
+    "notesEn": "Slow eccentric with a brief pause at the bottom; maintains control and chest tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_chest_press_single_arm",
+    "exerciseId": "machine_chest_press",
+    "nameIt": "Chest press macchina a un braccio",
+    "nameEn": "Single-Arm Machine Chest Press",
+    "notesIt": "Esegui un lato alla volta per controllo e simmetria; evita torsioni del busto e spalla che sale.",
+    "notesEn": "Work one side at a time for control and symmetry; avoid torso twisting and shoulder shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "machine_chest_press_partial_top",
+    "exerciseId": "machine_chest_press",
+    "nameIt": "Chest press parziali in alto",
+    "nameEn": "Machine Chest Press Top Partials",
+    "notesIt": "Parziali in alto per focus su lockout; non perdere controllo scapolare e non accelerare senza controllo.",
+    "notesEn": "Top partials to focus on lockout; keep scapular control and don’t rush the reps.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_chest_fly_low_to_high",
+    "exerciseId": "cable_chest_fly",
+    "nameIt": "Croci cavi basso-alto",
+    "nameEn": "Low-to-High Cable Fly",
+    "notesIt": "Tira dai cavi bassi verso alto per enfatizzare petto alto. Evita spalle in avanti e ROM troppo corto.",
+    "notesEn": "Pull from low cables to high to emphasize upper chest. Avoid shoulder roll-forward and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_high_to_low",
+    "exerciseId": "cable_chest_fly",
+    "nameIt": "Croci cavi alto-basso",
+    "nameEn": "High-to-Low Cable Fly",
+    "notesIt": "Tira dall'alto verso il basso per enfatizzare petto basso. Mantieni gomiti morbidi e controllo in allungamento.",
+    "notesEn": "Pull from high to low to emphasize lower chest. Keep elbows soft and control the stretch.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_single_arm",
+    "exerciseId": "cable_chest_fly",
+    "nameIt": "Croci al cavo a un braccio",
+    "nameEn": "Single-Arm Cable Fly",
+    "notesIt": "Un lato alla volta per migliorare controllo scapolare; evita rotazioni eccessive del busto.",
+    "notesEn": "One side at a time to improve scapular control; avoid excessive torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_fly_incline",
+    "exerciseId": "db_fly",
+    "nameIt": "Croci manubri su inclinata",
+    "nameEn": "Incline Dumbbell Fly",
+    "notesIt": "Esegui su panca inclinata per focus sul petto alto. Evita ROM estremo e manubri troppo pesanti.",
+    "notesEn": "Perform on an incline to target upper chest. Avoid extreme ROM and overly heavy dumbbells.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_fly_floor",
+    "exerciseId": "db_fly",
+    "nameIt": "Croci manubri da terra",
+    "nameEn": "Floor Dumbbell Fly",
+    "notesIt": "A terra per limitare profondità e proteggere la spalla. Mantieni controllo e tensione continua.",
+    "notesEn": "On the floor to limit depth and protect the shoulders. Keep control and continuous tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "push_up_incline",
+    "exerciseId": "push_up",
+    "nameIt": "Push-up inclinati",
+    "nameEn": "Incline Push-Up",
+    "notesIt": "Mani su rialzo per ridurre il carico; mantieni linea testa-spalle-anche.",
+    "notesEn": "Hands elevated to reduce load; keep head-shoulders-hips aligned.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_decline",
+    "exerciseId": "push_up",
+    "nameIt": "Push-up declinati",
+    "nameEn": "Decline Push-Up",
+    "notesIt": "Piedi su rialzo per aumentare il focus su petto alto e spalle; evita iperlordosi.",
+    "notesEn": "Feet elevated to increase upper-chest/shoulder demand; avoid overextending the low back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_tempo_3_0_1",
+    "exerciseId": "push_up",
+    "nameIt": "Push-up tempo 3-0-1",
+    "nameEn": "Push-Up Tempo 3-0-1",
+    "notesIt": "Discesa lenta per aumentare controllo e tensione. Evita di perdere linea del corpo nella fase eccentrica.",
+    "notesEn": "Slow eccentric to increase control and tension. Avoid losing body alignment during the lowering phase.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "diamond_push_up_elevated_feet",
+    "exerciseId": "diamond_push_up",
+    "nameIt": "Diamond push-up con piedi rialzati",
+    "nameEn": "Feet-Elevated Diamond Push-Up",
+    "notesIt": "Aumenta il carico su tricipiti e spalle; mantieni gomiti vicini e core in bracing.",
+    "notesEn": "Increases triceps/shoulder demand; keep elbows tucked and core braced.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "diamond_push_up_pause_bottom",
+    "exerciseId": "diamond_push_up",
+    "nameIt": "Diamond push-up con pausa in basso",
+    "nameEn": "Paused Diamond Push-Up",
+    "notesIt": "Pausa breve in basso per aumentare controllo. Evita di 'collassare' sulle spalle.",
+    "notesEn": "Brief pause at the bottom to build control. Avoid collapsing into the shoulders.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "wide_push_up_hands_elevated",
+    "exerciseId": "wide_push_up",
+    "nameIt": "Wide push-up mani rialzate",
+    "nameEn": "Hands-Elevated Wide Push-Up",
+    "notesIt": "Riduce carico mantenendo focus sul petto. Evita ROM ridotto e scapole non controllate.",
+    "notesEn": "Reduces load while keeping chest focus. Avoid reduced ROM and uncontrolled scapulae.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "dip_rings",
+    "exerciseId": "dip",
+    "nameIt": "Dip agli anelli",
+    "nameEn": "Ring Dip",
+    "notesIt": "Instabilità maggiore: mantieni anelli vicini al corpo e scapole depresse. Evita di perdere controllo in basso.",
+    "notesEn": "More instability: keep rings close and scapulae depressed. Avoid losing control at the bottom.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "dip_assisted_band",
+    "exerciseId": "dip",
+    "nameIt": "Dip assistiti con elastico",
+    "nameEn": "Band-Assisted Dip",
+    "notesIt": "Usa l'elastico per mantenere tecnica pulita. Evita di rimbalzare e di accorciare troppo il ROM.",
+    "notesEn": "Use a band to keep technique clean. Avoid bouncing and excessively shortening the ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bench_dip_knees_bent",
+    "exerciseId": "bench_dip",
+    "nameIt": "Bench dip con ginocchia piegate",
+    "nameEn": "Bench Dip (Knees Bent)",
+    "notesIt": "Versione più facile con piedi più vicini. Evita spalle in avanti e discesa troppo profonda.",
+    "notesEn": "Easier variation with feet closer. Avoid shoulders rolling forward and going too deep.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bench_dip_legs_straight",
+    "exerciseId": "bench_dip",
+    "nameIt": "Bench dip gambe tese",
+    "nameEn": "Bench Dip (Legs Straight)",
+    "notesIt": "Aumenta il carico con gambe tese. Evita dolore anteriore di spalla e ROM eccessivo.",
+    "notesEn": "Increases load with straight legs. Avoid anterior shoulder pain and excessive ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_overhead_press_seated",
+    "exerciseId": "bb_overhead_press",
+    "nameIt": "Military press seduto",
+    "nameEn": "Seated Barbell Overhead Press",
+    "notesIt": "Seduto per ridurre contributo delle gambe; mantieni core attivo e traiettoria vicino al viso.",
+    "notesEn": "Seated to reduce leg drive; keep core active and bar path close to the face.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_overhead_press_pause_forehead",
+    "exerciseId": "bb_overhead_press",
+    "nameIt": "Military press con pausa alla fronte",
+    "nameEn": "Overhead Press (Forehead Pause)",
+    "notesIt": "Pausa nel punto critico per migliorare controllo. Evita di spingere in avanti e perdere bracing.",
+    "notesEn": "Pause at the sticking point to build control. Avoid drifting forward and losing your brace.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_shoulder_press_neutral_grip",
+    "exerciseId": "db_shoulder_press",
+    "nameIt": "Spinte manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Shoulder Press",
+    "notesIt": "Presa neutra per comfort; mantieni gomiti sotto ai polsi. Evita di chiudere le spalle in alto.",
+    "notesEn": "Neutral grip for comfort; keep elbows under wrists. Avoid rolling shoulders forward at lockout.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_shoulder_press_seated",
+    "exerciseId": "db_shoulder_press",
+    "nameIt": "Spinte manubri seduto",
+    "nameEn": "Seated Dumbbell Shoulder Press",
+    "notesIt": "Seduto per più stabilità; controlla la discesa e non inarcare la schiena.",
+    "notesEn": "Seated for more stability; control the descent and avoid excessive back arch.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "arnold_press_seated",
+    "exerciseId": "arnold_press",
+    "nameIt": "Arnold press seduto",
+    "nameEn": "Seated Arnold Press",
+    "notesIt": "Seduto per più controllo; ruota senza perdere posizione scapolare. Evita ROM parziale.",
+    "notesEn": "Seated for more control; rotate without losing scapular position. Avoid partial ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_shoulder_press_single_arm",
+    "exerciseId": "machine_shoulder_press",
+    "nameIt": "Shoulder press macchina a un braccio",
+    "nameEn": "Single-Arm Machine Shoulder Press",
+    "notesIt": "Un lato alla volta per simmetria; evita torsioni e spalla che si solleva.",
+    "notesEn": "One side at a time for symmetry; avoid twisting and shoulder shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_lateral_raise_seated",
+    "exerciseId": "db_lateral_raise",
+    "nameIt": "Alzate laterali seduto",
+    "nameEn": "Seated Dumbbell Lateral Raise",
+    "notesIt": "Seduto per ridurre slanci; mantieni pollice leggermente verso l'alto. Evita trapezi dominanti.",
+    "notesEn": "Seated to reduce momentum; keep the thumb slightly up. Avoid trap dominance.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_partial_bottom",
+    "exerciseId": "db_lateral_raise",
+    "nameIt": "Alzate laterali parziali in basso",
+    "nameEn": "Bottom-Partials Lateral Raise",
+    "notesIt": "Parziali nel range iniziale per tensione continua. Evita slanci e spalle verso le orecchie.",
+    "notesEn": "Partials in the initial range for constant tension. Avoid swinging and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_lateral_raise_behind_body",
+    "exerciseId": "cable_lateral_raise",
+    "nameIt": "Alzate laterali al cavo da dietro",
+    "nameEn": "Behind-the-Body Cable Lateral Raise",
+    "notesIt": "Parti con il cavo leggermente dietro per migliorare linea di trazione. Evita rotazioni del busto.",
+    "notesEn": "Start with the cable slightly behind to improve the line of pull. Avoid torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_front_raise_alternating",
+    "exerciseId": "db_front_raise",
+    "nameIt": "Alzate frontali alternate",
+    "nameEn": "Alternating Dumbbell Front Raise",
+    "notesIt": "Alterna le braccia per controllo e ritmo. Evita slanci e busto che oscilla.",
+    "notesEn": "Alternate arms for control and rhythm. Avoid swinging and torso rocking.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_rear_delt_fly_prone_incline",
+    "exerciseId": "db_rear_delt_fly",
+    "nameIt": "Croci inverse prono su inclinata",
+    "nameEn": "Chest-Supported Rear Delt Fly",
+    "notesIt": "Appoggio torace per eliminare slanci; apri con gomiti morbidi e scapole stabili.",
+    "notesEn": "Chest support removes momentum; open with soft elbows and stable scapulae.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_face_pull_rope",
+    "exerciseId": "cable_face_pull",
+    "nameIt": "Face pull con corda",
+    "nameEn": "Rope Face Pull",
+    "notesIt": "Separa le estremità della corda in chiusura per aumentare rotazione esterna. Evita spalle alte.",
+    "notesEn": "Split the rope ends at the finish to increase external rotation. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_face_pull_high_anchor",
+    "exerciseId": "cable_face_pull",
+    "nameIt": "Face pull ancoraggio alto",
+    "nameEn": "High-Anchor Face Pull",
+    "notesIt": "Ancoraggio alto per linea di trazione più verticale. Mantieni core stabile e non inarcare la schiena.",
+    "notesEn": "High anchor for a more vertical line of pull. Keep core stable and avoid back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "band_pull_apart_overhand",
+    "exerciseId": "band_pull_apart",
+    "nameIt": "Band pull-apart presa prona",
+    "nameEn": "Overhand Band Pull-Apart",
+    "notesIt": "Presa prona per enfatizzare parte alta del dorso. Evita gomiti piegati e spalle alte.",
+    "notesEn": "Overhand grip to emphasize upper back. Avoid bending elbows and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_underhand",
+    "exerciseId": "band_pull_apart",
+    "nameIt": "Band pull-apart presa supina",
+    "nameEn": "Underhand Band Pull-Apart",
+    "notesIt": "Presa supina per cambiare stimolo su bicipite/cuffia. Mantieni scapole addotte senza iperestendere la schiena.",
+    "notesEn": "Underhand grip to change stimulus toward biceps/rotator cuff. Retract scapulae without overextending the back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_barbell_row_underhand",
+    "exerciseId": "bb_barbell_row",
+    "nameIt": "Rematore bilanciere presa supina",
+    "nameEn": "Underhand Barbell Row",
+    "notesIt": "Presa supina per più bicipite e lats; mantieni hinge fermo e barra vicino al corpo.",
+    "notesEn": "Underhand grip for more biceps and lats; keep a stable hinge and the bar close.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_barbell_row_pause_top",
+    "exerciseId": "bb_barbell_row",
+    "nameIt": "Rematore bilanciere con pausa in alto",
+    "nameEn": "Barbell Row (Top Pause)",
+    "notesIt": "Pausa breve al petto per aumentare controllo scapolare. Evita di usare slancio con le anche.",
+    "notesEn": "Brief pause at the chest to improve scapular control. Avoid using hip momentum.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_one_arm_row_knee_on_bench",
+    "exerciseId": "db_one_arm_row",
+    "nameIt": "Rematore 1 braccio con ginocchio su panca",
+    "nameEn": "One-Arm Dumbbell Row (Knee on Bench)",
+    "notesIt": "Versione stabile per imparare la traiettoria. Evita spalla che sale e torsioni eccessive.",
+    "notesEn": "Stable setup to learn the path. Avoid shoulder shrugging and excessive twisting.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_one_arm_row_chest_supported",
+    "exerciseId": "db_one_arm_row",
+    "nameIt": "Rematore 1 braccio chest-supported",
+    "nameEn": "Chest-Supported One-Arm Row",
+    "notesIt": "Appoggia il torace su panca inclinata per isolare il dorso. Evita ROM parziale e slanci.",
+    "notesEn": "Support the chest on an incline bench to isolate the back. Avoid partial ROM and swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_seated_row_close_grip",
+    "exerciseId": "cable_seated_row",
+    "nameIt": "Rematore cavo presa stretta",
+    "nameEn": "Close-Grip Seated Cable Row",
+    "notesIt": "Presa stretta per enfasi su lats; evita di spingere la testa in avanti e di inclinarti troppo indietro.",
+    "notesEn": "Close grip to emphasize lats; avoid jutting the head forward and leaning too far back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_seated_row_wide_grip",
+    "exerciseId": "cable_seated_row",
+    "nameIt": "Rematore cavo presa larga",
+    "nameEn": "Wide-Grip Seated Cable Row",
+    "notesIt": "Presa larga per dorso alto/rhomboids; mantieni gomiti aperti e scapole che si muovono controllate.",
+    "notesEn": "Wide grip for upper back/rhomboids; keep elbows out and scapulae moving with control.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_row_single_arm",
+    "exerciseId": "machine_row",
+    "nameIt": "Rematore macchina a un braccio",
+    "nameEn": "Single-Arm Machine Row",
+    "notesIt": "Un lato alla volta per simmetria; mantieni petto contro il supporto e non ruotare il busto.",
+    "notesEn": "One side at a time for symmetry; keep chest on the pad and don’t rotate the torso.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pull_up_assisted_band",
+    "exerciseId": "pull_up",
+    "nameIt": "Trazioni assistite con elastico",
+    "nameEn": "Band-Assisted Pull-Up",
+    "notesIt": "Usa elastico per mantenere ROM completo e controllo. Evita slanci e scapole non depresse.",
+    "notesEn": "Use a band to keep full ROM and control. Avoid swinging and uncontrolled scapulae.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_pause_top",
+    "exerciseId": "pull_up",
+    "nameIt": "Trazioni con pausa in alto",
+    "nameEn": "Pull-Up (Top Pause)",
+    "notesIt": "Pausa breve con mento sopra la sbarra per controllo. Evita di perdere tensione nel core.",
+    "notesEn": "Brief pause with chin over the bar for control. Avoid losing core tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_scapular",
+    "exerciseId": "pull_up",
+    "nameIt": "Trazioni scapolari",
+    "nameEn": "Scapular Pull-Up",
+    "notesIt": "Movimento corto per imparare depressione scapolare. Evita piegare i gomiti e compensi con la schiena.",
+    "notesEn": "Short-range drill to learn scapular depression. Avoid bending elbows and back compensation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "chin_up_pause_top",
+    "exerciseId": "chin_up",
+    "nameIt": "Chin-up con pausa in alto",
+    "nameEn": "Chin-Up (Top Pause)",
+    "notesIt": "Pausa per controllo e forza nel punto alto. Evita slanci e spalle verso le orecchie.",
+    "notesEn": "Pause to build control and top-end strength. Avoid swinging and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "chin_up_assisted_band",
+    "exerciseId": "chin_up",
+    "nameIt": "Chin-up assistiti con elastico",
+    "nameEn": "Band-Assisted Chin-Up",
+    "notesIt": "Assistenza per ROM completo mantenendo tecnica. Evita di 'saltare' nella prima ripetizione.",
+    "notesEn": "Assistance to keep full ROM and technique. Avoid jumping into the first rep.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lat_pulldown_wide_grip",
+    "exerciseId": "lat_pulldown",
+    "nameIt": "Lat machine presa larga",
+    "nameEn": "Wide-Grip Lat Pulldown",
+    "notesIt": "Presa più larga per enfasi su dorso alto; evita spalle che salgono e di tirare dietro la nuca.",
+    "notesEn": "Wider grip to emphasize upper back; avoid shrugging and pulling behind the neck.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_pause_bottom",
+    "exerciseId": "lat_pulldown",
+    "nameIt": "Lat machine con pausa in basso",
+    "nameEn": "Lat Pulldown (Bottom Pause)",
+    "notesIt": "Pausa al petto per migliorare controllo e scapole depresse. Evita slanci del busto.",
+    "notesEn": "Pause at the chest to improve control and scapular depression. Avoid torso swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lat_pulldown_neutral_grip_pause_bottom",
+    "exerciseId": "lat_pulldown_neutral_grip",
+    "nameIt": "Lat neutra con pausa in basso",
+    "nameEn": "Neutral-Grip Lat Pulldown (Bottom Pause)",
+    "notesIt": "Pausa per enfatizzare depressione scapolare. Evita di compensare inclinando troppo il busto.",
+    "notesEn": "Pause to emphasize scapular depression. Avoid compensating by leaning back too much.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_deadlift_sumo",
+    "exerciseId": "bb_deadlift",
+    "nameIt": "Stacco sumo",
+    "nameEn": "Sumo Deadlift",
+    "notesIt": "Piedi più larghi e punte aperte; mantieni ginocchia verso l'esterno e schiena neutra.",
+    "notesEn": "Wider stance with toes out; keep knees out and spine neutral.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_pause_shin",
+    "exerciseId": "bb_deadlift",
+    "nameIt": "Stacco con pausa allo stinco",
+    "nameEn": "Paused Deadlift (At Shin)",
+    "notesIt": "Pausa poco sopra il pavimento per aumentare controllo e posizione. Evita che il bilanciere si allontani dalle gambe.",
+    "notesEn": "Pause just off the floor to build control and positioning. Avoid letting the bar drift away.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_tempo_3_0_1",
+    "exerciseId": "bb_deadlift",
+    "nameIt": "Stacco tempo 3-0-1",
+    "nameEn": "Deadlift Tempo 3-0-1",
+    "notesIt": "Ritorno controllato in 3 secondi per tecnica. Evita di perdere la schiena neutra in discesa.",
+    "notesEn": "Control the lowering for 3 seconds to reinforce technique. Avoid losing neutral spine on the way down.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_back_squat_high_bar",
+    "exerciseId": "bb_back_squat",
+    "nameIt": "Squat high-bar",
+    "nameEn": "High-Bar Back Squat",
+    "notesIt": "Bilanciere più alto sul trapezio, busto più verticale; non lasciare cedere le ginocchia all'interno.",
+    "notesEn": "Bar higher on the traps, more upright torso; don’t let knees cave in.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_low_bar",
+    "exerciseId": "bb_back_squat",
+    "nameIt": "Squat low-bar",
+    "nameEn": "Low-Bar Back Squat",
+    "notesIt": "Bilanciere più basso, maggiore coinvolgimento di posterior chain; cura la posizione dei polsi e gomiti.",
+    "notesEn": "Bar lower for more posterior chain; manage wrist and elbow position.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_pause",
+    "exerciseId": "bb_back_squat",
+    "nameIt": "Squat con pausa",
+    "nameEn": "Paused Back Squat",
+    "notesIt": "Pausa in buca per controllo e stabilità. Evita di perdere bracing e di rimbalzare.",
+    "notesEn": "Pause in the hole for control and stability. Avoid losing your brace and bouncing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bench_press_close_grip",
+    "exerciseId": "bb_bench_press",
+    "nameIt": "Panca presa stretta",
+    "nameEn": "Close-Grip Bench Press",
+    "notesIt": "Riduci la larghezza della presa per enfatizzare tricipiti; mantieni avambracci verticali e controllo sul petto.",
+    "notesEn": "Use a narrower grip to emphasize triceps; keep forearms vertical and control the touch point.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bench_press_pause",
+    "exerciseId": "bb_bench_press",
+    "nameIt": "Panca con pausa",
+    "nameEn": "Paused Bench Press",
+    "notesIt": "Fai una pausa breve sul petto senza perdere tensione. Non rilassare scapole o polsi.",
+    "notesEn": "Pause briefly on the chest without losing tightness. Don’t relax scapulae or wrists.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bench_press_tempo_3_0_1",
+    "exerciseId": "bb_bench_press",
+    "nameIt": "Panca tempo 3-0-1",
+    "nameEn": "Bench Press Tempo 3-0-1",
+    "notesIt": "Scendi in 3 secondi, nessuna pausa in basso, risali controllato. Mantieni lo stesso touch point su ogni ripetizione.",
+    "notesEn": "Lower for 3 seconds, no pause at the bottom, press up with control. Keep the same touch point every rep.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_flat_bench_press_neutral_grip",
+    "exerciseId": "db_flat_bench_press",
+    "nameIt": "Panca manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Bench Press",
+    "notesIt": "Presa neutra per comfort di spalla; mantieni gomiti vicini e ROM completo senza perdere stabilità.",
+    "notesEn": "Neutral grip for shoulder comfort; keep elbows tucked and use full ROM without losing stability.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_flat_bench_press_floor",
+    "exerciseId": "db_flat_bench_press",
+    "nameIt": "Floor press manubri",
+    "nameEn": "Dumbbell Floor Press",
+    "notesIt": "Esegui a terra per limitare la profondità e aumentare stabilità. Non rimbalzare i gomiti sul pavimento.",
+    "notesEn": "Perform on the floor to limit depth and increase stability. Don’t bounce elbows off the floor.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_incline_bench_press_pause",
+    "exerciseId": "bb_incline_bench_press",
+    "nameIt": "Panca inclinata con pausa",
+    "nameEn": "Paused Incline Bench Press",
+    "notesIt": "Pausa sul petto alto mantenendo tensione; evita di spostare la spinta sulle spalle.",
+    "notesEn": "Pause on the upper chest while staying tight; avoid shifting the press into the shoulders.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_incline_bench_press_close_grip",
+    "exerciseId": "bb_incline_bench_press",
+    "nameIt": "Panca inclinata presa stretta",
+    "nameEn": "Close-Grip Incline Bench Press",
+    "notesIt": "Presa leggermente più stretta per più tricipite; tieni avambracci verticali e scapole ferme.",
+    "notesEn": "Slightly narrower grip for more triceps; keep forearms vertical and scapulae fixed.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_incline_bench_press_neutral_grip",
+    "exerciseId": "db_incline_bench_press",
+    "nameIt": "Panca inclinata manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Incline Press",
+    "notesIt": "Presa neutra per ridurre stress sulla spalla; non accorciare il ROM per caricare di più.",
+    "notesEn": "Neutral grip to reduce shoulder stress; don’t shorten ROM just to go heavier.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_incline_bench_press_low_incline",
+    "exerciseId": "db_incline_bench_press",
+    "nameIt": "Panca manubri bassa inclinazione",
+    "nameEn": "Low-Incline Dumbbell Press",
+    "notesIt": "Usa inclinazione moderata per focalizzare petto alto senza dominanza deltoidi. Mantieni scapole addotte.",
+    "notesEn": "Use a modest incline to hit upper chest without excessive front-delt takeover. Keep scapulae retracted.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "smith_incline_press_close_grip",
+    "exerciseId": "smith_incline_press",
+    "nameIt": "Smith inclinata presa stretta",
+    "nameEn": "Close-Grip Smith Incline Press",
+    "notesIt": "Presa più stretta per tricipiti; evita spalle sollevate e ROM incompleto.",
+    "notesEn": "Narrower grip for triceps; avoid shrugging and incomplete ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "smith_incline_press_tempo_3_1_1",
+    "exerciseId": "smith_incline_press",
+    "nameIt": "Smith inclinata tempo 3-1-1",
+    "nameEn": "Smith Incline Press Tempo 3-1-1",
+    "notesIt": "Discesa lenta con pausa breve in basso; mantiene controllo e tensione sul petto.",
+    "notesEn": "Slow eccentric with a brief pause at the bottom; maintains control and chest tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_chest_press_single_arm",
+    "exerciseId": "machine_chest_press",
+    "nameIt": "Chest press macchina a un braccio",
+    "nameEn": "Single-Arm Machine Chest Press",
+    "notesIt": "Esegui un lato alla volta per controllo e simmetria; evita torsioni del busto e spalla che sale.",
+    "notesEn": "Work one side at a time for control and symmetry; avoid torso twisting and shoulder shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "machine_chest_press_partial_top",
+    "exerciseId": "machine_chest_press",
+    "nameIt": "Chest press parziali in alto",
+    "nameEn": "Machine Chest Press Top Partials",
+    "notesIt": "Parziali in alto per focus su lockout; non perdere controllo scapolare e non accelerare senza controllo.",
+    "notesEn": "Top partials to focus on lockout; keep scapular control and don’t rush the reps.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_chest_fly_low_to_high",
+    "exerciseId": "cable_chest_fly",
+    "nameIt": "Croci cavi basso-alto",
+    "nameEn": "Low-to-High Cable Fly",
+    "notesIt": "Tira dai cavi bassi verso alto per enfatizzare petto alto. Evita spalle in avanti e ROM troppo corto.",
+    "notesEn": "Pull from low cables to high to emphasize upper chest. Avoid shoulder roll-forward and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_high_to_low",
+    "exerciseId": "cable_chest_fly",
+    "nameIt": "Croci cavi alto-basso",
+    "nameEn": "High-to-Low Cable Fly",
+    "notesIt": "Tira dall'alto verso il basso per enfatizzare petto basso. Mantieni gomiti morbidi e controllo in allungamento.",
+    "notesEn": "Pull from high to low to emphasize lower chest. Keep elbows soft and control the stretch.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_chest_fly_single_arm",
+    "exerciseId": "cable_chest_fly",
+    "nameIt": "Croci al cavo a un braccio",
+    "nameEn": "Single-Arm Cable Fly",
+    "notesIt": "Un lato alla volta per migliorare controllo scapolare; evita rotazioni eccessive del busto.",
+    "notesEn": "One side at a time to improve scapular control; avoid excessive torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_fly_incline",
+    "exerciseId": "db_fly",
+    "nameIt": "Croci manubri su inclinata",
+    "nameEn": "Incline Dumbbell Fly",
+    "notesIt": "Esegui su panca inclinata per focus sul petto alto. Evita ROM estremo e manubri troppo pesanti.",
+    "notesEn": "Perform on an incline to target upper chest. Avoid extreme ROM and overly heavy dumbbells.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_fly_floor",
+    "exerciseId": "db_fly",
+    "nameIt": "Croci manubri da terra",
+    "nameEn": "Floor Dumbbell Fly",
+    "notesIt": "A terra per limitare profondità e proteggere la spalla. Mantieni controllo e tensione continua.",
+    "notesEn": "On the floor to limit depth and protect the shoulders. Keep control and continuous tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "push_up_incline",
+    "exerciseId": "push_up",
+    "nameIt": "Push-up inclinati",
+    "nameEn": "Incline Push-Up",
+    "notesIt": "Mani su rialzo per ridurre il carico; mantieni linea testa-spalle-anche.",
+    "notesEn": "Hands elevated to reduce load; keep head-shoulders-hips aligned.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_decline",
+    "exerciseId": "push_up",
+    "nameIt": "Push-up declinati",
+    "nameEn": "Decline Push-Up",
+    "notesIt": "Piedi su rialzo per aumentare il focus su petto alto e spalle; evita iperlordosi.",
+    "notesEn": "Feet elevated to increase upper-chest/shoulder demand; avoid overextending the low back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "push_up_tempo_3_0_1",
+    "exerciseId": "push_up",
+    "nameIt": "Push-up tempo 3-0-1",
+    "nameEn": "Push-Up Tempo 3-0-1",
+    "notesIt": "Discesa lenta per aumentare controllo e tensione. Evita di perdere linea del corpo in eccentrica.",
+    "notesEn": "Slow eccentric to increase control and tension. Avoid losing alignment during the lowering phase.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "diamond_push_up_elevated_feet",
+    "exerciseId": "diamond_push_up",
+    "nameIt": "Diamond push-up con piedi rialzati",
+    "nameEn": "Feet-Elevated Diamond Push-Up",
+    "notesIt": "Aumenta il carico su tricipiti e spalle; mantieni gomiti vicini e core in bracing.",
+    "notesEn": "Increases triceps/shoulder demand; keep elbows tucked and core braced.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "diamond_push_up_pause_bottom",
+    "exerciseId": "diamond_push_up",
+    "nameIt": "Diamond push-up con pausa in basso",
+    "nameEn": "Paused Diamond Push-Up",
+    "notesIt": "Pausa breve in basso per aumentare controllo. Evita di collassare sulle spalle.",
+    "notesEn": "Brief pause at the bottom to build control. Avoid collapsing into the shoulders.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "wide_push_up_hands_elevated",
+    "exerciseId": "wide_push_up",
+    "nameIt": "Wide push-up mani rialzate",
+    "nameEn": "Hands-Elevated Wide Push-Up",
+    "notesIt": "Riduce carico mantenendo focus sul petto. Evita ROM ridotto e scapole non controllate.",
+    "notesEn": "Reduces load while keeping chest focus. Avoid reduced ROM and uncontrolled scapulae.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "dip_rings",
+    "exerciseId": "dip",
+    "nameIt": "Dip agli anelli",
+    "nameEn": "Ring Dip",
+    "notesIt": "Instabilità maggiore: mantieni anelli vicini al corpo e scapole depresse. Evita perdita di controllo in basso.",
+    "notesEn": "More instability: keep rings close and scapulae depressed. Avoid losing control at the bottom.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "dip_assisted_band",
+    "exerciseId": "dip",
+    "nameIt": "Dip assistiti con elastico",
+    "nameEn": "Band-Assisted Dip",
+    "notesIt": "Usa l'elastico per mantenere tecnica pulita. Evita rimbalzi e ROM troppo corto.",
+    "notesEn": "Use a band to keep technique clean. Avoid bouncing and excessively short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bench_dip_knees_bent",
+    "exerciseId": "bench_dip",
+    "nameIt": "Bench dip con ginocchia piegate",
+    "nameEn": "Bench Dip (Knees Bent)",
+    "notesIt": "Versione più facile con piedi più vicini. Evita discesa troppo profonda e spalle in avanti.",
+    "notesEn": "Easier version with feet closer. Avoid going too deep and shoulders rolling forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bench_dip_legs_straight",
+    "exerciseId": "bench_dip",
+    "nameIt": "Bench dip gambe tese",
+    "nameEn": "Bench Dip (Legs Straight)",
+    "notesIt": "Aumenta il carico con gambe tese. Evita dolore anteriore di spalla e ROM eccessivo.",
+    "notesEn": "Increases load with straight legs. Avoid anterior shoulder pain and excessive ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_overhead_press_seated",
+    "exerciseId": "bb_overhead_press",
+    "nameIt": "Military press seduto",
+    "nameEn": "Seated Barbell Overhead Press",
+    "notesIt": "Seduto per ridurre contributo delle gambe; traiettoria vicino al viso. Evita iperestensione lombare.",
+    "notesEn": "Seated to reduce leg drive; keep bar path close. Avoid low-back overextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_overhead_press_pause_forehead",
+    "exerciseId": "bb_overhead_press",
+    "nameIt": "Military press con pausa alla fronte",
+    "nameEn": "Overhead Press (Forehead Pause)",
+    "notesIt": "Pausa nel punto critico per controllo. Evita di spingere in avanti e perdere bracing.",
+    "notesEn": "Pause at the sticking point for control. Avoid drifting forward and losing your brace.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_shoulder_press_neutral_grip",
+    "exerciseId": "db_shoulder_press",
+    "nameIt": "Spinte manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Shoulder Press",
+    "notesIt": "Presa neutra per comfort; gomiti sotto ai polsi. Evita di chiudere le spalle in alto.",
+    "notesEn": "Neutral grip for comfort; keep elbows under wrists. Avoid rolling shoulders forward at lockout.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_shoulder_press_seated",
+    "exerciseId": "db_shoulder_press",
+    "nameIt": "Spinte manubri seduto",
+    "nameEn": "Seated Dumbbell Shoulder Press",
+    "notesIt": "Seduto per più stabilità; controlla la discesa e non inarcare la schiena.",
+    "notesEn": "Seated for stability; control the descent and avoid excessive back arch.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "arnold_press_seated",
+    "exerciseId": "arnold_press",
+    "nameIt": "Arnold press seduto",
+    "nameEn": "Seated Arnold Press",
+    "notesIt": "Seduto per più controllo; ruota senza perdere posizione scapolare. Evita ROM parziale.",
+    "notesEn": "Seated for more control; rotate without losing scapular position. Avoid partial ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_shoulder_press_single_arm",
+    "exerciseId": "machine_shoulder_press",
+    "nameIt": "Shoulder press macchina a un braccio",
+    "nameEn": "Single-Arm Machine Shoulder Press",
+    "notesIt": "Un lato alla volta per simmetria; evita torsioni e spalla che si solleva.",
+    "notesEn": "One side at a time for symmetry; avoid twisting and shoulder shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_lateral_raise_seated",
+    "exerciseId": "db_lateral_raise",
+    "nameIt": "Alzate laterali seduto",
+    "nameEn": "Seated Dumbbell Lateral Raise",
+    "notesIt": "Seduto per ridurre slanci; evita trapezi dominanti. Mantieni tensione continua.",
+    "notesEn": "Seated to reduce momentum; avoid trap dominance. Keep constant tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_lateral_raise_partial_bottom",
+    "exerciseId": "db_lateral_raise",
+    "nameIt": "Alzate laterali parziali in basso",
+    "nameEn": "Bottom-Partials Lateral Raise",
+    "notesIt": "Parziali nel range iniziale per tensione continua. Evita slanci e spalle verso le orecchie.",
+    "notesEn": "Partials in the initial range for constant tension. Avoid swinging and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_lateral_raise_behind_body",
+    "exerciseId": "cable_lateral_raise",
+    "nameIt": "Alzate laterali al cavo da dietro",
+    "nameEn": "Behind-the-Body Cable Lateral Raise",
+    "notesIt": "Parti con il cavo leggermente dietro per linea di trazione migliore. Evita rotazioni del busto.",
+    "notesEn": "Start with the cable slightly behind for a better line of pull. Avoid torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_front_raise_alternating",
+    "exerciseId": "db_front_raise",
+    "nameIt": "Alzate frontali alternate",
+    "nameEn": "Alternating Dumbbell Front Raise",
+    "notesIt": "Alterna le braccia per controllo. Evita slanci e busto che oscilla.",
+    "notesEn": "Alternate arms for control. Avoid swinging and torso rocking.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_rear_delt_fly_prone_incline",
+    "exerciseId": "db_rear_delt_fly",
+    "nameIt": "Croci inverse prono su inclinata",
+    "nameEn": "Chest-Supported Rear Delt Fly",
+    "notesIt": "Appoggio torace per eliminare slanci; apri con gomiti morbidi e scapole stabili.",
+    "notesEn": "Chest support removes momentum; open with soft elbows and stable scapulae.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_face_pull_rope",
+    "exerciseId": "cable_face_pull",
+    "nameIt": "Face pull con corda",
+    "nameEn": "Rope Face Pull",
+    "notesIt": "Separa le estremità della corda in chiusura per aumentare rotazione esterna. Evita spalle alte.",
+    "notesEn": "Split the rope ends at the finish to increase external rotation. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_face_pull_high_anchor",
+    "exerciseId": "cable_face_pull",
+    "nameIt": "Face pull ancoraggio alto",
+    "nameEn": "High-Anchor Face Pull",
+    "notesIt": "Ancoraggio alto per linea di trazione più verticale. Evita di inarcare la schiena.",
+    "notesEn": "High anchor for a more vertical line of pull. Avoid arching the back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "band_pull_apart_overhand",
+    "exerciseId": "band_pull_apart",
+    "nameIt": "Band pull-apart presa prona",
+    "nameEn": "Overhand Band Pull-Apart",
+    "notesIt": "Presa prona per enfasi su dorso alto. Evita gomiti piegati e spalle alte.",
+    "notesEn": "Overhand grip to emphasize upper back. Avoid bending elbows and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_underhand",
+    "exerciseId": "band_pull_apart",
+    "nameIt": "Band pull-apart presa supina",
+    "nameEn": "Underhand Band Pull-Apart",
+    "notesIt": "Presa supina per cambiare stimolo su bicipite/cuffia. Evita iperestensione lombare.",
+    "notesEn": "Underhand grip to shift stimulus toward biceps/rotator cuff. Avoid overextending the low back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_barbell_row_underhand",
+    "exerciseId": "bb_barbell_row",
+    "nameIt": "Rematore bilanciere presa supina",
+    "nameEn": "Underhand Barbell Row",
+    "notesIt": "Presa supina per più bicipite e lats; mantieni hinge fermo e barra vicina al corpo.",
+    "notesEn": "Underhand grip for more biceps and lats; keep a stable hinge and the bar close.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_barbell_row_pause_top",
+    "exerciseId": "bb_barbell_row",
+    "nameIt": "Rematore bilanciere con pausa in alto",
+    "nameEn": "Barbell Row (Top Pause)",
+    "notesIt": "Pausa breve al petto per controllo scapolare. Evita slancio con le anche.",
+    "notesEn": "Brief pause at the chest for scapular control. Avoid hip momentum.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_one_arm_row_knee_on_bench",
+    "exerciseId": "db_one_arm_row",
+    "nameIt": "Rematore 1 braccio con ginocchio su panca",
+    "nameEn": "One-Arm Dumbbell Row (Knee on Bench)",
+    "notesIt": "Setup stabile per imparare la traiettoria. Evita spalla che sale e torsioni eccessive.",
+    "notesEn": "Stable setup to learn the path. Avoid shrugging and excessive twisting.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_one_arm_row_chest_supported",
+    "exerciseId": "db_one_arm_row",
+    "nameIt": "Rematore 1 braccio chest-supported",
+    "nameEn": "Chest-Supported One-Arm Row",
+    "notesIt": "Appoggio torace su panca inclinata per isolare il dorso. Evita ROM parziale e slanci.",
+    "notesEn": "Support the chest on an incline bench to isolate the back. Avoid partial ROM and swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_seated_row_close_grip",
+    "exerciseId": "cable_seated_row",
+    "nameIt": "Rematore cavo presa stretta",
+    "nameEn": "Close-Grip Seated Cable Row",
+    "notesIt": "Presa stretta per enfasi su lats; evita di inclinarti troppo indietro.",
+    "notesEn": "Close grip to emphasize lats; avoid leaning too far back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_seated_row_wide_grip",
+    "exerciseId": "cable_seated_row",
+    "nameIt": "Rematore cavo presa larga",
+    "nameEn": "Wide-Grip Seated Cable Row",
+    "notesIt": "Presa larga per dorso alto; mantieni gomiti aperti e scapole controllate.",
+    "notesEn": "Wide grip for upper back; keep elbows out and scapulae controlled.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_row_single_arm",
+    "exerciseId": "machine_row",
+    "nameIt": "Rematore macchina a un braccio",
+    "nameEn": "Single-Arm Machine Row",
+    "notesIt": "Un lato alla volta per simmetria; mantieni petto contro il supporto e non ruotare il busto.",
+    "notesEn": "One side at a time for symmetry; keep chest on the pad and don’t rotate the torso.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pull_up_assisted_band",
+    "exerciseId": "pull_up",
+    "nameIt": "Trazioni assistite con elastico",
+    "nameEn": "Band-Assisted Pull-Up",
+    "notesIt": "Usa elastico per ROM completo e controllo. Evita slanci e spalle non depresse.",
+    "notesEn": "Use a band for full ROM and control. Avoid swinging and uncontrolled scapulae.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_pause_top",
+    "exerciseId": "pull_up",
+    "nameIt": "Trazioni con pausa in alto",
+    "nameEn": "Pull-Up (Top Pause)",
+    "notesIt": "Pausa breve con mento sopra la sbarra. Evita di perdere tensione nel core.",
+    "notesEn": "Brief pause with chin over the bar. Avoid losing core tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "pull_up_scapular",
+    "exerciseId": "pull_up",
+    "nameIt": "Trazioni scapolari",
+    "nameEn": "Scapular Pull-Up",
+    "notesIt": "Movimento corto per imparare depressione scapolare. Evita di piegare i gomiti.",
+    "notesEn": "Short-range drill to learn scapular depression. Avoid bending the elbows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "chin_up_pause_top",
+    "exerciseId": "chin_up",
+    "nameIt": "Chin-up con pausa in alto",
+    "nameEn": "Chin-Up (Top Pause)",
+    "notesIt": "Pausa per controllo nel punto alto. Evita slanci e spalle verso le orecchie.",
+    "notesEn": "Pause to build control at the top. Avoid swinging and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "chin_up_assisted_band",
+    "exerciseId": "chin_up",
+    "nameIt": "Chin-up assistiti con elastico",
+    "nameEn": "Band-Assisted Chin-Up",
+    "notesIt": "Assistenza per ROM completo mantenendo tecnica. Evita di saltare nella prima ripetizione.",
+    "notesEn": "Assistance for full ROM while keeping technique. Avoid jumping into the first rep.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lat_pulldown_wide_grip",
+    "exerciseId": "lat_pulldown",
+    "nameIt": "Lat machine presa larga",
+    "nameEn": "Wide-Grip Lat Pulldown",
+    "notesIt": "Presa più larga per dorso alto; evita spalle che salgono e tirata dietro la nuca.",
+    "notesEn": "Wider grip for upper back; avoid shrugging and behind-the-neck pulling.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_pause_bottom",
+    "exerciseId": "lat_pulldown",
+    "nameIt": "Lat machine con pausa in basso",
+    "nameEn": "Lat Pulldown (Bottom Pause)",
+    "notesIt": "Pausa al petto per migliorare controllo e scapole depresse. Evita slanci del busto.",
+    "notesEn": "Pause at the chest to improve control and scapular depression. Avoid torso swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lat_pulldown_neutral_grip_pause_bottom",
+    "exerciseId": "lat_pulldown_neutral_grip",
+    "nameIt": "Lat neutra con pausa in basso",
+    "nameEn": "Neutral-Grip Lat Pulldown (Bottom Pause)",
+    "notesIt": "Pausa per enfatizzare depressione scapolare. Evita di inclinare troppo il busto.",
+    "notesEn": "Pause to emphasize scapular depression. Avoid leaning back too much.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_deadlift_sumo",
+    "exerciseId": "bb_deadlift",
+    "nameIt": "Stacco sumo",
+    "nameEn": "Sumo Deadlift",
+    "notesIt": "Piedi più larghi e punte aperte; ginocchia fuori e schiena neutra.",
+    "notesEn": "Wider stance with toes out; knees out and neutral spine.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_pause_shin",
+    "exerciseId": "bb_deadlift",
+    "nameIt": "Stacco con pausa allo stinco",
+    "nameEn": "Paused Deadlift (At Shin)",
+    "notesIt": "Pausa poco sopra il pavimento per aumentare controllo. Evita che la barra si allontani dalle gambe.",
+    "notesEn": "Pause just off the floor to build control. Avoid the bar drifting away from the legs.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_deadlift_tempo_3_0_1",
+    "exerciseId": "bb_deadlift",
+    "nameIt": "Stacco tempo 3-0-1",
+    "nameEn": "Deadlift Tempo 3-0-1",
+    "notesIt": "Ritorno controllato in 3 secondi per tecnica. Evita di perdere schiena neutra in discesa.",
+    "notesEn": "Control the lowering for 3 seconds to reinforce technique. Avoid losing neutral spine on the way down.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_back_squat_high_bar",
+    "exerciseId": "bb_back_squat",
+    "nameIt": "Squat high-bar",
+    "nameEn": "High-Bar Back Squat",
+    "notesIt": "Bilanciere più alto sul trapezio, busto più verticale. Evita ginocchia che collassano.",
+    "notesEn": "Bar higher on the traps, more upright torso. Avoid knee cave.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_low_bar",
+    "exerciseId": "bb_back_squat",
+    "nameIt": "Squat low-bar",
+    "nameEn": "Low-Bar Back Squat",
+    "notesIt": "Bilanciere più basso per maggiore posterior chain. Cura polsi e gomiti.",
+    "notesEn": "Lower bar for more posterior chain. Manage wrists and elbows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_back_squat_pause",
+    "exerciseId": "bb_back_squat",
+    "nameIt": "Squat con pausa",
+    "nameEn": "Paused Back Squat",
+    "notesIt": "Pausa in buca per controllo e stabilità. Evita rimbalzo e perdita di bracing.",
+    "notesEn": "Pause in the hole for control and stability. Avoid bouncing and losing your brace.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_front_squat_cross_arm",
+    "exerciseId": "bb_front_squat",
+    "nameIt": "Front squat presa incrociata",
+    "nameEn": "Cross-Arm Front Squat",
+    "notesIt": "Variante per limitazioni di polso; mantieni gomiti alti. Evita che la barra scenda.",
+    "notesEn": "Option for limited wrists; keep elbows high. Don’t let the bar roll down.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_front_squat_pause",
+    "exerciseId": "bb_front_squat",
+    "nameIt": "Front squat con pausa",
+    "nameEn": "Paused Front Squat",
+    "notesIt": "Pausa in basso per rinforzare posizione e bracing. Evita collasso del busto.",
+    "notesEn": "Pause at the bottom to reinforce position and bracing. Avoid torso collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "goblet_squat_heels_elevated",
+    "exerciseId": "goblet_squat",
+    "nameIt": "Goblet squat con talloni rialzati",
+    "nameEn": "Heels-Elevated Goblet Squat",
+    "notesIt": "Talloni su rialzo per più dorsiflessione e focus quadricipiti. Evita di cadere in avanti.",
+    "notesEn": "Elevate heels for more dorsiflexion and quad emphasis. Avoid tipping forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "goblet_squat_pause_bottom",
+    "exerciseId": "goblet_squat",
+    "nameIt": "Goblet squat con pausa in basso",
+    "nameEn": "Paused Goblet Squat",
+    "notesIt": "Pausa breve per controllo e profondità. Evita retroversione del bacino.",
+    "notesEn": "Short pause for control and depth. Avoid pelvic tuck.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_goblet_squat_tempo_3_1_1",
+    "exerciseId": "db_goblet_squat",
+    "nameIt": "Goblet squat manubrio tempo 3-1-1",
+    "nameEn": "Dumbbell Goblet Squat Tempo 3-1-1",
+    "notesIt": "Discesa lenta con pausa; utile per tecnica. Mantieni ginocchia in linea e core attivo.",
+    "notesEn": "Slow descent with a pause; useful for technique. Keep knees tracking and core active.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "smith_back_squat_heels_forward",
+    "exerciseId": "smith_back_squat",
+    "nameIt": "Smith squat con piedi avanti",
+    "nameEn": "Smith Squat (Feet Forward)",
+    "notesIt": "Piedi più avanti per più quadricipite. Evita ROM doloroso e bacino che si muove.",
+    "notesEn": "Feet forward for more quad emphasis. Avoid painful ROM and shifting hips.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "smith_back_squat_pause",
+    "exerciseId": "smith_back_squat",
+    "nameIt": "Smith squat con pausa",
+    "nameEn": "Paused Smith Squat",
+    "notesIt": "Pausa in basso per controllo senza rimbalzo. Evita ginocchia che collassano.",
+    "notesEn": "Pause at the bottom for control without bouncing. Avoid knee cave.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "hack_squat_machine_narrow_stance",
+    "exerciseId": "hack_squat_machine",
+    "nameIt": "Hack squat stance stretta",
+    "nameEn": "Hack Squat (Narrow Stance)",
+    "notesIt": "Stance stretta per quadricipiti; controlla ginocchia e non sollevare i talloni.",
+    "notesEn": "Narrow stance for quads; control knee tracking and don’t let heels lift.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "hack_squat_machine_wide_stance",
+    "exerciseId": "hack_squat_machine",
+    "nameIt": "Hack squat stance larga",
+    "nameEn": "Hack Squat (Wide Stance)",
+    "notesIt": "Stance larga per più glutei/adduttori; evita ROM eccessivo se perdi bacino.",
+    "notesEn": "Wide stance for more glutes/adductors; avoid excessive ROM if pelvis shifts.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "leg_press_high_foot",
+    "exerciseId": "leg_press",
+    "nameIt": "Leg press piedi alti",
+    "nameEn": "Leg Press (High Foot Placement)",
+    "notesIt": "Piedi alti per più glutei/femorali; non staccare il bacino dallo schienale.",
+    "notesEn": "High feet for more glutes/hamstrings; don’t let hips lift off the pad.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "leg_press_low_foot",
+    "exerciseId": "leg_press",
+    "nameIt": "Leg press piedi bassi",
+    "nameEn": "Leg Press (Low Foot Placement)",
+    "notesIt": "Piedi bassi per quadricipiti; evita ginocchia che collassano e ROM ridotto.",
+    "notesEn": "Low feet for quads; avoid knee cave and shortened ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "leg_press_single_leg",
+    "exerciseId": "leg_press",
+    "nameIt": "Leg press a una gamba",
+    "nameEn": "Single-Leg Leg Press",
+    "notesIt": "Un lato alla volta per simmetria; mantieni bacino stabile e ginocchio in linea.",
+    "notesEn": "One side at a time for symmetry; keep pelvis stable and knee tracking.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_romanian_deadlift_deficit",
+    "exerciseId": "bb_romanian_deadlift",
+    "nameIt": "Stacco rumeno su deficit",
+    "nameEn": "Deficit Romanian Deadlift",
+    "notesIt": "Stai su rialzo per aumentare ROM; mantieni schiena neutra e barra vicina.",
+    "notesEn": "Stand on a small elevation to increase ROM; keep a neutral spine and the bar close.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_romanian_deadlift_pause_mid",
+    "exerciseId": "bb_romanian_deadlift",
+    "nameIt": "Stacco rumeno con pausa a metà",
+    "nameEn": "Romanian Deadlift (Mid-Shin Pause)",
+    "notesIt": "Pausa a metà per controllo e femorali. Evita di piegare troppo le ginocchia.",
+    "notesEn": "Pause mid-way for control and hamstrings. Avoid excessive knee bend.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_romanian_deadlift_single_leg",
+    "exerciseId": "db_romanian_deadlift",
+    "nameIt": "Stacco rumeno a una gamba manubri",
+    "nameEn": "Single-Leg Dumbbell Romanian Deadlift",
+    "notesIt": "Hinge su una gamba per stabilità; mantieni anche squadrate. Evita rotazioni del bacino.",
+    "notesEn": "Single-leg hinge for stability; keep hips square. Avoid pelvic rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_romanian_deadlift_tempo_3_1_1",
+    "exerciseId": "db_romanian_deadlift",
+    "nameIt": "Stacco rumeno manubri tempo 3-1-1",
+    "nameEn": "Dumbbell RDL Tempo 3-1-1",
+    "notesIt": "Eccentrica lenta con pausa; evita spalle che si arrotondano in basso.",
+    "notesEn": "Slow eccentric with a pause; avoid rounding the shoulders at the bottom.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_romanian_deadlift_single_kb",
+    "exerciseId": "kb_romanian_deadlift",
+    "nameIt": "Stacco rumeno con un kettlebell",
+    "nameEn": "Single-Kettlebell Romanian Deadlift",
+    "notesIt": "Un kettlebell davanti per anti-rotazione. Evita di spostare peso sulle punte.",
+    "notesEn": "Single KB in front adds anti-rotation demand. Avoid shifting weight to the toes.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "hip_thrust_bb_pause_top",
+    "exerciseId": "hip_thrust_bb",
+    "nameIt": "Hip thrust con pausa in alto",
+    "nameEn": "Hip Thrust (Top Pause)",
+    "notesIt": "Pausa 1-2 secondi in massima estensione senza iperestendere la schiena.",
+    "notesEn": "Hold 1–2 seconds at full extension without overextending the back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "hip_thrust_bb_tempo_3_0_1",
+    "exerciseId": "hip_thrust_bb",
+    "nameIt": "Hip thrust tempo 3-0-1",
+    "nameEn": "Hip Thrust Tempo 3-0-1",
+    "notesIt": "Discesa lenta per controllo; evita di rimbalzare in basso.",
+    "notesEn": "Slow lowering for control; avoid bouncing at the bottom.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "glute_bridge_single_leg",
+    "exerciseId": "glute_bridge",
+    "nameIt": "Glute bridge a una gamba",
+    "nameEn": "Single-Leg Glute Bridge",
+    "notesIt": "Mantieni bacino livello e spingi col tallone. Evita rotazioni e spinta sulle punte.",
+    "notesEn": "Keep hips level and drive through the heel. Avoid rotation and toe push-off.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "glute_bridge_pause_top",
+    "exerciseId": "glute_bridge",
+    "nameIt": "Glute bridge con pausa in alto",
+    "nameEn": "Glute Bridge (Top Pause)",
+    "notesIt": "Pausa per sentire i glutei; non iperestendere la zona lombare.",
+    "notesEn": "Pause to feel the glutes; don’t overextend the low back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "split_squat_front_foot_elevated",
+    "exerciseId": "split_squat",
+    "nameIt": "Split squat con piede avanti rialzato",
+    "nameEn": "Front-Foot Elevated Split Squat",
+    "notesIt": "Rialza il piede avanti per più ROM. Evita perdita di equilibrio e ginocchio che collassa.",
+    "notesEn": "Elevate the front foot for more ROM. Avoid losing balance and knee cave.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "split_squat_pause_bottom",
+    "exerciseId": "split_squat",
+    "nameIt": "Split squat con pausa in basso",
+    "nameEn": "Paused Split Squat",
+    "notesIt": "Pausa breve per controllo; spingi col piede davanti e mantieni busto stabile.",
+    "notesEn": "Brief pause for control; drive through the front foot and keep torso stable.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bulgarian_split_squat_db_torso_forward",
+    "exerciseId": "bulgarian_split_squat_db",
+    "nameIt": "Bulgarian split squat con busto in avanti",
+    "nameEn": "Bulgarian Split Squat (Forward Torso)",
+    "notesIt": "Leggera inclinazione per più gluteo; mantieni schiena neutra.",
+    "notesEn": "Slight forward lean for more glute; keep a neutral spine.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bulgarian_split_squat_db_pause_bottom",
+    "exerciseId": "bulgarian_split_squat_db",
+    "nameIt": "Bulgarian split squat con pausa in basso",
+    "nameEn": "Paused Bulgarian Split Squat",
+    "notesIt": "Pausa in basso per controllo; evita rimbalzo e perdita di equilibrio.",
+    "notesEn": "Pause at the bottom for control; avoid bouncing and losing balance.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "walking_lunge_db_long_step",
+    "exerciseId": "walking_lunge_db",
+    "nameIt": "Affondi camminati passo lungo",
+    "nameEn": "Walking Lunge (Long Step)",
+    "notesIt": "Passo lungo per più gluteo; mantieni ginocchio stabile e busto controllato.",
+    "notesEn": "Long step for more glute; keep the knee stable and torso controlled.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "walking_lunge_db_short_step",
+    "exerciseId": "walking_lunge_db",
+    "nameIt": "Affondi camminati passo corto",
+    "nameEn": "Walking Lunge (Short Step)",
+    "notesIt": "Passo corto per più quadricipite; evita ginocchio instabile.",
+    "notesEn": "Short step for more quad; avoid knee wobble.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "step_up_db_knee_drive",
+    "exerciseId": "step_up_db",
+    "nameIt": "Step-up con ginocchiata",
+    "nameEn": "Step-Up with Knee Drive",
+    "notesIt": "Sali e porta il ginocchio in alto per equilibrio; evita slanci e spinta dalla gamba dietro.",
+    "notesEn": "Step up and drive the knee for balance; avoid jumping and pushing off the trailing leg.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "step_up_db_slow_eccentric",
+    "exerciseId": "step_up_db",
+    "nameIt": "Step-up eccentrica lenta",
+    "nameEn": "Step-Up (Slow Eccentric)",
+    "notesIt": "Scendi lentamente per controllo; evita di cadere dal box.",
+    "notesEn": "Lower slowly for control; avoid dropping off the box.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_close_grip_bench_press_pause",
+    "exerciseId": "bb_close_grip_bench_press",
+    "nameIt": "Panca presa stretta con pausa",
+    "nameEn": "Paused Close-Grip Bench Press",
+    "notesIt": "Pausa sul petto per mantenere tecnica e tensione. Evita di allargare i gomiti in risalita.",
+    "notesEn": "Pause on the chest to maintain tightness and technique. Avoid flaring elbows on the press.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_close_grip_bench_press_tempo_3_0_1",
+    "exerciseId": "bb_close_grip_bench_press",
+    "nameIt": "Panca presa stretta tempo 3-0-1",
+    "nameEn": "Close-Grip Bench Press Tempo 3-0-1",
+    "notesIt": "Eccentrica lenta per controllo; mantieni polsi neutri e avambracci verticali.",
+    "notesEn": "Slow eccentric for control; keep wrists neutral and forearms vertical.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_pause_bench_press_2s",
+    "exerciseId": "bb_pause_bench_press",
+    "nameIt": "Panca con pausa 2 secondi",
+    "nameEn": "2-Second Paused Bench Press",
+    "notesIt": "Pausa più lunga per controllo; non perdere set-up scapolare e leg drive.",
+    "notesEn": "Longer pause for control; don’t lose scapular set-up and leg drive.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_spoto_press_pause_1s",
+    "exerciseId": "bb_spoto_press",
+    "nameIt": "Spoto press con pausa 1 secondo",
+    "nameEn": "Spoto Press (1s Pause)",
+    "notesIt": "Pausa breve sopra il petto; mantieni traiettoria e gomiti sotto la barra.",
+    "notesEn": "Brief pause above the chest; keep bar path and elbows under the bar.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_board_press_two_board",
+    "exerciseId": "bb_board_press",
+    "nameIt": "Board press (2 board)",
+    "nameEn": "Two-Board Press",
+    "notesIt": "Riduzione ROM moderata; utile per lockout. Evita rimbalzi sulla tavola.",
+    "notesEn": "Moderate ROM reduction; useful for lockout. Avoid bouncing off the board.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_board_press_three_board",
+    "exerciseId": "bb_board_press",
+    "nameIt": "Board press (3 board)",
+    "nameEn": "Three-Board Press",
+    "notesIt": "Riduzione ROM maggiore; focus su tricipiti. Evita setup instabile e carichi fuori controllo.",
+    "notesEn": "Greater ROM reduction; triceps focus. Avoid unstable setup and uncontrolled loads.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_floor_press_pause",
+    "exerciseId": "bb_floor_press",
+    "nameIt": "Floor press con pausa",
+    "nameEn": "Paused Floor Press",
+    "notesIt": "Pausa con gomiti a terra per eliminare rimbalzo. Evita polsi piegati e ROM incoerente.",
+    "notesEn": "Pause with elbows on the floor to remove bounce. Avoid bent wrists and inconsistent ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "smith_flat_press_close_grip",
+    "exerciseId": "smith_flat_press",
+    "nameIt": "Smith piana presa stretta",
+    "nameEn": "Close-Grip Smith Flat Press",
+    "notesIt": "Presa più stretta per tricipiti; mantieni scapole addotte e spalle basse.",
+    "notesEn": "Narrower grip for triceps; keep scapulae retracted and shoulders down.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "smith_flat_press_tempo_3_1_1",
+    "exerciseId": "smith_flat_press",
+    "nameIt": "Smith piana tempo 3-1-1",
+    "nameEn": "Smith Flat Press Tempo 3-1-1",
+    "notesIt": "Eccentrica lenta con pausa per controllo; evita rimbalzo e ROM corto.",
+    "notesEn": "Slow eccentric with a pause for control; avoid bouncing and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_incline_chest_press_single_arm",
+    "exerciseId": "machine_incline_chest_press",
+    "nameIt": "Chest press inclinata a un braccio",
+    "nameEn": "Single-Arm Incline Machine Press",
+    "notesIt": "Un lato alla volta per simmetria; evita torsioni del busto e spalla che sale.",
+    "notesEn": "One side at a time for symmetry; avoid torso twisting and shoulder shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "machine_incline_chest_press_partial_top",
+    "exerciseId": "machine_incline_chest_press",
+    "nameIt": "Chest press inclinata parziali in alto",
+    "nameEn": "Incline Machine Press Top Partials",
+    "notesIt": "Parziali in alto per lockout; mantieni controllo e tensione costante.",
+    "notesEn": "Top partials for lockout; keep control and constant tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_decline_chest_press_pause_bottom",
+    "exerciseId": "machine_decline_chest_press",
+    "nameIt": "Chest press declinata con pausa in basso",
+    "nameEn": "Decline Machine Press (Bottom Pause)",
+    "notesIt": "Pausa breve in basso senza perdere scapole; evita rimbalzi.",
+    "notesEn": "Brief pause at the bottom without losing scapular position; avoid bouncing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_decline_bench_press_neutral_grip",
+    "exerciseId": "db_decline_bench_press",
+    "nameIt": "Panca declinata manubri presa neutra",
+    "nameEn": "Neutral-Grip Dumbbell Decline Press",
+    "notesIt": "Presa neutra per comfort; controlla l'allungamento e non sbattere in chiusura.",
+    "notesEn": "Neutral grip for comfort; control the stretch and don’t crash at the top.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_press_standing_staggered",
+    "exerciseId": "cable_press_standing",
+    "nameIt": "Spinte al cavo in piedi in affondo",
+    "nameEn": "Standing Cable Press (Staggered Stance)",
+    "notesIt": "Stance sfalsata per stabilità; evita torsioni e iperlordosi.",
+    "notesEn": "Staggered stance for stability; avoid twisting and low-back overextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_press_standing_pause_out",
+    "exerciseId": "cable_press_standing",
+    "nameIt": "Spinte al cavo con pausa in chiusura",
+    "nameEn": "Standing Cable Press (Lockout Pause)",
+    "notesIt": "Pausa in chiusura per controllare scapole e serrato. Evita spalle che salgono.",
+    "notesEn": "Pause at lockout to control scapulae and serratus. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_press_single_arm_anti_rotation",
+    "exerciseId": "cable_press_single_arm",
+    "nameIt": "Spinte al cavo 1 braccio anti-rotazione",
+    "nameEn": "Single-Arm Cable Press (Anti-Rotation)",
+    "notesIt": "Resisti alla rotazione del busto; core attivo e glutei stretti. Evita compensi lombari.",
+    "notesEn": "Resist torso rotation; keep core and glutes engaged. Avoid low-back compensation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_fly_low_single_arm",
+    "exerciseId": "cable_fly_low",
+    "nameIt": "Croci basse al cavo a un braccio",
+    "nameEn": "Single-Arm Low Cable Fly",
+    "notesIt": "Un lato alla volta per controllo scapolare; evita torsioni eccessive.",
+    "notesEn": "One side at a time for scapular control; avoid excessive rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_fly_high_single_arm",
+    "exerciseId": "cable_fly_high",
+    "nameIt": "Croci alte al cavo a un braccio",
+    "nameEn": "Single-Arm High Cable Fly",
+    "notesIt": "Traccia verso il basso mantenendo gomito morbido. Evita spalla che si chiude in avanti.",
+    "notesEn": "Trace down with a soft elbow. Avoid the shoulder rolling forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pec_deck_pause_squeeze",
+    "exerciseId": "pec_deck",
+    "nameIt": "Pec deck con pausa in chiusura",
+    "nameEn": "Pec Deck (Squeeze Pause)",
+    "notesIt": "Pausa 1 secondo in massimo accorciamento senza spingere spalle avanti.",
+    "notesEn": "Hold 1 second at peak contraction without pushing shoulders forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "push_up_knee_hands_elevated",
+    "exerciseId": "push_up_knee",
+    "nameIt": "Push-up ginocchia mani rialzate",
+    "nameEn": "Knee Push-Up (Hands Elevated)",
+    "notesIt": "Facilita ulteriormente mantenendo tecnica. Evita ROM corto e bacino che cede.",
+    "notesEn": "Further regression while keeping technique. Avoid short ROM and sagging hips.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pike_push_up_feet_elevated",
+    "exerciseId": "pike_push_up",
+    "nameIt": "Pike push-up con piedi rialzati",
+    "nameEn": "Feet-Elevated Pike Push-Up",
+    "notesIt": "Aumenta il carico sulle spalle; mantieni controllo e testa tra le mani.",
+    "notesEn": "Increases shoulder load; keep control and lower head between the hands.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "handstand_push_up_wall_partial",
+    "exerciseId": "handstand_push_up_wall",
+    "nameIt": "Handstand push-up al muro (parziali)",
+    "nameEn": "Wall Handstand Push-Up (Partials)",
+    "notesIt": "Parziali per accumulare volume mantenendo forma. Evita compensi lombari.",
+    "notesEn": "Partials to accumulate volume while keeping form. Avoid low-back compensation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_push_press_pause_overhead",
+    "exerciseId": "bb_push_press",
+    "nameIt": "Push press con pausa sopra la testa",
+    "nameEn": "Push Press (Overhead Pause)",
+    "notesIt": "Pausa sopra la testa per stabilità. Evita iperestensione lombare e chiusura delle spalle.",
+    "notesEn": "Pause overhead for stability. Avoid low-back overextension and shoulder roll-forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_hammer_curl_alternating",
+    "exerciseId": "db_hammer_curl",
+    "nameIt": "Curl martello alternato",
+    "nameEn": "Alternating Hammer Curl",
+    "notesIt": "Alterna le braccia per più controllo; evita torsioni del busto.",
+    "notesEn": "Alternate arms for more control; avoid torso twisting.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "db_hammer_curl_cross_body",
+    "exerciseId": "db_hammer_curl",
+    "nameIt": "Curl martello cross-body",
+    "nameEn": "Cross-Body Hammer Curl",
+    "notesIt": "Tira verso la spalla opposta per enfatizzare brachiale. Evita spalle che avanzano.",
+    "notesEn": "Curl toward the opposite shoulder to emphasize brachialis. Avoid shoulders drifting forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_biceps_curl_tempo_3_0_1",
+    "exerciseId": "bb_biceps_curl",
+    "nameIt": "Curl bilanciere tempo 3-0-1",
+    "nameEn": "Barbell Curl Tempo 3-0-1",
+    "notesIt": "Eccentrica lenta per controllo; gomiti fermi e core attivo.",
+    "notesEn": "Slow eccentric for control; keep elbows still and core braced.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "ez_bar_curl_close_grip",
+    "exerciseId": "ez_bar_curl",
+    "nameIt": "Curl EZ presa stretta",
+    "nameEn": "Close-Grip EZ-Bar Curl",
+    "notesIt": "Presa più stretta per più brachiale; evita dondolii e ROM ridotto.",
+    "notesEn": "Closer grip for more brachialis; avoid swinging and shortened ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "ez_bar_curl_wide_grip",
+    "exerciseId": "ez_bar_curl",
+    "nameIt": "Curl EZ presa larga",
+    "nameEn": "Wide-Grip EZ-Bar Curl",
+    "notesIt": "Presa più larga per più enfasi bicipite; evita gomiti che si muovono avanti.",
+    "notesEn": "Wider grip for more biceps emphasis; avoid elbows drifting forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_incline_curl_supination_focus",
+    "exerciseId": "db_incline_curl",
+    "nameIt": "Curl inclinato focus supinazione",
+    "nameEn": "Incline Curl (Supination Focus)",
+    "notesIt": "Supina gradualmente per massima contrazione. Evita di alzare le spalle.",
+    "notesEn": "Gradually supinate for peak contraction. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "preacher_curl_machine_single_arm",
+    "exerciseId": "preacher_curl_machine",
+    "nameIt": "Preacher curl macchina a un braccio",
+    "nameEn": "Single-Arm Machine Preacher Curl",
+    "notesIt": "Un lato alla volta per simmetria; evita di ruotare il busto.",
+    "notesEn": "One side at a time for symmetry; avoid torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_biceps_curl_single_arm",
+    "exerciseId": "cable_biceps_curl",
+    "nameIt": "Curl al cavo a un braccio",
+    "nameEn": "Single-Arm Cable Curl",
+    "notesIt": "Un braccio alla volta per controllo; gomito stabile e polso neutro.",
+    "notesEn": "Single arm for control; keep elbow stable and wrist neutral.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_biceps_curl_behind_body",
+    "exerciseId": "cable_biceps_curl",
+    "nameIt": "Curl al cavo da dietro",
+    "nameEn": "Behind-the-Body Cable Curl",
+    "notesIt": "Partenza con braccio leggermente dietro per più allungamento. Evita spalle in avanti.",
+    "notesEn": "Start with the arm slightly behind for more stretch. Avoid shoulders rolling forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_rope_hammer_curl_high_anchor",
+    "exerciseId": "cable_rope_hammer_curl",
+    "nameIt": "Curl martello corda ancoraggio alto",
+    "nameEn": "High-Anchor Rope Hammer Curl",
+    "notesIt": "Linea di trazione diversa per avambracci; evita gomiti che si muovono.",
+    "notesEn": "Different line of pull for forearms; avoid elbow drift.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "concentration_curl_pause_top",
+    "exerciseId": "concentration_curl",
+    "nameIt": "Curl concentrazione con pausa in alto",
+    "nameEn": "Concentration Curl (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto senza perdere controllo. Evita slanci.",
+    "notesEn": "Pause 1 second at the top without losing control. Avoid swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "zottman_curl_tempo_3_0_1",
+    "exerciseId": "zottman_curl",
+    "nameIt": "Curl Zottman tempo 3-0-1",
+    "nameEn": "Zottman Curl Tempo 3-0-1",
+    "notesIt": "Discesa lenta in pronazione per avambracci. Evita polsi instabili.",
+    "notesEn": "Slow pronated lowering for forearms. Avoid unstable wrists.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "reverse_curl_bb_pause_top",
+    "exerciseId": "reverse_curl_bb",
+    "nameIt": "Reverse curl con pausa in alto",
+    "nameEn": "Reverse Curl (Top Pause)",
+    "notesIt": "Pausa breve in alto per controllo. Evita dondolii del busto.",
+    "notesEn": "Brief pause at the top for control. Avoid torso swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "triceps_pushdown_rope_pause_bottom",
+    "exerciseId": "triceps_pushdown_rope",
+    "nameIt": "Pushdown corda con pausa in basso",
+    "nameEn": "Rope Pushdown (Bottom Pause)",
+    "notesIt": "Pausa in basso per massima estensione. Evita spalle che si muovono.",
+    "notesEn": "Pause at the bottom for full extension. Avoid shoulder movement.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "triceps_pushdown_rope_single_arm",
+    "exerciseId": "triceps_pushdown_rope",
+    "nameIt": "Pushdown corda a un braccio",
+    "nameEn": "Single-Arm Rope Pushdown",
+    "notesIt": "Un lato alla volta per simmetria; gomito fermo e polso neutro.",
+    "notesEn": "Single arm for symmetry; keep elbow still and wrist neutral.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "triceps_pushdown_bar_reverse_grip",
+    "exerciseId": "triceps_pushdown_bar",
+    "nameIt": "Pushdown presa inversa",
+    "nameEn": "Reverse-Grip Triceps Pushdown",
+    "notesIt": "Presa supina per cambiare stimolo; evita spalle che avanzano e ROM corto.",
+    "notesEn": "Underhand grip to change stimulus; avoid shoulders drifting forward and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "overhead_triceps_extension_rope_staggered",
+    "exerciseId": "overhead_triceps_extension_rope",
+    "nameIt": "Estensioni sopra testa in affondo",
+    "nameEn": "Overhead Rope Extension (Staggered Stance)",
+    "notesIt": "Stance sfalsata per stabilità; evita iperlordosi e gomiti che si aprono.",
+    "notesEn": "Staggered stance for stability; avoid low-back overextension and flared elbows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "skull_crusher_ez_bar_incline",
+    "exerciseId": "skull_crusher_ez_bar",
+    "nameIt": "Skull crusher EZ su inclinata",
+    "nameEn": "Incline EZ-Bar Skull Crusher",
+    "notesIt": "Panca inclinata per aumentare allungamento. Evita gomiti che si aprono.",
+    "notesEn": "Incline bench increases stretch. Avoid flaring elbows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_overhead_triceps_extension_single_db",
+    "exerciseId": "db_overhead_triceps_extension",
+    "nameIt": "Estensione sopra testa con un manubrio",
+    "nameEn": "Single-Dumbbell Overhead Triceps Extension",
+    "notesIt": "Un manubrio a due mani; gomiti stretti e core attivo. Evita iperlordosi.",
+    "notesEn": "One dumbbell with both hands; keep elbows tucked and core braced. Avoid overextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_kickback_single_arm",
+    "exerciseId": "cable_kickback",
+    "nameIt": "Kickback al cavo a un braccio",
+    "nameEn": "Single-Arm Cable Kickback",
+    "notesIt": "Controlla la linea del braccio; evita spalla che si muove e slanci.",
+    "notesEn": "Control upper-arm line; avoid shoulder movement and swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_triceps_kickback_pause_top",
+    "exerciseId": "db_triceps_kickback",
+    "nameIt": "Kickback manubrio con pausa in alto",
+    "nameEn": "Dumbbell Kickback (Top Pause)",
+    "notesIt": "Pausa in massima estensione; evita ROM corto e slanci.",
+    "notesEn": "Pause at full extension; avoid short ROM and swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "close_grip_push_up_hands_elevated",
+    "exerciseId": "close_grip_push_up",
+    "nameIt": "Push-up presa stretta mani rialzate",
+    "nameEn": "Hands-Elevated Close-Grip Push-Up",
+    "notesIt": "Regressione per mantenere gomiti vicini e ROM completo. Evita bacino che cede.",
+    "notesEn": "Regression to keep elbows tucked and full ROM. Avoid sagging hips.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "close_grip_push_up_feet_elevated",
+    "exerciseId": "close_grip_push_up",
+    "nameIt": "Push-up presa stretta piedi rialzati",
+    "nameEn": "Feet-Elevated Close-Grip Push-Up",
+    "notesIt": "Progressione per più tricipite/spalle; mantieni core in bracing.",
+    "notesEn": "Progression for more triceps/shoulders; keep core braced.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bench_close_grip_push_up_pause_bottom",
+    "exerciseId": "bench_close_grip_push_up",
+    "nameIt": "Push-up stretti su panca con pausa in basso",
+    "nameEn": "Incline Close-Grip Push-Up (Bottom Pause)",
+    "notesIt": "Pausa breve in basso per controllo; evita spalle in avanti.",
+    "notesEn": "Brief pause at the bottom for control; avoid shoulders rolling forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_rdl_pause_mid_shin",
+    "exerciseId": "bb_rdl",
+    "nameIt": "RDL con pausa a metà stinco",
+    "nameEn": "RDL (Mid-Shin Pause)",
+    "notesIt": "Pausa breve per controllo e tensione sui femorali. Evita di perdere schiena neutra.",
+    "notesEn": "Brief pause to build control and hamstring tension. Avoid losing neutral spine.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_rdl_tempo_3_1_1",
+    "exerciseId": "bb_rdl",
+    "nameIt": "RDL tempo 3-1-1",
+    "nameEn": "RDL Tempo 3-1-1",
+    "notesIt": "Eccentrica lenta con pausa; non trasformarlo in squat.",
+    "notesEn": "Slow eccentric with a pause; don’t turn it into a squat.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_good_morning_pause_bottom",
+    "exerciseId": "bb_good_morning",
+    "nameIt": "Good morning con pausa in basso",
+    "nameEn": "Good Morning (Bottom Pause)",
+    "notesIt": "Pausa breve nel punto più basso mantenendo tensione. Evita flessione lombare.",
+    "notesEn": "Brief pause at the bottom while staying tight. Avoid lumbar flexion.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_swing_hardstyle",
+    "exerciseId": "kb_swing",
+    "nameIt": "Kettlebell swing hardstyle",
+    "nameEn": "Hardstyle Kettlebell Swing",
+    "notesIt": "Esplosivo e compatto; blocca in alto con glutei e core. Evita iperestensione.",
+    "notesEn": "Explosive and crisp; lock out with glutes and core. Avoid hyperextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "kb_swing_american",
+    "exerciseId": "kb_swing",
+    "nameIt": "Kettlebell swing americano",
+    "nameEn": "American Kettlebell Swing",
+    "notesIt": "Porta il kettlebell sopra la testa solo se controlli spalle e core. Evita arco lombare.",
+    "notesEn": "Take the bell overhead only if shoulders and core are controlled. Avoid low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_deadlift_suitcase",
+    "exerciseId": "kb_deadlift",
+    "nameIt": "Stacco kettlebell suitcase",
+    "nameEn": "Suitcase Kettlebell Deadlift",
+    "notesIt": "Kettlebell a lato per anti-rotazione; mantieni anche livellate. Evita inclinazioni.",
+    "notesEn": "Bell on one side for anti-rotation; keep hips level. Avoid leaning.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_hip_thrust_pause_top",
+    "exerciseId": "bb_hip_thrust",
+    "nameIt": "Hip thrust con pausa in alto",
+    "nameEn": "Hip Thrust (Top Pause)",
+    "notesIt": "Pausa 1-2 secondi in massima estensione senza iperestendere la schiena.",
+    "notesEn": "Hold 1–2 seconds at full extension without overextending the back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_hip_thrust_tempo_3_0_1",
+    "exerciseId": "bb_hip_thrust",
+    "nameIt": "Hip thrust tempo 3-0-1",
+    "nameEn": "Hip Thrust Tempo 3-0-1",
+    "notesIt": "Discesa lenta per controllo; evita rimbalzo e ROM corto.",
+    "notesEn": "Slow lowering for control; avoid bouncing and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_hip_thrust_single_leg",
+    "exerciseId": "machine_hip_thrust",
+    "nameIt": "Hip thrust macchina a una gamba",
+    "nameEn": "Single-Leg Machine Hip Thrust",
+    "notesIt": "Un lato alla volta per simmetria; mantieni bacino stabile e ROM controllato.",
+    "notesEn": "One side at a time for symmetry; keep pelvis stable and ROM controlled.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_pull_through_pause_out",
+    "exerciseId": "cable_pull_through",
+    "nameIt": "Pull-through con pausa in chiusura",
+    "nameEn": "Cable Pull-Through (Lockout Pause)",
+    "notesIt": "Pausa in estensione d'anca per sentire i glutei. Evita iperestensione lombare.",
+    "notesEn": "Pause at hip extension to feel glutes. Avoid low-back hyperextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "back_extension_glute_bias",
+    "exerciseId": "back_extension",
+    "nameIt": "Back extension focus glutei",
+    "nameEn": "Back Extension (Glute Bias)",
+    "notesIt": "Leggera flessione di ginocchio e focus su estensione d'anca. Evita iperestensione in alto.",
+    "notesEn": "Slight knee bend and focus on hip extension. Avoid hyperextending at the top.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "back_extension_pause_top",
+    "exerciseId": "back_extension",
+    "nameIt": "Back extension con pausa in alto",
+    "nameEn": "Back Extension (Top Pause)",
+    "notesIt": "Pausa breve in alto mantenendo core attivo. Evita di spingere con la schiena.",
+    "notesEn": "Brief pause at the top with an active core. Avoid driving from the low back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "reverse_hyperextension_slow_eccentric",
+    "exerciseId": "reverse_hyperextension",
+    "nameIt": "Reverse hyper eccentrica lenta",
+    "nameEn": "Reverse Hyper (Slow Eccentric)",
+    "notesIt": "Ritorno lento per controllo; evita slanci eccessivi.",
+    "notesEn": "Slow return for control; avoid excessive swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lying_leg_curl_machine_single_leg",
+    "exerciseId": "lying_leg_curl_machine",
+    "nameIt": "Leg curl sdraiato a una gamba",
+    "nameEn": "Single-Leg Lying Leg Curl",
+    "notesIt": "Un lato alla volta; mantieni bacino giù e ROM completo.",
+    "notesEn": "Single-leg; keep hips down and use full ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "lying_leg_curl_machine_pause_contraction",
+    "exerciseId": "lying_leg_curl_machine",
+    "nameIt": "Leg curl sdraiato pausa in chiusura",
+    "nameEn": "Lying Leg Curl (Squeeze Pause)",
+    "notesIt": "Pausa 1 secondo in contrazione; evita rimbalzi e fianchi che si alzano.",
+    "notesEn": "Pause 1 second at peak contraction; avoid bouncing and hip lift.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "seated_leg_curl_machine_single_leg",
+    "exerciseId": "seated_leg_curl_machine",
+    "nameIt": "Leg curl seduto a una gamba",
+    "nameEn": "Single-Leg Seated Leg Curl",
+    "notesIt": "Un lato alla volta per simmetria; evita di staccare la schiena dallo schienale.",
+    "notesEn": "Single-leg for symmetry; avoid lifting the back off the pad.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "standing_leg_curl_machine_slow_eccentric",
+    "exerciseId": "standing_leg_curl_machine",
+    "nameIt": "Leg curl in piedi eccentrica lenta",
+    "nameEn": "Standing Leg Curl (Slow Eccentric)",
+    "notesIt": "Eccentrica lenta per controllo; evita oscillazioni del bacino.",
+    "notesEn": "Slow eccentric for control; avoid hip swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "nordic_hamstring_curl_assisted",
+    "exerciseId": "nordic_hamstring_curl",
+    "nameIt": "Nordic curl assistito",
+    "nameEn": "Assisted Nordic Curl",
+    "notesIt": "Usa assistenza (mani/elastico) per mantenere controllo. Evita collasso rapido.",
+    "notesEn": "Use assistance (hands/band) to keep control. Avoid fast collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_glute_bridge_pause_top",
+    "exerciseId": "bb_glute_bridge",
+    "nameIt": "Glute bridge bilanciere con pausa in alto",
+    "nameEn": "Barbell Glute Bridge (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto senza iperestendere. Spingi coi talloni.",
+    "notesEn": "Pause 1 second at the top without hyperextending. Drive through heels.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "frog_pump_pause_top",
+    "exerciseId": "frog_pump",
+    "nameIt": "Frog pump con pausa in alto",
+    "nameEn": "Frog Pump (Top Pause)",
+    "notesIt": "Pausa breve per sentire glutei; evita spinta lombare.",
+    "notesEn": "Brief pause to feel glutes; avoid low-back drive.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "banded_glute_bridge_abduction_hold",
+    "exerciseId": "banded_glute_bridge",
+    "nameIt": "Glute bridge con elastico + tenuta abduzione",
+    "nameEn": "Banded Glute Bridge + Abduction Hold",
+    "notesIt": "Mantieni ginocchia spinte fuori durante la pausa. Evita collasso verso l'interno.",
+    "notesEn": "Keep knees pushed out during the hold. Avoid caving inward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_back_lunge_pause_bottom",
+    "exerciseId": "bb_back_lunge",
+    "nameIt": "Affondo indietro bilanciere con pausa in basso",
+    "nameEn": "Barbell Reverse Lunge (Bottom Pause)",
+    "notesIt": "Pausa breve in basso per stabilità. Evita perdita di equilibrio e ginocchio che collassa.",
+    "notesEn": "Brief pause at the bottom for stability. Avoid losing balance and knee cave.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_reverse_lunge_alternating",
+    "exerciseId": "db_reverse_lunge",
+    "nameIt": "Affondi indietro alternati",
+    "nameEn": "Alternating Reverse Lunges",
+    "notesIt": "Alterna le gambe mantenendo passo costante. Evita passi troppo corti.",
+    "notesEn": "Alternate legs with consistent step length. Avoid overly short steps.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_forward_lunge_pause_bottom",
+    "exerciseId": "db_forward_lunge",
+    "nameIt": "Affondo avanti con pausa in basso",
+    "nameEn": "Forward Lunge (Bottom Pause)",
+    "notesIt": "Pausa breve per controllo. Evita impatto eccessivo e ginocchio che collassa.",
+    "notesEn": "Brief pause for control. Avoid hard impact and knee cave.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "walking_lunge_bodyweight_long_step",
+    "exerciseId": "walking_lunge_bodyweight",
+    "nameIt": "Affondi camminati passo lungo",
+    "nameEn": "Walking Lunge (Long Step)",
+    "notesIt": "Passo lungo per più gluteo; mantieni busto stabile.",
+    "notesEn": "Long step for more glute; keep torso stable.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "curtsy_lunge_db",
+    "exerciseId": "curtsy_lunge",
+    "nameIt": "Affondo curtsy con manubri",
+    "nameEn": "Dumbbell Curtsy Lunge",
+    "notesIt": "Aggiungi carico mantenendo controllo del ginocchio. Evita rotazioni.",
+    "notesEn": "Add load while keeping knee control. Avoid twisting.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cossack_squat_assisted",
+    "exerciseId": "cossack_squat",
+    "nameIt": "Cossack squat assistito",
+    "nameEn": "Assisted Cossack Squat",
+    "notesIt": "Usa un supporto per equilibrio e profondità. Evita collasso del ginocchio.",
+    "notesEn": "Use support for balance and depth. Avoid knee collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "side_lunge_db",
+    "exerciseId": "side_lunge",
+    "nameIt": "Affondo laterale con manubri",
+    "nameEn": "Dumbbell Side Lunge",
+    "notesIt": "Carico ai lati e hinge controllato. Evita spostare peso sulle punte.",
+    "notesEn": "Load at the sides with a controlled hinge. Avoid shifting to the toes.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lateral_step_up_db",
+    "exerciseId": "lateral_step_up",
+    "nameIt": "Step-up laterale con manubri",
+    "nameEn": "Dumbbell Lateral Step-Up",
+    "notesIt": "Aumenta il carico mantenendo ginocchio in linea. Evita slanci.",
+    "notesEn": "Add load while keeping the knee tracking. Avoid jumping.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "step_down_slow_eccentric",
+    "exerciseId": "step_down",
+    "nameIt": "Step-down eccentrica lenta",
+    "nameEn": "Step-Down (Slow Eccentric)",
+    "notesIt": "Scendi lentamente per controllo del ginocchio. Evita impatto e bacino che cade.",
+    "notesEn": "Lower slowly for knee control. Avoid hard contact and hip drop.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "wall_sit_single_leg_shift",
+    "exerciseId": "wall_sit",
+    "nameIt": "Wall sit con spostamento su una gamba",
+    "nameEn": "Wall Sit (Single-Leg Shift)",
+    "notesIt": "Sposta il peso alternando lato per lato. Evita ginocchia che collassano.",
+    "notesEn": "Shift weight side to side. Avoid knees caving.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "leg_extension_machine_single_leg",
+    "exerciseId": "leg_extension_machine",
+    "nameIt": "Leg extension a una gamba",
+    "nameEn": "Single-Leg Leg Extension",
+    "notesIt": "Un lato alla volta per simmetria; pausa in chiusura e controllo in discesa.",
+    "notesEn": "Single leg for symmetry; pause at lockout and control the lowering.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "leg_extension_machine_pause_top",
+    "exerciseId": "leg_extension_machine",
+    "nameIt": "Leg extension con pausa in alto",
+    "nameEn": "Leg Extension (Top Pause)",
+    "notesIt": "Pausa 1 secondo in massimo accorciamento; evita slanci.",
+    "notesEn": "Pause 1 second at peak contraction; avoid swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "sissy_squat_assisted",
+    "exerciseId": "sissy_squat",
+    "nameIt": "Sissy squat assistito",
+    "nameEn": "Assisted Sissy Squat",
+    "notesIt": "Usa supporto per equilibrio e ROM. Evita dolore e perdita di controllo.",
+    "notesEn": "Use support for balance and ROM. Avoid pain and loss of control.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "belt_squat_wide_stance",
+    "exerciseId": "belt_squat",
+    "nameIt": "Belt squat stance larga",
+    "nameEn": "Belt Squat (Wide Stance)",
+    "notesIt": "Stance più larga per glutei/adduttori. Evita ROM corto e oscillazioni.",
+    "notesEn": "Wider stance for glutes/adductors. Avoid short ROM and swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "belt_squat_narrow_stance",
+    "exerciseId": "belt_squat",
+    "nameIt": "Belt squat stance stretta",
+    "nameEn": "Belt Squat (Narrow Stance)",
+    "notesIt": "Stance stretta per quadricipiti; controlla ginocchia in linea.",
+    "notesEn": "Narrow stance for quads; keep knees tracking.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "smith_split_squat_front_foot_forward",
+    "exerciseId": "smith_split_squat",
+    "nameIt": "Split squat Smith con piede avanti avanzato",
+    "nameEn": "Smith Split Squat (Front Foot Forward)",
+    "notesIt": "Piede avanti più distante per più gluteo. Evita ROM parziale e ginocchio instabile.",
+    "notesEn": "Front foot farther for more glute. Avoid partial ROM and knee wobble.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_sumo_squat_pause_bottom",
+    "exerciseId": "db_sumo_squat",
+    "nameIt": "Squat sumo con pausa in basso",
+    "nameEn": "Dumbbell Sumo Squat (Bottom Pause)",
+    "notesIt": "Pausa breve per controllo e adduttori. Evita collasso del busto.",
+    "notesEn": "Brief pause for control and adductors. Avoid torso collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_sumo_deadlift_pause_shin",
+    "exerciseId": "bb_sumo_deadlift",
+    "nameIt": "Stacco sumo con pausa allo stinco",
+    "nameEn": "Sumo Deadlift (Paused at Shin)",
+    "notesIt": "Pausa poco sopra il pavimento mantenendo barra vicina. Evita che le anche salgano troppo presto.",
+    "notesEn": "Pause just off the floor with the bar close. Avoid hips shooting up early.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_deficit_deadlift_pause_floor",
+    "exerciseId": "bb_deficit_deadlift",
+    "nameIt": "Deficit deadlift con pausa vicino al pavimento",
+    "nameEn": "Deficit Deadlift (Low Pause)",
+    "notesIt": "Pausa breve nella prima fase mantenendo tensione. Evita schiena che si arrotonda.",
+    "notesEn": "Brief pause early in the pull while staying tight. Avoid rounding the back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_rack_pull_knee_height",
+    "exerciseId": "bb_rack_pull",
+    "nameIt": "Rack pull altezza ginocchio",
+    "nameEn": "Rack Pull (Knee Height)",
+    "notesIt": "Partenza all'altezza del ginocchio per lockout. Evita iperestensione in alto.",
+    "notesEn": "Start around knee height for lockout work. Avoid hyperextending at the top.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_bent_over_row_pause_top",
+    "exerciseId": "bb_bent_over_row",
+    "nameIt": "Rematore bilanciere pausa in alto",
+    "nameEn": "Bent-Over Row (Top Pause)",
+    "notesIt": "Pausa breve al contatto per controllo scapolare. Evita slanci con le anche.",
+    "notesEn": "Brief pause at the top for scapular control. Avoid hip momentum.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pendlay_row_cluster",
+    "exerciseId": "pendlay_row",
+    "nameIt": "Pendlay row cluster",
+    "nameEn": "Pendlay Row Cluster",
+    "notesIt": "Ripetizioni singole con pause brevi per mantenere tecnica. Evita di perdere posizione del busto.",
+    "notesEn": "Singles with short rests to maintain technique. Avoid losing torso position.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "t_bar_row_neutral_grip",
+    "exerciseId": "t_bar_row",
+    "nameIt": "T-bar row presa neutra",
+    "nameEn": "Neutral-Grip T-Bar Row",
+    "notesIt": "Presa neutra per comfort e focus lats. Evita ROM corto e schiena che si muove.",
+    "notesEn": "Neutral grip for comfort and lat focus. Avoid short ROM and excessive torso movement.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "chest_supported_row_db_neutral_grip",
+    "exerciseId": "chest_supported_row_db",
+    "nameIt": "Rematore chest-supported presa neutra",
+    "nameEn": "Chest-Supported Row (Neutral Grip)",
+    "notesIt": "Presa neutra per lats; evita spalle alte.",
+    "notesEn": "Neutral grip for lats; avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "one_arm_cable_row_pause",
+    "exerciseId": "one_arm_cable_row",
+    "nameIt": "Rematore cavo 1 braccio con pausa",
+    "nameEn": "Single-Arm Cable Row (Pause)",
+    "notesIt": "Pausa breve in chiusura; evita rotazioni del busto.",
+    "notesEn": "Brief pause at peak; avoid torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "straight_arm_pulldown_rope",
+    "exerciseId": "straight_arm_pulldown",
+    "nameIt": "Pulldown braccia tese alla corda",
+    "nameEn": "Rope Straight-Arm Pulldown",
+    "notesIt": "Usa corda per comfort; mantieni gomiti quasi tesi e costole giù.",
+    "notesEn": "Use rope for comfort; keep elbows nearly straight and ribs down.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pullover_db_bent_arm",
+    "exerciseId": "pullover_db",
+    "nameIt": "Pullover manubrio gomiti più piegati",
+    "nameEn": "Dumbbell Pullover (More Elbow Bend)",
+    "notesIt": "Più piega gomito per comfort spalla; evita arco lombare.",
+    "notesEn": "More elbow bend for shoulder comfort; avoid low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_pullover_pause_squeeze",
+    "exerciseId": "machine_pullover",
+    "nameIt": "Pullover macchina pausa in chiusura",
+    "nameEn": "Machine Pullover (Squeeze Pause)",
+    "notesIt": "Pausa 1 secondo in basso per sentire i dorsali. Evita spalle alte.",
+    "notesEn": "Pause 1 second at the bottom to feel the lats. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "inverted_row_supinated",
+    "exerciseId": "inverted_row",
+    "nameIt": "Inverted row presa supina",
+    "nameEn": "Supinated Inverted Row",
+    "notesIt": "Presa supina per più bicipite; mantieni corpo in linea.",
+    "notesEn": "Supinated grip for more biceps; keep body rigid.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "inverted_row_feet_elevated_wide_grip",
+    "exerciseId": "inverted_row_feet_elevated",
+    "nameIt": "Inverted row piedi rialzati presa larga",
+    "nameEn": "Feet-Elevated Inverted Row (Wide Grip)",
+    "notesIt": "Presa più larga per dorso alto; evita spalle che collassano.",
+    "notesEn": "Wider grip for upper back; avoid shoulders collapsing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "dead_hang_active",
+    "exerciseId": "dead_hang",
+    "nameIt": "Dead hang attivo",
+    "nameEn": "Active Hang",
+    "notesIt": "Leggera depressione scapolare mantenendo gomiti tesi. Evita tensione cervicale.",
+    "notesEn": "Slight scapular depression with straight elbows. Avoid neck tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "scapular_pull_up_hold",
+    "exerciseId": "scapular_pull_up",
+    "nameIt": "Trazioni scapolari con tenuta",
+    "nameEn": "Scapular Pull-Up (Hold)",
+    "notesIt": "Tieni 1-2 secondi in depressione. Evita piegare i gomiti.",
+    "notesEn": "Hold 1–2 seconds in depression. Avoid bending elbows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "shrug_bb_pause_top",
+    "exerciseId": "shrug_bb",
+    "nameIt": "Scrollate bilanciere pausa in alto",
+    "nameEn": "Barbell Shrug (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto; evita rotazioni del collo.",
+    "notesEn": "Pause 1 second at the top; avoid neck rolling.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "shrug_db_seated",
+    "exerciseId": "shrug_db",
+    "nameIt": "Scrollate manubri seduto",
+    "nameEn": "Seated Dumbbell Shrug",
+    "notesIt": "Seduto per ridurre slanci; evita spalle che ruotano.",
+    "notesEn": "Seated to reduce momentum; avoid rolling shoulders.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "farmer_carry_db_heavy_short",
+    "exerciseId": "farmer_carry_db",
+    "nameIt": "Farmer carry pesante (tratti brevi)",
+    "nameEn": "Heavy Farmer Carry (Short Distance)",
+    "notesIt": "Carico alto e distanza breve mantenendo postura. Evita spalle alte e passi instabili.",
+    "notesEn": "Heavy load for a short distance with good posture. Avoid shrugging and unstable steps.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "suitcase_carry_kb_switch",
+    "exerciseId": "suitcase_carry_kb",
+    "nameIt": "Suitcase carry con cambio lato",
+    "nameEn": "Suitcase Carry (Side Switch)",
+    "notesIt": "Cambia lato a metà distanza mantenendo busto verticale. Evita inclinazioni laterali.",
+    "notesEn": "Switch sides mid-distance while staying tall. Avoid side bending.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "plank_rkc",
+    "exerciseId": "plank",
+    "nameIt": "Plank RKC",
+    "nameEn": "RKC Plank",
+    "notesIt": "Versione più intensa: contrai glutei e addome al massimo, gomiti che 'tirano' verso i piedi. Evita trattenere il respiro.",
+    "notesEn": "Harder version: squeeze glutes and abs hard and drag elbows toward feet. Avoid holding your breath.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "plank_shoulder_tap",
+    "exerciseId": "plank",
+    "nameIt": "Plank con tap spalle",
+    "nameEn": "Plank Shoulder Taps",
+    "notesIt": "Tocca una spalla alla volta mantenendo bacino fermo. Evita rotazioni.",
+    "notesEn": "Tap one shoulder at a time keeping hips still. Avoid rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "side_plank_knee_down",
+    "exerciseId": "side_plank",
+    "nameIt": "Side plank con ginocchio a terra",
+    "nameEn": "Side Plank (Knee Down)",
+    "notesIt": "Regressione per imparare allineamento e controllo. Evita spalla che sale.",
+    "notesEn": "Regression to learn alignment and control. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "side_plank_star",
+    "exerciseId": "side_plank",
+    "nameIt": "Side plank star",
+    "nameEn": "Star Side Plank",
+    "notesIt": "Solleva la gamba superiore per aumentare lavoro su abduttori. Evita bacino che ruota.",
+    "notesEn": "Lift the top leg to increase abductor demand. Avoid hip rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "dead_bug_band_resisted",
+    "exerciseId": "dead_bug",
+    "nameIt": "Dead bug con elastico",
+    "nameEn": "Band-Resisted Dead Bug",
+    "notesIt": "Aggiungi resistenza per anti-estensione; lombari sempre a terra.",
+    "notesEn": "Add resistance for anti-extension; keep low back flat.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bird_dog_pause",
+    "exerciseId": "bird_dog",
+    "nameIt": "Bird dog con pausa",
+    "nameEn": "Bird Dog (Pause)",
+    "notesIt": "Pausa 1-2 secondi in estensione mantenendo bacino stabile. Evita rotazioni.",
+    "notesEn": "Hold 1–2 seconds at full reach with stable hips. Avoid rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "hollow_body_hold_tuck",
+    "exerciseId": "hollow_body_hold",
+    "nameIt": "Hollow hold in raccolta",
+    "nameEn": "Tuck Hollow Hold",
+    "notesIt": "Regressione con ginocchia al petto mantenendo lombari a terra.",
+    "notesEn": "Regression with knees tucked while keeping low back down.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "hollow_body_hold_rock",
+    "exerciseId": "hollow_body_hold",
+    "nameIt": "Hollow rock",
+    "nameEn": "Hollow Rock",
+    "notesIt": "Oscilla mantenendo forma hollow. Evita perdere retroversione del bacino.",
+    "notesEn": "Rock while maintaining hollow position. Avoid losing posterior pelvic tilt.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "hanging_knee_raise_twist",
+    "exerciseId": "hanging_knee_raise",
+    "nameIt": "Knee raise alla sbarra con rotazione",
+    "nameEn": "Hanging Knee Raise with Twist",
+    "notesIt": "Porta le ginocchia verso un lato alternando. Evita slanci e spalle passive.",
+    "notesEn": "Raise knees toward one side alternating. Avoid swinging and passive shoulders.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "hanging_leg_raise_toes_to_bar",
+    "exerciseId": "hanging_leg_raise",
+    "nameIt": "Toes-to-bar",
+    "nameEn": "Toes-to-Bar",
+    "notesIt": "Porta i piedi alla sbarra con controllo scapolare. Evita kipping se non controllato.",
+    "notesEn": "Bring toes to the bar with scapular control. Avoid uncontrolled kipping.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "captains_chair_knee_raise_pause_top",
+    "exerciseId": "captains_chair_knee_raise",
+    "nameIt": "Captain chair knee raise con pausa",
+    "nameEn": "Captain's Chair Knee Raise (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto; evita slanci.",
+    "notesEn": "Pause 1 second at the top; avoid swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_crunch_kneeling",
+    "exerciseId": "cable_crunch",
+    "nameIt": "Crunch al cavo in ginocchio",
+    "nameEn": "Kneeling Cable Crunch",
+    "notesIt": "In ginocchio per più stabilità; espira nella chiusura e mantieni bacino fermo.",
+    "notesEn": "Kneeling for stability; exhale as you crunch and keep pelvis steady.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "ab_wheel_rollout_knee",
+    "exerciseId": "ab_wheel_rollout",
+    "nameIt": "Ab wheel rollout dalle ginocchia",
+    "nameEn": "Kneeling Ab Wheel Rollout",
+    "notesIt": "Versione base: ROM solo quanto mantieni lombari neutre.",
+    "notesEn": "Base version: only roll as far as you can keep a neutral low back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "ab_wheel_rollout_wall",
+    "exerciseId": "ab_wheel_rollout",
+    "nameIt": "Ab wheel rollout al muro",
+    "nameEn": "Wall Ab Wheel Rollout",
+    "notesIt": "Usa un muro come stop per dose del ROM. Evita crollo lombare.",
+    "notesEn": "Use a wall as a ROM limiter. Avoid low-back collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "mountain_climber_slow",
+    "exerciseId": "mountain_climber",
+    "nameIt": "Mountain climber lento",
+    "nameEn": "Slow Mountain Climber",
+    "notesIt": "Versione controllata per core; bacino stabile e passo lento.",
+    "notesEn": "Controlled version for core; keep hips stable and move slowly.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "mountain_climber_fast",
+    "exerciseId": "mountain_climber",
+    "nameIt": "Mountain climber veloce",
+    "nameEn": "Fast Mountain Climber",
+    "notesIt": "Aumenta ritmo mantenendo forma. Evita bacino alto.",
+    "notesEn": "Increase pace while keeping form. Avoid high hips.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "russian_twist_feet_up",
+    "exerciseId": "russian_twist",
+    "nameIt": "Russian twist piedi sollevati",
+    "nameEn": "Russian Twist (Feet Up)",
+    "notesIt": "Piedi sollevati per più core; evita arrotondare la schiena.",
+    "notesEn": "Feet up for more core demand; avoid rounding the back.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "pallof_press_half_kneeling",
+    "exerciseId": "pallof_press",
+    "nameIt": "Pallof press in mezzo ginocchio",
+    "nameEn": "Half-Kneeling Pallof Press",
+    "notesIt": "Posizione stabile per anti-rotazione; costole giù e gluteo attivo.",
+    "notesEn": "Stable anti-rotation position; ribs down and glute engaged.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_woodchop_high_to_low",
+    "exerciseId": "cable_woodchop",
+    "nameIt": "Woodchop alto-basso",
+    "nameEn": "High-to-Low Woodchop",
+    "notesIt": "Linea diagonale dall'alto verso il basso; evita strattoni.",
+    "notesEn": "Diagonal line high to low; avoid yanking.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "cable_woodchop_low_to_high",
+    "exerciseId": "cable_woodchop",
+    "nameIt": "Woodchop basso-alto",
+    "nameEn": "Low-to-High Woodchop",
+    "notesIt": "Linea diagonale dal basso verso l'alto; evita bacino che ruota troppo.",
+    "notesEn": "Diagonal line low to high; avoid excessive hip rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "superman_hold_alt_reach",
+    "exerciseId": "superman_hold",
+    "nameIt": "Superman hold con alternanza braccia",
+    "nameEn": "Superman Hold (Alternating Reach)",
+    "notesIt": "Alterna braccia mantenendo controllo. Evita dolore lombare eccessivo.",
+    "notesEn": "Alternate arms while staying controlled. Avoid excessive low-back discomfort.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_calf_raise_standing_pause_top",
+    "exerciseId": "bb_calf_raise_standing",
+    "nameIt": "Calf raise bilanciere con pausa in alto",
+    "nameEn": "Standing Barbell Calf Raise (Top Pause)",
+    "notesIt": "Pausa 1-2 secondi in alto; discesa lenta. Evita rimbalzi.",
+    "notesEn": "Hold 1–2 seconds at the top; lower slowly. Avoid bouncing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_calf_raise_standing_single_leg",
+    "exerciseId": "db_calf_raise_standing",
+    "nameIt": "Calf raise con manubrio a una gamba",
+    "nameEn": "Single-Leg Dumbbell Calf Raise",
+    "notesIt": "Un lato alla volta per simmetria; ROM completo su gradino.",
+    "notesEn": "Single leg for symmetry; full ROM on a step.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_calf_raise_standing_slow_eccentric",
+    "exerciseId": "machine_calf_raise_standing",
+    "nameIt": "Calf raise macchina eccentrica lenta",
+    "nameEn": "Standing Machine Calf Raise (Slow Eccentric)",
+    "notesIt": "Discesa lenta 3 secondi; evita mezze ripetizioni.",
+    "notesEn": "Lower for 3 seconds; avoid half reps.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "machine_calf_raise_seated_pause_top",
+    "exerciseId": "machine_calf_raise_seated",
+    "nameIt": "Calf raise seduto con pausa in alto",
+    "nameEn": "Seated Calf Raise (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto; controlla la discesa.",
+    "notesEn": "Pause 1 second at the top; control the descent.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "single_leg_calf_raise_knee_bent",
+    "exerciseId": "single_leg_calf_raise",
+    "nameIt": "Calf raise 1 gamba con ginocchio piegato",
+    "nameEn": "Single-Leg Calf Raise (Bent Knee)",
+    "notesIt": "Ginocchio leggermente piegato per più soleo. Evita ROM corto.",
+    "notesEn": "Slight knee bend for more soleus. Avoid short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "tibialis_raise_wall",
+    "exerciseId": "tibialis_raise",
+    "nameIt": "Tibialis raise al muro",
+    "nameEn": "Wall Tibialis Raise",
+    "notesIt": "Schiena al muro e solleva punte; controllo senza slanci.",
+    "notesEn": "Back against a wall and lift toes; control without swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "leg_press_calf_raise_pause_top",
+    "exerciseId": "leg_press_calf_raise",
+    "nameIt": "Calf raise leg press con pausa in alto",
+    "nameEn": "Leg Press Calf Raise (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto; evita piegare le ginocchia.",
+    "notesEn": "Pause 1 second at the top; avoid bending the knees.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "donkey_calf_raise_slow_eccentric",
+    "exerciseId": "donkey_calf_raise",
+    "nameIt": "Donkey calf raise eccentrica lenta",
+    "nameEn": "Donkey Calf Raise (Slow Eccentric)",
+    "notesIt": "Discesa lenta per allungamento; evita rimbalzi.",
+    "notesEn": "Slow lower for stretch; avoid bouncing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "jump_rope_single_under",
+    "exerciseId": "jump_rope",
+    "nameIt": "Corda single-under",
+    "nameEn": "Single-Under Jump Rope",
+    "notesIt": "Salti bassi e costanti; polsi che guidano. Evita braccia larghe.",
+    "notesEn": "Low, consistent hops; wrists drive the rope. Avoid wide arms.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "jump_rope_double_under",
+    "exerciseId": "jump_rope",
+    "nameIt": "Corda double-under",
+    "nameEn": "Double-Under Jump Rope",
+    "notesIt": "Due giri per salto; mantieni corpo rigido e ritmo. Evita salti troppo alti.",
+    "notesEn": "Two rope passes per jump; keep body tight and rhythm steady. Avoid jumping too high.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "box_jump_step_down",
+    "exerciseId": "box_jump",
+    "nameIt": "Box jump con discesa in step-down",
+    "nameEn": "Box Jump (Step-Down)",
+    "notesIt": "Scendi dal box con controllo per ridurre stress. Evita saltare giù pesantemente.",
+    "notesEn": "Step down under control to reduce stress. Avoid jumping down heavily.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "burpee_no_push_up",
+    "exerciseId": "burpee",
+    "nameIt": "Burpee senza push-up",
+    "nameEn": "Burpee (No Push-Up)",
+    "notesIt": "Regressione: elimina la parte di spinta. Mantieni ritmo e postura.",
+    "notesEn": "Regression: remove the push-up portion. Keep rhythm and posture.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "burpee_push_up",
+    "exerciseId": "burpee",
+    "nameIt": "Burpee con push-up",
+    "nameEn": "Burpee with Push-Up",
+    "notesIt": "Aggiungi un push-up in basso mantenendo core attivo. Evita schiena che cede.",
+    "notesEn": "Add a push-up at the bottom with an active core. Avoid sagging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bear_crawl_forward_backward",
+    "exerciseId": "bear_crawl",
+    "nameIt": "Bear crawl avanti e indietro",
+    "nameEn": "Bear Crawl Forward/Backward",
+    "notesIt": "Cambia direzione mantenendo controllo del bacino. Evita oscillazioni.",
+    "notesEn": "Switch direction while keeping hips controlled. Avoid swaying.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "sled_push_heavy_short",
+    "exerciseId": "sled_push",
+    "nameIt": "Sled push pesante (tratti brevi)",
+    "nameEn": "Heavy Sled Push (Short Distance)",
+    "notesIt": "Carico alto, passi corti, postura compatta. Evita collasso del tronco.",
+    "notesEn": "Heavy load, short steps, compact posture. Avoid torso collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "rower_interval_30_30",
+    "exerciseId": "rower_interval",
+    "nameIt": "Vogatore 30\" ON / 30\" OFF",
+    "nameEn": "Rower 30s ON / 30s OFF",
+    "notesIt": "Intervalli brevi curando tecnica. Evita partire a tutta e perdere forma.",
+    "notesEn": "Short intervals while keeping technique. Avoid going all-out and losing form.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "assault_bike_interval_20_40",
+    "exerciseId": "assault_bike_interval",
+    "nameIt": "Air bike 20\" ON / 40\" OFF",
+    "nameEn": "Air Bike 20s ON / 40s OFF",
+    "notesIt": "Gestisci la potenza per qualità ripetibile. Evita postura chiusa e spalle alte.",
+    "notesEn": "Pace output for repeatable quality. Avoid rounded posture and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "face_pull_rope_external_rotation",
+    "exerciseId": "face_pull_rope",
+    "nameIt": "Face pull + extra-rotazione",
+    "nameEn": "Face Pull + External Rotation",
+    "notesIt": "Finisci in 'doppio bicipite' per cuffia. Evita spalle alte e arco lombare.",
+    "notesEn": "Finish in a 'double biceps' position for cuff work. Avoid shrugging and low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "face_pull_rope_high_anchor",
+    "exerciseId": "face_pull_rope",
+    "nameIt": "Face pull ancoraggio alto",
+    "nameEn": "High-Anchor Face Pull",
+    "notesIt": "Linea più alta per dorso alto; controlla scapole. Evita ROM corto.",
+    "notesEn": "Higher line for upper back; control scapulae. Avoid short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_external_rotation_elbow_on_towel",
+    "exerciseId": "cable_external_rotation",
+    "nameIt": "Extra-rotazioni cavo con asciugamano al gomito",
+    "nameEn": "Cable External Rotation (Towel Under Elbow)",
+    "notesIt": "Asciugamano per mantenere posizione del gomito e scapola. Evita compensi del busto.",
+    "notesEn": "Towel helps maintain elbow/scapular position. Avoid torso compensation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "band_external_rotation_isometric_hold",
+    "exerciseId": "band_external_rotation",
+    "nameIt": "Extra-rotazioni elastico con tenuta",
+    "nameEn": "Band External Rotation (Isometric Hold)",
+    "notesIt": "Tieni 2 secondi in massima extra-rotazione. Evita spalla che avanza.",
+    "notesEn": "Hold 2 seconds at peak external rotation. Avoid shoulder drift forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "band_internal_rotation_slow_eccentric",
+    "exerciseId": "band_internal_rotation",
+    "nameIt": "Intra-rotazioni elastico eccentrica lenta",
+    "nameEn": "Band Internal Rotation (Slow Eccentric)",
+    "notesIt": "Ritorno lento per controllo. Evita ROM corto e spalla che collassa.",
+    "notesEn": "Slow return for control. Avoid short ROM and shoulder collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "ytw_raise_prone",
+    "exerciseId": "ytw_raise",
+    "nameIt": "Y-T-W da prono",
+    "nameEn": "Prone Y-T-W Raises",
+    "notesIt": "Da prono su panca: movimenti piccoli e controllati. Evita spalle alte.",
+    "notesEn": "Prone on a bench: small, controlled reps. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "prone_cobra_breathing",
+    "exerciseId": "prone_cobra",
+    "nameIt": "Prone cobra con respirazione",
+    "nameEn": "Prone Cobra (Breathing)",
+    "notesIt": "Respira mantenendo scapole in retrazione/depressione. Evita tensione cervicale.",
+    "notesEn": "Breathe while holding scapulae retracted/depressed. Avoid neck tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "scapular_wall_slide_band",
+    "exerciseId": "scapular_wall_slide",
+    "nameIt": "Wall slide scapolare con elastico",
+    "nameEn": "Banded Scapular Wall Slide",
+    "notesIt": "Elastico sui polsi per attivare extrarotatori/serrato. Evita arco lombare.",
+    "notesEn": "Band on wrists to activate external rotators/serratus. Avoid low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "band_pull_apart_overhand",
+    "exerciseId": "band_pull_apart",
+    "nameIt": "Pull-apart presa prona",
+    "nameEn": "Overhand Band Pull-Apart",
+    "notesIt": "Presa prona per più deltoidi posteriori. Evita spalle alte.",
+    "notesEn": "Overhand grip biases rear delts. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "band_pull_apart_underhand",
+    "exerciseId": "band_pull_apart",
+    "nameIt": "Pull-apart presa supina",
+    "nameEn": "Underhand Band Pull-Apart",
+    "notesIt": "Presa supina per cambiare angolo; controllo scapolare. Evita ROM corto.",
+    "notesEn": "Underhand grip changes the angle; control scapulae. Avoid short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "reverse_fly_cable_single_arm",
+    "exerciseId": "reverse_fly_cable",
+    "nameIt": "Reverse fly al cavo a un braccio",
+    "nameEn": "Single-Arm Cable Reverse Fly",
+    "notesIt": "Un lato alla volta per controllo; evita rotazioni del busto.",
+    "notesEn": "Single-arm for control; avoid torso rotation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "rear_delt_fly_machine_pause",
+    "exerciseId": "rear_delt_fly_machine",
+    "nameIt": "Rear delt fly macchina con pausa",
+    "nameEn": "Machine Rear Delt Fly (Pause)",
+    "notesIt": "Pausa 1 secondo in apertura; evita rimbalzi e ROM corto.",
+    "notesEn": "Pause 1 second in the open position; avoid bouncing and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_upright_row_rope",
+    "exerciseId": "cable_upright_row",
+    "nameIt": "Upright row al cavo con corda",
+    "nameEn": "Cable Upright Row (Rope)",
+    "notesIt": "Corda per più libertà; evita elevazione dolorosa.",
+    "notesEn": "Rope allows more freedom; avoid painful elevation.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_upright_row_partial",
+    "exerciseId": "db_upright_row",
+    "nameIt": "Upright row manubri parziali",
+    "nameEn": "Dumbbell Upright Row (Partials)",
+    "notesIt": "Usa ROM non doloroso; evita spalle che si chiudono.",
+    "notesEn": "Use a pain-free ROM; avoid shoulders rolling forward.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "shrug_trap_bar_pause_top",
+    "exerciseId": "shrug_trap_bar",
+    "nameIt": "Trap bar shrug con pausa in alto",
+    "nameEn": "Trap Bar Shrug (Top Pause)",
+    "notesIt": "Pausa 1 secondo in alto; evita rimbalzi e rotazioni del collo.",
+    "notesEn": "Pause 1 second at the top; avoid bouncing and neck rolling.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "scapular_push_up_plus",
+    "exerciseId": "scapular_push_up",
+    "nameIt": "Scapular push-up plus",
+    "nameEn": "Scapular Push-Up Plus",
+    "notesIt": "Enfatizza protrazione finale (serrato). Evita gomiti che si piegano.",
+    "notesEn": "Emphasize the final protraction (serratus). Avoid bending elbows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "serratus_wall_slide_band_resisted",
+    "exerciseId": "serratus_wall_slide",
+    "nameIt": "Serratus wall slide con elastico resistente",
+    "nameEn": "Band-Resisted Serratus Wall Slide",
+    "notesIt": "Più resistenza sui polsi; costole giù e scapole che ruotano in alto.",
+    "notesEn": "More resistance at the wrists; ribs down and scapulae upwardly rotate.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_clean_from_blocks",
+    "exerciseId": "bb_clean",
+    "nameIt": "Clean dai blocchi",
+    "nameEn": "Clean from Blocks",
+    "notesIt": "Partenza rialzata per focalizzarti su tirata e ricezione. Evita strappi e schiena arrotondata.",
+    "notesEn": "Elevated start to focus on pull and catch. Avoid jerking and back rounding.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_power_clean_singles",
+    "exerciseId": "bb_power_clean",
+    "nameIt": "Power clean singole",
+    "nameEn": "Power Clean Singles",
+    "notesIt": "Ripetizioni singole per qualità e velocità. Evita fatica che rovina la ricezione.",
+    "notesEn": "Singles for quality and speed. Avoid fatigue that ruins the catch.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_hang_clean_high_hang",
+    "exerciseId": "bb_hang_clean",
+    "nameIt": "Hang clean (high hang)",
+    "nameEn": "High-Hang Clean",
+    "notesIt": "Partenza alta sopra il ginocchio per timing. Evita tirare di braccia.",
+    "notesEn": "High hang above the knee for timing. Avoid arm pulling.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_clean_and_press_push_press",
+    "exerciseId": "bb_clean_and_press",
+    "nameIt": "Clean & push press",
+    "nameEn": "Clean & Push Press",
+    "notesIt": "Usa leggero drive di gambe nel press. Evita iperestensione lombare.",
+    "notesEn": "Use a small leg drive in the press. Avoid low-back overextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_clean_alternating",
+    "exerciseId": "db_clean",
+    "nameIt": "Clean manubri alternato",
+    "nameEn": "Alternating Dumbbell Clean",
+    "notesIt": "Un braccio alla volta per controllo. Evita torsioni del busto.",
+    "notesEn": "Single-arm alternating for control. Avoid torso twisting.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_clean_and_press_alternating",
+    "exerciseId": "db_clean_and_press",
+    "nameIt": "Clean & press manubri alternato",
+    "nameEn": "Alternating Dumbbell Clean and Press",
+    "notesIt": "Alterna braccia mantenendo core stabile. Evita arco lombare.",
+    "notesEn": "Alternate arms with a stable core. Avoid low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_clean_single_arm",
+    "exerciseId": "kb_clean",
+    "nameIt": "Clean kettlebell a un braccio",
+    "nameEn": "Single-Arm Kettlebell Clean",
+    "notesIt": "Timing e 'infilare la mano' per evitare impatto. Evita tirare di braccio.",
+    "notesEn": "Use timing and 'thread the hand' to avoid impact. Avoid arm pulling.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_clean_and_press_ladder",
+    "exerciseId": "kb_clean_and_press",
+    "nameIt": "Clean & press ladder",
+    "nameEn": "KB Clean and Press Ladder",
+    "notesIt": "Scala ripetizioni per lato. Evita perdere forma nel press.",
+    "notesEn": "Rep ladder per side. Avoid losing form in the press.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_snatch_intervals",
+    "exerciseId": "kb_snatch",
+    "nameIt": "Snatch kettlebell a intervalli",
+    "nameEn": "KB Snatch Intervals",
+    "notesIt": "Intervalli per condizionamento mantenendo tecnica. Evita impatto sul polso.",
+    "notesEn": "Intervals for conditioning while keeping technique. Avoid wrist impact.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "thruster_db_single_arm",
+    "exerciseId": "thruster_db",
+    "nameIt": "Thruster manubrio a un braccio",
+    "nameEn": "Single-Arm Dumbbell Thruster",
+    "notesIt": "Un braccio alla volta per anti-rotazione. Evita inclinazioni laterali.",
+    "notesEn": "Single arm for anti-rotation. Avoid side bending.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "wall_ball_light",
+    "exerciseId": "wall_ball",
+    "nameIt": "Wall ball (palla leggera)",
+    "nameEn": "Wall Ball (Light Ball)",
+    "notesIt": "Regressione per imparare ritmo e tecnica. Evita collasso delle ginocchia.",
+    "notesEn": "Regression to learn rhythm and technique. Avoid knees caving in.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "medicine_ball_slam_kneeling",
+    "exerciseId": "medicine_ball_slam",
+    "nameIt": "Slam palla medica in ginocchio",
+    "nameEn": "Kneeling Medicine Ball Slam",
+    "notesIt": "Riduce contributo gambe e aumenta core. Evita iperestensione lombare.",
+    "notesEn": "Reduces leg drive and increases core demand. Avoid low-back overextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "battle_ropes_alternating",
+    "exerciseId": "battle_ropes",
+    "nameIt": "Battle ropes onde alternate",
+    "nameEn": "Battle Ropes (Alternating Waves)",
+    "notesIt": "Onde alternate mantenendo postura. Evita spalle alte e schiena che cede.",
+    "notesEn": "Alternating waves with good posture. Avoid shrugging and collapsing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "battle_ropes_double",
+    "exerciseId": "battle_ropes",
+    "nameIt": "Battle ropes onde doppie",
+    "nameEn": "Battle Ropes (Double Waves)",
+    "notesIt": "Onde simultanee con core attivo. Evita ritmo troppo veloce che rovina forma.",
+    "notesEn": "Double waves with an active core. Avoid a pace that breaks form.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_snatch_from_blocks",
+    "exerciseId": "bb_snatch",
+    "nameIt": "Snatch dai blocchi",
+    "nameEn": "Snatch from Blocks",
+    "notesIt": "Partenza rialzata per focalizzarti su traiettoria e lockout. Evita strappi e ricezione instabile.",
+    "notesEn": "Elevated start to focus on bar path and lockout. Avoid jerking and unstable receiving.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_power_snatch_singles",
+    "exerciseId": "bb_power_snatch",
+    "nameIt": "Power snatch singole",
+    "nameEn": "Power Snatch Singles",
+    "notesIt": "Singole per qualità e velocità. Evita affaticamento che rovina lockout.",
+    "notesEn": "Singles for quality and speed. Avoid fatigue that breaks lockout.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_hang_snatch_high_hang",
+    "exerciseId": "bb_hang_snatch",
+    "nameIt": "Hang snatch (high hang)",
+    "nameEn": "High-Hang Snatch",
+    "notesIt": "Partenza alta per timing e turnover. Evita tirare di braccia.",
+    "notesEn": "High hang for timing and turnover. Avoid arm pulling.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "overhead_squat_bb_pause_bottom",
+    "exerciseId": "overhead_squat_bb",
+    "nameIt": "Overhead squat con pausa in basso",
+    "nameEn": "Overhead Squat (Bottom Pause)",
+    "notesIt": "Pausa breve per stabilità in overhead. Evita collasso e perdere tensione.",
+    "notesEn": "Brief pause to build overhead stability. Avoid collapsing and losing tension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "snatch_balance_heaving",
+    "exerciseId": "snatch_balance",
+    "nameIt": "Heaving snatch balance",
+    "nameEn": "Heaving Snatch Balance",
+    "notesIt": "Più spinta di gambe e meno drop sotto. Evita lockout instabile.",
+    "notesEn": "More leg drive, less drop under. Avoid unstable lockout.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_clean_and_jerk_split",
+    "exerciseId": "bb_clean_and_jerk",
+    "nameIt": "Clean & jerk (split)",
+    "nameEn": "Clean and Jerk (Split)",
+    "notesIt": "Split jerk in overhead per più stabilità. Evita passi troppo stretti.",
+    "notesEn": "Use split jerk for overhead stability. Avoid overly narrow steps.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "bb_clean_and_jerk_power",
+    "exerciseId": "bb_clean_and_jerk",
+    "nameIt": "Clean & jerk (power)",
+    "nameEn": "Clean and Jerk (Power)",
+    "notesIt": "Ricezione più alta; richiede forza e controllo. Evita press lento.",
+    "notesEn": "Higher catch; requires strength and control. Avoid slow pressing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "bb_push_jerk_pause_overhead",
+    "exerciseId": "bb_push_jerk",
+    "nameIt": "Push jerk con pausa sopra la testa",
+    "nameEn": "Push Jerk (Overhead Pause)",
+    "notesIt": "Pausa 1 secondo in overhead; costole giù e scapole stabili.",
+    "notesEn": "Hold 1 second overhead; ribs down and scapulae stable.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_turkish_get_up_half",
+    "exerciseId": "kb_turkish_get_up",
+    "nameIt": "Turkish get-up (mezzo)",
+    "nameEn": "Half Turkish Get-Up",
+    "notesIt": "Esegui fino alla posizione seduta/in ginocchio per imparare i passaggi. Evita fretta.",
+    "notesEn": "Perform up to seated/half-kneeling to learn transitions. Avoid rushing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_windmill_light",
+    "exerciseId": "kb_windmill",
+    "nameIt": "Windmill (carico leggero)",
+    "nameEn": "Windmill (Light Load)",
+    "notesIt": "Usa carico leggero per mobilità e controllo spalla. Evita arco lombare.",
+    "notesEn": "Use a light load for mobility and shoulder control. Avoid low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "kb_overhead_carry_long",
+    "exerciseId": "kb_overhead_carry",
+    "nameIt": "Overhead carry (distanza lunga)",
+    "nameEn": "Overhead Carry (Long Distance)",
+    "notesIt": "Distanza più lunga con carico moderato; evita spalle alte e arco lombare.",
+    "notesEn": "Longer distance with moderate load; avoid shrugging and low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_snatch_alternating",
+    "exerciseId": "db_snatch",
+    "nameIt": "Snatch manubrio alternato",
+    "nameEn": "Alternating Dumbbell Snatch",
+    "notesIt": "Alterna lato mantenendo core stabile. Evita torsioni e ricezione instabile.",
+    "notesEn": "Alternate sides with a stable core. Avoid twisting and unstable catches.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_devils_press_competition",
+    "exerciseId": "db_devils_press",
+    "nameIt": "Devil's press (stile gara)",
+    "nameEn": "Devil's Press (Competition Style)",
+    "notesIt": "Mantieni standard e controllo in tutte le fasi. Evita schiena che cede.",
+    "notesEn": "Keep standards and control in all phases. Avoid back collapse.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "man_maker_db_with_push_up",
+    "exerciseId": "man_maker_db",
+    "nameIt": "Man maker con push-up completo",
+    "nameEn": "Man Maker (Full Push-Up)",
+    "notesIt": "Push-up completo prima del row. Evita bacino che ruota nel rematore.",
+    "notesEn": "Full push-up before rowing. Avoid hip rotation during rows.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "treadmill_run_incline",
+    "exerciseId": "treadmill_run",
+    "nameIt": "Corsa treadmill in salita",
+    "nameEn": "Incline Treadmill Run",
+    "notesIt": "Usa pendenza moderata per intensità. Evita inclinarti eccessivamente in avanti.",
+    "notesEn": "Use moderate incline to increase intensity. Avoid excessive forward lean.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+  {
+    "id": "lat_pulldown_wide_grip_pause_chest",
+    "exerciseId": "lat_pulldown_wide_grip",
+    "nameIt": "Lat pulldown largo con pausa al petto",
+    "nameEn": "Wide-Grip Lat Pulldown (Chest Pause)",
+    "notesIt": "Pausa 1 secondo al petto senza perdere scapole depresse. Evita slanci.",
+    "notesEn": "Pause 1 second on the chest without losing scapular depression. Avoid swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lat_pulldown_underhand_close_grip",
+    "exerciseId": "lat_pulldown_underhand",
+    "nameIt": "Lat pulldown supino presa stretta",
+    "nameEn": "Close-Grip Underhand Lat Pulldown",
+    "notesIt": "Presa più stretta per più bicipite; evita spalle che salgono.",
+    "notesEn": "Closer grip for more biceps; avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "lat_pulldown_single_arm_kneeling",
+    "exerciseId": "lat_pulldown_single_arm",
+    "nameIt": "Lat pulldown 1 braccio in ginocchio",
+    "nameEn": "Kneeling Single-Arm Lat Pulldown",
+    "notesIt": "In ginocchio per stabilità e anti-rotazione. Evita torsioni del busto.",
+    "notesEn": "Kneeling for stability and anti-rotation. Avoid torso twisting.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "assisted_pull_up_machine_slow_eccentric",
+    "exerciseId": "assisted_pull_up_machine",
+    "nameIt": "Trazioni assistite eccentrica lenta",
+    "nameEn": "Assisted Pull-Up (Slow Eccentric)",
+    "notesIt": "Discesa lenta 3 secondi per controllo. Evita ROM corto.",
+    "notesEn": "Lower for 3 seconds for control. Avoid short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "assisted_dip_machine_pause_bottom",
+    "exerciseId": "assisted_dip_machine",
+    "nameIt": "Dip assistite con pausa in basso",
+    "nameEn": "Assisted Dip (Bottom Pause)",
+    "notesIt": "Pausa breve in basso senza perdere spalle basse. Evita rimbalzi.",
+    "notesEn": "Brief pause at the bottom without losing shoulder position. Avoid bouncing.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_triceps_extension_bar_overhead_staggered",
+    "exerciseId": "cable_triceps_extension_bar_overhead",
+    "nameIt": "Estensioni sopra testa (stance sfalsata)",
+    "nameEn": "Overhead Cable Triceps Extension (Staggered Stance)",
+    "notesIt": "Stance sfalsata per stabilità; costole giù. Evita iperlordosi.",
+    "notesEn": "Staggered stance for stability; ribs down. Avoid overextension.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_lateral_raise_behind_body",
+    "exerciseId": "cable_lateral_raise",
+    "nameIt": "Alzate laterali cavo da dietro",
+    "nameEn": "Cable Lateral Raise (Behind Body)",
+    "notesIt": "Partenza dietro il corpo per più tensione in allungamento. Evita slanci.",
+    "notesEn": "Start behind the body for more stretch tension. Avoid swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "cable_front_raise_rope",
+    "exerciseId": "cable_front_raise",
+    "nameIt": "Alzate frontali cavo con corda",
+    "nameEn": "Cable Front Raise (Rope)",
+    "notesIt": "Corda per polsi neutri; controlla costole giù. Evita arco lombare.",
+    "notesEn": "Rope for neutral wrists; keep ribs down. Avoid low-back arching.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_lateral_raise_seated_partials",
+    "exerciseId": "db_lateral_raise_seated",
+    "nameIt": "Laterali seduto parziali",
+    "nameEn": "Seated Lateral Raise (Partials)",
+    "notesIt": "Parziali nel ROM di massima tensione senza slanci. Evita spalle alte.",
+    "notesEn": "Partials in the high-tension range without swinging. Avoid shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "db_lateral_raise_leaning_pause_top",
+    "exerciseId": "db_lateral_raise_leaning",
+    "nameIt": "Laterali in inclinazione con pausa in alto",
+    "nameEn": "Leaning Lateral Raise (Top Pause)",
+    "notesIt": "Pausa breve in alto senza alzare la spalla. Evita slanci.",
+    "notesEn": "Brief pause at the top without shrugging. Avoid swinging.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "rear_delt_row_cable_high_anchor",
+    "exerciseId": "rear_delt_row_cable",
+    "nameIt": "Rear delt row al cavo ancoraggio alto",
+    "nameEn": "High-Anchor Cable Rear Delt Row",
+    "notesIt": "Linea più alta per dorso alto. Evita spalle che salgono e ROM corto.",
+    "notesEn": "Higher line for upper back. Avoid shrugging and short ROM.",
+    "isCustom": false,
+    "createdAt": 0
+  },
+
+  {
+    "id": "incline_db_y_raise_light",
+    "exerciseId": "incline_db_y_raise",
+    "nameIt": "Y-raise inclinata (leggero)",
+    "nameEn": "Incline Y Raise (Light Load)",
+    "notesIt": "Carichi leggeri e controllo; focus su scapole. Evita slanci e spalle alte.",
+    "notesEn": "Light loads with control; focus on scapulae. Avoid swinging and shrugging.",
+    "isCustom": false,
+    "createdAt": 0
+  }
+]

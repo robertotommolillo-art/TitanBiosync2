@@ -1,0 +1,11 @@
+[versions]
+# ... keep existing versions ...
+kotlinxSerialization = "1.7.3"
+
+[libraries]
+# ... keep existing libraries ...
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+[plugins]
+# ... keep existing plugins ...
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

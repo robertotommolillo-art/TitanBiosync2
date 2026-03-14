@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/exerciseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Squat" />
+
+    <TextView
+        android:id="@+id/exerciseVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volume: 1234 kg"
+        android:alpha="0.7" />
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/workoutReportHostFragment"
+        android:name="com.titanbiosync.gym.ui.report.WorkoutReportHostFragment"
+        android:label="Report allenamento">
+        <argument
+            android:name="sessionId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.titanbiosync.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_settings"
+            app:destination="@id/settingsFragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_session_detail"
+            app:destination="@id/sessionDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.titanbiosync.ui.settings.SettingsFragment"
+        android:label="Impostazioni" />
+
+    <fragment
+        android:id="@+id/gymWorkoutSessionFragment"
+        android:name="com.titanbiosync.gym.ui.session.GymWorkoutSessionFragment"
+        android:label="Allenamento">
+        <argument
+            android:name="sessionId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workoutReportHostFragment"
+        android:name="com.titanbiosync.gym.ui.report.WorkoutReportHostFragment"
+        android:label="Report allenamento">
+        <argument
+            android:name="sessionId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/startSessionFragment"
+        android:name="com.titanbiosync.ui.session.StartSessionFragment"
+        android:label="Start Session">
+        <action
+            android:id="@+id/action_start_session_to_session_detail"
+            app:destination="@id/sessionDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionDetailFragment"
+        android:name="com.titanbiosync.ui.session.SessionDetailFragment"
+        android:label="Session Detail">
+        <argument
+            android:name="sessionId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_session_detail_to_summary"
+            app:destination="@id/sessionSummaryFragment"
+            app:popUpTo="@id/dashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionSummaryFragment"
+        android:name="com.titanbiosync.ui.session.SessionSummaryFragment"
+        android:label="Session Summary">
+        <argument
+            android:name="sessionId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deviceListFragment"
+        android:name="com.titanbiosync.ui.device.DeviceListFragment"
+        android:label="Devices" />
+
+    <fragment
+        android:id="@+id/gymExercisesFragment"
+        android:name="com.titanbiosync.gym.ui.GymExercisesFragment"
+        android:label="Esercizi" />
+
+    <fragment
+        android:id="@+id/gymLibraryFragment"
+        android:name="com.titanbiosync.gym.ui.library.GymLibraryFragment"
+        android:label="Gym" />
+
+    <fragment
+        android:id="@+id/workoutTemplateDetailFragment"
+        android:name="com.titanbiosync.gym.ui.template.WorkoutTemplateDetailFragment"
+        android:label="Scheda">
+        <argument
+            android:name="templateId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exercisePickerFragment"
+        android:name="com.titanbiosync.gym.ui.picker.ExercisePickerFragment"
+        android:label="Seleziona esercizio">
+        <argument
+            android:name="templateId"
+            app:argType="string" />
+        <argument
+            android:name="mode"
+            app:argType="string"
+            android:defaultValue="SINGLE" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onlineExerciseSearchFragment"
+        android:name="com.titanbiosync.gym.ui.online.OnlineExerciseSearchFragment"
+        android:label="Cerca online">
+        <argument
+            android:name="query"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exerciseImportPreviewFragment"
+        android:name="com.titanbiosync.gym.ui.online.ExerciseImportPreviewFragment"
+        android:label="Importa esercizio">
+        <argument
+            android:name="candidateId"
+            app:argType="string" />
+    </fragment>
+
+    <!-- NEW: Storico -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.titanbiosync.gym.ui.history.HistoryFragment"
+        android:label="Storico" />
+
+</navigation>

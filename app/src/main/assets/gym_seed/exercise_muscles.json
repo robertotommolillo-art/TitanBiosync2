@@ -1,0 +1,1203 @@
+[
+  { "exerciseId": "bb_bench_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_bench_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_flat_bench_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_flat_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "db_flat_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_flat_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_incline_bench_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_incline_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "db_incline_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_incline_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "smith_incline_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "smith_incline_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "smith_incline_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+
+  { "exerciseId": "machine_chest_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "machine_chest_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "machine_chest_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+
+  { "exerciseId": "cable_chest_fly", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_chest_fly", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "cable_chest_fly", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_fly", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_fly", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "push_up", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "push_up", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "push_up", "muscleId": "glutes", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "diamond_push_up", "muscleId": "triceps", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "diamond_push_up", "muscleId": "chest", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "diamond_push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "diamond_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "wide_push_up", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "wide_push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "wide_push_up", "muscleId": "triceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "wide_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "dip", "muscleId": "chest", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "dip", "muscleId": "triceps", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "dip", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "dip", "muscleId": "serratus", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bench_dip", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bench_dip", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bench_dip", "muscleId": "chest", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "bb_overhead_press", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "triceps", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "glutes", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_shoulder_press", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_shoulder_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "db_shoulder_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "arnold_press", "muscleId": "front_delts", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "arnold_press", "muscleId": "side_delts", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "arnold_press", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "arnold_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "machine_shoulder_press", "muscleId": "front_delts", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "machine_shoulder_press", "muscleId": "side_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "machine_shoulder_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+
+  { "exerciseId": "db_lateral_raise", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_lateral_raise", "muscleId": "traps", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "cable_lateral_raise", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_lateral_raise", "muscleId": "traps", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "db_front_raise", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_front_raise", "muscleId": "upper_chest", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "rear_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "rhomboids", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "mid_back", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "db_rear_delt_fly", "muscleId": "rear_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_rear_delt_fly", "muscleId": "rhomboids", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "db_rear_delt_fly", "muscleId": "mid_back", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "cable_face_pull", "muscleId": "rear_delts", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "cable_face_pull", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "cable_face_pull", "muscleId": "rhomboids", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "cable_face_pull", "muscleId": "traps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "band_pull_apart", "muscleId": "rear_delts", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "band_pull_apart", "muscleId": "rhomboids", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "band_pull_apart", "muscleId": "traps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "band_pull_apart", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "bb_barbell_row", "muscleId": "mid_back", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "lats", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_one_arm_row", "muscleId": "lats", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "mid_back", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "biceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "cable_seated_row", "muscleId": "mid_back", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "cable_seated_row", "muscleId": "lats", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "cable_seated_row", "muscleId": "rhomboids", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "cable_seated_row", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "machine_row", "muscleId": "mid_back", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "machine_row", "muscleId": "lats", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "machine_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "machine_row", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "pull_up", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "pull_up", "muscleId": "upper_back", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "pull_up", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "pull_up", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "pull_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "chin_up", "muscleId": "lats", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "chin_up", "muscleId": "biceps", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "chin_up", "muscleId": "upper_back", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "chin_up", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "chin_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "lat_pulldown", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "lat_pulldown", "muscleId": "biceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "lat_pulldown", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "lat_pulldown", "muscleId": "rhomboids", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "lat_pulldown_neutral_grip", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "lat_pulldown_neutral_grip", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "lat_pulldown_neutral_grip", "muscleId": "rhomboids", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "bb_deadlift", "muscleId": "glutes", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "bb_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_deadlift", "muscleId": "erectors", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "bb_deadlift", "muscleId": "lats", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_back_squat", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_back_squat", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_back_squat", "muscleId": "hamstrings", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_back_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "bb_back_squat", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_back_squat", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_back_squat", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_back_squat", "muscleId": "hamstrings", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_back_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "bb_back_squat", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "bb_front_squat", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_front_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_front_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "bb_front_squat", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "goblet_squat", "muscleId": "quads", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "goblet_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "goblet_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "db_goblet_squat", "muscleId": "quads", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "db_goblet_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "db_goblet_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "smith_back_squat", "muscleId": "quads", "role": "primary", "weight": 0.95 },
+  { "exerciseId": "smith_back_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "smith_back_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "hack_squat_machine", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "hack_squat_machine", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "hack_squat_machine", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "hack_squat_machine", "muscleId": "calves", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "leg_press", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "leg_press", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "leg_press", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "leg_press", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "bb_deadlift", "muscleId": "glutes", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "bb_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_deadlift", "muscleId": "erectors", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "bb_deadlift", "muscleId": "lats", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "glutes", "role": "secondary", "weight": 0.75 },
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "glutes", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_romanian_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "kb_romanian_deadlift", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "kb_romanian_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "hip_thrust_bb", "muscleId": "glutes", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "hip_thrust_bb", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "hip_thrust_bb", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "glute_bridge", "muscleId": "glutes", "role": "primary", "weight": 0.95 },
+  { "exerciseId": "glute_bridge", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "glute_bridge", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "split_squat", "muscleId": "quads", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "split_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "split_squat", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "split_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "quads", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "glutes", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "walking_lunge_db", "muscleId": "quads", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "glutes", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "step_up_db", "muscleId": "quads", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "step_up_db", "muscleId": "glutes", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "step_up_db", "muscleId": "hamstrings", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "step_up_db", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "step_up_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_bench_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_bench_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_flat_bench_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_flat_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "db_flat_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_flat_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "bb_incline_bench_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_incline_bench_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_incline_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "db_incline_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_incline_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "smith_incline_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "smith_incline_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "smith_incline_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+
+  { "exerciseId": "machine_chest_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "machine_chest_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "machine_chest_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+
+  { "exerciseId": "cable_chest_fly", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_chest_fly", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "cable_chest_fly", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_fly", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_fly", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "push_up", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "push_up", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "push_up", "muscleId": "glutes", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "diamond_push_up", "muscleId": "triceps", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "diamond_push_up", "muscleId": "chest", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "diamond_push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "diamond_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "wide_push_up", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "wide_push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "wide_push_up", "muscleId": "triceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "wide_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "dip", "muscleId": "chest", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "dip", "muscleId": "triceps", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "dip", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "dip", "muscleId": "serratus", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bench_dip", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bench_dip", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bench_dip", "muscleId": "chest", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "bb_overhead_press", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "triceps", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "bb_overhead_press", "muscleId": "glutes", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_shoulder_press", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_shoulder_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "db_shoulder_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "arnold_press", "muscleId": "front_delts", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "arnold_press", "muscleId": "side_delts", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "arnold_press", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "arnold_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "machine_shoulder_press", "muscleId": "front_delts", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "machine_shoulder_press", "muscleId": "side_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "machine_shoulder_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+
+  { "exerciseId": "db_lateral_raise", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_lateral_raise", "muscleId": "traps", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "cable_lateral_raise", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_lateral_raise", "muscleId": "traps", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "db_front_raise", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_front_raise", "muscleId": "upper_chest", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "rear_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "rhomboids", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "mid_back", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "db_rear_delt_fly", "muscleId": "rear_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_rear_delt_fly", "muscleId": "rhomboids", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "db_rear_delt_fly", "muscleId": "mid_back", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "cable_face_pull", "muscleId": "rear_delts", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "cable_face_pull", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "cable_face_pull", "muscleId": "rhomboids", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "cable_face_pull", "muscleId": "traps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "band_pull_apart", "muscleId": "rear_delts", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "band_pull_apart", "muscleId": "rhomboids", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "band_pull_apart", "muscleId": "traps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "band_pull_apart", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "bb_barbell_row", "muscleId": "mid_back", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "lats", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_barbell_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_one_arm_row", "muscleId": "lats", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "mid_back", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "biceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "db_one_arm_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "cable_seated_row", "muscleId": "mid_back", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "cable_seated_row", "muscleId": "lats", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "cable_seated_row", "muscleId": "rhomboids", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "cable_seated_row", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "machine_row", "muscleId": "mid_back", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "machine_row", "muscleId": "lats", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "machine_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "machine_row", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "pull_up", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "pull_up", "muscleId": "upper_back", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "pull_up", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "pull_up", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "pull_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "chin_up", "muscleId": "lats", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "chin_up", "muscleId": "biceps", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "chin_up", "muscleId": "upper_back", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "chin_up", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "chin_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "lat_pulldown", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "lat_pulldown", "muscleId": "biceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "lat_pulldown", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "lat_pulldown", "muscleId": "rhomboids", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "lat_pulldown_neutral_grip", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "lat_pulldown_neutral_grip", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "lat_pulldown_neutral_grip", "muscleId": "rhomboids", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "bb_deadlift", "muscleId": "glutes", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "bb_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_deadlift", "muscleId": "erectors", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "bb_deadlift", "muscleId": "lats", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_back_squat", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_back_squat", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_back_squat", "muscleId": "hamstrings", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_back_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "bb_back_squat", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "bb_front_squat", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_front_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_front_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "bb_front_squat", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "goblet_squat", "muscleId": "quads", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "goblet_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "goblet_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "db_goblet_squat", "muscleId": "quads", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "db_goblet_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "db_goblet_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "smith_back_squat", "muscleId": "quads", "role": "primary", "weight": 0.95 },
+  { "exerciseId": "smith_back_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "smith_back_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "hack_squat_machine", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "hack_squat_machine", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "hack_squat_machine", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "hack_squat_machine", "muscleId": "calves", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "leg_press", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "leg_press", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "leg_press", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "leg_press", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "glutes", "role": "secondary", "weight": 0.75 },
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "bb_romanian_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "glutes", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "db_romanian_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_romanian_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "kb_romanian_deadlift", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "kb_romanian_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "hip_thrust_bb", "muscleId": "glutes", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "hip_thrust_bb", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "hip_thrust_bb", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "glute_bridge", "muscleId": "glutes", "role": "primary", "weight": 0.95 },
+  { "exerciseId": "glute_bridge", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "glute_bridge", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "split_squat", "muscleId": "quads", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "split_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "split_squat", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "split_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "quads", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "glutes", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bulgarian_split_squat_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "walking_lunge_db", "muscleId": "quads", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "glutes", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "walking_lunge_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "step_up_db", "muscleId": "quads", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "step_up_db", "muscleId": "glutes", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "step_up_db", "muscleId": "hamstrings", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "step_up_db", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "step_up_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_close_grip_bench_press", "muscleId": "triceps", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_close_grip_bench_press", "muscleId": "chest", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "bb_close_grip_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_close_grip_bench_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "bb_close_grip_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "bb_pause_bench_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_pause_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "bb_pause_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_pause_bench_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "bb_spoto_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_spoto_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "bb_spoto_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_spoto_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_board_press", "muscleId": "triceps", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bb_board_press", "muscleId": "chest", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "bb_board_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_board_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "bb_floor_press", "muscleId": "chest", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_floor_press", "muscleId": "triceps", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "bb_floor_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "bb_floor_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "smith_flat_press", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "smith_flat_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "smith_flat_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+
+  { "exerciseId": "machine_incline_chest_press", "muscleId": "upper_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "machine_incline_chest_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "machine_incline_chest_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+
+  { "exerciseId": "machine_decline_chest_press", "muscleId": "lower_chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "machine_decline_chest_press", "muscleId": "triceps", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "machine_decline_chest_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "db_decline_bench_press", "muscleId": "lower_chest", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "db_decline_bench_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "db_decline_bench_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "db_decline_bench_press", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "cable_press_standing", "muscleId": "chest", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "cable_press_standing", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "cable_press_standing", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "cable_press_standing", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "cable_press_standing", "muscleId": "obliques", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "cable_press_single_arm", "muscleId": "chest", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "cable_press_single_arm", "muscleId": "front_delts", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "cable_press_single_arm", "muscleId": "triceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "cable_press_single_arm", "muscleId": "obliques", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "cable_press_single_arm", "muscleId": "transverse_abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "cable_fly_low", "muscleId": "chest", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "cable_fly_low", "muscleId": "upper_chest", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "cable_fly_low", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "cable_fly_low", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "cable_fly_high", "muscleId": "lower_chest", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "cable_fly_high", "muscleId": "chest", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "cable_fly_high", "muscleId": "front_delts", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "cable_fly_high", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "pec_deck", "muscleId": "chest", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "pec_deck", "muscleId": "front_delts", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "push_up_knee", "muscleId": "chest", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "push_up_knee", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "push_up_knee", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "push_up_knee", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "pike_push_up", "muscleId": "front_delts", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "pike_push_up", "muscleId": "side_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "pike_push_up", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "pike_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "handstand_push_up_wall", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "handstand_push_up_wall", "muscleId": "triceps", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "handstand_push_up_wall", "muscleId": "upper_back", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "handstand_push_up_wall", "muscleId": "abs", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "handstand_push_up_wall", "muscleId": "glutes", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_push_press", "muscleId": "front_delts", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "bb_push_press", "muscleId": "triceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_push_press", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_push_press", "muscleId": "glutes", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bb_push_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "db_hammer_curl", "muscleId": "biceps", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "db_hammer_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.6 },
+
+  { "exerciseId": "bb_biceps_curl", "muscleId": "biceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_biceps_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "ez_bar_curl", "muscleId": "biceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "ez_bar_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "db_incline_curl", "muscleId": "biceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_incline_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "preacher_curl_machine", "muscleId": "biceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "preacher_curl_machine", "muscleId": "forearms", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "cable_biceps_curl", "muscleId": "biceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_biceps_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "cable_rope_hammer_curl", "muscleId": "biceps", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "cable_rope_hammer_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.65 },
+
+  { "exerciseId": "concentration_curl", "muscleId": "biceps", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "zottman_curl", "muscleId": "biceps", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "zottman_curl", "muscleId": "forearms", "role": "secondary", "weight": 0.7 },
+
+  { "exerciseId": "reverse_curl_bb", "muscleId": "forearms", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "reverse_curl_bb", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "triceps_pushdown_rope", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "triceps_pushdown_bar", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "overhead_triceps_extension_rope", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "overhead_triceps_extension_rope", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "skull_crusher_ez_bar", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "db_overhead_triceps_extension", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "db_overhead_triceps_extension", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "cable_kickback", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "db_triceps_kickback", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "close_grip_push_up", "muscleId": "triceps", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "close_grip_push_up", "muscleId": "chest", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "close_grip_push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "close_grip_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "bench_close_grip_push_up", "muscleId": "triceps", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "bench_close_grip_push_up", "muscleId": "chest", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bench_close_grip_push_up", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bench_close_grip_push_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_rdl", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_rdl", "muscleId": "glutes", "role": "secondary", "weight": 0.75 },
+  { "exerciseId": "bb_rdl", "muscleId": "erectors", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "bb_rdl", "muscleId": "forearms", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "bb_good_morning", "muscleId": "hamstrings", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_good_morning", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "bb_good_morning", "muscleId": "erectors", "role": "stabilizer", "weight": 0.6 },
+  { "exerciseId": "bb_good_morning", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "db_good_morning", "muscleId": "hamstrings", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "db_good_morning", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "db_good_morning", "muscleId": "erectors", "role": "stabilizer", "weight": 0.45 },
+  { "exerciseId": "db_good_morning", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "kb_swing", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "kb_swing", "muscleId": "hamstrings", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "kb_swing", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "kb_swing", "muscleId": "forearms", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "kb_deadlift", "muscleId": "glutes", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "kb_deadlift", "muscleId": "hamstrings", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "kb_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "kb_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_hip_thrust", "muscleId": "glutes", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_hip_thrust", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_hip_thrust", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "machine_hip_thrust", "muscleId": "glutes", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "machine_hip_thrust", "muscleId": "hamstrings", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "machine_hip_thrust", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "cable_pull_through", "muscleId": "glutes", "role": "primary", "weight": 0.95 },
+  { "exerciseId": "cable_pull_through", "muscleId": "hamstrings", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "cable_pull_through", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "back_extension", "muscleId": "erectors", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "back_extension", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "back_extension", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "back_extension", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "reverse_hyperextension", "muscleId": "glutes", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "reverse_hyperextension", "muscleId": "hamstrings", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "reverse_hyperextension", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "reverse_hyperextension", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "glute_ham_raise", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "glute_ham_raise", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "glute_ham_raise", "muscleId": "erectors", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "lying_leg_curl_machine", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "seated_leg_curl_machine", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "standing_leg_curl_machine", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "standing_leg_curl_machine", "muscleId": "calves", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "nordic_hamstring_curl", "muscleId": "hamstrings", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "nordic_hamstring_curl", "muscleId": "glutes", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "nordic_hamstring_curl", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_glute_bridge", "muscleId": "glutes", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "bb_glute_bridge", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_glute_bridge", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "frog_pump", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "frog_pump", "muscleId": "adductors", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "banded_glute_bridge", "muscleId": "glutes", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "banded_glute_bridge", "muscleId": "abductors", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "banded_glute_bridge", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "bb_back_lunge", "muscleId": "glutes", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bb_back_lunge", "muscleId": "quads", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "bb_back_lunge", "muscleId": "hamstrings", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bb_back_lunge", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_reverse_lunge", "muscleId": "glutes", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "db_reverse_lunge", "muscleId": "quads", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "db_reverse_lunge", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "db_reverse_lunge", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_forward_lunge", "muscleId": "quads", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "db_forward_lunge", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "db_forward_lunge", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "db_forward_lunge", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "walking_lunge_bodyweight", "muscleId": "quads", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "walking_lunge_bodyweight", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "walking_lunge_bodyweight", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "walking_lunge_bodyweight", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "curtsy_lunge", "muscleId": "glutes", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "curtsy_lunge", "muscleId": "abductors", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "curtsy_lunge", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "curtsy_lunge", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "cossack_squat", "muscleId": "adductors", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "cossack_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "cossack_squat", "muscleId": "quads", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "cossack_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "side_lunge", "muscleId": "adductors", "role": "primary", "weight": 0.65 },
+  { "exerciseId": "side_lunge", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "side_lunge", "muscleId": "quads", "role": "secondary", "weight": 0.45 },
+
+  { "exerciseId": "lateral_step_up", "muscleId": "quads", "role": "primary", "weight": 0.65 },
+  { "exerciseId": "lateral_step_up", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "lateral_step_up", "muscleId": "abductors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "lateral_step_up", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "step_down", "muscleId": "quads", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "step_down", "muscleId": "glutes", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "step_down", "muscleId": "abductors", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "wall_sit", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "wall_sit", "muscleId": "glutes", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "leg_extension_machine", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "sissy_squat", "muscleId": "quads", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "sissy_squat", "muscleId": "calves", "role": "stabilizer", "weight": 0.2 },
+  { "exerciseId": "sissy_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "belt_squat", "muscleId": "quads", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "belt_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "belt_squat", "muscleId": "adductors", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "smith_split_squat", "muscleId": "quads", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "smith_split_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "smith_split_squat", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "db_sumo_squat", "muscleId": "adductors", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "db_sumo_squat", "muscleId": "glutes", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "db_sumo_squat", "muscleId": "quads", "role": "secondary", "weight": 0.5 },
+
+  { "exerciseId": "bb_sumo_deadlift", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_sumo_deadlift", "muscleId": "hamstrings", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "bb_sumo_deadlift", "muscleId": "adductors", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_sumo_deadlift", "muscleId": "erectors", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "bb_sumo_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_deficit_deadlift", "muscleId": "glutes", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "bb_deficit_deadlift", "muscleId": "hamstrings", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "bb_deficit_deadlift", "muscleId": "erectors", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "bb_deficit_deadlift", "muscleId": "lats", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "bb_deficit_deadlift", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_rack_pull", "muscleId": "erectors", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "bb_rack_pull", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "bb_rack_pull", "muscleId": "hamstrings", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "bb_rack_pull", "muscleId": "traps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_rack_pull", "muscleId": "forearms", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "bb_bent_over_row", "muscleId": "lats", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "bb_bent_over_row", "muscleId": "mid_back", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "bb_bent_over_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_bent_over_row", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_bent_over_row", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_bent_over_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "pendlay_row", "muscleId": "mid_back", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "pendlay_row", "muscleId": "lats", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "pendlay_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "pendlay_row", "muscleId": "biceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "pendlay_row", "muscleId": "erectors", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "pendlay_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "t_bar_row", "muscleId": "lats", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "t_bar_row", "muscleId": "mid_back", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "t_bar_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "t_bar_row", "muscleId": "biceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "t_bar_row", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "chest_supported_row_db", "muscleId": "mid_back", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "chest_supported_row_db", "muscleId": "lats", "role": "secondary", "weight": 0.65 },
+  { "exerciseId": "chest_supported_row_db", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "chest_supported_row_db", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "chest_supported_row_db", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "one_arm_cable_row", "muscleId": "lats", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "one_arm_cable_row", "muscleId": "mid_back", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "one_arm_cable_row", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "one_arm_cable_row", "muscleId": "obliques", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "straight_arm_pulldown", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "straight_arm_pulldown", "muscleId": "serratus", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "pullover_db", "muscleId": "lats", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "pullover_db", "muscleId": "chest", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "pullover_db", "muscleId": "serratus", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "pullover_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "machine_pullover", "muscleId": "lats", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "machine_pullover", "muscleId": "serratus", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "inverted_row", "muscleId": "mid_back", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "inverted_row", "muscleId": "lats", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "inverted_row", "muscleId": "rear_delts", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "inverted_row", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "inverted_row", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "inverted_row_feet_elevated", "muscleId": "mid_back", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "inverted_row_feet_elevated", "muscleId": "lats", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "inverted_row_feet_elevated", "muscleId": "rear_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "inverted_row_feet_elevated", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "inverted_row_feet_elevated", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "dead_hang", "muscleId": "forearms", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "dead_hang", "muscleId": "rotator_cuff", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "scapular_pull_up", "muscleId": "lower_traps", "role": "primary", "weight": 0.0 },
+  { "exerciseId": "plank", "muscleId": "transverse_abs", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "plank", "muscleId": "abs", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "plank", "muscleId": "glutes", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "plank", "muscleId": "serratus", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "side_plank", "muscleId": "obliques", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "side_plank", "muscleId": "transverse_abs", "role": "secondary", "weight": 0.6 },
+  { "exerciseId": "side_plank", "muscleId": "abductors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "side_plank", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "dead_bug", "muscleId": "transverse_abs", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "dead_bug", "muscleId": "abs", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "dead_bug", "muscleId": "hip_flexors", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "bird_dog", "muscleId": "transverse_abs", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "bird_dog", "muscleId": "erectors", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bird_dog", "muscleId": "glutes", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "hollow_body_hold", "muscleId": "abs", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "hollow_body_hold", "muscleId": "transverse_abs", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "hollow_body_hold", "muscleId": "hip_flexors", "role": "secondary", "weight": 0.4 },
+
+  { "exerciseId": "hanging_knee_raise", "muscleId": "abs", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "hanging_knee_raise", "muscleId": "hip_flexors", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "hanging_knee_raise", "muscleId": "forearms", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "hanging_knee_raise", "muscleId": "lats", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "hanging_leg_raise", "muscleId": "abs", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "hanging_leg_raise", "muscleId": "hip_flexors", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "hanging_leg_raise", "muscleId": "forearms", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "hanging_leg_raise", "muscleId": "lats", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "captains_chair_knee_raise", "muscleId": "abs", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "captains_chair_knee_raise", "muscleId": "hip_flexors", "role": "primary", "weight": 0.65 },
+
+  { "exerciseId": "cable_crunch", "muscleId": "abs", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_crunch", "muscleId": "obliques", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "machine_ab_crunch", "muscleId": "abs", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "ab_wheel_rollout", "muscleId": "transverse_abs", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "ab_wheel_rollout", "muscleId": "abs", "role": "secondary", "weight": 0.7 },
+  { "exerciseId": "ab_wheel_rollout", "muscleId": "serratus", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "ab_wheel_rollout", "muscleId": "lats", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "mountain_climber", "muscleId": "abs", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "mountain_climber", "muscleId": "hip_flexors", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "mountain_climber", "muscleId": "front_delts", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "russian_twist", "muscleId": "obliques", "role": "primary", "weight": 0.9 },
+  { "exerciseId": "russian_twist", "muscleId": "abs", "role": "secondary", "weight": 0.45 },
+
+  { "exerciseId": "pallof_press", "muscleId": "obliques", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "pallof_press", "muscleId": "transverse_abs", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "pallof_press", "muscleId": "serratus", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "cable_woodchop", "muscleId": "obliques", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "cable_woodchop", "muscleId": "abs", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "cable_woodchop", "muscleId": "glutes", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "back_extension_isometric_hold", "muscleId": "erectors", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "back_extension_isometric_hold", "muscleId": "glutes", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "superman_hold", "muscleId": "erectors", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "superman_hold", "muscleId": "glutes", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_calf_raise_standing", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "bb_calf_raise_standing", "muscleId": "tibialis_anterior", "role": "stabilizer", "weight": 0.1 },
+
+  { "exerciseId": "db_calf_raise_standing", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "machine_calf_raise_standing", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "machine_calf_raise_seated", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "single_leg_calf_raise", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "single_leg_calf_raise", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "tibialis_raise", "muscleId": "tibialis_anterior", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "leg_press_calf_raise", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "donkey_calf_raise", "muscleId": "calves", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "jump_rope", "muscleId": "calves", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "jump_rope", "muscleId": "quads", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "jump_rope", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "box_jump", "muscleId": "glutes", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "box_jump", "muscleId": "quads", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "box_jump", "muscleId": "calves", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "box_jump", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "broad_jump", "muscleId": "glutes", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "broad_jump", "muscleId": "quads", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "broad_jump", "muscleId": "calves", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "broad_jump", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "burpee", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "burpee", "muscleId": "chest", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "burpee", "muscleId": "triceps", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "burpee", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "bear_crawl", "muscleId": "abs", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bear_crawl", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bear_crawl", "muscleId": "quads", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "sled_push", "muscleId": "quads", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "sled_push", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "sled_push", "muscleId": "calves", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "sled_push", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "rower_interval", "muscleId": "lats", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "rower_interval", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "rower_interval", "muscleId": "glutes", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "rower_interval", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "assault_bike_interval", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "assault_bike_interval", "muscleId": "glutes", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "assault_bike_interval", "muscleId": "front_delts", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "assault_bike_interval", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "farmer_carry_bodyweight", "muscleId": "calves", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "farmer_carry_bodyweight", "muscleId": "glutes", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "farmer_carry_bodyweight", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+  { "exerciseId": "face_pull_rope", "muscleId": "rear_delts", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "face_pull_rope", "muscleId": "mid_back", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "face_pull_rope", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "face_pull_rope", "muscleId": "upper_traps", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "cable_external_rotation", "muscleId": "rotator_cuff", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "band_external_rotation", "muscleId": "rotator_cuff", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "band_internal_rotation", "muscleId": "rotator_cuff", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "band_internal_rotation", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "ytw_raise", "muscleId": "lower_traps", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "ytw_raise", "muscleId": "mid_back", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "ytw_raise", "muscleId": "rear_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "ytw_raise", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.3 },
+
+  { "exerciseId": "prone_cobra", "muscleId": "lower_traps", "role": "primary", "weight": 0.45 },
+  { "exerciseId": "prone_cobra", "muscleId": "mid_back", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "prone_cobra", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "scapular_wall_slide", "muscleId": "serratus", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "scapular_wall_slide", "muscleId": "lower_traps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "scapular_wall_slide", "muscleId": "rotator_cuff", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "band_pull_apart", "muscleId": "rear_delts", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "band_pull_apart", "muscleId": "mid_back", "role": "secondary", "weight": 0.45 },
+
+  { "exerciseId": "reverse_fly_cable", "muscleId": "rear_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "reverse_fly_cable", "muscleId": "mid_back", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "rear_delts", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "rear_delt_fly_machine", "muscleId": "mid_back", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "cable_upright_row", "muscleId": "side_delts", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "cable_upright_row", "muscleId": "upper_traps", "role": "secondary", "weight": 0.5 },
+
+  { "exerciseId": "db_upright_row", "muscleId": "side_delts", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "db_upright_row", "muscleId": "upper_traps", "role": "secondary", "weight": 0.5 },
+
+  { "exerciseId": "shrug_trap_bar", "muscleId": "upper_traps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "shrug_trap_bar", "muscleId": "forearms", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "scapular_push_up", "muscleId": "serratus", "role": "primary", "weight": 0.75 },
+  { "exerciseId": "scapular_push_up", "muscleId": "chest", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "serratus_wall_slide", "muscleId": "serratus", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "serratus_wall_slide", "muscleId": "lower_traps", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bb_clean", "muscleId": "glutes", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "bb_clean", "muscleId": "quads", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "bb_clean", "muscleId": "traps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_clean", "muscleId": "erectors", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "bb_clean", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_clean", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_power_clean", "muscleId": "glutes", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bb_power_clean", "muscleId": "quads", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bb_power_clean", "muscleId": "traps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_power_clean", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_power_clean", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_hang_clean", "muscleId": "glutes", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bb_hang_clean", "muscleId": "hamstrings", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_hang_clean", "muscleId": "traps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "bb_hang_clean", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_clean_and_press", "muscleId": "glutes", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_clean_and_press", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_clean_and_press", "muscleId": "front_delts", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bb_clean_and_press", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_clean_and_press", "muscleId": "traps", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bb_clean_and_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_clean", "muscleId": "glutes", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "db_clean", "muscleId": "quads", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "db_clean", "muscleId": "traps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "db_clean", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_clean_and_press", "muscleId": "front_delts", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "db_clean_and_press", "muscleId": "triceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "db_clean_and_press", "muscleId": "glutes", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "db_clean_and_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_clean", "muscleId": "glutes", "role": "primary", "weight": 0.45 },
+  { "exerciseId": "kb_clean", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "kb_clean", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "kb_clean", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_clean_and_press", "muscleId": "front_delts", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "kb_clean_and_press", "muscleId": "triceps", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "kb_clean_and_press", "muscleId": "glutes", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "kb_clean_and_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_snatch", "muscleId": "glutes", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "kb_snatch", "muscleId": "hamstrings", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "kb_snatch", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "kb_snatch", "muscleId": "forearms", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "kb_snatch", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "thruster_db", "muscleId": "quads", "role": "primary", "weight": 0.65 },
+  { "exerciseId": "thruster_db", "muscleId": "glutes", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "thruster_db", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "thruster_db", "muscleId": "triceps", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "thruster_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "thruster_bb", "muscleId": "quads", "role": "primary", "weight": 0.65 },
+  { "exerciseId": "thruster_bb", "muscleId": "glutes", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "thruster_bb", "muscleId": "front_delts", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "thruster_bb", "muscleId": "triceps", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "thruster_bb", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "wall_ball", "muscleId": "quads", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "wall_ball", "muscleId": "glutes", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "wall_ball", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "wall_ball", "muscleId": "abs", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "medicine_ball_slam", "muscleId": "abs", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "medicine_ball_slam", "muscleId": "lats", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "medicine_ball_slam", "muscleId": "front_delts", "role": "secondary", "weight": 0.2 },
+
+  { "exerciseId": "battle_ropes", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "battle_ropes", "muscleId": "forearms", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "battle_ropes", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "bb_snatch", "muscleId": "glutes", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bb_snatch", "muscleId": "quads", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "bb_snatch", "muscleId": "traps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_snatch", "muscleId": "rear_delts", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "bb_snatch", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+  { "exerciseId": "bb_snatch", "muscleId": "forearms", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_power_snatch", "muscleId": "glutes", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "bb_power_snatch", "muscleId": "quads", "role": "primary", "weight": 0.45 },
+  { "exerciseId": "bb_power_snatch", "muscleId": "traps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_power_snatch", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_hang_snatch", "muscleId": "glutes", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "bb_hang_snatch", "muscleId": "hamstrings", "role": "secondary", "weight": 0.4 },
+  { "exerciseId": "bb_hang_snatch", "muscleId": "traps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_hang_snatch", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "overhead_squat_bb", "muscleId": "quads", "role": "primary", "weight": 0.65 },
+  { "exerciseId": "overhead_squat_bb", "muscleId": "glutes", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "overhead_squat_bb", "muscleId": "abs", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "overhead_squat_bb", "muscleId": "serratus", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "overhead_squat_bb", "muscleId": "rotator_cuff", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "snatch_balance", "muscleId": "quads", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "snatch_balance", "muscleId": "glutes", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "snatch_balance", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "snatch_balance", "muscleId": "rotator_cuff", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_clean_and_jerk", "muscleId": "quads", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "bb_clean_and_jerk", "muscleId": "glutes", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "bb_clean_and_jerk", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_clean_and_jerk", "muscleId": "triceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_clean_and_jerk", "muscleId": "abs", "role": "stabilizer", "weight": 0.3 },
+
+  { "exerciseId": "bb_push_jerk", "muscleId": "front_delts", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "bb_push_jerk", "muscleId": "triceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_push_jerk", "muscleId": "quads", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_push_jerk", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "bb_split_jerk", "muscleId": "front_delts", "role": "primary", "weight": 0.5 },
+  { "exerciseId": "bb_split_jerk", "muscleId": "triceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "bb_split_jerk", "muscleId": "quads", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "bb_split_jerk", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_turkish_get_up", "muscleId": "abs", "role": "primary", "weight": 0.55 },
+  { "exerciseId": "kb_turkish_get_up", "muscleId": "obliques", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "kb_turkish_get_up", "muscleId": "rotator_cuff", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "kb_turkish_get_up", "muscleId": "glutes", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "kb_windmill", "muscleId": "obliques", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "kb_windmill", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "kb_windmill", "muscleId": "rotator_cuff", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "kb_overhead_carry", "muscleId": "serratus", "role": "primary", "weight": 0.35 },
+  { "exerciseId": "kb_overhead_carry", "muscleId": "rotator_cuff", "role": "stabilizer", "weight": 0.25 },
+  { "exerciseId": "kb_overhead_carry", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+
+  { "exerciseId": "db_snatch", "muscleId": "glutes", "role": "primary", "weight": 0.45 },
+  { "exerciseId": "db_snatch", "muscleId": "hamstrings", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "db_snatch", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "db_snatch", "muscleId": "abs", "role": "stabilizer", "weight": 0.25 },
+
+  { "exerciseId": "db_devils_press", "muscleId": "abs", "role": "stabilizer", "weight": 0.35 },
+  { "exerciseId": "db_devils_press", "muscleId": "glutes", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "db_devils_press", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "db_devils_press", "muscleId": "triceps", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "man_maker_db", "muscleId": "abs", "role": "stabilizer", "weight": 0.4 },
+  { "exerciseId": "man_maker_db", "muscleId": "lats", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "man_maker_db", "muscleId": "chest", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "man_maker_db", "muscleId": "front_delts", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "rowing_erg_steady_state", "muscleId": "quads", "role": "secondary", "weight": 0.3 },
+  { "exerciseId": "rowing_erg_steady_state", "muscleId": "glutes", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "rowing_erg_steady_state", "muscleId": "lats", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "rowing_erg_steady_state", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "treadmill_run", "muscleId": "calves", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "treadmill_run", "muscleId": "quads", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "treadmill_run", "muscleId": "glutes", "role": "secondary", "weight": 0.2 },
+  { "exerciseId": "lat_pulldown_wide_grip", "muscleId": "lats", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "lat_pulldown_wide_grip", "muscleId": "mid_back", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "lat_pulldown_wide_grip", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "lat_pulldown_wide_grip", "muscleId": "forearms", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "lat_pulldown_underhand", "muscleId": "lats", "role": "primary", "weight": 0.8 },
+  { "exerciseId": "lat_pulldown_underhand", "muscleId": "biceps", "role": "secondary", "weight": 0.5 },
+  { "exerciseId": "lat_pulldown_underhand", "muscleId": "mid_back", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "lat_pulldown_single_arm", "muscleId": "lats", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "lat_pulldown_single_arm", "muscleId": "biceps", "role": "secondary", "weight": 0.35 },
+  { "exerciseId": "lat_pulldown_single_arm", "muscleId": "obliques", "role": "stabilizer", "weight": 0.2 },
+
+  { "exerciseId": "assisted_pull_up_machine", "muscleId": "lats", "role": "primary", "weight": 0.85 },
+  { "exerciseId": "assisted_pull_up_machine", "muscleId": "biceps", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "assisted_pull_up_machine", "muscleId": "mid_back", "role": "secondary", "weight": 0.4 },
+
+  { "exerciseId": "assisted_dip_machine", "muscleId": "triceps", "role": "primary", "weight": 0.6 },
+  { "exerciseId": "assisted_dip_machine", "muscleId": "chest", "role": "secondary", "weight": 0.55 },
+  { "exerciseId": "assisted_dip_machine", "muscleId": "front_delts", "role": "secondary", "weight": 0.35 },
+
+  { "exerciseId": "cable_triceps_extension_bar_overhead", "muscleId": "triceps", "role": "primary", "weight": 1.0 },
+  { "exerciseId": "cable_triceps_extension_bar_overhead", "muscleId": "abs", "role": "stabilizer", "weight": 0.15 },
+
+  { "exerciseId": "cable_lateral_raise", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "cable_front_raise", "muscleId": "front_delts", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "db_lateral_raise_seated", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "db_lateral_raise_leaning", "muscleId": "side_delts", "role": "primary", "weight": 1.0 },
+
+  { "exerciseId": "rear_delt_row_cable", "muscleId": "rear_delts", "role": "primary", "weight": 0.7 },
+  { "exerciseId": "rear_delt_row_cable", "muscleId": "mid_back", "role": "secondary", "weight": 0.45 },
+  { "exerciseId": "rear_delt_row_cable", "muscleId": "biceps", "role": "secondary", "weight": 0.25 },
+
+  { "exerciseId": "incline_db_y_raise", "muscleId": "lower_traps", "role": "primary", "weight": 0.45 },
+  { "exerciseId": "incline_db_y_raise", "muscleId": "serratus", "role": "secondary", "weight": 0.25 },
+  { "exerciseId": "incline_db_y_raise", "muscleId": "rear_delts", "role": "secondary", "weight": 0.2 }
+]
