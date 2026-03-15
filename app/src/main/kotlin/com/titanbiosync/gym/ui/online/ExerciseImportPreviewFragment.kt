@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentExerciseImportPreviewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -50,7 +51,9 @@ class ExerciseImportPreviewFragment : Fragment() {
                 .setMessage("Verrà aggiunto al tuo catalogo locale.")
                 .setPositiveButton("Salva") { _, _ ->
                     viewModel.save(
-                        onDone = { findNavController().popBackStack() },
+                        onDone = { exerciseId, nameIt ->
+                            returnToPickerWithResult(exerciseId, nameIt)
+                        },
                         onError = { t ->
                             AlertDialog.Builder(requireContext())
                                 .setTitle("Errore")
@@ -65,8 +68,35 @@ class ExerciseImportPreviewFragment : Fragment() {
         }
     }
 
+    /** Passes the imported exercise result to ExercisePickerFragment via SavedStateHandle
+     *  and pops the back stack back to the picker. */
+    private fun returnToPickerWithResult(exerciseId: String, nameIt: String) {
+        val navController = findNavController()
+
+        // Try to place the result on the picker entry's SavedStateHandle so it can
+        // observe and open the configure bottom sheet automatically.
+        try {
+            val pickerEntry = navController.getBackStackEntry(R.id.exercisePickerFragment)
+            pickerEntry.savedStateHandle[KEY_IMPORTED_EXERCISE_ID] = exerciseId
+            pickerEntry.savedStateHandle[KEY_IMPORTED_EXERCISE_NAME_IT] = nameIt
+        } catch (_: IllegalArgumentException) {
+            // exercisePickerFragment not in back stack — fall through and just pop
+        }
+
+        val popped = navController.popBackStack(R.id.exercisePickerFragment, false)
+        if (!popped) {
+            // Fallback: pop at least the current fragment (e.g. deep-linked entry point)
+            navController.popBackStack()
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    companion object {
+        const val KEY_IMPORTED_EXERCISE_ID = "imported_exercise_id"
+        const val KEY_IMPORTED_EXERCISE_NAME_IT = "imported_exercise_name_it"
     }
 }

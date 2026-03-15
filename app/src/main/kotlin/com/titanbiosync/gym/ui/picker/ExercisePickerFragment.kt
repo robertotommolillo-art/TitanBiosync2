@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentExercisePickerBinding
+import com.titanbiosync.gym.ui.online.ExerciseImportPreviewFragment
 import com.titanbiosync.gym.ui.template.ConfigureTemplateExerciseBottomSheet
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -63,6 +64,32 @@ class ExercisePickerFragment : Fragment() {
             binding.searchOnlineButton.visibility = if (showOnline) View.VISIBLE else View.GONE
             binding.searchOnlineButton.text = "Cerca online \"$currentQuery\""
         }
+
+        // When returning from online import, open configure sheet for the imported exercise.
+        observeImportedExercise()
+    }
+
+    /** Observes the SavedStateHandle result set by [ExerciseImportPreviewFragment] and, when
+     *  an imported exercise id arrives, opens [ConfigureTemplateExerciseBottomSheet] once. */
+    private fun observeImportedExercise() {
+        val savedState = findNavController().currentBackStackEntry?.savedStateHandle ?: return
+
+        savedState.getLiveData<String>(ExerciseImportPreviewFragment.KEY_IMPORTED_EXERCISE_ID)
+            .observe(viewLifecycleOwner) { exerciseId ->
+                if (exerciseId.isNullOrEmpty()) return@observe
+
+                val nameIt = savedState.get<String>(
+                    ExerciseImportPreviewFragment.KEY_IMPORTED_EXERCISE_NAME_IT
+                ).orEmpty()
+
+                // Consume the result so it doesn't fire again on rotation / re-observe.
+                savedState.remove<String>(ExerciseImportPreviewFragment.KEY_IMPORTED_EXERCISE_ID)
+                savedState.remove<String>(ExerciseImportPreviewFragment.KEY_IMPORTED_EXERCISE_NAME_IT)
+
+                ConfigureTemplateExerciseBottomSheet
+                    .newInstance(exerciseId = exerciseId, exerciseNameIt = nameIt)
+                    .show(childFragmentManager, "ConfigureTemplateExerciseBottomSheet")
+            }
     }
 
     override fun onDestroyView() {
