@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- i tuoi uses-permission / uses-feature qui invariati -->
+    <!-- BLE / Bluetooth: legacy permissions (API < 31) -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+
+    <!-- BLE / Bluetooth: API 31+ (Android 12+).
+         neverForLocation: location is tracked via GPS (LocationTracker), not from BLE scanning. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!-- Location: needed for BLE scan on API < 31 and for GPS session tracking -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- BLE hardware feature (not required so the app installs on non-BLE devices) -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
 
     <application
         android:name=".TitanBiosyncApplication"

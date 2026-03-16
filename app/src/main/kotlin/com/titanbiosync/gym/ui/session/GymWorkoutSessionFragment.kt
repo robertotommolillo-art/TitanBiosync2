@@ -6,12 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentGymWorkoutSessionBinding
 import com.titanbiosync.gym.domain.WeightUnit
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.isActive
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class GymWorkoutSessionFragment : Fragment() {
@@ -21,6 +26,8 @@ class GymWorkoutSessionFragment : Fragment() {
 
     private val viewModel: GymWorkoutSessionViewModel by viewModels()
     private lateinit var adapter: GymWorkoutSessionExerciseAdapter
+
+    private var timerJob: Job? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,8 +51,6 @@ class GymWorkoutSessionFragment : Fragment() {
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
         binding.recycler.adapter = adapter
 
-        binding.sessionId.text = viewModel.getSessionId()
-
         binding.endButton.setOnClickListener {
             viewModel.endSession {
                 val args = Bundle().apply { putString("sessionId", viewModel.getSessionId()) }
@@ -62,9 +67,39 @@ class GymWorkoutSessionFragment : Fragment() {
             binding.unitHint.text = "Unità peso: ${unit.key}"
             adapter.setWeightUnit(unit)
         }
+
+        // Start the live elapsed-time timer once we know startedAt.
+        viewModel.startedAt.observe(viewLifecycleOwner) { startedAt ->
+            timerJob?.cancel()
+            if (startedAt != null) {
+                timerJob = viewLifecycleOwner.lifecycleScope.launch {
+                    while (isActive) {
+                        val now = System.currentTimeMillis()
+                        val elapsedSec = (now - startedAt) / 1000L
+                        binding.timerText.text = formatElapsed(elapsedSec)
+                        // Sleep until the start of the next whole second to avoid drift.
+                        val msUntilNextTick = 1000L - (now % 1000L)
+                        delay(msUntilNextTick)
+                    }
+                }
+            }
+        }
+    }
+
+    /** Formats elapsed seconds as mm:ss (or hh:mm:ss when ≥ 1 hour). */
+    private fun formatElapsed(totalSeconds: Long): String {
+        val hh = totalSeconds / 3600
+        val mm = (totalSeconds % 3600) / 60
+        val ss = totalSeconds % 60
+        return if (hh > 0) {
+            "%02d:%02d:%02d".format(hh, mm, ss)
+        } else {
+            "%02d:%02d".format(mm, ss)
+        }
     }
 
     override fun onDestroyView() {
+        timerJob?.cancel()
         super.onDestroyView()
         _binding = null
     }

@@ -16,6 +16,19 @@
     <string name="start_session_started">Sessione avviata: %1$s</string>
     <string name="start_session_error">Errore: %1$s</string>
 
+    <string name="start_session_use_gps">Usa posizione GPS</string>
+    <string name="start_session_location_denied">Permesso posizione negato. La sessione partirà senza GPS.</string>
+    <string name="start_session_location_settings_rationale">Permesso posizione negato definitivamente. Aprire Impostazioni per abilitarlo.</string>
+
+    <!-- Device / Bluetooth -->
+    <string name="device_grant_permissions">Concedi permessi</string>
+    <string name="device_permissions_info">⚠️ Permessi Bluetooth mancanti. Premi il pulsante per concederli.</string>
+    <string name="device_permissions_required">Permessi Bluetooth richiesti.</string>
+    <string name="device_permissions_settings_rationale">Permessi Bluetooth negati definitivamente. Aprire Impostazioni per abilitarli.</string>
+    <string name="device_bluetooth_not_enabled">⚠️ Bluetooth non abilitato.</string>
+    <string name="device_bluetooth_must_be_enabled">È necessario abilitare il Bluetooth.</string>
+    <string name="device_open_settings">Impostazioni</string>
+
     <!-- Common -->
     <string name="common_dash">—</string>
     <string name="common_coming_soon">Dettagli in arrivo</string>

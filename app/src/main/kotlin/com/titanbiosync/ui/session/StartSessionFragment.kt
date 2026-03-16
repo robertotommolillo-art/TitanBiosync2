@@ -1,9 +1,15 @@
 package com.titanbiosync.ui.session
 
+import android.Manifest
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -23,6 +29,40 @@ class StartSessionFragment : Fragment() {
 
     private val viewModel: StartSessionViewModel by viewModels()
 
+    /** Session type queued while waiting for the permission result. */
+    private var pendingSessionType: String? = null
+
+    private val locationPermissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { results ->
+        val fineGranted = results[Manifest.permission.ACCESS_FINE_LOCATION] == true
+        val type = pendingSessionType ?: return@registerForActivityResult
+        pendingSessionType = null
+
+        if (!fineGranted) {
+            val canAskAgain = locationPermissions().any { perm ->
+                shouldShowRequestPermissionRationale(perm)
+            }
+            if (!canAskAgain) {
+                Snackbar.make(
+                    binding.root,
+                    getString(R.string.start_session_location_settings_rationale),
+                    Snackbar.LENGTH_LONG
+                )
+                    .setAction(getString(R.string.device_open_settings)) { openAppSettings() }
+                    .show()
+            } else {
+                Snackbar.make(
+                    binding.root,
+                    getString(R.string.start_session_location_denied),
+                    Snackbar.LENGTH_LONG
+                ).show()
+            }
+        }
+        // Start session regardless: GPS is optional.
+        viewModel.startSession(type)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -40,16 +80,35 @@ class StartSessionFragment : Fragment() {
 
     private fun setupClickListeners() {
         binding.runningCard.setOnClickListener {
-            viewModel.startSession("running")
+            launchSession("running")
         }
 
         binding.cyclingCard.setOnClickListener {
-            viewModel.startSession("cycling")
+            launchSession("cycling")
         }
-
-        // Workout rimosso (UI + logica)
-        // binding.workoutCard.setOnClickListener { viewModel.startSession("workout") }
     }
+
+    /**
+     * Starts a session after optionally requesting location permission.
+     * If the GPS toggle is ON and permission has not been granted, the permission
+     * prompt is shown first. The session is started regardless of the result (GPS is
+     * optional — the tracker simply won't provide coordinates when denied).
+     */
+    private fun launchSession(type: String) {
+        val wantsGps = binding.locationSwitch.isChecked
+        if (wantsGps && !hasLocationPermission()) {
+            pendingSessionType = type
+            locationPermissionLauncher.launch(locationPermissions())
+        } else {
+            viewModel.startSession(type)
+        }
+    }
+
+    private fun hasLocationPermission(): Boolean =
+        ContextCompat.checkSelfPermission(
+            requireContext(),
+            Manifest.permission.ACCESS_FINE_LOCATION
+        ) == android.content.pm.PackageManager.PERMISSION_GRANTED
 
     private fun setupStateSubscription() {
         viewLifecycleOwner.lifecycleScope.launch {
@@ -85,8 +144,23 @@ class StartSessionFragment : Fragment() {
         }
     }
 
+    private fun openAppSettings() {
+        startActivity(
+            Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                data = Uri.fromParts("package", requireContext().packageName, null)
+            }
+        )
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    companion object {
+        private fun locationPermissions(): Array<String> = arrayOf(
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION
+        )
     }
 }

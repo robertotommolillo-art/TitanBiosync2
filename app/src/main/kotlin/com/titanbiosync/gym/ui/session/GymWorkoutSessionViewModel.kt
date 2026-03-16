@@ -11,6 +11,7 @@ import com.titanbiosync.data.local.entities.gym.GymWorkoutSetLogEntity
 import com.titanbiosync.gym.domain.WeightUnitRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.util.UUID
@@ -32,6 +33,10 @@ class GymWorkoutSessionViewModel @Inject constructor(
         .asLiveData()
 
     val exercises = sessionExerciseDao.observeForSession(sessionId).asLiveData()
+
+    val startedAt = sessionDao.observeById(sessionId)
+        .map { it?.startedAt }
+        .asLiveData()
 
     fun observeSets(sessionExerciseId: String) =
         setDao.observeForSessionExercise(sessionExerciseId).asLiveData()

@@ -98,6 +98,15 @@
         android:padding="8dp"
         android:visibility="gone" />
 
+    <!-- Grant permissions CTA (shown when permissions are missing) -->
+    <Button
+        android:id="@+id/grantPermissionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/device_grant_permissions"
+        android:visibility="gone" />
+
     <!-- RecyclerView for devices -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/devicesRecyclerView"

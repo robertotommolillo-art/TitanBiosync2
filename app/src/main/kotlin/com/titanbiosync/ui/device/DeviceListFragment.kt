@@ -2,7 +2,9 @@ package com.titanbiosync.ui.device
 
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +15,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
+import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentDeviceListBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -36,7 +39,21 @@ class DeviceListFragment : Fragment() {
             startScan()
         } else {
             viewModel.onPermissionsDenied()
-            showError("Bluetooth permissions are required")
+            val canAskAgain = viewModel.requiredPermissions.any { perm ->
+                shouldShowRequestPermissionRationale(perm)
+            }
+            if (!canAskAgain) {
+                // "Don't ask again" selected — direct user to Settings
+                Snackbar.make(
+                    binding.root,
+                    getString(R.string.device_permissions_settings_rationale),
+                    Snackbar.LENGTH_LONG
+                )
+                    .setAction(getString(R.string.device_open_settings)) { openAppSettings() }
+                    .show()
+            } else {
+                showError(getString(R.string.device_permissions_required))
+            }
         }
     }
 
@@ -47,7 +64,7 @@ class DeviceListFragment : Fragment() {
         if (result.resultCode == android.app.Activity.RESULT_OK) {
             startScan()
         } else {
-            showError("Bluetooth must be enabled")
+            showError(getString(R.string.device_bluetooth_must_be_enabled))
         }
     }
 
@@ -91,6 +108,10 @@ class DeviceListFragment : Fragment() {
         binding.disconnectButton.setOnClickListener {
             viewModel.disconnect()
         }
+
+        binding.grantPermissionsButton.setOnClickListener {
+            checkPermissionsAndScan()
+        }
     }
 
     private fun observeUiState() {
@@ -108,7 +129,6 @@ class DeviceListFragment : Fragment() {
                 // Update connected device card
                 if (state.connectedDevice != null) {
                     binding.connectedDeviceCard.isVisible = true
-                    // Corrected property name from displayName to name
                     binding.connectedDeviceName.text = state.connectedDevice.name
                 } else {
                     binding.connectedDeviceCard.isVisible = false
@@ -121,15 +141,18 @@ class DeviceListFragment : Fragment() {
                 binding.emptyStateLayout.isVisible = state.devices.isEmpty() && !state.isScanning
                 binding.devicesRecyclerView.isVisible = state.devices.isNotEmpty()
 
-                // Show info/error messages
+                // Show info/error messages and grant button
+                val permissionsMissing = !state.permissionsGranted
+                binding.grantPermissionsButton.isVisible = permissionsMissing
+
                 when {
                     !state.bluetoothEnabled -> {
                         binding.infoText.isVisible = true
-                        binding.infoText.text = "⚠️ Bluetooth is not enabled"
+                        binding.infoText.text = getString(R.string.device_bluetooth_not_enabled)
                     }
-                    !state.permissionsGranted -> {
+                    permissionsMissing -> {
                         binding.infoText.isVisible = true
-                        binding.infoText.text = "⚠️ Bluetooth permissions required"
+                        binding.infoText.text = getString(R.string.device_permissions_info)
                     }
                     state.error != null -> {
                         binding.infoText.isVisible = true
@@ -140,7 +163,7 @@ class DeviceListFragment : Fragment() {
                     }
                 }
 
-                // Handle errors
+                // Handle transient errors via Snackbar
                 state.error?.let { error ->
                     showError(error)
                     viewModel.clearError()
@@ -174,6 +197,14 @@ class DeviceListFragment : Fragment() {
 
     private fun showError(message: String) {
         Snackbar.make(binding.root, message, Snackbar.LENGTH_LONG).show()
+    }
+
+    private fun openAppSettings() {
+        startActivity(
+            Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                data = Uri.fromParts("package", requireContext().packageName, null)
+            }
+        )
     }
 
     override fun onDestroyView() {

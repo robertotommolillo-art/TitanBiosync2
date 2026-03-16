@@ -37,7 +37,7 @@ class ExerciseImportPreviewViewModel @Inject constructor(
         }
     }
 
-    fun save(onDone: () -> Unit, onError: (Throwable) -> Unit) {
+    fun save(onDone: (exerciseId: String, nameIt: String) -> Unit, onError: (Throwable) -> Unit) {
         val r = _resolved.value ?: return
 
         viewModelScope.launch {
@@ -78,7 +78,7 @@ class ExerciseImportPreviewViewModel @Inject constructor(
                     exerciseMuscleDao.upsertAll(links)
                 }
 
-                onDone()
+                onDone(newExerciseId, r.nameIt)
             } catch (t: Throwable) {
                 onError(t)
             }
