@@ -34,13 +34,27 @@ class ExerciseImportPreviewFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewModel.load()
 
+        // Titolo scelto nella lista (fallback se resolve è generico)
+        val candidateTitle = requireArguments().getString("candidateTitle").orEmpty()
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.resolved.collect { r ->
                 if (r == null) return@collect
-                binding.title.text = r.nameIt
+
+                val resolvedName = r.nameIt?.trim().orEmpty()
+                val nameItShown =
+                    if (resolvedName.isBlank() || resolvedName.equals("Esercizio personalizzato", ignoreCase = true)) {
+                        candidateTitle.ifBlank { resolvedName.ifBlank { "Esercizio" } }
+                    } else {
+                        resolvedName
+                    }
+
+                binding.title.text = nameItShown
                 binding.source.text = "Fonte: ${r.sourceName ?: "n/a"}"
-                binding.meta.text = "Categoria: ${r.category}\nEquipment: ${r.equipment ?: "-"}\nMeccanica: ${r.mechanics ?: "-"}\nLivello: ${r.level ?: "-"}"
-                binding.muscles.text = "Muscoli:\n" + r.muscles.joinToString("\n") { "• ${it.muscleId} (${it.role}, w=${it.weight})" }
+                binding.meta.text =
+                    "Categoria: ${r.category}\nEquipment: ${r.equipment ?: "-"}\nMeccanica: ${r.mechanics ?: "-"}\nLivello: ${r.level ?: "-"}"
+                binding.muscles.text =
+                    "Muscoli:\n" + r.muscles.joinToString("\n") { "• ${it.muscleId} (${it.role}, w=${it.weight})" }
                 binding.description.text = r.descriptionIt ?: ""
             }
         }
@@ -68,13 +82,15 @@ class ExerciseImportPreviewFragment : Fragment() {
         }
     }
 
-    /** Passes the imported exercise result to ExercisePickerFragment via SavedStateHandle
-     *  and pops the back stack back to the picker. */
+    /**
+     * Passes the imported exercise result to ExercisePickerFragment via SavedStateHandle
+     * and pops the back stack back to the picker.
+     */
     private fun returnToPickerWithResult(exerciseId: String, nameIt: String) {
         val navController = findNavController()
 
-        // Try to place the result on the picker entry's SavedStateHandle so it can
-        // observe and open the configure bottom sheet automatically.
+        // Put result onto the picker's back stack entry so it can observe and open
+        // the configure bottom sheet automatically.
         try {
             val pickerEntry = navController.getBackStackEntry(R.id.exercisePickerFragment)
             pickerEntry.savedStateHandle[KEY_IMPORTED_EXERCISE_ID] = exerciseId
@@ -85,7 +101,6 @@ class ExerciseImportPreviewFragment : Fragment() {
 
         val popped = navController.popBackStack(R.id.exercisePickerFragment, false)
         if (!popped) {
-            // Fallback: pop at least the current fragment (e.g. deep-linked entry point)
             navController.popBackStack()
         }
     }

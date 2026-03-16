@@ -1,7 +1,6 @@
 package com.titanbiosync.gym.ui.online
 
 import android.os.Bundle
-import android.os.Bundle.EMPTY
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +25,7 @@ class OnlineExerciseSearchFragment : Fragment() {
     private val adapter = OnlineExerciseCandidateAdapter { candidate ->
         val args = Bundle().apply {
             putString("candidateId", candidate.candidateId)
+            putString("candidateTitle", candidate.title) // NEW
         }
         findNavController().navigate(R.id.exerciseImportPreviewFragment, args)
     }

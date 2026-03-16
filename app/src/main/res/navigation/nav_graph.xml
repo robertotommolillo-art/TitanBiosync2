@@ -124,6 +124,11 @@
         <argument
             android:name="candidateId"
             app:argType="string" />
+        <!-- NEW -->
+        <argument
+            android:name="candidateTitle"
+            app:argType="string"
+            android:defaultValue="" />
     </fragment>
 
     <!-- NEW: Storico -->

@@ -27,6 +27,7 @@ class ExerciseImportPreviewViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val candidateId: String = savedStateHandle["candidateId"] ?: ""
+    private val candidateTitle: String = savedStateHandle["candidateTitle"] ?: ""
 
     private val _resolved = MutableStateFlow<OnlineExerciseResolved?>(null)
     val resolved = _resolved.asStateFlow()
@@ -37,18 +38,34 @@ class ExerciseImportPreviewViewModel @Inject constructor(
         }
     }
 
-    fun save(onDone: (exerciseId: String, nameIt: String) -> Unit, onError: (Throwable) -> Unit) {
+    private fun computeDisplayNameIt(r: OnlineExerciseResolved): String {
+        val resolvedName = r.nameIt?.trim().orEmpty()
+        val title = candidateTitle.trim()
+
+        // Se lo stub restituisce "Esercizio personalizzato" (o vuoto), usa il titolo scelto nella lista
+        return when {
+            resolvedName.isBlank() -> title.ifBlank { resolvedName }
+            resolvedName.equals("Esercizio personalizzato", ignoreCase = true) -> title.ifBlank { resolvedName }
+            else -> resolvedName
+        }
+    }
+
+    fun save(
+        onDone: (exerciseId: String, nameIt: String) -> Unit,
+        onError: (Throwable) -> Unit
+    ) {
         val r = _resolved.value ?: return
 
         viewModelScope.launch {
             try {
                 val newExerciseId = r.idHint ?: UUID.randomUUID().toString()
+                val nameItFinal = computeDisplayNameIt(r)
 
                 // 1) salva exercise
                 exerciseDao.upsert(
                     ExerciseEntity(
                         id = newExerciseId,
-                        nameIt = r.nameIt,
+                        nameIt = nameItFinal,
                         nameEn = r.nameEn,
                         descriptionIt = r.descriptionIt,
                         descriptionEn = r.descriptionEn,
@@ -78,7 +95,7 @@ class ExerciseImportPreviewViewModel @Inject constructor(
                     exerciseMuscleDao.upsertAll(links)
                 }
 
-                onDone(newExerciseId, r.nameIt)
+                onDone(newExerciseId, nameItFinal)
             } catch (t: Throwable) {
                 onError(t)
             }
