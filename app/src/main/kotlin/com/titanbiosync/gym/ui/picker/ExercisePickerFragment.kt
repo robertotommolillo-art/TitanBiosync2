@@ -4,16 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentExercisePickerBinding
 import com.titanbiosync.gym.ui.online.ExerciseImportPreviewFragment
 import com.titanbiosync.gym.ui.template.ConfigureTemplateExerciseBottomSheet
+import com.titanbiosync.gym.ui.template.ConfigureTemplateSupersetBottomSheet
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,10 +27,41 @@ class ExercisePickerFragment : Fragment() {
 
     private var currentQuery: String = ""
 
+    /** First exercise chosen when user starts a superset. Null = normal pick mode. */
+    private var pendingSupersetFirst: ExercisePickerViewModel.PickedExercise? = null
+
     private val adapter = ExercisePickerAdapter { exercise ->
-        ConfigureTemplateExerciseBottomSheet
-            .newInstance(exerciseId = exercise.id, exerciseNameIt = exercise.nameIt)
-            .show(childFragmentManager, "ConfigureTemplateExerciseBottomSheet")
+        val pending = pendingSupersetFirst
+        if (pending != null) {
+            // Step 2 of superset: open superset configuration sheet
+            val second = ExercisePickerViewModel.PickedExercise(
+                exerciseId = exercise.id,
+                nameIt = exercise.nameIt
+            )
+            clearSupersetState()
+            ConfigureTemplateSupersetBottomSheet
+                .newInstance(first = pending, second = second)
+                .show(childFragmentManager, "ConfigureTemplateSupersetBottomSheet")
+        } else {
+            // Ask user: Normal or Superset?
+            AlertDialog.Builder(requireContext())
+                .setTitle(exercise.nameIt)
+                .setMessage("Come vuoi aggiungere questo esercizio?")
+                .setPositiveButton("Normale") { _, _ ->
+                    ConfigureTemplateExerciseBottomSheet
+                        .newInstance(exerciseId = exercise.id, exerciseNameIt = exercise.nameIt)
+                        .show(childFragmentManager, "ConfigureTemplateExerciseBottomSheet")
+                }
+                .setNeutralButton("Superserie") { _, _ ->
+                    pendingSupersetFirst = ExercisePickerViewModel.PickedExercise(
+                        exerciseId = exercise.id,
+                        nameIt = exercise.nameIt
+                    )
+                    showSupersetBanner(exercise.nameIt)
+                }
+                .setNegativeButton("Annulla", null)
+                .show()
+        }
     }
 
     override fun onCreateView(
@@ -45,24 +77,9 @@ class ExercisePickerFragment : Fragment() {
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
         binding.recycler.adapter = adapter
 
-        // --- ascolta risultato import online ---
-        val navController = findNavController()
-        val handle = navController.currentBackStackEntry?.savedStateHandle
-
-        handle?.getLiveData<String>("imported_exercise_id")
-            ?.observe(viewLifecycleOwner, Observer { exerciseId ->
-                if (exerciseId.isNullOrBlank()) return@Observer
-
-                val nameIt = handle.get<String>("imported_exercise_name_it").orEmpty()
-
-                // Consuma il risultato (evita ri-trigger al rotate)
-                handle.remove<String>("imported_exercise_id")
-                handle.remove<String>("imported_exercise_name_it")
-
-                ConfigureTemplateExerciseBottomSheet
-                    .newInstance(exerciseId = exerciseId, exerciseNameIt = nameIt)
-                    .show(childFragmentManager, "ConfigureTemplateExerciseBottomSheet")
-            })
+        binding.cancelSupersetButton.setOnClickListener {
+            clearSupersetState()
+        }
 
         binding.searchOnlineButton.setOnClickListener {
             val q = currentQuery.trim()
@@ -87,6 +104,19 @@ class ExercisePickerFragment : Fragment() {
 
         // When returning from online import, open configure sheet for the imported exercise.
         observeImportedExercise()
+    }
+
+    /** Shows the superset banner with the name of the first exercise. */
+    private fun showSupersetBanner(firstName: String) {
+        binding.supersetBannerText.text =
+            "Superserie: \"$firstName\" selezionato. Scegli il 2° esercizio."
+        binding.supersetBanner.visibility = View.VISIBLE
+    }
+
+    /** Clears the pending superset state and hides the banner. */
+    private fun clearSupersetState() {
+        pendingSupersetFirst = null
+        binding.supersetBanner.visibility = View.GONE
     }
 
     /** Observes the SavedStateHandle result set by [ExerciseImportPreviewFragment] and, when

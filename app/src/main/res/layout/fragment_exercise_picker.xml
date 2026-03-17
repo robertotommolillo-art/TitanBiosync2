@@ -19,6 +19,34 @@
         android:visibility="gone"
         android:layout_marginTop="8dp" />
 
+    <!-- Superset pending banner: shown only when choosing the 2nd exercise for a superset -->
+    <LinearLayout
+        android:id="@+id/supersetBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF3E0"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/supersetBannerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleziona il 2° esercizio per la superserie"
+            android:textStyle="bold"
+            android:textColor="#E65100" />
+
+        <Button
+            android:id="@+id/cancelSupersetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annulla superserie"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
