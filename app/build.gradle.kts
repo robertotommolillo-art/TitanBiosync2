@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.hilt)
     alias(libs.plugins.androidx.navigation.safeargs)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.google.services)
 }
 
 kapt {
@@ -115,6 +116,12 @@ dependencies {
     // Google Play Services
     implementation(libs.play.services.location)
     implementation(libs.play.services.maps)
+
+    // Firebase (BOM manages versions; google-services.json required at runtime)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth.ktx)
+    // Coroutine support for Firebase Tasks (.await())
+    implementation(libs.kotlinx.coroutines.play.services)
 
     // Desugaring
     coreLibraryDesugaring(libs.desugar.jdk.libs)

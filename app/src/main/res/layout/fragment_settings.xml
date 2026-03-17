@@ -30,4 +30,21 @@
         android:alpha="0.7"
         android:text="Attuale: kg" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="?attr/colorOutline"
+        android:alpha="0.3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_logout"
+        app:icon="@android:drawable/ic_lock_power_off"
+        app:iconGravity="textStart" />
+
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.titanbiosync
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.NavHostFragment
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.startSessionFragment,
                 R.id.deviceListFragment,
                 R.id.gymLibraryFragment,
-                R.id.historyFragment, // NEW: Storico
+                R.id.historyFragment,
             )
         )
 
@@ -47,6 +48,13 @@ class MainActivity : AppCompatActivity() {
 
         // Bottom navigation <-> navController
         binding.bottomNavigation.setupWithNavController(navController)
+
+        // Nascondi toolbar e bottom nav sulla schermata di login
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            val isAuthScreen = destination.id == R.id.loginFragment
+            binding.toolbar.visibility = if (isAuthScreen) View.GONE else View.VISIBLE
+            binding.bottomNavigation.visibility = if (isAuthScreen) View.GONE else View.VISIBLE
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

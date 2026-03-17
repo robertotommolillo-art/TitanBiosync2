@@ -2,7 +2,22 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/dashboardFragment">
+    app:startDestination="@id/loginFragment">
+
+    <!-- ── Auth ─────────────────────────────────────────────── -->
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.titanbiosync.auth.ui.LoginFragment"
+        android:label="@string/action_login">
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ── Main ──────────────────────────────────────────────── -->
 
     <fragment
         android:id="@+id/dashboardFragment"
@@ -20,7 +35,13 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.titanbiosync.ui.settings.SettingsFragment"
-        android:label="Impostazioni" />
+        android:label="Impostazioni">
+        <action
+            android:id="@+id/action_settings_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/gymWorkoutSessionFragment"
