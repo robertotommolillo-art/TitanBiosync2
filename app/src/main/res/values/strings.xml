@@ -65,4 +65,16 @@
     <string name="dashboard_session_status_active">ATTIVA</string>
     <string name="dashboard_session_status_inactive">NESSUNA</string>
 
+    <!-- Login -->
+    <string name="login_subtitle">Accedi al tuo account</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Accedi</string>
+    <string name="login_error_empty_fields">Email e password sono obbligatorie</string>
+
+    <!-- Settings -->
+    <string name="action_logout">Esci</string>
+    <string name="logout_confirm_title">Uscita</string>
+    <string name="logout_confirm_message">Sei sicuro di voler uscire?</string>
+
 </resources>

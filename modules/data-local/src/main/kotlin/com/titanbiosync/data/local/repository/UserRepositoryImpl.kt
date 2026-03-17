@@ -17,6 +17,9 @@ class UserRepositoryImpl(
     override suspend fun findByEmail(email: String): User? =
         userDao.findByEmail(email)?.toDomain()
 
+    override suspend fun findByExternalId(externalId: String): User? =
+        userDao.findByExternalId(externalId)?.toDomain()
+
     override suspend fun upsert(user: User) =
         userDao.insert(user.toEntity())
 

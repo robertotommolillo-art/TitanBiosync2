@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization) apply false // ← NUOVO
     alias(libs.plugins.hilt) apply false
     alias(libs.plugins.androidx.navigation.safeargs) apply false
+    alias(libs.plugins.google.services) apply false
 }
 
 subprojects {
