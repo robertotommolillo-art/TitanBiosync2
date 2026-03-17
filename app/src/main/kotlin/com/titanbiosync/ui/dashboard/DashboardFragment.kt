@@ -57,6 +57,10 @@ class DashboardFragment : Fragment() {
             viewModel.uiState.collect { state ->
                 binding.viewSessionButton.isVisible = false
 
+                // Motivation: always show
+                binding.motivationText.text =
+                    state.motivationText.ifBlank { "Costanza > motivazione." }
+
                 if (state.isLoading) {
                     binding.userNameText.setText(R.string.common_loading)
                 }
@@ -72,12 +76,13 @@ class DashboardFragment : Fragment() {
                 }
 
                 state.user?.let { user ->
-                    binding.userNameText.text = user.displayName
-                    binding.userEmailText.text = user.email
+                    val name = user.displayName?.takeIf { it.isNotBlank() } ?: "Utente"
+                    binding.userNameText.text = "Ciao, $name"
+                    binding.userEmailText.text = user.email.orEmpty()
+                    binding.avatarInitialsText.text = computeInitials(name)
                 }
 
                 if (state.activeSession != null) {
-                    // CHIP: sessione attiva
                     binding.activeSessionStatusChip.setText(R.string.dashboard_session_status_active)
 
                     binding.activeSessionType.text = getString(
@@ -92,20 +97,17 @@ class DashboardFragment : Fragment() {
                         findNavController().navigate(action)
                     }
                 } else {
-                    // CHIP: nessuna sessione
                     binding.activeSessionStatusChip.setText(R.string.dashboard_session_status_inactive)
-
                     binding.activeSessionType.setText(R.string.dashboard_no_active_session)
                 }
 
-                // Quick stats
-                binding.quickStatSessionsValue.text = state.todaySessionsCount.toString()
-                binding.quickStatMinutesValue.text = state.todayActiveMinutes.toString()
-                binding.quickStatDevicesValue.text = state.connectedDevicesCount.toString()
-                binding.quickStatStreakValue.text = state.streakDays?.toString()
-                    ?: getString(R.string.common_dash)
+                // Quick stats (snapshot)
+                binding.quickStatSessionsValue.text = state.weekWorkoutsCount.toString()
+                binding.quickStatMinutesValue.text = formatMinutes(state.weekActiveMinutes)
+                binding.quickStatDevicesValue.text = state.weekVolumeText
+                binding.quickStatStreakValue.text = state.lastWorkoutText
 
-                // Summary cards
+                // Optional: keep old summary cards if you still want them
                 binding.todayStatsText.text = getString(
                     R.string.dashboard_today_stats,
                     state.todaySessionsCount,
@@ -117,6 +119,25 @@ class DashboardFragment : Fragment() {
                     state.connectedDevicesCount
                 )
             }
+        }
+    }
+
+    private fun computeInitials(name: String): String {
+        val parts = name.trim().split(Regex("\\s+")).filter { it.isNotBlank() }
+        val first = parts.getOrNull(0)?.firstOrNull()?.uppercaseChar()
+        val second = parts.getOrNull(1)?.firstOrNull()?.uppercaseChar()
+        return buildString {
+            if (first != null) append(first)
+            if (second != null) append(second)
+        }.ifBlank { "?" }
+    }
+
+    private fun formatMinutes(minutes: Int): String {
+        val h = minutes / 60
+        val m = minutes % 60
+        return when {
+            h > 0 -> "${h}h ${m}m"
+            else -> "${m}m"
         }
     }
 

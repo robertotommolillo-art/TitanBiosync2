@@ -26,16 +26,39 @@
                 android:orientation="horizontal"
                 android:paddingBottom="12dp">
 
+                <!-- Avatar (initials) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/avatarCard"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="?attr/colorSecondaryContainer">
+
+                    <TextView
+                        android:id="@+id/avatarInitialsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="DU"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:textColor="?attr/colorOnSecondaryContainer" />
+                </com.google.android.material.card.MaterialCardView>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
+                    <!-- Motivation text (replaces "Bentornato") -->
                     <TextView
+                        android:id="@+id/motivationText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/dashboard_welcome_back"
+                        android:text="@string/common_placeholder_ellipsis"
                         android:textAppearance="?attr/textAppearanceLabelLarge"
                         android:textColor="?attr/colorOnSurfaceVariant" />
 
@@ -141,8 +164,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:columnCount="2"
-                android:rowCount="2">
+                app:columnCount="2"
+                app:rowCount="2"
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/quickStatSessionsCard"
