@@ -1,14 +1,13 @@
 {
-  "_comment": "PLACEHOLDER — replace with your real google-services.json from the Firebase Console. Do NOT commit real credentials. See README_FIREBASE.md for setup instructions.",
   "project_info": {
-    "project_number": "000000000000",
-    "project_id": "titan-biosync-placeholder",
-    "storage_bucket": "titan-biosync-placeholder.appspot.com"
+    "project_number": "961891103105",
+    "project_id": "debatepromanager",
+    "storage_bucket": "debatepromanager.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+        "mobilesdk_app_id": "1:961891103105:android:9531b4ab36bc6573d57880",
         "android_client_info": {
           "package_name": "com.titanbiosync"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "PLACEHOLDER_DO_NOT_USE_IN_PRODUCTION"
+          "current_key": "AIzaSyCT8DHgq82uiMcrJJcG_vf38qTf5vJLIow"
         }
       ],
       "services": {
