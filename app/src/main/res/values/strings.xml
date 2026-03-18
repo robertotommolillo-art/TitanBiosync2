@@ -65,6 +65,24 @@
     <string name="dashboard_session_status_active">ATTIVA</string>
     <string name="dashboard_session_status_inactive">NESSUNA</string>
 
+    <!-- Profile Setup -->
+    <string name="profile_setup_title">Configura il tuo profilo</string>
+    <string name="profile_setup_subtitle">Inserisci i tuoi dati per personalizzare l\'esperienza</string>
+    <string name="profile_setup_first_name">Nome *</string>
+    <string name="profile_setup_last_name">Cognome *</string>
+    <string name="profile_setup_age">Età</string>
+    <string name="profile_setup_height">Altezza (cm)</string>
+    <string name="profile_setup_sex">Sesso</string>
+    <string name="profile_setup_sex_male">M</string>
+    <string name="profile_setup_sex_female">F</string>
+    <string name="profile_setup_sex_other">Altro</string>
+    <string name="profile_setup_pick_avatar">Scegli foto</string>
+    <string name="profile_setup_save">Salva e continua</string>
+
+    <!-- Settings – account section -->
+    <string name="settings_account_section_title">Account</string>
+    <string name="settings_link_account_coming_soon">Collega account (Backup/Ripristino) — coming soon</string>
+
     <!-- Login -->
     <string name="login_subtitle">Accedi al tuo account</string>
     <string name="hint_email">Email</string>

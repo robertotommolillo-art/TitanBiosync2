@@ -38,13 +38,23 @@
         android:background="?attr/colorOutline"
         android:alpha="0.3" />
 
+    <!-- Account / Backup section (coming soon) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_account_section_title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/logoutButton"
+        android:id="@+id/linkAccountButton"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/action_logout"
-        app:icon="@android:drawable/ic_lock_power_off"
+        android:enabled="false"
+        android:text="@string/settings_link_account_coming_soon"
+        app:icon="@android:drawable/ic_dialog_info"
         app:iconGravity="textStart" />
 
 </LinearLayout>

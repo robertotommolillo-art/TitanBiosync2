@@ -14,6 +14,12 @@ class UserRepositoryImpl(
     override fun observeUser(id: String): Flow<User?> =
         userDao.observeById(id).map { it?.toDomain() }
 
+    override fun observeCurrentProfile(): Flow<User?> =
+        userDao.observeFirstUser().map { it?.toDomain() }
+
+    override suspend fun getCurrentProfile(): User? =
+        userDao.getFirstUser()?.toDomain()
+
     override suspend fun findByEmail(email: String): User? =
         userDao.findByEmail(email)?.toDomain()
 

@@ -26,6 +26,16 @@
                 android:orientation="horizontal"
                 android:paddingBottom="12dp">
 
+                <!-- Avatar (shown when avatarUri is set) -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.App.CircularAvatar" />
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -47,15 +57,6 @@
                         android:text="@string/common_loading"
                         android:textAppearance="?attr/textAppearanceHeadlineMedium"
                         android:textColor="?attr/colorOnSurface" />
-
-                    <TextView
-                        android:id="@+id/userEmailText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="@string/common_placeholder_ellipsis"
-                        android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?attr/colorOnSurfaceVariant" />
                 </LinearLayout>
 
                 <ImageButton

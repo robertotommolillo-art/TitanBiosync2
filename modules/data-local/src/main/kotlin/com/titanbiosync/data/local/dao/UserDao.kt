@@ -9,6 +9,12 @@ interface UserDao {
     @Query("SELECT * FROM users WHERE id = :id LIMIT 1")
     fun observeById(id: String): Flow<UserEntity?>
 
+    @Query("SELECT * FROM users LIMIT 1")
+    fun observeFirstUser(): Flow<UserEntity?>
+
+    @Query("SELECT * FROM users LIMIT 1")
+    suspend fun getFirstUser(): UserEntity?
+
     @Query("SELECT * FROM users WHERE email = :email LIMIT 1")
     suspend fun findByEmail(email: String): UserEntity?
 

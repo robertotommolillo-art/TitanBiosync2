@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.titanbiosync.domain.model.Session
 import com.titanbiosync.domain.model.User
-import com.titanbiosync.domain.repository.AuthRepository
 import com.titanbiosync.domain.repository.UserRepository
 import com.titanbiosync.domain.usecase.session.GetActiveSessionUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -31,7 +30,6 @@ data class DashboardUiState(
 
 @HiltViewModel
 class DashboardViewModel @Inject constructor(
-    private val authRepository: AuthRepository,
     private val userRepository: UserRepository,
     private val getActiveSessionUseCase: GetActiveSessionUseCase
 ) : ViewModel() {
@@ -88,23 +86,15 @@ class DashboardViewModel @Inject constructor(
     }
 
     /**
-     * Resolves the local [User] for the currently authenticated Firebase user.
-     * If the user doesn't exist in the local Room database yet, it is created and persisted.
+     * Resolves the local [User] profile. If no profile exists yet, creates a placeholder.
      */
     private suspend fun resolveLocalUser(): User {
-        val authUser = authRepository.getCurrentUser()
-            ?: error("Nessun utente autenticato")
-
-        // Look up by Firebase UID (externalId)
-        val existing = userRepository.findByExternalId(authUser.uid)
+        val existing = userRepository.getCurrentProfile()
         if (existing != null) return existing
 
-        // First sign-in: create the local profile
+        // No profile yet — create a minimal placeholder (profile setup should handle this)
         val newUser = User(
             id = UUID.randomUUID().toString(),
-            externalId = authUser.uid,
-            email = authUser.email,
-            displayName = authUser.displayName,
             createdAt = System.currentTimeMillis(),
             lastActiveAt = System.currentTimeMillis()
         )
@@ -116,7 +106,7 @@ class DashboardViewModel @Inject constructor(
         activeSessionTickerJob?.cancel()
         activeSessionTickerJob = viewModelScope.launch {
             while (true) {
-                delay(30_000) // ogni 30 secondi
+                delay(30_000)
                 val session = _uiState.value.activeSession ?: break
                 if (session.endedAt != null) break
 
@@ -140,7 +130,6 @@ class DashboardViewModel @Inject constructor(
     }
 
     private fun normalizeEpochMillis(value: Long): Long {
-        // 10 cifre ~ epoch seconds, 13 cifre ~ epoch millis.
         return if (value in 1_000_000_000L..9_999_999_999L) value * 1000L else value
     }
 
@@ -148,8 +137,6 @@ class DashboardViewModel @Inject constructor(
         val json = session?.deviceIdsJson?.trim().orEmpty()
         if (json.isBlank()) return 0
 
-        // Atteso: ["id1","id2"] oppure [].
-        // Fallback conservativo senza parser JSON: contiamo le virgolette e dividiamo per 2.
         val quotes = json.count { it == '"' }
         if (quotes >= 2) return quotes / 2
 

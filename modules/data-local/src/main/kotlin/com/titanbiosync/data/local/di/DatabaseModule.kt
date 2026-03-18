@@ -272,6 +272,18 @@ object DatabaseModule {
         }
     }
 
+    private val MIGRATION_10_11 = object : Migration(10, 11) {
+        override fun migrate(db: SupportSQLiteDatabase) {
+            db.execSQL("ALTER TABLE users ADD COLUMN first_name TEXT")
+            db.execSQL("ALTER TABLE users ADD COLUMN last_name TEXT")
+            db.execSQL("ALTER TABLE users ADD COLUMN age INTEGER")
+            db.execSQL("ALTER TABLE users ADD COLUMN height REAL")
+            db.execSQL("ALTER TABLE users ADD COLUMN sex TEXT")
+            db.execSQL("ALTER TABLE users ADD COLUMN avatar_uri TEXT")
+            db.execSQL("ALTER TABLE users ADD COLUMN updated_at INTEGER")
+        }
+    }
+
     @Provides
     @Singleton
     fun provideAppDatabase(
@@ -282,7 +294,7 @@ object DatabaseModule {
             AppDatabase::class.java,
             DB_NAME
         )
-            .addMigrations(MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10)
+            .addMigrations(MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11)
 
         // fallback distruttivo SOLO in debug
         return if (isDebugBuild(context)) {

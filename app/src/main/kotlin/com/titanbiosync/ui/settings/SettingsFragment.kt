@@ -4,11 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
-import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentSettingsBinding
 import com.titanbiosync.gym.domain.WeightUnit
 import dagger.hilt.android.AndroidEntryPoint
@@ -49,18 +46,6 @@ class SettingsFragment : Fragment() {
             }
 
             binding.currentValue.text = "Attuale: ${unit.key}"
-        }
-
-        binding.logoutButton.setOnClickListener {
-            AlertDialog.Builder(requireContext())
-                .setTitle(R.string.logout_confirm_title)
-                .setMessage(R.string.logout_confirm_message)
-                .setPositiveButton(R.string.action_logout) { _, _ ->
-                    viewModel.logout()
-                    findNavController().navigate(R.id.action_settings_to_login)
-                }
-                .setNegativeButton(android.R.string.cancel, null)
-                .show()
         }
     }
 
