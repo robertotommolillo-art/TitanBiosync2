@@ -1,7 +1,6 @@
 package com.titanbiosync.auth.di
 
-import com.google.firebase.auth.FirebaseAuth
-import com.titanbiosync.auth.data.FirebaseAuthRepositoryImpl
+import com.titanbiosync.auth.data.NoOpAuthRepositoryImpl
 import com.titanbiosync.domain.repository.AuthRepository
 import dagger.Module
 import dagger.Provides
@@ -15,10 +14,5 @@ object AuthModule {
 
     @Provides
     @Singleton
-    fun provideFirebaseAuth(): FirebaseAuth = FirebaseAuth.getInstance()
-
-    @Provides
-    @Singleton
-    fun provideAuthRepository(firebaseAuth: FirebaseAuth): AuthRepository =
-        FirebaseAuthRepositoryImpl(firebaseAuth)
+    fun provideAuthRepository(): AuthRepository = NoOpAuthRepositoryImpl()
 }

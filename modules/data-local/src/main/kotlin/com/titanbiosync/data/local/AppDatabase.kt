@@ -81,7 +81,7 @@ import com.titanbiosync.data.local.entities.gym.WorkoutTemplateExerciseSetEntity
         WorkoutTemplateExerciseEntity::class,
         WorkoutTemplateExerciseSetEntity::class
     ],
-    version = 10,
+    version = 11,
     exportSchema = true
 )
 @TypeConverters(Converters::class)

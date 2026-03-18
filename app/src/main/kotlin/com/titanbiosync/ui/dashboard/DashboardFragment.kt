@@ -1,5 +1,6 @@
 package com.titanbiosync.ui.dashboard
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -72,8 +73,22 @@ class DashboardFragment : Fragment() {
                 }
 
                 state.user?.let { user ->
-                    binding.userNameText.text = user.displayName
-                    binding.userEmailText.text = user.email
+                    val name = user.displayName
+                        ?: listOfNotNull(user.firstName, user.lastName).joinToString(" ").takeIf { it.isNotBlank() }
+                    binding.userNameText.text = name ?: getString(R.string.dashboard_welcome_back)
+
+                    // Avatar
+                    val uri = user.avatarUri
+                    if (!uri.isNullOrBlank()) {
+                        try {
+                            binding.avatarImage.setImageURI(Uri.parse(uri))
+                            binding.avatarImage.isVisible = true
+                        } catch (_: Exception) {
+                            binding.avatarImage.isVisible = false
+                        }
+                    } else {
+                        binding.avatarImage.isVisible = false
+                    }
                 }
 
                 if (state.activeSession != null) {

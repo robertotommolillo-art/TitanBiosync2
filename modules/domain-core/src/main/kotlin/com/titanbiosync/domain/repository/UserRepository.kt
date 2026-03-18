@@ -5,6 +5,8 @@ import kotlinx.coroutines.flow.Flow
 
 interface UserRepository {
     fun observeUser(id: String): Flow<User?>
+    fun observeCurrentProfile(): Flow<User?>
+    suspend fun getCurrentProfile(): User?
     suspend fun findByEmail(email: String): User?
     suspend fun findByExternalId(externalId: String): User?
     suspend fun upsert(user: User)

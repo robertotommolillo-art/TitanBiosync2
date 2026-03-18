@@ -49,11 +49,11 @@ class MainActivity : AppCompatActivity() {
         // Bottom navigation <-> navController
         binding.bottomNavigation.setupWithNavController(navController)
 
-        // Nascondi toolbar e bottom nav sulla schermata di login
+        // Nascondi toolbar e bottom nav sulla schermata di setup profilo
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            val isAuthScreen = destination.id == R.id.loginFragment
-            binding.toolbar.visibility = if (isAuthScreen) View.GONE else View.VISIBLE
-            binding.bottomNavigation.visibility = if (isAuthScreen) View.GONE else View.VISIBLE
+            val isSetupScreen = destination.id == R.id.profileSetupFragment
+            binding.toolbar.visibility = if (isSetupScreen) View.GONE else View.VISIBLE
+            binding.bottomNavigation.visibility = if (isSetupScreen) View.GONE else View.VISIBLE
         }
     }
 
