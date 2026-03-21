@@ -5,11 +5,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.titanbiosync.data.local.dao.gym.ExerciseMuscleDao
+import com.titanbiosync.data.local.dao.gym.ExercisePrDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSessionDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSessionExerciseDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSetLogDao
 import com.titanbiosync.data.local.dao.gym.MuscleDao
 import com.titanbiosync.data.local.entities.gym.ExerciseMuscleEntity
+import com.titanbiosync.data.local.entities.gym.ExercisePrEntity
+import com.titanbiosync.domain.gym.E1rmCalculator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
@@ -23,7 +26,8 @@ class WorkoutReportViewModel @Inject constructor(
     private val sessionExerciseDao: GymWorkoutSessionExerciseDao,
     private val setDao: GymWorkoutSetLogDao,
     private val exerciseMuscleDao: ExerciseMuscleDao,
-    private val muscleDao: MuscleDao
+    private val muscleDao: MuscleDao,
+    private val exercisePrDao: ExercisePrDao
 ) : ViewModel() {
 
     private val sessionId: String = savedStateHandle["sessionId"] ?: ""
@@ -37,6 +41,9 @@ class WorkoutReportViewModel @Inject constructor(
     private val _exercises = MutableStateFlow<List<ExerciseWorkUi>>(emptyList())
     val exercises = _exercises.asLiveData()
 
+    private val _newPrs = MutableStateFlow<List<NewPrUi>>(emptyList())
+    val newPrs = _newPrs.asLiveData()
+
     init {
         refresh()
     }
@@ -48,6 +55,7 @@ class WorkoutReportViewModel @Inject constructor(
                 _summary.value = WorkoutSummaryUiState.empty(sessionId)
                 _muscles.value = emptyList()
                 _exercises.value = emptyList()
+                _newPrs.value = emptyList()
                 return@launch
             }
 
@@ -109,8 +117,78 @@ class WorkoutReportViewModel @Inject constructor(
 
             _exercises.value = exercisesUi
 
-            // ---- Muscles tab (weighted) ----
+            // ---- PR detection & persistence ----
+            // exerciseIds is also reused below by the muscles tab
+            val newPrsList = mutableListOf<NewPrUi>()
             val exerciseIds = sessionExercises.map { it.exerciseId }.distinct()
+            val existingPrs = exercisePrDao.getByExerciseIds(exerciseIds).associateBy { it.exerciseId }
+
+            for (se in sessionExercises) {
+                val setsForExercise = completedSetLogs.filter { it.sessionExerciseId == se.id }
+                if (setsForExercise.isEmpty()) continue
+
+                val bestWeight = setsForExercise.mapNotNull { it.weightKg }.maxOrNull() ?: 0f
+                val bestReps = setsForExercise.mapNotNull { it.reps }.maxOrNull() ?: 0
+                val bestE1rm = E1rmCalculator.bestE1rm(
+                    setsForExercise.mapNotNull { l ->
+                        val w = l.weightKg ?: return@mapNotNull null
+                        val r = l.reps ?: return@mapNotNull null
+                        Pair(w, r)
+                    }
+                ) ?: 0f
+
+                val existing = existingPrs[se.exerciseId]
+
+                val isWeightPr = bestWeight > 0f && bestWeight > (existing?.maxWeightKg ?: 0f)
+                val isE1rmPr = bestE1rm > 0f && bestE1rm > (existing?.maxE1rm ?: 0f)
+                val isRepsPr = bestReps > 0 && bestReps > (existing?.maxReps ?: 0)
+
+                if (isWeightPr || isE1rmPr || isRepsPr) {
+                    val updatedPr = ExercisePrEntity(
+                        exerciseId = se.exerciseId,
+                        maxWeightKg = maxOf(bestWeight, existing?.maxWeightKg ?: 0f),
+                        maxE1rm = maxOf(bestE1rm, existing?.maxE1rm ?: 0f),
+                        maxReps = maxOf(bestReps, existing?.maxReps ?: 0),
+                        updatedAt = System.currentTimeMillis()
+                    )
+                    exercisePrDao.upsert(updatedPr)
+                }
+
+                if (isWeightPr) {
+                    newPrsList.add(
+                        NewPrUi(
+                            exerciseName = se.nameItSnapshot,
+                            prType = PrType.WEIGHT,
+                            value = bestWeight,
+                            unit = "kg"
+                        )
+                    )
+                }
+                if (isE1rmPr) {
+                    newPrsList.add(
+                        NewPrUi(
+                            exerciseName = se.nameItSnapshot,
+                            prType = PrType.E1RM,
+                            value = bestE1rm,
+                            unit = "kg"
+                        )
+                    )
+                }
+                if (isRepsPr) {
+                    newPrsList.add(
+                        NewPrUi(
+                            exerciseName = se.nameItSnapshot,
+                            prType = PrType.REPS,
+                            value = bestReps.toFloat(),
+                            unit = "reps"
+                        )
+                    )
+                }
+            }
+
+            _newPrs.value = newPrsList
+
+            // ---- Muscles tab (weighted) ----
             if (exerciseIds.isEmpty()) {
                 _muscles.value = emptyList()
                 return@launch
@@ -205,4 +283,13 @@ data class ExerciseWorkUi(
     val exerciseId: String,
     val nameIt: String,
     val volume: Float
+)
+
+enum class PrType { WEIGHT, E1RM, REPS }
+
+data class NewPrUi(
+    val exerciseName: String,
+    val prType: PrType,
+    val value: Float,
+    val unit: String
 )
