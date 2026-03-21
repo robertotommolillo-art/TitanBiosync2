@@ -24,6 +24,7 @@ import com.titanbiosync.data.local.dao.gym.GymWorkoutSessionDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSessionExerciseDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSetLogDao
 import com.titanbiosync.data.local.dao.gym.MuscleDao
+import com.titanbiosync.data.local.dao.gym.ExercisePrDao
 import com.titanbiosync.data.local.dao.gym.WorkoutTemplateDao
 import com.titanbiosync.data.local.dao.gym.WorkoutTemplateExerciseDao
 import com.titanbiosync.data.local.dao.gym.WorkoutTemplateExerciseSetDao
@@ -38,6 +39,7 @@ import com.titanbiosync.data.local.entities.SensorReadingEntity
 import com.titanbiosync.data.local.entities.SessionEntity
 import com.titanbiosync.data.local.entities.UserEntity
 import com.titanbiosync.data.local.entities.gym.ExerciseMediaEntity
+import com.titanbiosync.data.local.entities.gym.ExercisePrEntity
 import com.titanbiosync.data.local.entities.gym.ExerciseMuscleEntity
 import com.titanbiosync.data.local.entities.gym.ExerciseVariantEntity
 import com.titanbiosync.data.local.entities.gym.GymSeedMetaEntity
@@ -79,9 +81,12 @@ import com.titanbiosync.data.local.entities.gym.WorkoutTemplateExerciseSetEntity
         com.titanbiosync.data.local.entities.gym.GymFolderEntity::class,
         WorkoutTemplateEntity::class,
         WorkoutTemplateExerciseEntity::class,
-        WorkoutTemplateExerciseSetEntity::class
+        WorkoutTemplateExerciseSetEntity::class,
+
+        // --- Strength PR tracking ---
+        ExercisePrEntity::class
     ],
-    version = 11,
+    version = 12,
     exportSchema = true
 )
 @TypeConverters(Converters::class)
@@ -117,4 +122,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun gymWorkoutSessionDao(): GymWorkoutSessionDao
     abstract fun gymWorkoutSessionExerciseDao(): GymWorkoutSessionExerciseDao
     abstract fun gymWorkoutSetLogDao(): GymWorkoutSetLogDao
+
+    // --- Strength PR tracking ---
+    abstract fun exercisePrDao(): ExercisePrDao
 }

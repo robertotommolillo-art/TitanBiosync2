@@ -26,6 +26,7 @@ import com.titanbiosync.data.local.dao.gym.GymWorkoutSessionDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSessionExerciseDao
 import com.titanbiosync.data.local.dao.gym.GymWorkoutSetLogDao
 import com.titanbiosync.data.local.dao.gym.MuscleDao
+import com.titanbiosync.data.local.dao.gym.ExercisePrDao
 import com.titanbiosync.data.local.dao.gym.WorkoutTemplateDao
 import com.titanbiosync.data.local.dao.gym.WorkoutTemplateExerciseDao
 import com.titanbiosync.data.local.dao.gym.WorkoutTemplateExerciseSetDao
@@ -284,6 +285,31 @@ object DatabaseModule {
         }
     }
 
+    /**
+     * Migration 11 -> 12
+     * - Adds gym_exercise_pr table for per-exercise strength PR tracking.
+     */
+    private val MIGRATION_11_12 = object : Migration(11, 12) {
+        override fun migrate(db: SupportSQLiteDatabase) {
+            db.execSQL(
+                """
+                CREATE TABLE IF NOT EXISTS gym_exercise_pr (
+                    exerciseId TEXT NOT NULL,
+                    maxWeightKg REAL NOT NULL,
+                    maxE1rm REAL NOT NULL,
+                    maxReps INTEGER NOT NULL,
+                    updatedAt INTEGER NOT NULL,
+                    PRIMARY KEY(exerciseId),
+                    FOREIGN KEY(exerciseId) REFERENCES gym_exercises(id) ON DELETE CASCADE
+                )
+                """.trimIndent()
+            )
+            db.execSQL(
+                "CREATE INDEX IF NOT EXISTS index_gym_exercise_pr_exerciseId ON gym_exercise_pr(exerciseId)"
+            )
+        }
+    }
+
     @Provides
     @Singleton
     fun provideAppDatabase(
@@ -294,7 +320,7 @@ object DatabaseModule {
             AppDatabase::class.java,
             DB_NAME
         )
-            .addMigrations(MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11)
+            .addMigrations(MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12)
 
         // fallback distruttivo SOLO in debug
         return if (isDebugBuild(context)) {
@@ -348,4 +374,7 @@ object DatabaseModule {
     @Provides
     fun provideWorkoutTemplateExerciseSetDao(db: AppDatabase): WorkoutTemplateExerciseSetDao =
         db.workoutTemplateExerciseSetDao()
+
+    // --- Strength PR tracking ---
+    @Provides fun provideExercisePrDao(db: AppDatabase): ExercisePrDao = db.exercisePrDao()
 }
