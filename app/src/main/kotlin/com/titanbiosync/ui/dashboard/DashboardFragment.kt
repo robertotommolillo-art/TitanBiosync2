@@ -64,7 +64,6 @@ class DashboardFragment : Fragment() {
 
                 state.error?.let { error ->
                     binding.userNameText.setText(R.string.dashboard_error_title)
-                    binding.userEmailText.text = error
                     Toast.makeText(
                         context,
                         getString(R.string.dashboard_error_message, error),

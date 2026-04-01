@@ -89,6 +89,8 @@ dependencies {
     // Room (needed in app module for RoomDatabase + withTransaction extensions)
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
     kapt("androidx.room:room-compiler:2.6.1")
 
     // Hilt
