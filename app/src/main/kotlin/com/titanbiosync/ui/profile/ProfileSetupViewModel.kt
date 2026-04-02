@@ -16,7 +16,8 @@ data class ProfileSetupUiState(
     val isLoading: Boolean = false,
     val profileExists: Boolean = false,
     val savedSuccessfully: Boolean = false,
-    val error: String? = null
+    val error: String? = null,
+    val preferences: UserPreferences = UserPreferences.DEFAULT
 )
 
 @HiltViewModel
@@ -35,9 +36,11 @@ class ProfileSetupViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(isLoading = true)
             val existing = userRepository.getCurrentProfile()
+            val prefs = UserPreferences.fromJson(existing?.preferencesJson)
             _uiState.value = _uiState.value.copy(
                 isLoading = false,
-                profileExists = existing?.firstName?.isNotBlank() == true
+                profileExists = existing?.firstName?.isNotBlank() == true,
+                preferences = prefs
             )
         }
     }
@@ -48,7 +51,8 @@ class ProfileSetupViewModel @Inject constructor(
         age: Int?,
         height: Float?,
         sex: String?,
-        avatarUri: String?
+        avatarUri: String?,
+        preferences: UserPreferences
     ) {
         if (firstName.isBlank()) {
             _uiState.value = _uiState.value.copy(error = "Il nome è obbligatorio")
@@ -79,7 +83,7 @@ class ProfileSetupViewModel @Inject constructor(
                     lastActiveAt = now,
                     updatedAt = now,
                     privacyConsent = existing?.privacyConsent,
-                    preferencesJson = existing?.preferencesJson
+                    preferencesJson = UserPreferences.toJson(preferences)
                 )
                 userRepository.upsert(user)
                 _uiState.value = _uiState.value.copy(isLoading = false, savedSuccessfully = true)

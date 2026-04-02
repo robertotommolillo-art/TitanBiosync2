@@ -28,6 +28,13 @@ class ProfileSetupFragment : Fragment() {
 
     private var selectedAvatarUri: Uri? = null
 
+    /** Goal key values matching [UserPreferences] constants, parallel to goal display labels. */
+    private val goalKeys = listOf(
+        UserPreferences.GOAL_HYPERTROPHY,
+        UserPreferences.GOAL_STRENGTH,
+        UserPreferences.GOAL_FAT_LOSS
+    )
+
     private val pickImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
         if (uri != null) {
             // Take persistable permission so the URI survives app restarts
@@ -63,12 +70,43 @@ class ProfileSetupFragment : Fragment() {
             getString(R.string.profile_setup_sex_female),
             getString(R.string.profile_setup_sex_other)
         )
-        val adapter = android.widget.ArrayAdapter(
-            requireContext(),
-            android.R.layout.simple_dropdown_item_1line,
-            sexOptions
+        binding.sexAutoComplete.setAdapter(
+            android.widget.ArrayAdapter(
+                requireContext(),
+                android.R.layout.simple_dropdown_item_1line,
+                sexOptions
+            )
         )
-        binding.sexAutoComplete.setAdapter(adapter)
+
+        // Populate goal dropdown (optional)
+        val goalLabels = listOf(
+            getString(R.string.profile_setup_goal_hypertrophy),
+            getString(R.string.profile_setup_goal_strength),
+            getString(R.string.profile_setup_goal_fat_loss)
+        )
+        binding.goalAutoComplete.setAdapter(
+            android.widget.ArrayAdapter(
+                requireContext(),
+                android.R.layout.simple_dropdown_item_1line,
+                goalLabels
+            )
+        )
+
+        // Default weight unit selection: kg
+        binding.weightUnitToggle.check(R.id.btnWeightKg)
+
+        // Default height unit selection: cm
+        binding.heightUnitToggle.check(R.id.btnHeightCm)
+
+        // Update height hint when unit changes
+        binding.heightUnitToggle.addOnButtonCheckedListener { _, checkedId, isChecked ->
+            if (isChecked) {
+                binding.heightInputLayout.hint = getString(
+                    if (checkedId == R.id.btnHeightFt) R.string.profile_setup_height_ft
+                    else R.string.profile_setup_height_cm
+                )
+            }
+        }
 
         binding.pickAvatarButton.setOnClickListener {
             pickImage.launch("image/*")
@@ -84,13 +122,26 @@ class ProfileSetupFragment : Fragment() {
             val age = ageStr.toIntOrNull()
             val height = heightStr.toFloatOrNull()
 
+            val weightUnit = if (binding.weightUnitToggle.checkedButtonId == R.id.btnWeightLb)
+                UserPreferences.WEIGHT_LB else UserPreferences.WEIGHT_KG
+            val heightUnit = if (binding.heightUnitToggle.checkedButtonId == R.id.btnHeightFt)
+                UserPreferences.HEIGHT_FT else UserPreferences.HEIGHT_CM
+
+            val goalLabel = binding.goalAutoComplete.text?.toString().orEmpty()
+            val goalKey = if (goalLabel.isBlank()) null else goalKeys.getOrNull(goalLabels.indexOf(goalLabel))
+
             viewModel.saveProfile(
                 firstName = firstName,
                 lastName = lastName,
                 age = age,
                 height = height,
                 sex = sex,
-                avatarUri = selectedAvatarUri?.toString()
+                avatarUri = selectedAvatarUri?.toString(),
+                preferences = UserPreferences(
+                    weightUnit = weightUnit,
+                    heightUnit = heightUnit,
+                    goal = goalKey
+                )
             )
         }
 

@@ -71,13 +71,24 @@
     <string name="profile_setup_first_name">Nome *</string>
     <string name="profile_setup_last_name">Cognome *</string>
     <string name="profile_setup_age">Età</string>
-    <string name="profile_setup_height">Altezza (cm)</string>
+    <string name="profile_setup_height_cm">Altezza (cm)</string>
+    <string name="profile_setup_height_ft">Altezza (ft)</string>
     <string name="profile_setup_sex">Sesso</string>
     <string name="profile_setup_sex_male">M</string>
     <string name="profile_setup_sex_female">F</string>
     <string name="profile_setup_sex_other">Altro</string>
     <string name="profile_setup_pick_avatar">Scegli foto</string>
     <string name="profile_setup_save">Salva e continua</string>
+    <string name="profile_setup_weight_unit_label">Unità di peso</string>
+    <string name="profile_setup_weight_kg">kg</string>
+    <string name="profile_setup_weight_lb">lb</string>
+    <string name="profile_setup_height_unit_label">Unità di altezza</string>
+    <string name="profile_setup_height_unit_cm">cm</string>
+    <string name="profile_setup_height_unit_ft">ft</string>
+    <string name="profile_setup_goal">Obiettivo</string>
+    <string name="profile_setup_goal_hypertrophy">Ipertrofia</string>
+    <string name="profile_setup_goal_strength">Forza</string>
+    <string name="profile_setup_goal_fat_loss">Dimagrimento</string>
 
     <!-- Settings – account section -->
     <string name="settings_account_section_title">Account</string>
