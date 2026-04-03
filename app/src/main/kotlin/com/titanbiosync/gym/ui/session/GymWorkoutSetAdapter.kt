@@ -92,7 +92,7 @@ class GymWorkoutSetAdapter(
         b.weightInput.hint = weightUnit.key
 
         val displayWeight = item.weightKg?.let { kg -> WeightUnitConverter.kgToDisplay(kg, weightUnit) }
-        val displayWeightText = displayWeight?.let { formatWeight(it) }.orEmpty()
+        val displayWeightText = displayWeight?.let { formatDecimal(it) }.orEmpty()
 
         if (b.weightInput.text?.toString().orEmpty() != displayWeightText) {
             b.weightInput.setText(displayWeightText)
@@ -103,7 +103,7 @@ class GymWorkoutSetAdapter(
             b.repsInput.setText(repsText)
         }
 
-        val rpeText = item.rpe?.let { formatWeight(it) }.orEmpty()
+        val rpeText = item.rpe?.let { formatDecimal(it) }.orEmpty()
         if (b.rpeInput.text?.toString().orEmpty() != rpeText) {
             b.rpeInput.setText(rpeText)
         }
@@ -126,7 +126,7 @@ class GymWorkoutSetAdapter(
                 val rpe = parseAndClampRpe(b.rpeInput.text?.toString())
                 onUpdate(item, reps, kg, b.doneCheck.isChecked, rpe)
 
-                val formatted = display?.let { formatWeight(it) }.orEmpty()
+                val formatted = display?.let { formatDecimal(it) }.orEmpty()
                 if (b.weightInput.text?.toString().orEmpty() != formatted) {
                     b.weightInput.setText(formatted)
                 }
@@ -151,7 +151,7 @@ class GymWorkoutSetAdapter(
                 val rpe = parseAndClampRpe(b.rpeInput.text?.toString())
                 onUpdate(item, reps, kg, b.doneCheck.isChecked, rpe)
 
-                val formatted = rpe?.let { formatWeight(it) }.orEmpty()
+                val formatted = rpe?.let { formatDecimal(it) }.orEmpty()
                 if (b.rpeInput.text?.toString().orEmpty() != formatted) {
                     b.rpeInput.setText(formatted)
                 }
@@ -177,7 +177,7 @@ class GymWorkoutSetAdapter(
         return value.coerceIn(1.0f, 10.0f)
     }
 
-    private fun formatWeight(value: Float): String {
+    private fun formatDecimal(value: Float): String {
         val bd = BigDecimal(value.toDouble())
             .setScale(2, RoundingMode.HALF_UP)
             .stripTrailingZeros()
