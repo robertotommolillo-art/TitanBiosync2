@@ -18,5 +18,6 @@ data class GymWorkoutSetLogEntity(
     val reps: Int? = null,
     val weightKg: Float? = null,
     val completed: Boolean = false,
-    val completedAt: Long? = null
+    val completedAt: Long? = null,
+    val rpe: Float? = null
 )

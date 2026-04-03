@@ -58,6 +58,7 @@ class GymWorkoutSessionViewModel @Inject constructor(
                     setIndex = nextIndex,
                     reps = lastSet?.reps,
                     weightKg = lastSet?.weightKg,
+                    rpe = lastSet?.rpe,
                     completed = false,
                     completedAt = null
                 )
@@ -70,7 +71,8 @@ class GymWorkoutSessionViewModel @Inject constructor(
         set: GymWorkoutSetLogEntity,
         reps: Int?,
         weightKg: Float?,
-        completed: Boolean
+        completed: Boolean,
+        rpe: Float?
     ) {
         viewModelScope.launch {
             val completedAt = if (completed) (set.completedAt ?: System.currentTimeMillis()) else null
@@ -79,7 +81,8 @@ class GymWorkoutSessionViewModel @Inject constructor(
                     reps = reps,
                     weightKg = weightKg,
                     completed = completed,
-                    completedAt = completedAt
+                    completedAt = completedAt,
+                    rpe = rpe
                 )
             )
         }
