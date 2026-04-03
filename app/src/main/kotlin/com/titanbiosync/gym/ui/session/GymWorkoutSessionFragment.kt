@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -45,6 +46,9 @@ class GymWorkoutSessionFragment : Fragment() {
             onAddSet = { sessionExerciseId -> viewModel.addSet(sessionExerciseId) },
             onUpdateSet = { set, reps, weightKg, completed ->
                 viewModel.updateSet(set, reps, weightKg, completed)
+            },
+            onSetCompleted = { exerciseName, setIndex ->
+                viewModel.onSetCompleted(exerciseName, setIndex)
             }
         )
 
@@ -89,6 +93,59 @@ class GymWorkoutSessionFragment : Fragment() {
                     }
                 }
             }
+        }
+
+        // Rest timer banner
+        binding.restTimerMinus.setOnClickListener { viewModel.adjustRestTimer(-15) }
+        binding.restTimerPlus.setOnClickListener { viewModel.adjustRestTimer(+15) }
+        binding.restTimerStop.setOnClickListener { viewModel.stopRestTimer() }
+        binding.restTimerCountdown.setOnClickListener { showRestDurationPicker() }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.restTimerState.collect { state ->
+                if (state.isRunning) {
+                    binding.restTimerBanner.visibility = View.VISIBLE
+                    binding.restTimerCountdown.text = formatRestTime(state.remainingSec)
+                    binding.restTimerLabel.text = buildRestLabel(state)
+                } else {
+                    binding.restTimerBanner.visibility = View.GONE
+                }
+            }
+        }
+    }
+
+    /** Opens a simple dialog to choose a preset rest duration. */
+    private fun showRestDurationPicker() {
+        val presets = GymWorkoutSessionViewModel.REST_DURATION_PRESETS
+        val labels = presets.map { sec ->
+            val mm = sec / 60
+            val ss = sec % 60
+            if (mm > 0 && ss > 0) "${mm}m ${ss}s" else if (mm > 0) "${mm}m" else "${ss}s"
+        }.toTypedArray()
+
+        AlertDialog.Builder(requireContext())
+            .setTitle("Durata recupero")
+            .setItems(labels) { _, which ->
+                viewModel.setRestDuration(presets[which])
+            }
+            .setNegativeButton("Annulla", null)
+            .show()
+    }
+
+    /** Formats remaining seconds as mm:ss. */
+    private fun formatRestTime(totalSeconds: Int): String {
+        val mm = totalSeconds / 60
+        val ss = totalSeconds % 60
+        return "%02d:%02d".format(mm, ss)
+    }
+
+    /** Builds the label line showing exercise name + set number. */
+    private fun buildRestLabel(state: RestTimerState): String {
+        val setNum = state.setIndex + 1
+        return if (state.exerciseName.isNotBlank()) {
+            "Recupero · ${state.exerciseName} · Set $setNum"
+        } else {
+            "Recupero · Set $setNum"
         }
     }
 

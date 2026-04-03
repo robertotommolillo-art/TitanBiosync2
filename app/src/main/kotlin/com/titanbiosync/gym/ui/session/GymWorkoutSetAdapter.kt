@@ -20,6 +20,9 @@ class GymWorkoutSetAdapter(
     private val onUpdate: (set: GymWorkoutSetLogEntity, reps: Int?, weightKg: Float?, completed: Boolean) -> Unit
 ) : ListAdapter<GymWorkoutSetLogEntity, GymWorkoutSetAdapter.VH>(Diff) {
 
+    /** Set this from outside (e.g. in onBindViewHolder of the parent adapter) to receive set-completion events. */
+    var onSetCompleted: (setIndex: Int) -> Unit = {}
+
     private var weightUnit: WeightUnit = WeightUnit.KG
     private var pendingFocusOnLastItem = false
     private var attachedRecyclerView: RecyclerView? = null
@@ -109,6 +112,10 @@ class GymWorkoutSetAdapter(
             val display = parseUserFloat(b.weightInput.text?.toString())
             val kg = display?.let { WeightUnitConverter.displayToKg(it, weightUnit) }
             onUpdate(item, reps, kg, isChecked)
+            // Notify rest timer only when completing (false → true transition).
+            if (isChecked && !item.completed) {
+                onSetCompleted(item.setIndex)
+            }
         }
 
         b.weightInput.setOnFocusChangeListener { _, hasFocus ->
