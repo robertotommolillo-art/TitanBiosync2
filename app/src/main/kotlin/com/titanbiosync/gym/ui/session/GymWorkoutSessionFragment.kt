@@ -62,6 +62,12 @@ class GymWorkoutSessionFragment : Fragment() {
             adapter.submitList(rows)
         }
 
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.scrollToNewSet.collect { sessionExerciseId ->
+                adapter.scrollToNewSetAndFocus(binding.recycler, sessionExerciseId)
+            }
+        }
+
         viewModel.weightUnit.observe(viewLifecycleOwner) { unitOrNull ->
             val unit = unitOrNull ?: WeightUnit.KG
             binding.unitHint.text = "Unità peso: ${unit.key}"

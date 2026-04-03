@@ -23,6 +23,11 @@ interface GymWorkoutSetLogDao {
     suspend fun getMaxSetIndex(sessionExerciseId: String): Int
 
     @Query(
+        "SELECT * FROM gym_workout_set_log WHERE sessionExerciseId = :sessionExerciseId ORDER BY setIndex DESC LIMIT 1"
+    )
+    suspend fun getLastSet(sessionExerciseId: String): GymWorkoutSetLogEntity?
+
+    @Query(
         """
         SELECT 
             s.id AS sessionId,

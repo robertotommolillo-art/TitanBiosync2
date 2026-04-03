@@ -1,7 +1,9 @@
 package com.titanbiosync.gym.ui.session
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import androidx.core.widget.doAfterTextChanged
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -19,6 +21,43 @@ class GymWorkoutSetAdapter(
 ) : ListAdapter<GymWorkoutSetLogEntity, GymWorkoutSetAdapter.VH>(Diff) {
 
     private var weightUnit: WeightUnit = WeightUnit.KG
+    private var pendingFocusOnLastItem = false
+    private var attachedRecyclerView: RecyclerView? = null
+
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+        super.onAttachedToRecyclerView(recyclerView)
+        attachedRecyclerView = recyclerView
+    }
+
+    override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
+        super.onDetachedFromRecyclerView(recyclerView)
+        attachedRecyclerView = null
+    }
+
+    /** Call this before the new item arrives; the adapter will focus reps on the next submitList commit. */
+    fun requestFocusOnNextItem() {
+        pendingFocusOnLastItem = true
+    }
+
+    override fun submitList(list: List<GymWorkoutSetLogEntity>?) {
+        super.submitList(list) {
+            if (pendingFocusOnLastItem) {
+                pendingFocusOnLastItem = false
+                val rv = attachedRecyclerView?.takeIf { it.isAttachedToWindow } ?: return@submitList
+                val lastIdx = itemCount - 1
+                if (lastIdx < 0) return@submitList
+                rv.scrollToPosition(lastIdx)
+                rv.post {
+                    if (!rv.isAttachedToWindow) return@post
+                    val vh = rv.findViewHolderForAdapterPosition(lastIdx) as? VH ?: return@post
+                    vh.binding.repsInput.requestFocus()
+                    val imm = vh.binding.repsInput.context
+                        .getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+                    imm?.showSoftInput(vh.binding.repsInput, InputMethodManager.SHOW_IMPLICIT)
+                }
+            }
+        }
+    }
 
     fun setWeightUnit(unit: WeightUnit) {
         weightUnit = unit

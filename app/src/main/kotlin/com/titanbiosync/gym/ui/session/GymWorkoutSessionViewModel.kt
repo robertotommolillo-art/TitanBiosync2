@@ -10,7 +10,10 @@ import com.titanbiosync.data.local.dao.gym.GymWorkoutSetLogDao
 import com.titanbiosync.data.local.entities.gym.GymWorkoutSetLogEntity
 import com.titanbiosync.gym.domain.WeightUnitRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
@@ -41,16 +44,25 @@ class GymWorkoutSessionViewModel @Inject constructor(
     fun observeSets(sessionExerciseId: String) =
         setDao.observeForSessionExercise(sessionExerciseId).asLiveData()
 
+    private val _scrollToNewSet = MutableSharedFlow<String>(extraBufferCapacity = 1)
+    val scrollToNewSet: SharedFlow<String> = _scrollToNewSet.asSharedFlow()
+
     fun addSet(sessionExerciseId: String) {
         viewModelScope.launch {
-            val nextIndex = setDao.getMaxSetIndex(sessionExerciseId) + 1
+            val lastSet = setDao.getLastSet(sessionExerciseId)
+            val nextIndex = (lastSet?.setIndex ?: -1) + 1
             setDao.insert(
                 GymWorkoutSetLogEntity(
                     id = UUID.randomUUID().toString(),
                     sessionExerciseId = sessionExerciseId,
-                    setIndex = nextIndex
+                    setIndex = nextIndex,
+                    reps = lastSet?.reps,
+                    weightKg = lastSet?.weightKg,
+                    completed = false,
+                    completedAt = null
                 )
             )
+            _scrollToNewSet.emit(sessionExerciseId)
         }
     }
 
