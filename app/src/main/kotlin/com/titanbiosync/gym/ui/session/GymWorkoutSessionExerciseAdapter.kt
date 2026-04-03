@@ -72,4 +72,22 @@ class GymWorkoutSessionExerciseAdapter(
             onAddSet(item.id)
         }
     }
+
+    /**
+     * Scrolls the outer RecyclerView to the exercise matching [sessionExerciseId], then requests
+     * focus on the last (newly added) reps field inside its nested sets RecyclerView.
+     * Gracefully no-ops if the ViewHolder is not yet bound.
+     */
+    fun scrollToNewSetAndFocus(recyclerView: RecyclerView, sessionExerciseId: String) {
+        val position = currentList.indexOfFirst { it.id == sessionExerciseId }
+        if (position < 0) return
+        recyclerView.scrollToPosition(position)
+        recyclerView.post {
+            if (!recyclerView.isAttachedToWindow) return@post
+            // Re-check the item at this position still matches (list may have changed).
+            if (currentList.getOrNull(position)?.id != sessionExerciseId) return@post
+            val vh = recyclerView.findViewHolderForAdapterPosition(position) as? VH ?: return@post
+            vh.setsAdapter.requestFocusOnNextItem()
+        }
+    }
 }
