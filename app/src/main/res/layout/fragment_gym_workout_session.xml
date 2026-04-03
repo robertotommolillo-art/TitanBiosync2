@@ -65,7 +65,7 @@
                     android:id="@+id/restTimerLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Recupero"
+                    android:text="@string/rest_timer_label"
                     android:textSize="11sp"
                     android:alpha="0.7" />
 

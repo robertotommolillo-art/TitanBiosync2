@@ -120,15 +120,19 @@ class GymWorkoutSessionFragment : Fragment() {
         val labels = presets.map { sec ->
             val mm = sec / 60
             val ss = sec % 60
-            if (mm > 0 && ss > 0) "${mm}m ${ss}s" else if (mm > 0) "${mm}m" else "${ss}s"
+            when {
+                mm > 0 && ss > 0 -> getString(R.string.rest_timer_duration_format_ms, mm, ss)
+                mm > 0 -> getString(R.string.rest_timer_duration_format_m, mm)
+                else -> getString(R.string.rest_timer_duration_format_s, sec)
+            }
         }.toTypedArray()
 
         AlertDialog.Builder(requireContext())
-            .setTitle("Durata recupero")
+            .setTitle(R.string.rest_timer_duration_picker_title)
             .setItems(labels) { _, which ->
                 viewModel.setRestDuration(presets[which])
             }
-            .setNegativeButton("Annulla", null)
+            .setNegativeButton(android.R.string.cancel, null)
             .show()
     }
 
@@ -143,9 +147,9 @@ class GymWorkoutSessionFragment : Fragment() {
     private fun buildRestLabel(state: RestTimerState): String {
         val setNum = state.setIndex + 1
         return if (state.exerciseName.isNotBlank()) {
-            "Recupero · ${state.exerciseName} · Set $setNum"
+            getString(R.string.rest_timer_label_with_exercise, state.exerciseName, setNum)
         } else {
-            "Recupero · Set $setNum"
+            getString(R.string.rest_timer_label_no_exercise, setNum)
         }
     }
 

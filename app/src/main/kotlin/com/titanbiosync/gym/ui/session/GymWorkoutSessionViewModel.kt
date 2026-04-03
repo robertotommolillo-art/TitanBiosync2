@@ -93,7 +93,8 @@ class GymWorkoutSessionViewModel @Inject constructor(
                 remaining--
                 _restTimerState.update { it.copy(remainingSec = remaining) }
             }
-            if (isActive) {
+            // Natural completion (remaining reached 0): always mark as done.
+            if (remaining == 0) {
                 _restTimerState.update { it.copy(isRunning = false) }
             }
         }
