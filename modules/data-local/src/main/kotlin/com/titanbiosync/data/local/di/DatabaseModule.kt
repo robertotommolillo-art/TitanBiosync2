@@ -310,6 +310,16 @@ object DatabaseModule {
         }
     }
 
+    /**
+     * Migration 12 -> 13
+     * - Adds rpe column to gym_workout_set_log for per-set RPE tracking.
+     */
+    private val MIGRATION_12_13 = object : Migration(12, 13) {
+        override fun migrate(db: SupportSQLiteDatabase) {
+            db.execSQL("ALTER TABLE gym_workout_set_log ADD COLUMN rpe REAL")
+        }
+    }
+
     @Provides
     @Singleton
     fun provideAppDatabase(
@@ -320,7 +330,7 @@ object DatabaseModule {
             AppDatabase::class.java,
             DB_NAME
         )
-            .addMigrations(MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12)
+            .addMigrations(MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12, MIGRATION_12_13)
 
         // fallback distruttivo SOLO in debug
         return if (isDebugBuild(context)) {

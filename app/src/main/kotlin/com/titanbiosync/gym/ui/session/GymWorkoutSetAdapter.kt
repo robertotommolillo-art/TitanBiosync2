@@ -17,7 +17,13 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 
 class GymWorkoutSetAdapter(
-    private val onUpdate: (set: GymWorkoutSetLogEntity, reps: Int?, weightKg: Float?, completed: Boolean) -> Unit
+    private val onUpdate: (
+        set: GymWorkoutSetLogEntity,
+        reps: Int?,
+        weightKg: Float?,
+        completed: Boolean,
+        rpe: Float?
+    ) -> Unit
 ) : ListAdapter<GymWorkoutSetLogEntity, GymWorkoutSetAdapter.VH>(Diff) {
 
     /** Set this from outside (e.g. in onBindViewHolder of the parent adapter) to receive set-completion events. */
@@ -80,8 +86,10 @@ class GymWorkoutSetAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val binding = ItemGymWorkoutSetBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
-        // Imposta una volta sola: max 2 decimali e un solo punto
+        // max 2 decimali e un solo punto
         binding.weightInput.filters = arrayOf(DecimalDigitsInputFilter(maxDecimals = 2))
+        // RPE tipicamente 1 decimale
+        binding.rpeInput.filters = arrayOf(DecimalDigitsInputFilter(maxDecimals = 1))
 
         return VH(binding)
     }
@@ -95,7 +103,6 @@ class GymWorkoutSetAdapter(
 
         val displayWeight = item.weightKg?.let { kg -> WeightUnitConverter.kgToDisplay(kg, weightUnit) }
         val displayWeightText = displayWeight?.let { formatWeight(it) }.orEmpty()
-
         if (b.weightInput.text?.toString().orEmpty() != displayWeightText) {
             b.weightInput.setText(displayWeightText)
         }
@@ -105,15 +112,24 @@ class GymWorkoutSetAdapter(
             b.repsInput.setText(repsText)
         }
 
+        val rpeText = item.rpe?.let { formatRpe(it) }.orEmpty()
+        if (b.rpeInput.text?.toString().orEmpty() != rpeText) {
+            b.rpeInput.setText(rpeText)
+        }
+
         b.doneCheck.setOnCheckedChangeListener(null)
         b.doneCheck.isChecked = item.completed
         b.doneCheck.setOnCheckedChangeListener { _, isChecked ->
             val reps = b.repsInput.text?.toString()?.toIntOrNull()
             val display = parseUserFloat(b.weightInput.text?.toString())
             val kg = display?.let { WeightUnitConverter.displayToKg(it, weightUnit) }
-            onUpdate(item, reps, kg, isChecked)
+            val wasCompleted = item.completed
+            val rpe = parseAndClampRpe(b.rpeInput.text?.toString())
+
+            onUpdate(item, reps, kg, isChecked, rpe)
+
             // Notify rest timer only when completing (false → true transition).
-            if (isChecked && !item.completed) {
+            if (!wasCompleted && isChecked) {
                 onSetCompleted(item.setIndex)
             }
         }
@@ -123,7 +139,9 @@ class GymWorkoutSetAdapter(
                 val reps = b.repsInput.text?.toString()?.toIntOrNull()
                 val display = parseUserFloat(b.weightInput.text?.toString())
                 val kg = display?.let { WeightUnitConverter.displayToKg(it, weightUnit) }
-                onUpdate(item, reps, kg, b.doneCheck.isChecked)
+                val rpe = parseAndClampRpe(b.rpeInput.text?.toString())
+
+                onUpdate(item, reps, kg, b.doneCheck.isChecked, rpe)
 
                 val formatted = display?.let { formatWeight(it) }.orEmpty()
                 if (b.weightInput.text?.toString().orEmpty() != formatted) {
@@ -137,12 +155,31 @@ class GymWorkoutSetAdapter(
                 val reps = b.repsInput.text?.toString()?.toIntOrNull()
                 val display = parseUserFloat(b.weightInput.text?.toString())
                 val kg = display?.let { WeightUnitConverter.displayToKg(it, weightUnit) }
-                onUpdate(item, reps, kg, b.doneCheck.isChecked)
+                val rpe = parseAndClampRpe(b.rpeInput.text?.toString())
+
+                onUpdate(item, reps, kg, b.doneCheck.isChecked, rpe)
+            }
+        }
+
+        b.rpeInput.setOnFocusChangeListener { _, hasFocus ->
+            if (!hasFocus) {
+                val reps = b.repsInput.text?.toString()?.toIntOrNull()
+                val display = parseUserFloat(b.weightInput.text?.toString())
+                val kg = display?.let { WeightUnitConverter.displayToKg(it, weightUnit) }
+                val rpe = parseAndClampRpe(b.rpeInput.text?.toString())
+
+                onUpdate(item, reps, kg, b.doneCheck.isChecked, rpe)
+
+                val formatted = rpe?.let { formatRpe(it) }.orEmpty()
+                if (b.rpeInput.text?.toString().orEmpty() != formatted) {
+                    b.rpeInput.setText(formatted)
+                }
             }
         }
 
         b.weightInput.doAfterTextChanged { /* no-op */ }
         b.repsInput.doAfterTextChanged { /* no-op */ }
+        b.rpeInput.doAfterTextChanged { /* no-op */ }
     }
 
     private fun parseUserFloat(text: String?): Float? {
@@ -152,9 +189,23 @@ class GymWorkoutSetAdapter(
         return raw.toFloatOrNull()
     }
 
+    private fun parseAndClampRpe(text: String?): Float? {
+        val raw = text?.trim().orEmpty()
+        if (raw.isBlank()) return null
+        val value = raw.toFloatOrNull() ?: return null
+        return value.coerceIn(1.0f, 10.0f)
+    }
+
     private fun formatWeight(value: Float): String {
         val bd = BigDecimal(value.toDouble())
             .setScale(2, RoundingMode.HALF_UP)
+            .stripTrailingZeros()
+        return bd.toPlainString()
+    }
+
+    private fun formatRpe(value: Float): String {
+        val bd = BigDecimal(value.toDouble())
+            .setScale(1, RoundingMode.HALF_UP)
             .stripTrailingZeros()
         return bd.toPlainString()
     }

@@ -74,6 +74,9 @@ interface GymWorkoutSetLogDao {
     @Insert(onConflict = OnConflictStrategy.ABORT)
     suspend fun insert(item: GymWorkoutSetLogEntity)
 
+    @Insert(onConflict = OnConflictStrategy.ABORT)
+    suspend fun insertAll(items: List<GymWorkoutSetLogEntity>)
+
     @Update
     suspend fun update(item: GymWorkoutSetLogEntity)
 }

@@ -86,7 +86,7 @@ import com.titanbiosync.data.local.entities.gym.WorkoutTemplateExerciseSetEntity
         // --- Strength PR tracking ---
         ExercisePrEntity::class
     ],
-    version = 12,
+    version = 13,
     exportSchema = true
 )
 @TypeConverters(Converters::class)

@@ -44,12 +44,12 @@ class GymWorkoutSessionFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner,
             observeSets = { sessionExerciseId -> viewModel.observeSets(sessionExerciseId) },
             onAddSet = { sessionExerciseId -> viewModel.addSet(sessionExerciseId) },
-            onUpdateSet = { set, reps, weightKg, completed ->
-                viewModel.updateSet(set, reps, weightKg, completed)
+            onUpdateSet = { set, reps, weightKg, completed, rpe ->
+                viewModel.updateSet(set, reps, weightKg, completed, rpe = rpe)
             },
             onSetCompleted = { exerciseName, setIndex ->
                 viewModel.onSetCompleted(exerciseName, setIndex)
-            }
+            },
         )
 
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())

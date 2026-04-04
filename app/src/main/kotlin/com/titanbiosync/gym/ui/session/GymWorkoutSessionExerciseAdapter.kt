@@ -17,7 +17,7 @@ class GymWorkoutSessionExerciseAdapter(
     private val lifecycleOwner: LifecycleOwner,
     private val observeSets: (sessionExerciseId: String) -> LiveData<List<GymWorkoutSetLogEntity>>,
     private val onAddSet: (sessionExerciseId: String) -> Unit,
-    private val onUpdateSet: (set: GymWorkoutSetLogEntity, reps: Int?, weightKg: Float?, completed: Boolean) -> Unit,
+    private val onUpdateSet: (set: GymWorkoutSetLogEntity, reps: Int?, weightKg: Float?, completed: Boolean, rpe: Float?) -> Unit,
     private val onSetCompleted: (exerciseName: String, setIndex: Int) -> Unit = { _, _ -> }
 ) : ListAdapter<GymWorkoutSessionExerciseEntity, GymWorkoutSessionExerciseAdapter.VH>(Diff) {
 
