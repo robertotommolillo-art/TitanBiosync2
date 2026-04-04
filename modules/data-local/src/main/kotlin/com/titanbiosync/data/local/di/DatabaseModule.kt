@@ -321,6 +321,8 @@ object DatabaseModule {
     }
 
     @Provides
+    @Singleton
+    fun provideAppDatabase(
         @ApplicationContext context: Context
     ): AppDatabase {
         val builder = Room.databaseBuilder(
