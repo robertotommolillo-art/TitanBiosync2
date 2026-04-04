@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -44,8 +45,11 @@ class GymWorkoutSessionFragment : Fragment() {
             observeSets = { sessionExerciseId -> viewModel.observeSets(sessionExerciseId) },
             onAddSet = { sessionExerciseId -> viewModel.addSet(sessionExerciseId) },
             onUpdateSet = { set, reps, weightKg, completed, rpe ->
-                viewModel.updateSet(set, reps, weightKg, completed, rpe)
-            }
+                viewModel.updateSet(set, reps, weightKg, completed, rpe = rpe)
+            },
+            onSetCompleted = { exerciseName, setIndex ->
+                viewModel.onSetCompleted(exerciseName, setIndex)
+            },
         )
 
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
@@ -89,6 +93,63 @@ class GymWorkoutSessionFragment : Fragment() {
                     }
                 }
             }
+        }
+
+        // Rest timer banner
+        binding.restTimerMinus.setOnClickListener { viewModel.adjustRestTimer(-15) }
+        binding.restTimerPlus.setOnClickListener { viewModel.adjustRestTimer(+15) }
+        binding.restTimerStop.setOnClickListener { viewModel.stopRestTimer() }
+        binding.restTimerCountdown.setOnClickListener { showRestDurationPicker() }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.restTimerState.collect { state ->
+                if (state.isRunning) {
+                    binding.restTimerBanner.visibility = View.VISIBLE
+                    binding.restTimerCountdown.text = formatRestTime(state.remainingSec)
+                    binding.restTimerLabel.text = buildRestLabel(state)
+                } else {
+                    binding.restTimerBanner.visibility = View.GONE
+                }
+            }
+        }
+    }
+
+    /** Opens a simple dialog to choose a preset rest duration. */
+    private fun showRestDurationPicker() {
+        val presets = GymWorkoutSessionViewModel.REST_DURATION_PRESETS
+        val labels = presets.map { sec ->
+            val mm = sec / 60
+            val ss = sec % 60
+            when {
+                mm > 0 && ss > 0 -> getString(R.string.rest_timer_duration_format_ms, mm, ss)
+                mm > 0 -> getString(R.string.rest_timer_duration_format_m, mm)
+                else -> getString(R.string.rest_timer_duration_format_s, sec)
+            }
+        }.toTypedArray()
+
+        AlertDialog.Builder(requireContext())
+            .setTitle(R.string.rest_timer_duration_picker_title)
+            .setItems(labels) { _, which ->
+                viewModel.setRestDuration(presets[which])
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
+    /** Formats remaining seconds as mm:ss. */
+    private fun formatRestTime(totalSeconds: Int): String {
+        val mm = totalSeconds / 60
+        val ss = totalSeconds % 60
+        return "%02d:%02d".format(mm, ss)
+    }
+
+    /** Builds the label line showing exercise name + set number. */
+    private fun buildRestLabel(state: RestTimerState): String {
+        val setNum = state.setIndex + 1
+        return if (state.exerciseName.isNotBlank()) {
+            getString(R.string.rest_timer_label_with_exercise, state.exerciseName, setNum)
+        } else {
+            getString(R.string.rest_timer_label_no_exercise, setNum)
         }
     }
 

@@ -106,4 +106,13 @@
     <string name="logout_confirm_title">Uscita</string>
     <string name="logout_confirm_message">Sei sicuro di voler uscire?</string>
 
+    <!-- Gym session – rest timer -->
+    <string name="rest_timer_label">Recupero</string>
+    <string name="rest_timer_label_with_exercise">Recupero · %1$s · Set %2$d</string>
+    <string name="rest_timer_label_no_exercise">Recupero · Set %1$d</string>
+    <string name="rest_timer_duration_picker_title">Durata recupero</string>
+    <string name="rest_timer_duration_format_ms">%1$dm %2$ds</string>
+    <string name="rest_timer_duration_format_m">%1$dm</string>
+    <string name="rest_timer_duration_format_s">%1$ds</string>
+
 </resources>
