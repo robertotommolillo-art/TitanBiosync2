@@ -48,24 +48,24 @@ class CreateGymWorkoutSessionFromTemplate @Inject constructor(
             sessionExerciseDao.insertAll(sessionExercises)
 
             // Build a map from template exercise position -> session exercise id
-            val positionToSessionExerciseId = sessionExercises.associate { it.position to it.id }
+            val sessionExerciseIdsByPosition = sessionExercises.associate { it.position to it.id }
 
             // Fetch template set definitions and pre-populate set log rows
             val templateSets = templateExerciseSetDao.getAllForTemplateOnce(templateId)
-            val setLogs = templateSets.mapNotNull { templateSet ->
-                val sessionExerciseId = positionToSessionExerciseId[templateSet.position]
-                    ?: return@mapNotNull null
-                GymWorkoutSetLogEntity(
-                    id = UUID.randomUUID().toString(),
-                    sessionExerciseId = sessionExerciseId,
-                    setIndex = templateSet.setIndex,
-                    reps = templateSet.reps,
-                    weightKg = null,
-                    completed = false,
-                    completedAt = null,
-                    rpe = null
-                )
-            }
+            val setLogs = templateSets
+                .filter { sessionExerciseIdsByPosition.containsKey(it.position) }
+                .map { templateSet ->
+                    GymWorkoutSetLogEntity(
+                        id = UUID.randomUUID().toString(),
+                        sessionExerciseId = sessionExerciseIdsByPosition.getValue(templateSet.position),
+                        setIndex = templateSet.setIndex,
+                        reps = templateSet.reps,
+                        weightKg = null,
+                        completed = false,
+                        completedAt = null,
+                        rpe = null
+                    )
+                }
             if (setLogs.isNotEmpty()) {
                 setLogDao.insertAll(setLogs)
             }
