@@ -148,4 +148,27 @@
         android:name="com.titanbiosync.gym.ui.history.HistoryFragment"
         android:label="Storico" />
 
+    <!-- NEW: Progressi -->
+    <fragment
+        android:id="@+id/progressListFragment"
+        android:name="com.titanbiosync.gym.ui.progress.ProgressListFragment"
+        android:label="@string/progress_list_title">
+        <action
+            android:id="@+id/action_progressList_to_exerciseProgressDetail"
+            app:destination="@id/exerciseProgressDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exerciseProgressDetailFragment"
+        android:name="com.titanbiosync.gym.ui.progress.ExerciseProgressDetailFragment"
+        android:label="{exerciseName}">
+        <argument
+            android:name="exerciseId"
+            app:argType="string" />
+        <argument
+            android:name="exerciseName"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
 </navigation>
