@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.titanbiosync.R
 import com.titanbiosync.databinding.ItemProgressExerciseBinding
+
 class ProgressExerciseAdapter(
     private val onItemClick: (ProgressExerciseUi) -> Unit
 ) : ListAdapter<ProgressExerciseUi, ProgressExerciseAdapter.ViewHolder>(DIFF_CALLBACK) {

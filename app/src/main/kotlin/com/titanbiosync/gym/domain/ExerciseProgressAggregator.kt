@@ -42,11 +42,10 @@ object ExerciseProgressAggregator {
 
     /**
      * Returns the last [limit] session points (most recent), ordered ascending (oldest first).
-     * Useful for sparkline charts.
+     * Useful for sparkline charts. Accepts already-aggregated [points].
      */
-    fun lastN(rows: List<ExerciseRawSetRow>, limit: Int): List<ExerciseSessionPoint> {
-        val all = aggregate(rows)
-        return if (all.size <= limit) all else all.takeLast(limit)
+    fun lastN(points: List<ExerciseSessionPoint>, limit: Int): List<ExerciseSessionPoint> {
+        return if (points.size <= limit) points else points.takeLast(limit)
     }
 }
 

@@ -72,14 +72,16 @@ class ExerciseProgressAggregatorTest {
             row("s1", 1000L, 5, 80f),
             row("s2", 2000L, 5, 85f)
         )
-        val result = ExerciseProgressAggregator.lastN(rows, 10)
+        val points = ExerciseProgressAggregator.aggregate(rows)
+        val result = ExerciseProgressAggregator.lastN(points, 10)
         assertEquals(2, result.size)
     }
 
     @Test
     fun `lastN returns last N entries ordered ascending`() {
         val rows = (1..12).map { i -> row("s$i", i.toLong() * 1000, 5, (60 + i).toFloat()) }
-        val result = ExerciseProgressAggregator.lastN(rows, 8)
+        val points = ExerciseProgressAggregator.aggregate(rows)
+        val result = ExerciseProgressAggregator.lastN(points, 8)
         assertEquals(8, result.size)
         // Should be sessions 5..12 (last 8), ordered ascending
         assertEquals(5000L, result.first().sessionDate)

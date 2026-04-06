@@ -199,7 +199,7 @@ class WorkoutReportViewModel @Inject constructor(
             for (se in sessionExercises) {
                 val rawRows = setDao.getRawSetsForExercise(se.exerciseId)
                 val allPoints = ExerciseProgressAggregator.aggregate(rawRows)
-                val sparklinePoints = ExerciseProgressAggregator.lastN(rawRows, SPARKLINE_SESSIONS)
+                val sparklinePoints = ExerciseProgressAggregator.lastN(allPoints, SPARKLINE_SESSIONS)
 
                 val currentPoint = allPoints.lastOrNull { it.sessionId == sessionId }
                 val prevPoint = allPoints.lastOrNull { it.sessionId != sessionId }
