@@ -202,7 +202,7 @@ class WorkoutReportViewModel @Inject constructor(
                 val sparklinePoints = ExerciseProgressAggregator.lastN(allPoints, SPARKLINE_SESSIONS)
 
                 val currentPoint = allPoints.lastOrNull { it.sessionId == sessionId }
-                val prevPoint = allPoints.lastOrNull { it.sessionId != sessionId }
+                val prevPoint = allPoints.dropLastWhile { it.sessionId == sessionId }.lastOrNull()
 
                 chartsUi.add(
                     ExerciseChartUi(

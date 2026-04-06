@@ -87,7 +87,7 @@ class ExerciseChartAdapter :
             val dataSet = LineDataSet(entries, "").apply {
                 this.color = lineColor
                 lineWidth = 2f
-                setDrawCircles(points.size <= 12)
+                setDrawCircles(points.size <= SPARKLINE_CIRCLE_THRESHOLD)
                 setCircleColor(lineColor)
                 circleRadius = 3f
                 setDrawValues(false)
@@ -104,6 +104,9 @@ class ExerciseChartAdapter :
     }
 
     companion object {
+        /** Show circles on the sparkline only when there are few enough points to avoid clutter. */
+        private const val SPARKLINE_CIRCLE_THRESHOLD = 12
+
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<ExerciseChartUi>() {
             override fun areItemsTheSame(old: ExerciseChartUi, new: ExerciseChartUi) =
                 old.exerciseId == new.exerciseId

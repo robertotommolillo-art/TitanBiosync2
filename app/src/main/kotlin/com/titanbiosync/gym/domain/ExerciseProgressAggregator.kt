@@ -24,7 +24,7 @@ object ExerciseProgressAggregator {
         val bySession = rows.groupBy { it.sessionId }
 
         return bySession.map { (sessionId, sets) ->
-            val startedAt = sets.first().startedAt
+            val startedAt = sets.minOf { it.startedAt }
             val maxWeight = sets.maxOf { it.weightKg }
             val totalVolume = sets.sumOf { (it.weightKg * it.reps).toDouble() }.toFloat()
             val bestE1rm = E1rmCalculator.bestE1rm(

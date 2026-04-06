@@ -28,8 +28,7 @@ class ExerciseProgressDetailFragment : Fragment(R.layout.fragment_exercise_progr
     private val viewModel: ExerciseProgressDetailViewModel by viewModels()
     private val args: ExerciseProgressDetailFragmentArgs by navArgs()
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        _binding = FragmentExerciseProgressDetailBinding.bind(view)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {        _binding = FragmentExerciseProgressDetailBinding.bind(view)
 
         binding.exerciseNameTitle.text = args.exerciseName
 
@@ -116,7 +115,7 @@ class ExerciseProgressDetailFragment : Fragment(R.layout.fragment_exercise_progr
         val dataSet = LineDataSet(entries, yLabel).apply {
             this.color = lineColor
             lineWidth = 2f
-            setDrawCircles(entries.size <= 30)
+            setDrawCircles(entries.size <= DETAIL_CHART_CIRCLE_THRESHOLD)
             setCircleColor(lineColor)
             circleRadius = 4f
             setDrawValues(false)
@@ -153,5 +152,10 @@ class ExerciseProgressDetailFragment : Fragment(R.layout.fragment_exercise_progr
             val idx = value.toInt()
             return if (idx in timestamps.indices) fmt.format(Date(timestamps[idx])) else ""
         }
+    }
+
+    companion object {
+        /** Show data point circles only when there are few enough entries to avoid clutter. */
+        private const val DETAIL_CHART_CIRCLE_THRESHOLD = 30
     }
 }
