@@ -13,6 +13,8 @@ import com.titanbiosync.data.local.dao.gym.MuscleDao
 import com.titanbiosync.data.local.entities.gym.ExerciseMuscleEntity
 import com.titanbiosync.data.local.entities.gym.ExercisePrEntity
 import com.titanbiosync.domain.gym.E1rmCalculator
+import com.titanbiosync.gym.domain.ExerciseProgressAggregator
+import com.titanbiosync.gym.domain.ExerciseSessionPoint
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
@@ -44,6 +46,9 @@ class WorkoutReportViewModel @Inject constructor(
     private val _newPrs = MutableStateFlow<List<NewPrUi>>(emptyList())
     val newPrs = _newPrs.asLiveData()
 
+    private val _exerciseCharts = MutableStateFlow<List<ExerciseChartUi>>(emptyList())
+    val exerciseCharts = _exerciseCharts.asLiveData()
+
     init {
         refresh()
     }
@@ -56,6 +61,7 @@ class WorkoutReportViewModel @Inject constructor(
                 _muscles.value = emptyList()
                 _exercises.value = emptyList()
                 _newPrs.value = emptyList()
+                _exerciseCharts.value = emptyList()
                 return@launch
             }
 
@@ -188,6 +194,32 @@ class WorkoutReportViewModel @Inject constructor(
 
             _newPrs.value = newPrsList
 
+            // ---- Exercise charts (sparklines for end-of-workout summary) ----
+            val chartsUi = mutableListOf<ExerciseChartUi>()
+            for (se in sessionExercises) {
+                val rawRows = setDao.getRawSetsForExercise(se.exerciseId)
+                val allPoints = ExerciseProgressAggregator.aggregate(rawRows)
+                val sparklinePoints = ExerciseProgressAggregator.lastN(rawRows, SPARKLINE_SESSIONS)
+
+                val currentPoint = allPoints.lastOrNull { it.sessionId == sessionId }
+                val prevPoint = allPoints.lastOrNull { it.sessionId != sessionId }
+
+                chartsUi.add(
+                    ExerciseChartUi(
+                        exerciseId = se.exerciseId,
+                        exerciseName = se.nameItSnapshot,
+                        sparklinePoints = sparklinePoints,
+                        currentBestE1rm = currentPoint?.bestE1rm,
+                        currentMaxWeightKg = currentPoint?.maxWeightKg ?: 0f,
+                        currentVolume = currentPoint?.totalVolume ?: 0f,
+                        prevBestE1rm = prevPoint?.bestE1rm,
+                        prevMaxWeightKg = prevPoint?.maxWeightKg,
+                        prevVolume = prevPoint?.totalVolume
+                    )
+                )
+            }
+            _exerciseCharts.value = chartsUi
+
             // ---- Muscles tab (weighted) ----
             if (exerciseIds.isEmpty()) {
                 _muscles.value = emptyList()
@@ -293,3 +325,32 @@ data class NewPrUi(
     val value: Float,
     val unit: String
 )
+
+/** Number of past sessions used in the end-of-workout sparkline. */
+private const val SPARKLINE_SESSIONS = 10
+
+/**
+ * UI model for a per-exercise card shown on the end-of-workout summary screen.
+ * [sparklinePoints] are ordered ascending (oldest → newest).
+ */
+data class ExerciseChartUi(
+    val exerciseId: String,
+    val exerciseName: String,
+    /** Last [SPARKLINE_SESSIONS] occurrences of this exercise, ordered oldest-first. */
+    val sparklinePoints: List<ExerciseSessionPoint>,
+    val currentBestE1rm: Float?,
+    val currentMaxWeightKg: Float,
+    val currentVolume: Float,
+    val prevBestE1rm: Float?,
+    val prevMaxWeightKg: Float?,
+    val prevVolume: Float?
+) {
+    /** Primary metric for the current session: best e1RM when available, else max weight. */
+    val currentPrimary: Float get() = currentBestE1rm ?: currentMaxWeightKg
+
+    /** Delta of primary metric vs previous occurrence (null if no previous). */
+    val deltaPrimary: Float? get() {
+        val prev = prevBestE1rm ?: prevMaxWeightKg ?: return null
+        return currentPrimary - prev
+    }
+}
