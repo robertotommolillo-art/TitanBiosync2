@@ -5,6 +5,7 @@ import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentWorkoutReportSummaryBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -18,6 +19,8 @@ class WorkoutReportSummaryFragment : Fragment(R.layout.fragment_workout_report_s
     // ViewModel condiviso dal parent (Host)
     private val viewModel: WorkoutReportViewModel by viewModels({ requireParentFragment() })
 
+    private val exerciseChartAdapter = ExerciseChartAdapter()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Non è strettamente necessario leggere qui sessionId: lo gestisce il parent
@@ -25,6 +28,11 @@ class WorkoutReportSummaryFragment : Fragment(R.layout.fragment_workout_report_s
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentWorkoutReportSummaryBinding.bind(view)
+
+        binding.exerciseChartsRecycler.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = exerciseChartAdapter
+        }
 
         viewModel.summary.observe(viewLifecycleOwner) { s ->
             binding.summaryText.text = buildString {
@@ -61,6 +69,13 @@ class WorkoutReportSummaryFragment : Fragment(R.layout.fragment_workout_report_s
                     }
                 }.trimEnd()
             }
+        }
+
+        viewModel.exerciseCharts.observe(viewLifecycleOwner) { charts ->
+            val hasData = charts.isNotEmpty()
+            binding.exerciseChartsTitle.isVisible = hasData
+            binding.exerciseChartsRecycler.isVisible = hasData
+            exerciseChartAdapter.submitList(charts)
         }
     }
 
