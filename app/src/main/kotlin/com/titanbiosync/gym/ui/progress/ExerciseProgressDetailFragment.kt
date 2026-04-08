@@ -18,6 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import com.titanbiosync.gym.domain.ExerciseSessionPoint
 
 @AndroidEntryPoint
 class ExerciseProgressDetailFragment : Fragment(R.layout.fragment_exercise_progress_detail) {

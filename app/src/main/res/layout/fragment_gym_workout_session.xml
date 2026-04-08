@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -34,6 +35,82 @@
         android:paddingTop="8dp"
         android:text="Unità peso: kg"
         android:alpha="0.7" />
+
+    <!-- Rest Timer Banner: visible only when a rest timer is running -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/restTimerBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="?attr/colorSecondaryContainer"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/restTimerLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rest_timer_label"
+                    android:textSize="11sp"
+                    android:alpha="0.7" />
+
+                <TextView
+                    android:id="@+id/restTimerCountdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:30"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:id="@+id/restTimerMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-15s"
+                android:minWidth="0dp"
+                android:paddingHorizontal="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:id="@+id/restTimerPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+15s"
+                android:minWidth="0dp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginStart="4dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TextButton"
+                android:id="@+id/restTimerStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:minWidth="0dp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"

@@ -31,7 +31,7 @@ class ProgressListViewModel @Inject constructor(
 
     private val _query = MutableStateFlow("")
 
-    /** Map from exerciseId to number of distinct sessions containing completed sets. */
+    /** Map from exerciseId to number of distinct finished sessions containing completed sets. */
     private val _sessionCounts = MutableStateFlow<Map<String, Int>>(emptyMap())
 
     val exercises: LiveData<List<ProgressExerciseUi>> = _query
@@ -40,13 +40,21 @@ class ProgressListViewModel @Inject constructor(
             exerciseDao.search(q, limit = 200)
         }
         .combine(_sessionCounts) { exercises, counts ->
-            exercises.map { ex ->
-                ProgressExerciseUi(
-                    exerciseId = ex.id,
-                    exerciseName = ex.nameIt,
-                    sessionCount = counts[ex.id] ?: 0
-                )
-            }
+            exercises
+                .mapNotNull { ex ->
+                    val sessionCount = counts[ex.id] ?: 0
+                    if (sessionCount <= 0) {
+                        null // nascondi esercizi mai eseguiti
+                    } else {
+                        ProgressExerciseUi(
+                            exerciseId = ex.id,
+                            exerciseName = ex.nameIt,
+                            sessionCount = sessionCount
+                        )
+                    }
+                }
+                // utile: prima quelli più allenati
+                .sortedByDescending { it.sessionCount }
         }
         .asLiveData()
 
@@ -60,8 +68,6 @@ class ProgressListViewModel @Inject constructor(
 
     private fun loadSessionCounts() {
         viewModelScope.launch {
-            // Fetch all raw set rows for each exercise — we use a simpler approach:
-            // get all exercises that have at least one completed set, grouped by exerciseId
             val rows = setLogDao.getExerciseSessionCounts()
             _sessionCounts.value = rows.associate { it.exerciseId to it.sessionCount }
         }

@@ -58,9 +58,13 @@ class HistoryFragment : Fragment() {
         binding.sessionsRecycler.layoutManager = LinearLayoutManager(requireContext())
         binding.sessionsRecycler.adapter = HistorySessionsAdapter(
             onClick = { session ->
+                // Apri la sessione in modalità "storico" (read-only)
                 findNavController().navigate(
                     R.id.gymWorkoutSessionFragment,
-                    bundleOf("sessionId" to session.id)
+                    bundleOf(
+                        "sessionId" to session.id,
+                        "readOnly" to true
+                    )
                 )
             }
         )
