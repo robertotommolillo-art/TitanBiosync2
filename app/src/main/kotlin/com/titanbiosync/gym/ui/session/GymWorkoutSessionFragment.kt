@@ -40,22 +40,29 @@ class GymWorkoutSessionFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val readOnly: Boolean = arguments?.getBoolean("readOnly", false) ?: false
+
         adapter = GymWorkoutSessionExerciseAdapter(
             lifecycleOwner = viewLifecycleOwner,
             observeSets = { sessionExerciseId -> viewModel.observeSets(sessionExerciseId) },
-            onAddSet = { sessionExerciseId -> viewModel.addSet(sessionExerciseId) },
+            onAddSet = { sessionExerciseId ->
+                if (!readOnly) viewModel.addSet(sessionExerciseId)
+            },
             onUpdateSet = { set, reps, weightKg, completed, rpe ->
-                viewModel.updateSet(set, reps, weightKg, completed, rpe = rpe)
-            },
-            onSetCompleted = { exerciseName, setIndex ->
-                viewModel.onSetCompleted(exerciseName, setIndex)
-            },
-        )
+                onUpdateSet = { set, reps, weightKg, completed, rpe ->
+                    if (!readOnly) viewModel.updateSet(set, reps, weightKg, completed, rpe = rpe)
+                },
+                onSetCompleted = { exerciseName, setIndex ->
+                    viewModel.onSetCompleted(exerciseName, setIndex)
+                },        )
 
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
         binding.recycler.adapter = adapter
 
+        // read-only: non puoi terminare
+        binding.endButton.isEnabled = !readOnly
         binding.endButton.setOnClickListener {
+            if (readOnly) return@setOnClickListener
             viewModel.endSession {
                 val args = Bundle().apply { putString("sessionId", viewModel.getSessionId()) }
                 findNavController().navigate(R.id.workoutReportHostFragment, args)
@@ -78,19 +85,49 @@ class GymWorkoutSessionFragment : Fragment() {
             adapter.setWeightUnit(unit)
         }
 
-        // Start the live elapsed-time timer once we know startedAt.
+        // Timer: live solo se sessione attiva e non readOnly
         viewModel.startedAt.observe(viewLifecycleOwner) { startedAt ->
+            fun showFinalOrStaticTimer() {
+                timerJob?.cancel()
+                val endedAt = viewModel.endedAt.value
+                if (startedAt != null && endedAt != null) {
+                    val elapsedSec = (endedAt - startedAt) / 1000L
+                    binding.timerText.text = formatElapsed(elapsedSec)
+                }
+            }
+
+            if (readOnly) {
+                showFinalOrStaticTimer()
+                return@observe
+            }
+
             timerJob?.cancel()
-            if (startedAt != null) {
+            val endedAt = viewModel.endedAt.value
+            if (startedAt != null && endedAt == null) {
                 timerJob = viewLifecycleOwner.lifecycleScope.launch {
                     while (isActive) {
                         val now = System.currentTimeMillis()
                         val elapsedSec = (now - startedAt) / 1000L
                         binding.timerText.text = formatElapsed(elapsedSec)
-                        // Sleep until the start of the next whole second to avoid drift.
                         val msUntilNextTick = 1000L - (now % 1000L)
                         delay(msUntilNextTick)
                     }
+                }
+            } else {
+                showFinalOrStaticTimer()
+            }
+        }
+
+        // Quando la sessione termina, ferma il timer live e disabilita il tasto
+        viewModel.endedAt.observe(viewLifecycleOwner) { endedAt ->
+            if (endedAt != null) {
+                timerJob?.cancel()
+                binding.endButton.isEnabled = false
+
+                val startedAt = viewModel.startedAt.value
+                if (startedAt != null) {
+                    val elapsedSec = (endedAt - startedAt) / 1000L
+                    binding.timerText.text = formatElapsed(elapsedSec)
                 }
             }
         }

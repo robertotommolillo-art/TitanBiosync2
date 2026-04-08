@@ -62,6 +62,10 @@ class GymWorkoutSessionViewModel @Inject constructor(
         .map { it?.startedAt }
         .asLiveData()
 
+    val endedAt = sessionDao.observeById(sessionId)
+        .map { it?.endedAt }
+        .asLiveData()
+
     fun observeSets(sessionExerciseId: String) =
         setDao.observeForSessionExercise(sessionExerciseId).asLiveData()
 

@@ -37,14 +37,21 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Settings
         binding.settingsButton.setOnClickListener {
             findNavController().navigate(R.id.settingsFragment)
         }
 
+        // Quick stats (still "coming soon")
         binding.quickStatSessionsCard.setOnClickListener { showComingSoon(it) }
         binding.quickStatMinutesCard.setOnClickListener { showComingSoon(it) }
         binding.quickStatDevicesCard.setOnClickListener { showComingSoon(it) }
         binding.quickStatStreakCard.setOnClickListener { showComingSoon(it) }
+
+        // Progress entry point (replaces bottom-nav item)
+        binding.progressCard.setOnClickListener {
+            findNavController().navigate(R.id.progressListFragment)
+        }
 
         setupStateSubscription()
     }
@@ -73,7 +80,10 @@ class DashboardFragment : Fragment() {
 
                 state.user?.let { user ->
                     val name = user.displayName
-                        ?: listOfNotNull(user.firstName, user.lastName).joinToString(" ").takeIf { it.isNotBlank() }
+                        ?: listOfNotNull(user.firstName, user.lastName)
+                            .joinToString(" ")
+                            .takeIf { it.isNotBlank() }
+
                     binding.userNameText.text = name ?: getString(R.string.dashboard_welcome_back)
 
                     // Avatar
@@ -108,7 +118,6 @@ class DashboardFragment : Fragment() {
                 } else {
                     // CHIP: nessuna sessione
                     binding.activeSessionStatusChip.setText(R.string.dashboard_session_status_inactive)
-
                     binding.activeSessionType.setText(R.string.dashboard_no_active_session)
                 }
 

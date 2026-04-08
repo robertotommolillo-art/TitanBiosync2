@@ -26,9 +26,5 @@
         android:icon="@android:drawable/ic_menu_recent_history"
         android:title="Storico" />
 
-    <item
-        android:id="@+id/progressListFragment"
-        android:icon="@android:drawable/ic_menu_sort_by_size"
-        android:title="@string/nav_progressi" />
 
 </menu>

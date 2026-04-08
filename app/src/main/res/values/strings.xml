@@ -34,6 +34,7 @@
     <string name="common_coming_soon">Dettagli in arrivo</string>
     <string name="common_loading">Loading…</string>
     <string name="common_placeholder_ellipsis">…</string>
+    <string name="common_open">Apri</string>
 
     <!-- Dashboard -->
     <string name="dashboard_settings">Impostazioni</string>
@@ -54,6 +55,9 @@
 
     <string name="dashboard_error_title">Errore</string>
     <string name="dashboard_error_message">Errore: %1$s</string>
+
+    <!-- Dashboard: Progress card -->
+    <string name="dashboard_progress_subtitle">Grafici e trend dei tuoi allenamenti</string>
 
     <!-- Quick stats -->
     <string name="dashboard_quick_sessions">Sessioni</string>

@@ -41,6 +41,10 @@
         <argument
             android:name="sessionId"
             app:argType="string" />
+        <argument
+            android:name="readOnly"
+            app:argType="boolean"
+            android:defaultValue="false" />
     </fragment>
 
     <fragment
