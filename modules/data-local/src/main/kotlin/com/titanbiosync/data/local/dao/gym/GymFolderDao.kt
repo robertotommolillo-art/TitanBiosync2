@@ -24,4 +24,7 @@ interface GymFolderDao {
 
     @Query("SELECT MAX(sortIndex) FROM gym_folders")
     suspend fun getMaxSortIndex(): Int?
+
+    @Query("SELECT * FROM gym_folders WHERE name = :name LIMIT 1")
+    suspend fun getByNameOnce(name: String): GymFolderEntity?
 }

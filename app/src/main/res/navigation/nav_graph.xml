@@ -171,4 +171,10 @@
             android:defaultValue="" />
     </fragment>
 
+    <!-- AI Coach -->
+    <fragment
+        android:id="@+id/aiCoachFragment"
+        android:name="com.titanbiosync.coach.ui.AiCoachFragment"
+        android:label="@string/coach_title" />
+
 </navigation>

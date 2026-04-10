@@ -58,4 +58,10 @@ interface WorkoutTemplateDao {
     ORDER BY sortIndex ASC, updatedAt DESC
 """)
     suspend fun getByFolderIdOnce(folderId: String): List<WorkoutTemplateEntity>
+
+    @Query("SELECT * FROM gym_workout_templates WHERE id = :id LIMIT 1")
+    suspend fun getByIdOnce(id: String): WorkoutTemplateEntity?
+
+    @Query("SELECT * FROM gym_workout_templates ORDER BY sortIndex ASC, updatedAt DESC")
+    suspend fun getAllOnce(): List<WorkoutTemplateEntity>
 }
