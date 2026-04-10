@@ -86,11 +86,7 @@ class WorkoutHistorySummaryBuilder @Inject constructor(
     }
 
     /** Estimates average sessions per week over the last 4 weeks. */
-    fun calculateWeeklyFrequency(sessionStartTimes: List<Long>): Float? =
-        Companion.calculateWeeklyFrequency(sessionStartTimes)
-
     companion object {
-        /** Estimates average sessions per week over the last 4 weeks. */
         fun calculateWeeklyFrequency(sessionStartTimes: List<Long>): Float? {
             if (sessionStartTimes.isEmpty()) return null
             val fourWeeksAgo = System.currentTimeMillis() - TimeUnit.DAYS.toMillis(28)

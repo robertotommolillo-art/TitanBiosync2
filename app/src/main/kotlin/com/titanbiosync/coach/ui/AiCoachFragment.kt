@@ -93,7 +93,7 @@ class AiCoachFragment : Fragment() {
             if (templateId != null) {
                 Snackbar.make(
                     binding.root,
-                    "Scheda salvata nella cartella \"${AiCoachRepository.AI_FOLDER_NAME}\"!",
+                    "Scheda salvata nella cartella \"${AiCoachViewModel.AI_FOLDER_NAME}\"!",
                     Snackbar.LENGTH_LONG
                 ).show()
                 viewModel.clearSavedTemplateId()
@@ -130,7 +130,7 @@ class AiCoachFragment : Fragment() {
             .setTitle("Salva scheda")
             .setMessage(
                 "Vuoi salvare la scheda \"$title\" ($exerciseCount esercizi) " +
-                        "nella cartella \"${AiCoachRepository.AI_FOLDER_NAME}\"?"
+                        "nella cartella \"${AiCoachViewModel.AI_FOLDER_NAME}\"?"
             )
             .setPositiveButton("Salva in Gym") { _, _ -> viewModel.confirmSavePlan() }
             .setNegativeButton("Annulla") { _, _ -> viewModel.discardPlan() }

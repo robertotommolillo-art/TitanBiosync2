@@ -135,6 +135,7 @@ class AiCoachViewModel @Inject constructor(
     companion object {
         const val ROLE_USER = "user"
         const val ROLE_ASSISTANT = "assistant"
+        const val AI_FOLDER_NAME = AiCoachRepository.AI_FOLDER_NAME
     }
 }
 
