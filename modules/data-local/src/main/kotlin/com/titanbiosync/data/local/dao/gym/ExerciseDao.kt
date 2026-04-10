@@ -198,4 +198,10 @@ interface ExerciseDao {
         role: String? = null,
         limit: Int = 200
     ): Flow<List<ExerciseEntity>>
+
+    @Query("SELECT * FROM gym_exercises WHERE LOWER(nameIt) = LOWER(:nameIt) AND archivedAt IS NULL LIMIT 1")
+    suspend fun findByNameIt(nameIt: String): ExerciseEntity?
+
+    @Query("SELECT * FROM gym_exercises WHERE id = :id LIMIT 1")
+    suspend fun getByIdOnce(id: String): ExerciseEntity?
 }

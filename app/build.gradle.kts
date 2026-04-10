@@ -33,6 +33,13 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "COACH_API_URL", "\"https://titanbiosync-ai-coach.PLACEHOLDER.workers.dev\"")
+            buildConfigField("String", "COACH_APP_TOKEN", "\"\"")
+        }
+
+        debug {
+            buildConfigField("String", "COACH_API_URL", "\"https://titanbiosync-ai-coach.PLACEHOLDER.workers.dev\"")
+            buildConfigField("String", "COACH_APP_TOKEN", "\"\"")
         }
     }
 

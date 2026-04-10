@@ -31,4 +31,9 @@
         android:icon="@android:drawable/ic_menu_sort_by_size"
         android:title="@string/nav_progressi" />
 
+    <item
+        android:id="@+id/aiCoachFragment"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="@string/nav_coach" />
+
 </menu>

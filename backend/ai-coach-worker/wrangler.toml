@@ -1,0 +1,7 @@
+name = "titanbiosync-ai-coach"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+# APP_TOKEN is set via `wrangler secret put APP_TOKEN` (never hardcode secrets)
+# OPENAI_API_KEY is set via `wrangler secret put OPENAI_API_KEY`

@@ -130,4 +130,12 @@
     <string name="progress_sessions_count">%1$d sessioni</string>
     <string name="progress_no_sessions">Nessuna sessione</string>
 
+    <!-- AI Coach -->
+    <string name="nav_coach">Coach</string>
+    <string name="coach_title">AI Coach</string>
+    <string name="coach_message_hint">Scrivi un messaggio…</string>
+    <string name="coach_send">Invia</string>
+    <string name="coach_generate_workout">Genera scheda</string>
+    <string name="coach_generate_spec_hint">es. push 4 giorni, ipertrofia, intermedio</string>
+
 </resources>

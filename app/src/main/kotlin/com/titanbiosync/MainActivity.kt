@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.gymLibraryFragment,
                 R.id.historyFragment,
                 R.id.progressListFragment,
+                R.id.aiCoachFragment,
             )
         )
 
