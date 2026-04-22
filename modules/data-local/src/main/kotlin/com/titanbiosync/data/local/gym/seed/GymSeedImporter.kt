@@ -11,6 +11,7 @@ class GymSeedImporter(
     companion object {
         private const val META_KEY_VERSION = "gym_seed_version"
         private const val TAG = "GymSeedImporter"
+        private const val CHUNK_SIZE = 100
     }
 
     /**
@@ -28,21 +29,34 @@ class GymSeedImporter(
         try {
             validateSeed(seed)
 
-            db.withTransaction {
-                db.muscleDao().upsertAll(seed.muscles)
-                db.exerciseDao().upsertAll(seed.exercises)
-                db.exerciseVariantDao().upsertAll(seed.variants)
-
-                db.exerciseMuscleDao().upsertAll(seed.exerciseMuscles)
-                db.exerciseMediaDao().upsertAll(seed.media)
-
-                db.gymSeedMetaDao().upsert(
-                    GymSeedMetaEntity(
-                        key = META_KEY_VERSION,
-                        value = seedVersion.toString()
-                    )
-                )
+            // Import in chunks to avoid locking the database for too long and causing timeouts/ANRs.
+            // This is especially important during startup (OverlayBinder transitions).
+            
+            db.muscleDao().upsertAll(seed.muscles)
+            
+            seed.exercises.chunked(CHUNK_SIZE).forEach { chunk ->
+                db.withTransaction { db.exerciseDao().upsertAll(chunk) }
             }
+            
+            seed.variants.chunked(CHUNK_SIZE).forEach { chunk ->
+                db.withTransaction { db.exerciseVariantDao().upsertAll(chunk) }
+            }
+
+            seed.exerciseMuscles.chunked(CHUNK_SIZE).forEach { chunk ->
+                db.withTransaction { db.exerciseMuscleDao().upsertAll(chunk) }
+            }
+
+            seed.media.chunked(CHUNK_SIZE).forEach { chunk ->
+                db.withTransaction { db.exerciseMediaDao().upsertAll(chunk) }
+            }
+
+            db.gymSeedMetaDao().upsert(
+                GymSeedMetaEntity(
+                    key = META_KEY_VERSION,
+                    value = seedVersion.toString()
+                )
+            )
+
         } catch (t: Throwable) {
             if (strict) throw t
             Log.e(TAG, "Gym seed import skipped (non-strict mode). seedVersion=$seedVersion", t)

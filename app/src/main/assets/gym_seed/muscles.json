@@ -5,6 +5,7 @@
   { "id": "front_delts", "nameIt": "Deltoidi anteriori", "nameEn": "Front Deltoids" },
   { "id": "side_delts", "nameIt": "Deltoidi laterali", "nameEn": "Lateral Deltoids" },
   { "id": "rear_delts", "nameIt": "Deltoidi posteriori", "nameEn": "Rear Deltoids" },
+  { "id": "delts", "nameIt": "Deltoidi", "nameEn": "Deltoids" },
   { "id": "triceps", "nameIt": "Tricipiti", "nameEn": "Triceps" },
   { "id": "biceps", "nameIt": "Bicipiti", "nameEn": "Biceps" },
   { "id": "forearms", "nameIt": "Avambracci", "nameEn": "Forearms" },
@@ -13,12 +14,12 @@
   { "id": "mid_back", "nameIt": "Dorso medio", "nameEn": "Mid Back" },
   { "id": "lower_back", "nameIt": "Lombari", "nameEn": "Lower Back" },
   { "id": "traps", "nameIt": "Trapezi", "nameEn": "Traps" },
-
   { "id": "upper_traps", "nameIt": "Trapezio superiore", "nameEn": "Upper trapezius" },
   { "id": "lower_traps", "nameIt": "Trapezio inferiore", "nameEn": "Lower trapezius" },
-
   { "id": "rhomboids", "nameIt": "Romboidi", "nameEn": "Rhomboids" },
   { "id": "rotator_cuff", "nameIt": "Cuffia dei rotatori", "nameEn": "Rotator Cuff" },
+  { "id": "serratus", "nameIt": "Serrato anteriore", "nameEn": "Serratus Anterior" },
+  { "id": "serratus anterior", "nameIt": "Serrato anteriore", "nameEn": "Serratus Anterior" },
   { "id": "abs", "nameIt": "Addominali", "nameEn": "Abs" },
   { "id": "obliques", "nameIt": "Obliqui", "nameEn": "Obliques" },
   { "id": "transverse_abs", "nameIt": "Trasverso dell'addome", "nameEn": "Transverse Abdominis" },
@@ -31,6 +32,10 @@
   { "id": "calves", "nameIt": "Polpacci", "nameEn": "Calves" },
   { "id": "tibialis_anterior", "nameIt": "Tibiale anteriore", "nameEn": "Tibialis Anterior" },
   { "id": "neck", "nameIt": "Collo", "nameEn": "Neck" },
-  { "id": "serratus", "nameIt": "Serrato anteriore", "nameEn": "Serratus Anterior" },
-  { "id": "erectors", "nameIt": "Erettori spinali", "nameEn": "Spinal Erectors" }
+  { "id": "erectors", "nameIt": "Erettori spinali", "nameEn": "Spinal Erectors" },
+
+  { "id": "pectorals", "nameIt": "Pettorali", "nameEn": "Pectorals" },
+  { "id": "spine", "nameIt": "Colonna vertebrale", "nameEn": "Spine" },
+  { "id": "levator scapulae", "nameIt": "Elevatore della scapola", "nameEn": "Levator Scapulae" },
+  { "id": "cardiovascular system", "nameIt": "Sistema cardiovascolare", "nameEn": "Cardiovascular System" }
 ]

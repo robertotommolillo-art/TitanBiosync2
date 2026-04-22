@@ -16,6 +16,9 @@ interface ExerciseDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(item: ExerciseEntity)
 
+    @Query("DELETE FROM gym_exercises")
+    suspend fun deleteAll()
+
     // --------------------
     // Base
     // --------------------

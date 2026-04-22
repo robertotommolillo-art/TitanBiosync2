@@ -12,19 +12,9 @@
         android:title="Start Session" />
 
     <item
-        android:id="@+id/deviceListFragment"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:title="Devices" />
-
-    <item
         android:id="@+id/gymLibraryFragment"
         android:icon="@android:drawable/ic_menu_agenda"
         android:title="Gym" />
-
-    <item
-        android:id="@+id/historyFragment"
-        android:icon="@android:drawable/ic_menu_recent_history"
-        android:title="Storico" />
 
     <item
         android:id="@+id/progressListFragment"

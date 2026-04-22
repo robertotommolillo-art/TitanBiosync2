@@ -40,7 +40,7 @@ class CreateGymWorkoutSessionFromTemplate @Inject constructor(
                 sessionId = sessionId,
                 exerciseId = row.exerciseId,
                 position = row.position,
-                nameItSnapshot = row.nameIt
+                nameItSnapshot = row.nameIt ?: ""
             )
         }
 

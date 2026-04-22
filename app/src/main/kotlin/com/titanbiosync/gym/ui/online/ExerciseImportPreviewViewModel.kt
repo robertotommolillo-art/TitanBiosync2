@@ -1,5 +1,6 @@
 package com.titanbiosync.gym.ui.online
 
+import android.content.Context // <-- aggiunto import!
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -10,6 +11,8 @@ import com.titanbiosync.data.local.entities.gym.ExerciseEntity
 import com.titanbiosync.data.local.entities.gym.ExerciseMuscleEntity
 import com.titanbiosync.gym.online.data.OnlineExerciseDataSource
 import com.titanbiosync.gym.online.model.OnlineExerciseResolved
+import com.google.gson.Gson           // <-- aggiunto import!
+import com.google.gson.reflect.TypeToken // <-- aggiunto import!
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -42,7 +45,6 @@ class ExerciseImportPreviewViewModel @Inject constructor(
         val resolvedName = r.nameIt?.trim().orEmpty()
         val title = candidateTitle.trim()
 
-        // Se lo stub restituisce "Esercizio personalizzato" (o vuoto), usa il titolo scelto nella lista
         return when {
             resolvedName.isBlank() -> title.ifBlank { resolvedName }
             resolvedName.equals("Esercizio personalizzato", ignoreCase = true) -> title.ifBlank { resolvedName }
@@ -61,7 +63,6 @@ class ExerciseImportPreviewViewModel @Inject constructor(
                 val newExerciseId = r.idHint ?: UUID.randomUUID().toString()
                 val nameItFinal = computeDisplayNameIt(r)
 
-                // 1) salva exercise
                 exerciseDao.upsert(
                     ExerciseEntity(
                         id = newExerciseId,
@@ -77,7 +78,6 @@ class ExerciseImportPreviewViewModel @Inject constructor(
                     )
                 )
 
-                // 2) salva muscoli (solo quelli che esistono in gym_muscles)
                 val existingMuscleIds = muscleDao.getAllIds().toSet()
 
                 val links = r.muscles

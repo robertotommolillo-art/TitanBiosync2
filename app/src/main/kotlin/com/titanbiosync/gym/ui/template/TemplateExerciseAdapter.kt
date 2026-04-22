@@ -39,8 +39,8 @@ class TemplateExerciseAdapter(
                 }
             } else ""
 
-            binding.title.text = row.nameIt + suffix
-            binding.subtitle.text = row.nameEn
+            binding.title.text = (row.nameIt ?: "") + suffix
+            binding.subtitle.text = row.nameEn ?: ""
 
             binding.root.setOnLongClickListener {
                 onLongClick(row)

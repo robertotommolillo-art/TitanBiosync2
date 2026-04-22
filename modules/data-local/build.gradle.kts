@@ -34,6 +34,7 @@ android {
 
 dependencies {
     implementation(project(":modules:domain-core"))
+    implementation("com.google.code.gson:gson:2.10.1")
 
     // Room
     implementation(libs.androidx.room.runtime)

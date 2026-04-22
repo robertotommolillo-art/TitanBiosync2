@@ -1,5 +1,6 @@
 package com.titanbiosync.gym.ui
 
+import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
@@ -13,6 +14,8 @@ import com.titanbiosync.data.local.entities.gym.ExerciseEntity
 import com.titanbiosync.data.local.entities.gym.ExerciseMediaEntity
 import com.titanbiosync.data.local.entities.gym.MuscleEntity
 import com.titanbiosync.data.local.gym.seed.GymSeedInitializer
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -39,7 +42,6 @@ class GymExercisesViewModel @Inject constructor(
             gymSeedInitializer.ensureSeeded(strict = BuildConfig.DEBUG)
         }
     }
-
     enum class MuscleMatchMode { ANY, ALL }
 
     data class Filters(
@@ -123,7 +125,7 @@ class GymExercisesViewModel @Inject constructor(
                             val needle = q.trim().lowercase()
                             baseFlow.map { list ->
                                 list.filter { e ->
-                                    e.nameIt.lowercase().contains(needle) || e.nameEn.lowercase().contains(needle)
+                                    (e.nameIt ?: "").lowercase().contains(needle) || (e.nameEn ?: "").lowercase().contains(needle)
                                 }
                             }
                         }

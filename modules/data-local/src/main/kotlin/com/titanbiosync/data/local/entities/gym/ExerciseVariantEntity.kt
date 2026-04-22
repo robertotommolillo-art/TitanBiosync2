@@ -4,6 +4,7 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -32,7 +33,9 @@ data class ExerciseVariantEntity(
     val nameIt: String,
     val nameEn: String,
 
+    @SerialName("notesIt")
     val descriptionIt: String? = null,
+    @SerialName("notesEn")
     val descriptionEn: String? = null,
 
     val equipment: String? = null,

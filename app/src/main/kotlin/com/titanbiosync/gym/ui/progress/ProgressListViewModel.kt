@@ -42,8 +42,8 @@ class ProgressListViewModel @Inject constructor(
         .combine(_sessionCounts) { exercises, counts ->
             exercises.map { ex ->
                 ProgressExerciseUi(
-                    exerciseId = ex.id,
-                    exerciseName = ex.nameIt,
+                    exerciseId = ex.id ?: "",
+                    exerciseName = ex.nameIt ?: "",
                     sessionCount = counts[ex.id] ?: 0
                 )
             }

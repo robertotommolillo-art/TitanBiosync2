@@ -14,7 +14,6 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asSharedFlow
-import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.util.UUID
@@ -37,9 +36,7 @@ class GymWorkoutSessionViewModel @Inject constructor(
 
     val exercises = sessionExerciseDao.observeForSession(sessionId).asLiveData()
 
-    val startedAt = sessionDao.observeById(sessionId)
-        .map { it?.startedAt }
-        .asLiveData()
+    val session = sessionDao.observeById(sessionId).asLiveData()
 
     fun observeSets(sessionExerciseId: String) =
         setDao.observeForSessionExercise(sessionExerciseId).asLiveData()

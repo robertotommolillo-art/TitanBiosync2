@@ -74,18 +74,25 @@ class GymWorkoutSessionFragment : Fragment() {
             adapter.setWeightUnit(unit)
         }
 
-        // Start the live elapsed-time timer once we know startedAt.
-        viewModel.startedAt.observe(viewLifecycleOwner) { startedAt ->
+        // Handle the session timer.
+        viewModel.session.observe(viewLifecycleOwner) { session ->
             timerJob?.cancel()
-            if (startedAt != null) {
-                timerJob = viewLifecycleOwner.lifecycleScope.launch {
-                    while (isActive) {
-                        val now = System.currentTimeMillis()
-                        val elapsedSec = (now - startedAt) / 1000L
-                        binding.timerText.text = formatElapsed(elapsedSec)
-                        // Sleep until the start of the next whole second to avoid drift.
-                        val msUntilNextTick = 1000L - (now % 1000L)
-                        delay(msUntilNextTick)
+            if (session != null) {
+                val endedAt = session.endedAt
+                if (endedAt != null) {
+                    // Session is finished, show final duration and stop ticking.
+                    val elapsedSec = (endedAt - session.startedAt) / 1000L
+                    binding.timerText.text = formatElapsed(elapsedSec)
+                } else {
+                    // Session is active, start ticking.
+                    timerJob = viewLifecycleOwner.lifecycleScope.launch {
+                        while (isActive) {
+                            val now = System.currentTimeMillis()
+                            val elapsedSec = (now - session.startedAt) / 1000L
+                            binding.timerText.text = formatElapsed(elapsedSec)
+                            val msUntilNextTick = 1000L - (now % 1000L)
+                            delay(msUntilNextTick)
+                        }
                     }
                 }
             }

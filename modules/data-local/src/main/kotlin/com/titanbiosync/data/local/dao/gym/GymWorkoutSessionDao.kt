@@ -53,4 +53,23 @@ interface GymWorkoutSessionDao {
         """
     )
     fun observeAll(): Flow<List<GymWorkoutSessionEntity>>
+
+    @Query(
+        """
+        SELECT * FROM gym_workout_session 
+        WHERE endedAt IS NOT NULL 
+        ORDER BY startedAt DESC 
+        LIMIT :limit
+        """
+    )
+    suspend fun getRecentCompleted(limit: Int): List<GymWorkoutSessionEntity>
+
+    @Query(
+        """
+        SELECT startedAt FROM gym_workout_session 
+        WHERE endedAt IS NOT NULL AND startedAt >= :since 
+        ORDER BY startedAt DESC
+        """
+    )
+    suspend fun getCompletedStartTimesSince(since: Long): List<Long>
 }

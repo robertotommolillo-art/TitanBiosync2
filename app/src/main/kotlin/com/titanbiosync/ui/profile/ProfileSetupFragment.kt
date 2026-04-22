@@ -28,6 +28,8 @@ class ProfileSetupFragment : Fragment() {
 
     private var selectedAvatarUri: Uri? = null
 
+    private var isNavigating = false
+
     /** Goal key values matching [UserPreferences] constants, parallel to goal display labels. */
     private val goalKeys = listOf(
         UserPreferences.GOAL_HYPERTROPHY,
@@ -169,6 +171,8 @@ class ProfileSetupFragment : Fragment() {
     }
 
     private fun navigateToDashboard() {
+        if (isNavigating) return
+        isNavigating = true
         findNavController().navigate(R.id.action_profileSetup_to_dashboard)
     }
 

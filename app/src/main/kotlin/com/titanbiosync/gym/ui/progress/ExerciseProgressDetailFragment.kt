@@ -14,6 +14,7 @@ import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.titanbiosync.R
 import com.titanbiosync.databinding.FragmentExerciseProgressDetailBinding
+import com.titanbiosync.gym.domain.ExerciseSessionPoint
 import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.Date

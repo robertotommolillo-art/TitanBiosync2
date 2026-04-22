@@ -138,4 +138,8 @@
     <string name="coach_generate_workout">Genera scheda</string>
     <string name="coach_generate_spec_hint">es. push 4 giorni, ipertrofia, intermedio</string>
 
+    <!-- Overflow menu items -->
+    <string name="nav_history">Storico</string>
+    <string name="nav_devices">Dispositivi</string>
+
 </resources>

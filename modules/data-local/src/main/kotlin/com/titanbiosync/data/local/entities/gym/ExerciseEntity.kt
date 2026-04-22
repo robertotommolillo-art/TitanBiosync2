@@ -3,6 +3,7 @@ package com.titanbiosync.data.local.entities.gym
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -22,16 +23,46 @@ import kotlinx.serialization.Serializable
 data class ExerciseEntity(
     @PrimaryKey val id: String,
 
-    val nameIt: String,
-    val nameEn: String,
+    val name: String? = null,
 
-    val descriptionIt: String? = null,
-    val descriptionEn: String? = null,
+    @SerialName("name_it")
+    val nameIt: String? = null,
 
-    // <-- prima era obbligatorio: ora ha default
-    val category: String = "bodybuilding",
+    @SerialName("name_en")
+    val nameEn: String? = null,
+
+    @SerialName("gif_file")
+    val gifFile: String? = null,
+
+    @SerialName("body_part")
+    val bodyPart: String? = null,
+
+    @SerialName("body_part_it")
+    val bodyPartIt: String? = null,
 
     val equipment: String? = null,
+
+    @SerialName("equipment_it")
+    val equipmentIt: String? = null,
+
+    val target: String? = null,
+
+    @SerialName("target_it")
+    val targetIt: String? = null,
+
+    @SerialName("description_it")
+    val descriptionIt: String? = null,
+
+    @SerialName("description_en")
+    val descriptionEn: String? = null,
+
+    @SerialName("instructions_en")
+    val instructionsEn: String? = null,
+
+    @SerialName("instructions_it")
+    val instructionsIt: String? = null,
+
+    val category: String? = "bodybuilding",
     val mechanics: String? = null,
     val level: String? = null,
 

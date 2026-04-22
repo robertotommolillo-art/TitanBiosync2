@@ -20,8 +20,8 @@ interface WorkoutTemplateExerciseDao {
         SELECT 
             t.position AS position,
             t.exerciseId AS exerciseId,
-            e.nameIt AS nameIt,
-            e.nameEn AS nameEn,
+            COALESCE(e.nameIt, e.name, '') AS nameIt,
+            COALESCE(e.nameEn, e.name, '') AS nameEn,
             t.supersetGroupId AS supersetGroupId,
             t.supersetOrder AS supersetOrder
         FROM gym_workout_template_exercises t

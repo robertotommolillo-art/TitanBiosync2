@@ -35,8 +35,8 @@ class ExercisePickerFragment : Fragment() {
         if (pending != null) {
             // Step 2 of superset: open superset configuration sheet
             val second = ExercisePickerViewModel.PickedExercise(
-                exerciseId = exercise.id,
-                nameIt = exercise.nameIt
+                exerciseId = exercise.id ?: "",
+                nameIt = exercise.nameIt ?: ""
             )
             clearSupersetState()
             ConfigureTemplateSupersetBottomSheet
@@ -45,19 +45,19 @@ class ExercisePickerFragment : Fragment() {
         } else {
             // Ask user: Normal or Superset?
             AlertDialog.Builder(requireContext())
-                .setTitle(exercise.nameIt)
+                .setTitle(exercise.nameIt ?: "")
                 .setMessage("Come vuoi aggiungere questo esercizio?")
                 .setPositiveButton("Normale") { _, _ ->
                     ConfigureTemplateExerciseBottomSheet
-                        .newInstance(exerciseId = exercise.id, exerciseNameIt = exercise.nameIt)
+                        .newInstance(exerciseId = exercise.id ?: "", exerciseNameIt = exercise.nameIt ?: "")
                         .show(childFragmentManager, "ConfigureTemplateExerciseBottomSheet")
                 }
                 .setNeutralButton("Superserie") { _, _ ->
                     pendingSupersetFirst = ExercisePickerViewModel.PickedExercise(
-                        exerciseId = exercise.id,
-                        nameIt = exercise.nameIt
+                        exerciseId = exercise.id ?: "",
+                        nameIt = exercise.nameIt ?: ""
                     )
-                    showSupersetBanner(exercise.nameIt)
+                    showSupersetBanner(exercise.nameIt ?: "")
                 }
                 .setNegativeButton("Annulla", null)
                 .show()

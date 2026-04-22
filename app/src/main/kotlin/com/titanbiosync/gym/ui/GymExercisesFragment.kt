@@ -9,6 +9,7 @@ import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.app.AlertDialog
 import com.titanbiosync.data.local.entities.gym.ExerciseMediaEntity
 import com.titanbiosync.databinding.FragmentGymExercisesBinding
 import com.titanbiosync.gym.ui.filters.GymFilterLabels

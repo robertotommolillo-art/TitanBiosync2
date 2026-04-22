@@ -38,8 +38,8 @@ android {
         }
 
         debug {
-            buildConfigField("String", "COACH_API_URL", "\"https://titanbiosync-ai-coach.PLACEHOLDER.workers.dev\"")
-            buildConfigField("String", "COACH_APP_TOKEN", "\"\"")
+            buildConfigField("String", "COACH_API_URL", "\"https://titanbiosync-ai-coach.titanbiosync.workers.dev\"")
+            buildConfigField("String", "COACH_APP_TOKEN", "\"B7Pbf52zfDeAw2gkEy7T5mtJgCYibEAWbdIDa5yV\"")
         }
     }
 
@@ -67,6 +67,7 @@ dependencies {
     // Modules
     implementation(project(":modules:domain-core"))
     implementation(project(":modules:data-local"))
+    implementation("com.google.code.gson:gson:2.10.1")
 
     // Calendar (month view) - Kotlin 1.9.x compatible
     implementation("com.kizitonwose.calendar:view:2.5.0")
@@ -140,4 +141,15 @@ dependencies {
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    configurations.configureEach {
+        resolutionStrategy.eachDependency {
+            if (requested.group == "org.jetbrains.kotlinx" &&
+                requested.name.startsWith("kotlinx-serialization-")
+            ) {
+                useVersion("1.6.3")
+                because("Project uses Kotlin 1.9.23; kotlinx.serialization 1.7.x requires Kotlin 2.0+")
+            }
+        }
+    }
 }

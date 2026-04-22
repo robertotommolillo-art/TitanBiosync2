@@ -1,12 +1,17 @@
 package com.titanbiosync
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.MenuProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.titanbiosync.databinding.ActivityMainBinding
@@ -32,14 +37,12 @@ class MainActivity : AppCompatActivity() {
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
-        // Top-level destinations = schermate del BottomNavigation
+        // Top-level destinations = schermate del BottomNavigation (max 5)
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.dashboardFragment,
                 R.id.startSessionFragment,
-                R.id.deviceListFragment,
                 R.id.gymLibraryFragment,
-                R.id.historyFragment,
                 R.id.progressListFragment,
                 R.id.aiCoachFragment,
             )
@@ -50,6 +53,21 @@ class MainActivity : AppCompatActivity() {
 
         // Bottom navigation <-> navController
         binding.bottomNavigation.setupWithNavController(navController)
+
+        // Aggiungi menu di overflow nella Toolbar per le voci rimosse dalla BottomNav
+        addMenuProvider(object : MenuProvider {
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                menuInflater.inflate(R.menu.main_toolbar_menu, menu)
+            }
+
+            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                if (menuItem.itemId == android.R.id.home) {
+                    return false
+                }
+                // onNavDestinationSelected naviga automaticamente se l'ID del menu combacia con quello del NavGraph
+                return menuItem.onNavDestinationSelected(navController)
+            }
+        })
 
         // Nascondi toolbar e bottom nav sulla schermata di setup profilo
         navController.addOnDestinationChangedListener { _, destination, _ ->
