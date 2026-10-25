@@ -1,76 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TitanBiosync</string>
-
     <!-- Start Session -->
-    <string name="start_session_title">Avvia nuova sessione</string>
+    <string name="start_session_title">Cardio</string>
     <string name="start_session_select_type">Seleziona il tipo di sessione:</string>
-
     <string name="start_session_running">Corsa</string>
     <string name="start_session_running_hint">Outdoor o tapis roulant</string>
-
     <string name="start_session_cycling">Ciclismo</string>
     <string name="start_session_cycling_hint">Strada o cyclette</string>
-
     <string name="start_session_starting">Avvio sessione…</string>
     <string name="start_session_started">Sessione avviata: %1$s</string>
     <string name="start_session_error">Errore: %1$s</string>
-
     <string name="start_session_use_gps">Usa posizione GPS</string>
     <string name="start_session_location_denied">Permesso posizione negato. La sessione partirà senza GPS.</string>
     <string name="start_session_location_settings_rationale">Permesso posizione negato definitivamente. Aprire Impostazioni per abilitarlo.</string>
-
     <!-- Device / Bluetooth -->
+    <string name="device_screen_title">Bluetooth Devices</string>
+    <string name="device_connected_title">Connected Device</string>
+    <string name="device_connected_name_placeholder">Device Name</string>
+    <string name="device_disconnect">Disconnect</string>
+    <string name="device_scan_start">Start Scan</string>
+    <string name="device_scan_stop">Stop Scan</string>
+    <string name="device_item_icon">📱</string>
+    <string name="device_item_address_placeholder">00:00:00:00:00:00</string>
+    <string name="device_item_signal">Signal: %1$s</string>
+    <string name="device_item_signal_good">Good</string>
+    <string name="device_item_signal_fair">Fair</string>
+    <string name="device_item_signal_weak">Weak</string>
+    <string name="device_item_connect">Connect</string>
+    <string name="device_item_connected">Connected</string>
+    <string name="device_no_devices_found">No devices found</string>
+    <string name="device_no_devices_hint">Tap Start Scan to find nearby devices</string>
+    <string name="device_empty_state_icon">📡</string>
+    <string name="device_warning_prefix">Warning: %1$s</string>
     <string name="device_grant_permissions">Concedi permessi</string>
-    <string name="device_permissions_info">⚠️ Permessi Bluetooth mancanti. Premi il pulsante per concederli.</string>
+    <string name="device_permissions_info">Permessi Bluetooth mancanti. Premi il pulsante per concederli.</string>
     <string name="device_permissions_required">Permessi Bluetooth richiesti.</string>
     <string name="device_permissions_settings_rationale">Permessi Bluetooth negati definitivamente. Aprire Impostazioni per abilitarli.</string>
-    <string name="device_bluetooth_not_enabled">⚠️ Bluetooth non abilitato.</string>
-    <string name="device_bluetooth_must_be_enabled">È necessario abilitare il Bluetooth.</string>
+    <string name="device_bluetooth_not_enabled">Bluetooth non abilitato.</string>
+    <string name="device_bluetooth_must_be_enabled">E necessario abilitare il Bluetooth.</string>
     <string name="device_open_settings">Impostazioni</string>
-
     <!-- Common -->
     <string name="common_dash">—</string>
     <string name="common_coming_soon">Dettagli in arrivo</string>
     <string name="common_loading">Loading…</string>
     <string name="common_placeholder_ellipsis">…</string>
-
     <!-- Dashboard -->
     <string name="dashboard_settings">Impostazioni</string>
     <string name="dashboard_welcome_back">Bentornato</string>
-
     <string name="dashboard_active_session_title">Sessione attiva</string>
     <string name="dashboard_no_active_session">Nessuna sessione attiva</string>
     <string name="dashboard_view_details">Vedi dettagli</string>
-
     <string name="dashboard_active_session_type">Tipo: %1$s</string>
-
     <string name="dashboard_today_title">Oggi</string>
-    <string name="dashboard_today_stats">%1$d sessioni\n%2$d minuti attivi</string>
-
+    <string name="dashboard_today_stats">%1$d sessioni&#10;%2$d minuti attivi</string>
     <string name="dashboard_devices_title">Dispositivi</string>
     <string name="dashboard_devices_count_zero">0 dispositivi connessi</string>
     <string name="dashboard_devices_connected">%1$d dispositivi connessi</string>
-
     <string name="dashboard_error_title">Errore</string>
     <string name="dashboard_error_message">Errore: %1$s</string>
-
     <!-- Quick stats -->
     <string name="dashboard_quick_sessions">Sessioni</string>
     <string name="dashboard_quick_minutes">Minuti</string>
     <string name="dashboard_quick_devices">Dispositivi</string>
     <string name="dashboard_quick_streak">Streak</string>
-
+    <string name="dashboard_weekly_goal_title">Obiettivo settimanale</string>
+    <string name="dashboard_weekly_goal_progress">%1$d/%2$d allenamenti completati</string>
+    <string name="dashboard_open_coach">Apri AI Coach</string>
+    <string name="dashboard_coach_discovery_badge">NOVITÀ</string>
+    <string name="dashboard_coach_discovery_title">Scopri AI Coach</string>
+    <string name="dashboard_coach_discovery_description">Genera schede, chiedi consigli e ricevi idee personalizzate per i tuoi allenamenti.</string>
+    <string name="dashboard_coach_discovery_examples">Provalo per: progressioni, split settimanali, recupero e dubbi tecnici.</string>
+    <string name="dashboard_coach_discovery_cta">Provalo ora</string>
+    <string name="dashboard_milestones_title">Milestone</string>
+    <string name="dashboard_activity_title">Attività recenti</string>
+    <string name="dashboard_activity_item">%1$s — %2$s</string>
+    <string name="dashboard_activity_empty">Nessuna attività recente. Inizia la tua prossima sessione.</string>
+    <string name="dashboard_body_metrics_title">Misure corporee</string>
+    <string name="dashboard_body_weight">Peso: %1$s</string>
+    <string name="dashboard_body_height">Altezza: %1$s</string>
+    <string name="dashboard_body_bmi">BMI: %1$s</string>
+    <string name="dashboard_body_resting_hr">HR a riposo: %1$s</string>
+    <string name="dashboard_body_spo2">SpO2 media: %1$s</string>
+    <string name="dashboard_body_not_available">Non disponibile</string>
     <!-- Active session status chip -->
     <string name="dashboard_session_status_active">ATTIVA</string>
     <string name="dashboard_session_status_inactive">NESSUNA</string>
-
     <!-- Profile Setup -->
     <string name="profile_setup_title">Configura il tuo profilo</string>
     <string name="profile_setup_subtitle">Inserisci i tuoi dati per personalizzare l\'esperienza</string>
     <string name="profile_setup_first_name">Nome *</string>
     <string name="profile_setup_last_name">Cognome *</string>
     <string name="profile_setup_age">Età</string>
+    <string name="profile_setup_weight_kg_hint">Peso (kg)</string>
+    <string name="profile_setup_weight_lb_hint">Peso (lb)</string>
     <string name="profile_setup_height_cm">Altezza (cm)</string>
     <string name="profile_setup_height_ft">Altezza (ft)</string>
     <string name="profile_setup_sex">Sesso</string>
@@ -89,23 +112,43 @@
     <string name="profile_setup_goal_hypertrophy">Ipertrofia</string>
     <string name="profile_setup_goal_strength">Forza</string>
     <string name="profile_setup_goal_fat_loss">Dimagrimento</string>
-
     <!-- Settings – account section -->
     <string name="settings_account_section_title">Account</string>
     <string name="settings_link_account_coming_soon">Collega account (Backup/Ripristino) — coming soon</string>
-
     <!-- Login -->
     <string name="login_subtitle">Accedi al tuo account</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="action_login">Accedi</string>
     <string name="login_error_empty_fields">Email e password sono obbligatorie</string>
-
+    <string name="login_or">Oppure</string>
+    <string name="login_continue_with_google">Continua con Google</string>
+    <string name="login_forgot_password">Password dimenticata?</string>
+    <string name="login_reset_password_email_required">Inserisci l\'email per recuperare la password</string>
+    <string name="login_reset_password_invalid_email">Inserisci un\'email valida per recuperare la password</string>
+    <string name="login_reset_password_success">Email di recupero inviata. Controlla la casella di posta.</string>
     <!-- Settings -->
     <string name="action_logout">Esci</string>
     <string name="logout_confirm_title">Uscita</string>
     <string name="logout_confirm_message">Sei sicuro di voler uscire?</string>
-
+    <string name="settings_current_weight_unit">Attuale: %1$s</string>
+    <string name="settings_account_status_logged_in">Account collegato correttamente. Sync cloud e backup locale disponibili.</string>
+    <string name="settings_local_backup_title">Backup locale (senza account)</string>
+    <string name="settings_account_status_logged_out">Puoi fare backup/ripristino sul dispositivo anche senza Firebase.</string>
+    <string name="settings_last_backup">Ultimo backup: %1$s</string>
+    <string name="settings_last_cloud_sync">Ultima sync cloud: %1$s</string>
+    <string name="settings_last_restore">Ultimo restore: %1$s</string>
+    <string name="settings_last_file_transfer">Ultimo export/import: %1$s</string>
+    <string name="settings_restore_confirm_title">Confermi il ripristino?</string>
+    <string name="settings_restore_confirm_logged_in">Recupero dati dal cloud con fallback locale. L\'operazione fa merge: i dati esistenti non vengono cancellati, ma possono essere aggiornati se presenti nel backup.</string>
+    <string name="settings_restore_confirm_logged_out">Ripristino da backup locale. L\'operazione fa merge: i dati esistenti non vengono cancellati, ma possono essere aggiornati se presenti nel backup.</string>
+    <string name="settings_import_confirm_title">Confermi l\'importazione file?</string>
+    <string name="settings_import_confirm_message">Importi un file JSON di backup. I dati vengono uniti (merge) a quelli presenti: nessuna cancellazione automatica, ma i record esistenti possono essere aggiornati.</string>
+    <string name="settings_confirm_action">Conferma</string>
+    <string name="settings_cancel_action">Annulla</string>
+    <string name="settings_chip_cloud_active">Cloud: attivo</string>
+    <string name="settings_chip_cloud_inactive">Cloud: non attivo</string>
+    <string name="settings_chip_local_ready">Backup locale: disponibile</string>
     <!-- Workout progress charts -->
     <string name="chart_pr_title">Nuovi record (PR)</string>
     <string name="chart_section_title">Progressi per esercizio</string>
@@ -115,7 +158,17 @@
     <string name="chart_label_vs_prev">vs precedente</string>
     <string name="chart_delta_no_prev">Prima volta</string>
     <string name="chart_no_data">Nessun dato disponibile</string>
-
+    <string name="report_muscle_map_title">Mappa muscoli coinvolti</string>
+    <string name="report_muscle_map_hint">Colori piu caldi indicano maggiore intensita.</string>
+    <string name="report_muscle_map_front">Vista frontale</string>
+    <string name="report_muscle_map_back">Vista posteriore</string>
+    <string name="report_muscle_map_cd">Mappa corpo umano con muscoli evidenziati</string>
+    <string name="report_muscle_map_back_cd">Mappa posteriore corpo umano con muscoli evidenziati</string>
+    <string name="report_muscle_map_error">Impossibile renderizzare la mappa muscolare.</string>
+    <string name="resume_gym_session_title">Allenamento non terminato</string>
+    <string name="resume_gym_session_message">Hai un allenamento palestra ancora aperto. Vuoi riprenderlo ora?</string>
+    <string name="resume_gym_session_confirm">Riprendi</string>
+    <string name="resume_gym_session_cancel">Più tardi</string>
     <!-- Progress section -->
     <string name="nav_progressi">Progressi</string>
     <string name="progress_list_title">Progressi</string>
@@ -129,7 +182,44 @@
     <string name="progress_detail_range_all">Tutto</string>
     <string name="progress_sessions_count">%1$d sessioni</string>
     <string name="progress_no_sessions">Nessuna sessione</string>
-
+    <string name="superset_label">Superserie</string>
+    <string name="superset_exercise_a">A</string>
+    <string name="superset_exercise_b">B</string>
+    <string name="execution_superset_title">Superserie in corso</string>
+    <string name="execution_add_set_for">+ Aggiungi serie %1$s</string>
+    <string name="session_replaced_badge">Sostituito</string>
+    <string name="common_double_dash">--</string>
+    <string name="execution_rest_in_progress">Recupero in corso…</string>
+    <string name="execution_skip_rest">Salta</string>
+    <string name="execution_add_set">+ Aggiungi Serie</string>
+    <string name="exercise_demo_cd">Animazione dimostrativa esercizio</string>
+    <string name="heart_rate_icon_cd">Icona battito cardiaco</string>
+    <string name="exercise_import_source">Fonte: %1$s</string>
+    <string name="exercise_import_meta">Categoria: %1$s&#10;Equipment: %2$s&#10;Meccanica: %3$s&#10;Livello: %4$s</string>
+    <string name="exercise_import_muscles">Muscoli:&#10;%1$s</string>
+    <string name="exercise_set_label">Set %1$d</string>
+    <!-- PR (Personal Records) section -->
+    <string name="nav_pr">Record</string>
+    <string name="pr_title">I miei Record (PR)</string>
+    <string name="pr_search_hint">Cerca esercizio…</string>
+    <string name="pr_label_best_weight">Peso max</string>
+    <string name="pr_label_best_e1rm">e1RM est.</string>
+    <string name="pr_empty">Nessun record trovato.&#10;Completa i tuoi primi allenamenti!</string>
+    <string name="pr_see_records">🏆 I miei Record</string>
+    <string name="pr_value_weight_kg">%1$.1f kg</string>
+    <string name="pr_value_e1rm_kg">%1$.1f kg</string>
+    <string name="pr_new_badge">Nuovo PR</string>
+    <string name="pr_last_record_date">Ultimo record: %1$s</string>
+    <string name="pr_last_record_unknown">Ultimo record: data non disponibile</string>
+    <string name="pr_sort_recent">Più recenti</string>
+    <string name="pr_sort_weight">Peso max</string>
+    <string name="pr_sort_e1rm">e1RM</string>
+    <string name="pr_summary_title">Riepilogo record</string>
+    <string name="pr_summary_total_exercises">Esercizi con PR: %1$d</string>
+    <string name="pr_summary_best_weight">Peso max assoluto: %1$s · %2$.1f kg</string>
+    <string name="pr_summary_best_e1rm">e1RM migliore: %1$s · %2$.1f kg</string>
+    <string name="pr_summary_latest_record">PR più recente: %1$s · %2$s</string>
+    <string name="pr_summary_latest_record_none">PR più recente: non disponibile</string>
     <!-- AI Coach -->
     <string name="nav_coach">Coach</string>
     <string name="coach_title">AI Coach</string>
@@ -137,9 +227,75 @@
     <string name="coach_send">Invia</string>
     <string name="coach_generate_workout">Genera scheda</string>
     <string name="coach_generate_spec_hint">es. push 4 giorni, ipertrofia, intermedio</string>
-
+    <string name="coach_web_search_label">Cerca esercizi online</string>
+    <string name="coach_web_search_hint">Arricchisce la scheda con esercizi da fonti web</string>
+    <string name="coach_empty_title">Il tuo coach sempre disponibile</string>
+    <string name="coach_empty_description">Fai una domanda, prova un prompt rapido oppure genera una nuova scheda in pochi secondi.</string>
+    <string name="coach_empty_generate_cta">Genera la tua prima scheda</string>
+    <string name="coach_prompt_progression">Suggeriscimi una progressione per lo squat</string>
+    <string name="coach_prompt_workout">Genera una scheda full body 3 giorni</string>
+    <string name="coach_prompt_recovery">Come posso migliorare il recupero?</string>
+    <string name="coach_welcome_title">Benvenuto in AI Coach</string>
+    <string name="coach_welcome_message">Qui puoi fare domande sull\'allenamento, generare schede personalizzate e ricevere idee pratiche per progredire. Inizia da un prompt rapido oppure usa “Genera scheda”.</string>
+    <string name="coach_welcome_primary_action">Inizia</string>
+    <string name="coach_welcome_secondary_action">Più tardi</string>
+    <string name="session_alternatives_cd">Mostra esercizi alternativi</string>
     <!-- Overflow menu items -->
     <string name="nav_history">Storico</string>
     <string name="nav_devices">Dispositivi</string>
-
+    <!-- Personalization -->
+    <string name="personalization_title">Personalizzazione</string>
+    <string name="personalization_subtitle">Scegli il tuo stile</string>
+    <string name="personalization_desc">Personalizza l\'aspetto dell\'applicazione con i temi disponibili.</string>
+    <string name="theme_default_name">Titan (Predefinito)</string>
+    <string name="theme_cyber_name">Cyber Neon</string>
+    <string name="theme_crimson_name">Crimson Fury</string>
+    <string name="theme_forest_name">Forest Zen</string>
+    <string name="personalization_similarity_title">Soglia similarità AI Coach</string>
+    <string name="personalization_similarity_desc">Più bassa = più varietà. Più alta = più simile alle schede precedenti.</string>
+    <string name="personalization_similarity_40">40% (massima varietà)</string>
+    <string name="personalization_similarity_45">45% (consigliato)</string>
+    <string name="personalization_similarity_50">50% (più conservativo)</string>
+    <!-- Gym library filters -->
+    <string name="library_goal_filter_title">Filtra per obiettivo</string>
+    <string name="library_goal_all">Tutti</string>
+    <string name="template_goal_hypertrophy">Ipertrofia</string>
+    <string name="template_goal_strength">Forza</string>
+    <string name="template_goal_fat_loss">Dimagrimento</string>
+    <string name="template_goal_unassigned">Senza obiettivo</string>
+    <string name="template_goal_badge">Obiettivo: %1$s</string>
+    <!-- History rich cards -->
+    <string name="history_pr_badge">PR</string>
+    <string name="history_session_gym">Allenamento palestra</string>
+    <string name="history_session_summary_gym">%1$d esercizi • %2$s</string>
+    <string name="history_session_summary_general">%1$s • %2$s</string>
+    <string name="history_session_metrics">%1$s • %2$s</string>
+    <string name="history_session_volume">Volume: %1$s kg</string>
+    <!-- Cardio session detail -->
+    <string name="cardio_start">Avvia Sessione</string>
+    <string name="cardio_end">Termina Sessione</string>
+    <string name="cardio_sim_data">Simula Dati Live</string>
+    <string name="session_detail_type_placeholder">Tipo: —</string>
+    <string name="session_detail_duration_placeholder_label">Durata: 00:00</string>
+    <string name="session_detail_type">Tipo: %1$s</string>
+    <string name="session_detail_duration">Durata: %1$s</string>
+    <string name="session_detail_duration_placeholder">00:00</string>
+    <string name="session_detail_status_ready">Stato: Pronto</string>
+    <string name="session_detail_status_running">Stato: In corso</string>
+    <string name="session_detail_status_ended">Stato: Terminato</string>
+    <string name="session_detail_live_route">Percorso Live</string>
+    <string name="session_detail_heart_rate">Frequenza Cardiaca</string>
+    <string name="session_detail_heart_rate_value">%1$d bpm</string>
+    <string name="session_detail_heart_rate_chart">Frequenza Cardiaca (bpm)</string>
+    <string name="session_detail_started">Sessione avviata</string>
+    <string name="session_detail_error">Errore: %1$s</string>
+    <!-- History items -->
+    <string name="history_session_title_placeholder">Allenamento 18:30</string>
+    <string name="history_session_title">%1$s %2$s</string>
+    <string name="history_session_duration">Durata: %1$d min</string>
+    <string name="history_session_in_progress">In corso / senza fine</string>
+    <plurals name="pr_sessions_count">
+        <item quantity="one">%d sessione</item>
+        <item quantity="other">%d sessioni</item>
+    </plurals>
 </resources>

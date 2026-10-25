@@ -65,7 +65,7 @@ class WorkoutHistorySummaryBuilder @Inject constructor(
         // Optimization: only fetch start times from the last 28 days
         val fourWeeksAgo = System.currentTimeMillis() - TimeUnit.DAYS.toMillis(28)
         val recentStartTimes = sessionDao.getCompletedStartTimesSince(fourWeeksAgo)
-        val weeklyFrequency = if (recentStartTimes.isEmpty()) null else recentStartTimes.size / 4f
+        val weeklyFrequency = calculateWeeklyFrequency(recentStartTimes)
 
         // ── Top PRs ────────────────────────────────────────────────────
         val recentSessionIds = completedSessions.map { it.id }
@@ -104,5 +104,22 @@ class WorkoutHistorySummaryBuilder @Inject constructor(
                     maxE1rm = pr.maxE1rm
                 )
             }
+    }
+
+    companion object {
+        /**
+         * Pure helper to compute average weekly frequency given a list of session start times (millis).
+         * Considers a window of the last 28 days (4 weeks).
+         */
+        fun calculateWeeklyFrequency(sessionStartTimes: List<Long>): Float? {
+            val now = System.currentTimeMillis()
+            val fourWeeksAgo = now - TimeUnit.DAYS.toMillis(28)
+
+            val recentSessions = sessionStartTimes.filter { it >= fourWeeksAgo }
+            if (recentSessions.isEmpty()) return null
+
+            // average over 4 weeks
+            return recentSessions.size / 4f
+        }
     }
 }

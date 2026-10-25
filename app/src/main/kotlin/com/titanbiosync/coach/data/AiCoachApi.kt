@@ -1,15 +1,16 @@
 package com.titanbiosync.coach.data
 
 import com.titanbiosync.coach.domain.ChatMessage
+import com.titanbiosync.coach.domain.PreviousWorkoutPlanSummary
 import com.titanbiosync.coach.domain.WorkoutHistorySummary
 import com.titanbiosync.coach.domain.WorkoutPlan
 import com.titanbiosync.coach.domain.WorkoutPlanExercise
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.decodeFromJsonElement
-import kotlinx.serialization.json.jsonObject
 import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
@@ -22,10 +23,13 @@ import java.util.concurrent.TimeUnit
  * JSON encoding/decoding uses [kotlinx.serialization].
  */
 class AiCoachApi(
-    private val baseUrl: String,
-    private val appToken: String,
+    baseUrl: String,
+    appToken: String,
     private val json: Json = Json { ignoreUnknownKeys = true }
 ) {
+
+    private val normalizedBaseUrl = baseUrl.trim().trimEnd('/')
+    private val normalizedAppToken = appToken.trim()
 
     // ── Serializable DTOs ──────────────────────────────────────────────────
 
@@ -63,7 +67,18 @@ class AiCoachApi(
     @Serializable
     private data class GenerateWorkoutRequestDto(
         val userSpec: String,
-        val history: HistorySummaryDto? = null
+        val history: HistorySummaryDto? = null,
+        val webSearch: Boolean = true,
+        val localExerciseNames: List<String>? = null,
+        val localExerciseHints: List<LocalExerciseHint>? = null,
+        val previousPlans: List<PreviousWorkoutPlanDto>? = null,
+        val similarityThreshold: Int = 45
+    )
+
+    @Serializable
+    private data class PreviousWorkoutPlanDto(
+        val title: String,
+        val exerciseNames: List<String>
     )
 
     @Serializable
@@ -76,6 +91,7 @@ class AiCoachApi(
     private data class GenerateWorkoutResponseDto(
         val message: String,
         val plan: JsonObject? = null,
+        val plans: JsonArray? = null,
         val tokensUsed: Int = 0
     )
 
@@ -124,25 +140,49 @@ class AiCoachApi(
      *
      * @param userSpec  Natural language description of the desired workout.
      * @param history   Optional workout history summary.
-     * @return Pair of (assistant message text, structured [WorkoutPlan]).
+     * @return Pair of (assistant message text, structured workout plans list).
      * @throws IOException on network error.
      * @throws AiCoachException on HTTP or API error.
      */
     fun generateWorkout(
         userSpec: String,
-        history: WorkoutHistorySummary?
-    ): Pair<String, WorkoutPlan> {
+        history: WorkoutHistorySummary?,
+        webSearch: Boolean = true,
+        localExerciseNames: List<String>? = null,
+        localExerciseHints: List<LocalExerciseHint>? = null,
+        previousPlans: List<PreviousWorkoutPlanSummary>? = null,
+        similarityThreshold: Int = 45
+    ): Pair<String, List<WorkoutPlan>> {
         val requestDto = GenerateWorkoutRequestDto(
             userSpec = userSpec,
-            history = history?.toDto()
+            history = history?.toDto(),
+            webSearch = webSearch,
+            localExerciseNames = localExerciseNames?.take(80),
+            localExerciseHints = localExerciseHints?.take(18),
+            previousPlans = previousPlans
+                ?.take(6)
+                ?.map { it.toDto() },
+            similarityThreshold = similarityThreshold.coerceIn(40, 50)
         )
         val responseBody = post("/coach/generate-workout", json.encodeToString(requestDto))
         val response = json.decodeFromString<GenerateWorkoutResponseDto>(responseBody)
-        val planDto = response.plan
-            ?.let { json.decodeFromJsonElement<WorkoutPlanDto>(it) }
-            ?: WorkoutPlanDto(title = "Scheda AI", exercises = emptyList())
-        val plan = planDto.toDomain()
-        return response.message to plan
+
+        val parsedPlans = response.plans
+            ?.mapNotNull { element ->
+                runCatching { json.decodeFromJsonElement<WorkoutPlanDto>(element) }.getOrNull()
+            }
+            .orEmpty()
+
+        val fallbackPlan = response.plan
+            ?.let { runCatching { json.decodeFromJsonElement<WorkoutPlanDto>(it) }.getOrNull() }
+
+        val planDtos = when {
+            parsedPlans.isNotEmpty() -> parsedPlans
+            fallbackPlan != null -> listOf(fallbackPlan)
+            else -> listOf(WorkoutPlanDto(title = "Scheda AI", exercises = emptyList()))
+        }
+
+        return response.message to planDtos.map { it.toDomain() }
     }
 
     // ── Helpers ────────────────────────────────────────────────────────────
@@ -171,17 +211,28 @@ class AiCoachApi(
         }
     )
 
+    private fun PreviousWorkoutPlanSummary.toDto() = PreviousWorkoutPlanDto(
+        title = title,
+        exerciseNames = exerciseNames.take(18)
+    )
+
     /**
      * Performs an HTTP POST with JSON body, returns the response body as a string.
      */
     private fun post(path: String, body: String): String {
-        val url = URL("$baseUrl$path")
+        if (normalizedAppToken.isBlank()) {
+            throw IllegalStateException(
+                "COACH_APP_TOKEN non configurato: imposta COACH_APP_TOKEN in Gradle o variabile ambiente"
+            )
+        }
+
+        val url = URL("$normalizedBaseUrl$path")
         val conn = url.openConnection() as HttpURLConnection
         conn.connectTimeout = TimeUnit.SECONDS.toMillis(15).toInt()
         conn.readTimeout = TimeUnit.SECONDS.toMillis(45).toInt()
         conn.requestMethod = "POST"
         conn.setRequestProperty("Content-Type", "application/json; charset=utf-8")
-        conn.setRequestProperty("X-App-Token", appToken)
+        conn.setRequestProperty("X-App-Token", normalizedAppToken)
         conn.doOutput = true
 
         conn.outputStream.bufferedWriter(Charsets.UTF_8).use { it.write(body) }

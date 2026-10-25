@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personalization_subtitle"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personalization_desc"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:alpha="0.7"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Theme Default -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/themeDefaultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/Widget.App.CardView.Outlined">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@color/theme_default_primary" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/theme_default_name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                <RadioButton
+                    android:id="@+id/radioDefault"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Theme Cyber -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/themeCyberCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/Widget.App.CardView.Outlined">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@color/theme_cyber_primary" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/theme_cyber_name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                <RadioButton
+                    android:id="@+id/radioCyber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Theme Crimson -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/themeCrimsonCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/Widget.App.CardView.Outlined">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@color/theme_crimson_primary" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/theme_crimson_name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                <RadioButton
+                    android:id="@+id/radioCrimson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Theme Forest -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/themeForestCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/Widget.App.CardView.Outlined">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@color/theme_forest_primary" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/theme_forest_name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+                <RadioButton
+                    android:id="@+id/radioForest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/personalization_similarity_title"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:alpha="0.75"
+            android:text="@string/personalization_similarity_desc"
+            android:textAppearance="?attr/textAppearanceBodySmall" />
+
+        <RadioGroup
+            android:id="@+id/similarityThresholdGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/threshold40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personalization_similarity_40" />
+
+            <RadioButton
+                android:id="@+id/threshold45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personalization_similarity_45" />
+
+            <RadioButton
+                android:id="@+id/threshold50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personalization_similarity_50" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
